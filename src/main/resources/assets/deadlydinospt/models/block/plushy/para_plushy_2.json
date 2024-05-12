@@ -1,6 +1,6 @@
 {
-	"parent": "deadlydinos:block/parent/para_plushy",
+	"parent": "deadlydinospt:block/parent/para_plushy",
 	"textures": {
-		"plushy": "deadlydinos:block/para_plushy_2"
+		"plushy": "deadlydinospt:block/para_plushy_2"
 	}
 }

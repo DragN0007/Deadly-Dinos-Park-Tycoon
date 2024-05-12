@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "deadlydinos:rawescargot"
+    "item": "deadlydinospt:rawescargot"
   },
-  "result": "deadlydinos:cookedescargot",
+  "result": "deadlydinospt:cookedescargot",
   "experience": 0.40,
   "cookingtime": 180
 }

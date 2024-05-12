@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "deadlydinos:yew_planks"
+      "item": "deadlydinospt:yew_planks"
     }
   },
   "result": {
-    "item": "deadlydinos:yew_slab",
+    "item": "deadlydinospt:yew_slab",
     "count": 6
   }
 }

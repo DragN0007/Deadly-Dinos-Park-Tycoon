@@ -34,7 +34,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:sequoia_leaves"
+              "name": "deadlydinospt:sequoia_leaves"
             },
             {
               "type": "minecraft:item",
@@ -53,7 +53,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:sequoia_sapling"
+              "name": "deadlydinospt:sequoia_sapling"
             }
           ]
         }

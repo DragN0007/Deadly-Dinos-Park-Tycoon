@@ -10,15 +10,15 @@
       "item": "minecraft:bread"
     },
     "B": {
-      "item": "deadlydinos:yew_plum_jam"
+      "item": "deadlydinospt:yew_plum_jam"
     },
     "C": {
-      "item": "deadlydinos:tiger_nut_butter"
+      "item": "deadlydinospt:tiger_nut_butter"
     }
 
   },
   "result": {
-    "item": "deadlydinos:pbj",
+    "item": "deadlydinospt:pbj",
     "count": 1
   }
 }

@@ -10,10 +10,10 @@
       "item": "minecraft:netherite_leggings"
     },
     "B": {
-      "item": "deadlydinos:largecarnileg"
+      "item": "deadlydinospt:largecarnileg"
     },
     "C": {
-      "item": "deadlydinos:largecarnitail"
+      "item": "deadlydinospt:largecarnitail"
     },
     "D": {
       "item": "minecraft:diamond"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonenetherite_leggings",
+    "item": "deadlydinospt:bonenetherite_leggings",
     "count": 1
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "deadlydinos:block/cycads_b"
+    "cross": "deadlydinospt:block/cycads_b"
   }
 }

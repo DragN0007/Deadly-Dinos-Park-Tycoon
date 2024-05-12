@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "deadlydinos:conifer_log"
+      "item": "deadlydinospt:conifer_log"
     }
   ],
   "result": {
-    "item": "deadlydinos:conifer_planks",
+    "item": "deadlydinospt:conifer_planks",
     "count": 4
   }
 }

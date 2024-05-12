@@ -10,10 +10,10 @@
       "item": "minecraft:golden_boots"
     },
     "B": {
-      "item": "deadlydinos:medherbiclaw"
+      "item": "deadlydinospt:medherbiclaw"
     },
     "C": {
-      "item": "deadlydinos:medherbiribs"
+      "item": "deadlydinospt:medherbiribs"
     },
     "D": {
       "item": "minecraft:gold_ingot"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonegold_boots",
+    "item": "deadlydinospt:bonegold_boots",
     "count": 1
   }
 }

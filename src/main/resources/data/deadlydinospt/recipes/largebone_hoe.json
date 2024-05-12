@@ -10,15 +10,15 @@
       "item": "minecraft:stick"
     },
     "B": {
-      "item": "deadlydinos:largecarnitail"
+      "item": "deadlydinospt:largecarnitail"
     },
     "C": {
-      "item": "deadlydinos:largecarnitooth"
+      "item": "deadlydinospt:largecarnitooth"
     }
 
   },
   "result": {
-    "item": "deadlydinos:largebone_hoe",
+    "item": "deadlydinospt:largebone_hoe",
     "count": 1
   }
 }

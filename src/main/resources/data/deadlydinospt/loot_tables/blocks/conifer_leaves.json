@@ -34,7 +34,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:conifer_leaves"
+              "name": "deadlydinospt:conifer_leaves"
             },
             {
               "type": "minecraft:item",
@@ -53,7 +53,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:conifer_sapling"
+              "name": "deadlydinospt:conifer_sapling"
             }
           ]
         }

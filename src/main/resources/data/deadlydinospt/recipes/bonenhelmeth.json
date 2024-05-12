@@ -10,10 +10,10 @@
       "item": "minecraft:netherite_helmet"
     },
     "B": {
-      "item": "deadlydinos:largeherbiskull"
+      "item": "deadlydinospt:largeherbiskull"
     },
     "C": {
-      "item": "deadlydinos:largeherbitooth"
+      "item": "deadlydinospt:largeherbitooth"
     },
     "D": {
       "item": "minecraft:diamond"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonenetherite_helmet",
+    "item": "deadlydinospt:bonenetherite_helmet",
     "count": 1
   }
 }

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "deadlydinos:medcarniskull"
+      "item": "deadlydinospt:medcarniskull"
     },
     "title": "Baby's First Dinosaur",
     "description": "Kill a Deadly Dino.",
@@ -12,224 +12,224 @@
   },
   "parent": "minecraft:adventure/kill_a_mob",
   "criteria": {
-    "deadlydinos:acro_entity": {
+    "deadlydinospt:acro_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:acro_entity"
+              "type": "deadlydinospt:acro_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:alberto_entity": {
+    "deadlydinospt:alberto_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:alberto_entity"
+              "type": "deadlydinospt:alberto_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:archae_entity": {
+    "deadlydinospt:archae_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:archae_entity"
+              "type": "deadlydinospt:archae_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:austro_entity": {
+    "deadlydinospt:austro_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:austro_entity"
+              "type": "deadlydinospt:austro_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:carno_entity": {
+    "deadlydinospt:carno_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:carno_entity"
+              "type": "deadlydinospt:carno_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:cerato_entity": {
+    "deadlydinospt:cerato_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:cerato_entity"
+              "type": "deadlydinospt:cerato_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:compy_entity": {
+    "deadlydinospt:compy_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:compy_entity"
+              "type": "deadlydinospt:compy_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:deinon_entity": {
+    "deadlydinospt:deinon_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:deinon_entity"
+              "type": "deadlydinospt:deinon_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:giga_entity": {
+    "deadlydinospt:giga_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:giga_entity"
+              "type": "deadlydinospt:giga_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:mahakala_entity": {
+    "deadlydinospt:mahakala_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:mahakala_entity"
+              "type": "deadlydinospt:mahakala_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:majunga_entity": {
+    "deadlydinospt:majunga_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:majunga_entity"
+              "type": "deadlydinospt:majunga_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:rex_entity": {
+    "deadlydinospt:rex_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:rex_entity"
+              "type": "deadlydinospt:rex_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:spino_entity": {
+    "deadlydinospt:spino_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:spino_entity"
+              "type": "deadlydinospt:spino_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:tarbo_entity": {
+    "deadlydinospt:tarbo_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:tarbo_entity"
+              "type": "deadlydinospt:tarbo_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:troodon_entity": {
+    "deadlydinospt:troodon_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:troodon_entity"
+              "type": "deadlydinospt:troodon_entity"
             },
             "entity": "this"
           }
         ]
       }
     },
-    "deadlydinos:utah_entity": {
+    "deadlydinospt:utah_entity": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
           {
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "deadlydinos:utah_entity"
+              "type": "deadlydinospt:utah_entity"
             },
             "entity": "this"
           }

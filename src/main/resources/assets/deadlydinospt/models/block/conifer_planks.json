@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "deadlydinos:block/conifer_planks"
+    "all": "deadlydinospt:block/conifer_planks"
   }
 }

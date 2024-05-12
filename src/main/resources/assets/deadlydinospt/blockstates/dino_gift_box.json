@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "deadlydinos:block/dino_gift_box_horizontal",
+      "model": "deadlydinospt:block/dino_gift_box_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "deadlydinos:block/dino_gift_box"
+      "model": "deadlydinospt:block/dino_gift_box"
     },
     "axis=z": {
-      "model": "deadlydinos:block/dino_gift_box_horizontal",
+      "model": "deadlydinospt:block/dino_gift_box_horizontal",
       "x": 90
     }
   }

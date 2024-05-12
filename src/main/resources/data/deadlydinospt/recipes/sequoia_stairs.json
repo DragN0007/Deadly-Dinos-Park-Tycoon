@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "deadlydinos:sequoia_planks"
+      "item": "deadlydinospt:sequoia_planks"
     }
   },
   "result": {
-    "item": "deadlydinos:sequoia_stairs",
+    "item": "deadlydinospt:sequoia_stairs",
     "count": 4
   }
 }

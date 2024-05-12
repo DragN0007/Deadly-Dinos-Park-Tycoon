@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "deadlydinos:block/sequoia_sapling"
+    "layer0": "deadlydinospt:block/sequoia_sapling"
   }
 }

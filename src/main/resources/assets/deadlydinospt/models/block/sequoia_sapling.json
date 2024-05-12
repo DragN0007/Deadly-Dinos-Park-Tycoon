@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "deadlydinos:block/sequoia_sapling"
+    "cross": "deadlydinospt:block/sequoia_sapling"
   }
 }

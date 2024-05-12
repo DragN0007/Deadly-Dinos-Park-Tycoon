@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-      "item": "deadlydinos:yew_plum"
+      "item": "deadlydinospt:yew_plum"
     },
     "B": {
       "item": "minecraft:sugar"
     }
   },
   "result": {
-    "item": "deadlydinos:yew_plum_jam",
+    "item": "deadlydinospt:yew_plum_jam",
     "count": 4
   }
 }

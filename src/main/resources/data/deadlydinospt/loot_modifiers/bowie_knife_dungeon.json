@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:chests/simple_dungeon"
     }
   ],
-  "addition": "deadlydinos:bowie_knife",
-  "type": "deadlydinos:bowie_knife_dungeon"
+  "addition": "deadlydinospt:bowie_knife",
+  "type": "deadlydinospt:bowie_knife_dungeon"
 }

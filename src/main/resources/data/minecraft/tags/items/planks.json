@@ -1,8 +1,8 @@
 {
   "repalce": false,
   "values": [
-    "deadlydinos:conifer_planks",
-    "deadlydinos:sequoia_planks",
-    "deadlydinos:yew_planks"
+    "deadlydinospt:conifer_planks",
+    "deadlydinospt:sequoia_planks",
+    "deadlydinospt:yew_planks"
   ]
 }

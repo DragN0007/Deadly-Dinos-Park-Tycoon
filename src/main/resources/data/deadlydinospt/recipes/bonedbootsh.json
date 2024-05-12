@@ -10,10 +10,10 @@
       "item": "minecraft:diamond_boots"
     },
     "B": {
-      "item": "deadlydinos:largeherbiclaw"
+      "item": "deadlydinospt:largeherbiclaw"
     },
     "C": {
-      "item": "deadlydinos:largeherbiribs"
+      "item": "deadlydinospt:largeherbiribs"
     },
     "D": {
       "item": "minecraft:diamond"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonediamond_boots",
+    "item": "deadlydinospt:bonediamond_boots",
     "count": 1
   }
 }

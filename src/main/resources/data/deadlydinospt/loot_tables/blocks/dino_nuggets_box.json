@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:dino_nugget_1",
+          "name": "deadlydinospt:dino_nugget_1",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -21,7 +21,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:dino_nugget_2",
+          "name": "deadlydinospt:dino_nugget_2",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:dino_nugget_3",
+          "name": "deadlydinospt:dino_nugget_3",
           "functions": [
             {
               "function": "minecraft:set_count",

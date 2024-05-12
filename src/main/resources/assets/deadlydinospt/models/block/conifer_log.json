@@ -2,7 +2,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "deadlydinos:block/conifer_log_top",
-    "side": "deadlydinos:block/conifer_log"
+    "end": "deadlydinospt:block/conifer_log_top",
+    "side": "deadlydinospt:block/conifer_log"
   }
 }

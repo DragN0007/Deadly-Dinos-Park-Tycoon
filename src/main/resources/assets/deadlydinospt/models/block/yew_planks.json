@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "deadlydinos:block/yew_planks"
+    "all": "deadlydinospt:block/yew_planks"
   }
 }

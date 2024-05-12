@@ -24,7 +24,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniskull"
+          "name": "deadlydinospt:medcarniskull"
         }
       ]
     },
@@ -50,7 +50,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnispine"
+          "name": "deadlydinospt:medcarnispine"
         }
       ]
     },
@@ -76,7 +76,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniribs"
+          "name": "deadlydinospt:medcarniribs"
         }
       ]
     },
@@ -102,7 +102,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnitail"
+          "name": "deadlydinospt:medcarnitail"
         }
       ]
     },
@@ -128,7 +128,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniclaw"
+          "name": "deadlydinospt:medcarniclaw"
         }
       ]
     },
@@ -154,7 +154,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnitooth"
+          "name": "deadlydinospt:medcarnitooth"
         }
       ]
     },
@@ -180,7 +180,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnileg"
+          "name": "deadlydinospt:medcarnileg"
         }
       ]
     },
@@ -246,7 +246,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawmediummeat"
+          "name": "deadlydinospt:rawmediummeat"
         }
       ]
     },
@@ -255,7 +255,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:carnotrophy"
+          "name": "deadlydinospt:carnotrophy"
         }
       ],
       "conditions": [

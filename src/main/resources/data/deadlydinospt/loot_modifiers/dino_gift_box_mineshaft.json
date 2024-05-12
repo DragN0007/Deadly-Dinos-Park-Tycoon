@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:chests/abandoned_mineshaft"
     }
   ],
-  "addition": "deadlydinos:dino_gift_box",
-  "type": "deadlydinos:dino_gift_box_mineshaft"
+  "addition": "deadlydinospt:dino_gift_box",
+  "type": "deadlydinospt:dino_gift_box_mineshaft"
 }

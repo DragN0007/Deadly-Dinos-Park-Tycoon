@@ -1,10 +1,10 @@
 {
   "variants": {
     "half=lower": {
-      "model": "deadlydinos:block/calamites_b"
+      "model": "deadlydinospt:block/calamites_b"
     },
     "half=upper": {
-      "model": "deadlydinos:block/calamites_t"
+      "model": "deadlydinospt:block/calamites_t"
     }
   }
 }

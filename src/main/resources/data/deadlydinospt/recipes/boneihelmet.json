@@ -10,10 +10,10 @@
       "item": "minecraft:iron_helmet"
     },
     "B": {
-      "item": "deadlydinos:medcarniskull"
+      "item": "deadlydinospt:medcarniskull"
     },
     "C": {
-      "item": "deadlydinos:medcarnitooth"
+      "item": "deadlydinospt:medcarnitooth"
     },
     "D": {
       "item": "minecraft:iron_ingot"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:boneiron_helmet",
+    "item": "deadlydinospt:boneiron_helmet",
     "count": 1
   }
 }

@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-      "item": "deadlydinos:conifer_planks"
+      "item": "deadlydinospt:conifer_planks"
     },
     "B": {
       "item": "minecraft:iron_nugget"
     }
   },
     "result": {
-      "item": "deadlydinos:rconifer_planks",
+      "item": "deadlydinospt:rconifer_planks",
       "count": 1
     }
   }

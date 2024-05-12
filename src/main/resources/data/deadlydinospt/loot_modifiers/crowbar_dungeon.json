@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:chests/simple_dungeon"
     }
   ],
-  "addition": "deadlydinos:crowbar",
-  "type": "deadlydinos:crowbar_dungeon"
+  "addition": "deadlydinospt:crowbar",
+  "type": "deadlydinospt:crowbar_dungeon"
 }

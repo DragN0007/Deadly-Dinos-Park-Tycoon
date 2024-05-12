@@ -1,9 +1,9 @@
 {
   "replace": false,
   "entries": [
-    "deadlydinos:dino_gift_box_dungeon",
-    "deadlydinos:dino_gift_box_mineshaft",
-    "deadlydinos:bowie_knife_dungeon",
-    "deadlydinos:crowbar_dungeon"
+    "deadlydinospt:dino_gift_box_dungeon",
+    "deadlydinospt:dino_gift_box_mineshaft",
+    "deadlydinospt:bowie_knife_dungeon",
+    "deadlydinospt:crowbar_dungeon"
   ]
 }

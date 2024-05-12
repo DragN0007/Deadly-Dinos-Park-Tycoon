@@ -1,8 +1,8 @@
 {
   "repalce": false,
   "values": [
-    "deadlydinos:conifer_log",
-    "deadlydinos:sequoia_log",
-    "deadlydinos:yew_log"
+    "deadlydinospt:conifer_log",
+    "deadlydinospt:sequoia_log",
+    "deadlydinospt:yew_log"
   ]
 }

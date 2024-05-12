@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "deadlydinos:yew_log"
+      "item": "deadlydinospt:yew_log"
     }
   ],
   "result": {
-    "item": "deadlydinos:yew_planks",
+    "item": "deadlydinospt:yew_planks",
     "count": 4
   }
 }

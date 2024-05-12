@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "deadlydinos:conifer_planks"
+      "item": "deadlydinospt:conifer_planks"
     }
   },
   "result": {
-    "item": "deadlydinos:conifer_stairs",
+    "item": "deadlydinospt:conifer_stairs",
     "count": 4
   }
 }

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "deadlydinos:conifer_stairs",
-    "deadlydinos:sequoia_stairs",
-    "deadlydinos:yew_stairs"
+    "deadlydinospt:conifer_stairs",
+    "deadlydinospt:sequoia_stairs",
+    "deadlydinospt:yew_stairs"
   ]
 }

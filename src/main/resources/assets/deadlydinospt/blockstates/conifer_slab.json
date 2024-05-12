@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "deadlydinos:block/conifer_slab"
+      "model": "deadlydinospt:block/conifer_slab"
     },
     "type=double": {
-      "model": "deadlydinos:block/conifer_planks"
+      "model": "deadlydinospt:block/conifer_planks"
     },
     "type=top": {
-      "model": "deadlydinos:block/conifer_slab_top"
+      "model": "deadlydinospt:block/conifer_slab_top"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "deadlydinos:block/yew_slab"
+      "model": "deadlydinospt:block/yew_slab"
     },
     "type=double": {
-      "model": "deadlydinos:block/yew_planks"
+      "model": "deadlydinospt:block/yew_planks"
     },
     "type=top": {
-      "model": "deadlydinos:block/yew_slab_top"
+      "model": "deadlydinospt:block/yew_slab_top"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "deadlydinos:rawsmallmeat",
-    "deadlydinos:rawmediummeat",
-    "deadlydinos:rawlargemeat"
+    "deadlydinospt:rawsmallmeat",
+    "deadlydinospt:rawmediummeat",
+    "deadlydinospt:rawlargemeat"
   ]
 }

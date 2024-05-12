@@ -38,7 +38,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:yew_leaves"
+              "name": "deadlydinospt:yew_leaves"
             },
             {
               "type": "minecraft:item",
@@ -57,7 +57,7 @@
                   ]
                 }
               ],
-              "name": "deadlydinos:yew_sapling"
+              "name": "deadlydinospt:yew_sapling"
             }
           ]
         }
@@ -153,7 +153,7 @@
               ]
             }
           ],
-          "name": "deadlydinos:yew_plum"
+          "name": "deadlydinospt:yew_plum"
         }
       ],
       "conditions": [

@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "deadlydinos:sequoia_log"
+      "item": "deadlydinospt:sequoia_log"
     }
   ],
   "result": {
-    "item": "deadlydinos:sequoia_planks",
+    "item": "deadlydinospt:sequoia_planks",
     "count": 4
   }
 }

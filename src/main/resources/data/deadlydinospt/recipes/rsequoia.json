@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-      "item": "deadlydinos:sequoia_planks"
+      "item": "deadlydinospt:sequoia_planks"
     },
     "B": {
       "item": "minecraft:iron_nugget"
     }
   },
     "result": {
-      "item": "deadlydinos:rsequoia_planks",
+      "item": "deadlydinospt:rsequoia_planks",
       "count": 1
     }
   }

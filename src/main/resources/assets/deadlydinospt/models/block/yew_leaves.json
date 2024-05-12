@@ -1,6 +1,6 @@
 {
   "parent": "block/leaves",
   "textures": {
-    "all": "deadlydinos:block/yew_leaves"
+    "all": "deadlydinospt:block/yew_leaves"
   }
 }

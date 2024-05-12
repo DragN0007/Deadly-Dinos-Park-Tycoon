@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "deadlydinos:block/zoster"
+    "cross": "deadlydinospt:block/zoster"
   }
 }

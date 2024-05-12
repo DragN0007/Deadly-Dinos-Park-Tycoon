@@ -1,10 +1,10 @@
 {
   "variants": {
     "half=lower": {
-      "model": "deadlydinos:block/cycads_b"
+      "model": "deadlydinospt:block/cycads_b"
     },
     "half=upper": {
-      "model": "deadlydinos:block/cycads_t"
+      "model": "deadlydinospt:block/cycads_t"
     }
   }
 }

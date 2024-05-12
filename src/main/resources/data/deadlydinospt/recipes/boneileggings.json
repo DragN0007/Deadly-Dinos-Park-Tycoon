@@ -10,10 +10,10 @@
       "item": "minecraft:iron_leggings"
     },
     "B": {
-      "item": "deadlydinos:medcarnileg"
+      "item": "deadlydinospt:medcarnileg"
     },
     "C": {
-      "item": "deadlydinos:medcarnitail"
+      "item": "deadlydinospt:medcarnitail"
     },
     "D": {
       "item": "minecraft:iron_ingot"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:boneiron_leggings",
+    "item": "deadlydinospt:boneiron_leggings",
     "count": 1
   }
 }

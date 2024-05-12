@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "deadlydinos:calamites",
+              "block": "deadlydinospt:calamites",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "deadlydinos:calamites"
+          "name": "deadlydinospt:calamites"
         }
       ],
       "conditions": [

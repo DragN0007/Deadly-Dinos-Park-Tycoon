@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "deadlydinos:rawsmallmeat",
-    "deadlydinos:rawmediummeat",
-    "deadlydinos:rawlargemeat",
-    "deadlydinos:cookedsmallmeat",
-    "deadlydinos:cookedmediummeat",
-    "deadlydinos:cookedlargemeat",
+    "deadlydinospt:rawsmallmeat",
+    "deadlydinospt:rawmediummeat",
+    "deadlydinospt:rawlargemeat",
+    "deadlydinospt:cookedsmallmeat",
+    "deadlydinospt:cookedmediummeat",
+    "deadlydinospt:cookedlargemeat",
     "minecraft:cooked_chicken",
     "minecraft:cooked_beef",
     "minecraft:cooked_porkchop",

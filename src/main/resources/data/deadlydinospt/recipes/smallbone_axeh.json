@@ -10,15 +10,15 @@
       "item": "minecraft:stick"
     },
     "B": {
-      "item": "deadlydinos:smallherbiribs"
+      "item": "deadlydinospt:smallherbiribs"
     },
     "C": {
-      "item": "deadlydinos:smallherbiclaw"
+      "item": "deadlydinospt:smallherbiclaw"
     }
 
   },
   "result": {
-    "item": "deadlydinos:smallbone_axe",
+    "item": "deadlydinospt:smallbone_axe",
     "count": 1
   }
 }

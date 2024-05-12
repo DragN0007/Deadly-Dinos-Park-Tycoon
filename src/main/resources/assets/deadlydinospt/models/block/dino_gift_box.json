@@ -2,7 +2,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "deadlydinos:block/dino_gift_box_top",
-    "side": "deadlydinos:block/dino_gift_box_side"
+    "end": "deadlydinospt:block/dino_gift_box_top",
+    "side": "deadlydinospt:block/dino_gift_box_side"
   }
 }

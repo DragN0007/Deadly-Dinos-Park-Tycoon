@@ -10,10 +10,10 @@
       "item": "minecraft:golden_helmet"
     },
     "B": {
-      "item": "deadlydinos:medcarniskull"
+      "item": "deadlydinospt:medcarniskull"
     },
     "C": {
-      "item": "deadlydinos:medcarnitooth"
+      "item": "deadlydinospt:medcarnitooth"
     },
     "D": {
       "item": "minecraft:gold_ingot"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonegold_helmet",
+    "item": "deadlydinospt:bonegold_helmet",
     "count": 1
   }
 }

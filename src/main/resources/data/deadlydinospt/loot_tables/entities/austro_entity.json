@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarniskull"
+          "name": "deadlydinospt:smallcarniskull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarnispine"
+          "name": "deadlydinospt:smallcarnispine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarniribs"
+          "name": "deadlydinospt:smallcarniribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarnitail"
+          "name": "deadlydinospt:smallcarnitail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarniclaw"
+          "name": "deadlydinospt:smallcarniclaw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarnitooth"
+          "name": "deadlydinospt:smallcarnitooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallcarnileg"
+          "name": "deadlydinospt:smallcarnileg"
         }
       ]
     },
@@ -205,7 +205,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallraptorclaw"
+          "name": "deadlydinospt:smallraptorclaw"
         }
       ]
     },
@@ -271,7 +271,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawsmallmeat"
+          "name": "deadlydinospt:rawsmallmeat"
         }
       ]
     },
@@ -280,7 +280,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:austrotrophy"
+          "name": "deadlydinospt:austrotrophy"
         }
       ],
       "conditions": [

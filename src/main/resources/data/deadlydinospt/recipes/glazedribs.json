@@ -7,14 +7,14 @@
   ],
   "key": {
     "A": {
-      "item": "deadlydinos:yew_plum_jam"
+      "item": "deadlydinospt:yew_plum_jam"
     },
     "B": {
-      "item": "deadlydinos:cookedmediummeat"
+      "item": "deadlydinospt:cookedmediummeat"
     }
   },
   "result": {
-    "item": "deadlydinos:glazed_ribs",
+    "item": "deadlydinospt:glazed_ribs",
     "count": 1
   }
 }

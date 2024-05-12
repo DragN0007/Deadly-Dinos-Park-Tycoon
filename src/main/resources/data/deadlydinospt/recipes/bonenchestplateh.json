@@ -10,10 +10,10 @@
       "item": "minecraft:netherite_chestplate"
     },
     "B": {
-      "item": "deadlydinos:largeherbiribs"
+      "item": "deadlydinospt:largeherbiribs"
     },
     "C": {
-      "item": "deadlydinos:largeherbispine"
+      "item": "deadlydinospt:largeherbispine"
     },
     "D": {
       "item": "minecraft:diamond"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonenetherite_chestplate",
+    "item": "deadlydinospt:bonenetherite_chestplate",
     "count": 1
   }
 }

@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "deadlydinos:cycads",
+              "block": "deadlydinospt:cycads",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "deadlydinos:cycads"
+          "name": "deadlydinospt:cycads"
         }
       ],
       "conditions": [

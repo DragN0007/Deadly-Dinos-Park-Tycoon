@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbiskull"
+          "name": "deadlydinospt:smallherbiskull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbispine"
+          "name": "deadlydinospt:smallherbispine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbiribs"
+          "name": "deadlydinospt:smallherbiribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbitail"
+          "name": "deadlydinospt:smallherbitail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbiclaw"
+          "name": "deadlydinospt:smallherbiclaw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbitooth"
+          "name": "deadlydinospt:smallherbitooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:smallherbileg"
+          "name": "deadlydinospt:smallherbileg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawsmallmeat"
+          "name": "deadlydinospt:rawsmallmeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:avatrophy"
+          "name": "deadlydinospt:avatrophy"
         }
       ],
       "conditions": [

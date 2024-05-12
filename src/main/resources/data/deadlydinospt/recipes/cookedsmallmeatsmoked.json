@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "deadlydinos:rawsmallmeat"
+    "item": "deadlydinospt:rawsmallmeat"
   },
-  "result": "deadlydinos:cookedsmallmeat",
+  "result": "deadlydinospt:cookedsmallmeat",
   "experience": 0.40,
   "cookingtime": 140
 }

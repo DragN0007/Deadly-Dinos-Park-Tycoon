@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarniskull"
+          "name": "deadlydinospt:largecarniskull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarnispine"
+          "name": "deadlydinospt:largecarnispine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarniribs"
+          "name": "deadlydinospt:largecarniribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarnitail"
+          "name": "deadlydinospt:largecarnitail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarniclaw"
+          "name": "deadlydinospt:largecarniclaw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarnitooth"
+          "name": "deadlydinospt:largecarnitooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:largecarnileg"
+          "name": "deadlydinospt:largecarnileg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawlargemeat"
+          "name": "deadlydinospt:rawlargemeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:tarbotrophy"
+          "name": "deadlydinospt:tarbotrophy"
         }
       ],
       "conditions": [

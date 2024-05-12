@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "deadlydinospt:bone_marrow"
+    }
+  ],
+  "result": {
+    "item": "deadlydinospt:broth"
+  }
+}

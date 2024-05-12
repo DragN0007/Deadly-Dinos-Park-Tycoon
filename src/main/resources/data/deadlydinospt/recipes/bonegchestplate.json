@@ -10,10 +10,10 @@
       "item": "minecraft:golden_chestplate"
     },
     "B": {
-      "item": "deadlydinos:medcarniribs"
+      "item": "deadlydinospt:medcarniribs"
     },
     "C": {
-      "item": "deadlydinos:medcarnispine"
+      "item": "deadlydinospt:medcarnispine"
     },
     "D": {
       "item": "minecraft:gold_ingot"
@@ -21,7 +21,7 @@
 
   },
   "result": {
-    "item": "deadlydinos:bonegold_chestplate",
+    "item": "deadlydinospt:bonegold_chestplate",
     "count": 1
   }
 }

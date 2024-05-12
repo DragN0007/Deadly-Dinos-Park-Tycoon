@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "deadlydinos:rawlargemeat"
+    "item": "deadlydinospt:rawlargemeat"
   },
-  "result": "deadlydinos:cookedlargemeat",
+  "result": "deadlydinospt:cookedlargemeat",
   "experience": 0.80,
   "cookingtime": 200
 }

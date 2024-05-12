@@ -7,11 +7,11 @@
   ],
   "key": {
     "A": {
-      "item": "deadlydinos:tiger_nuts"
+      "item": "deadlydinospt:tiger_nuts"
     }
   },
   "result": {
-    "item": "deadlydinos:tiger_nut_butter",
+    "item": "deadlydinospt:tiger_nut_butter",
     "count": 2
   }
 }

@@ -3,7 +3,7 @@ package com.dragn0007.deadlydinospt.entity.carni;
 import com.dragn0007.deadlydinospt.client.model.MahakalaModel;
 import com.dragn0007.deadlydinospt.entity.herbi.Ava;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
-import com.dragn0007.deadlydinospt.item.DDDItems;
+import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import net.minecraft.Util;
@@ -265,8 +265,8 @@ public class Mahakala extends ShoulderRidingEntity implements IAnimatable {
 
 
     //Tameable Entity
-    private static final Set<Item> TAME_FOOD = Sets.newHashSet(Items.MUTTON, Items.PORKCHOP, Items.CHICKEN, Items.BEEF, DDDItems.RAWSMALLMEAT.get(), DDDItems.RAWMEDIUMMEAT.get(), DDDItems.RAWLARGEMEAT.get());
-    private static final Ingredient FOOD_ITEMS = Ingredient.of(Items.MUTTON, Items.PORKCHOP, Items.CHICKEN, Items.BEEF, DDDItems.RAWSMALLMEAT.get(), DDDItems.RAWMEDIUMMEAT.get(), DDDItems.RAWLARGEMEAT.get());
+    private static final Set<Item> TAME_FOOD = Sets.newHashSet(Items.MUTTON, Items.PORKCHOP, Items.CHICKEN, Items.BEEF, DDPTItems.RAWSMALLMEAT.get(), DDPTItems.RAWMEDIUMMEAT.get(), DDPTItems.RAWLARGEMEAT.get());
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(Items.MUTTON, Items.PORKCHOP, Items.CHICKEN, Items.BEEF, DDPTItems.RAWSMALLMEAT.get(), DDPTItems.RAWMEDIUMMEAT.get(), DDPTItems.RAWLARGEMEAT.get());
     public boolean isFood(ItemStack p_28271_) {
         return FOOD_ITEMS.test(p_28271_);
     }

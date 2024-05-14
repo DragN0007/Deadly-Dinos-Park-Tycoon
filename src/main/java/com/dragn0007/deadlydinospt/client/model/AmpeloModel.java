@@ -9,7 +9,8 @@ public class AmpeloModel extends AnimatedGeoModel<Ampelo> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ampelomale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ampelofemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ampelofemale.png")),
+        LAVENDER(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ampelolavender.png"));
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

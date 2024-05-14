@@ -1,6 +1,6 @@
 package com.dragn0007.deadlydinospt.item.custom;
 
-import com.dragn0007.deadlydinospt.item.util.DDDItemGroup;
+import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
@@ -20,7 +20,7 @@ public class SodaItem extends Item {
     public MobEffectInstance[] effectInstances;
 
     public SodaItem(MobEffectInstance... effectInstances) {
-        super(new Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).build()).tab(DDDItemGroup.FOOD_GROUP));
+        super(new Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).build()).tab(DDPTItemGroup.FOOD_GROUP));
         this.effectInstances = effectInstances;
     }
 

@@ -9,7 +9,8 @@ public class TroodonModel extends AnimatedGeoModel<Troodon> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/troodonmale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/troodonfemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/troodonfemale.png")),
+        WHITE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/troodonwhite.png"));
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

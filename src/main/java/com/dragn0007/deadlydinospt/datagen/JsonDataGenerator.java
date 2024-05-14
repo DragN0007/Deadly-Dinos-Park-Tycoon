@@ -14,9 +14,9 @@ public class JsonDataGenerator {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        generator.addProvider(new DDDRecipeMaker(generator));
-        generator.addProvider(new DDDLootTableProvider(generator));
-        generator.addProvider(new DDDBlockstateProvider(generator, existingFileHelper));
-        generator.addProvider(new DDDItemModelProvider(generator, existingFileHelper));
+        generator.addProvider(new DDPTRecipeMaker(generator));
+        generator.addProvider(new DDPTLootTableProvider(generator));
+        generator.addProvider(new DDPTBlockstateProvider(generator, existingFileHelper));
+        generator.addProvider(new DDPTItemModelProvider(generator, existingFileHelper));
     }
 }

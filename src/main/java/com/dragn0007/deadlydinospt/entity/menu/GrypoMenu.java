@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.entity.menu;
 
 import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
-import com.dragn0007.deadlydinospt.gui.DDDMenuTypes;
+import com.dragn0007.deadlydinospt.gui.DDPTMenuTypes;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,7 +18,7 @@ public class GrypoMenu extends AbstractContainerMenu {
     public Grypo grypo;
 
     public GrypoMenu(int containerId, Inventory inventory, Container container, Grypo grypo) {
-        super(DDDMenuTypes.GRYPO_MENU.get(), containerId);
+        super(DDPTMenuTypes.GRYPO_MENU.get(), containerId);
         this.container = container;
         this.grypo = grypo;
 

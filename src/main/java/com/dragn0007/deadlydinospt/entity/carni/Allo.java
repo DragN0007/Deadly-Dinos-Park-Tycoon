@@ -4,7 +4,7 @@ import com.dragn0007.deadlydinospt.client.model.AlloModel;
 import com.dragn0007.deadlydinospt.entity.Bannered;
 import com.dragn0007.deadlydinospt.entity.ai.DinoWeakMeleeGoal;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
-import com.dragn0007.deadlydinospt.util.DDDTags;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -71,7 +71,7 @@ public class Allo extends TamableAnimal implements ContainerListener, Saddleable
 
     private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Allo.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> BANNERED = SynchedEntityData.defineId(Allo.class, EntityDataSerializers.BOOLEAN);
-    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDDTags.Items.MEATS);
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.MEATS);
 
     public SimpleContainer inventory;
     private LazyOptional<?> itemHandler = null;

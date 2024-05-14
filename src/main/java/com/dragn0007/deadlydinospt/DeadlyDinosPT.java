@@ -1,11 +1,11 @@
 package com.dragn0007.deadlydinospt;
 
-import com.dragn0007.deadlydinospt.block.DDDBlocks;
-import com.dragn0007.deadlydinospt.block.DDDBlocksDataGen;
+import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
-import com.dragn0007.deadlydinospt.gui.DDDMenuTypes;
-import com.dragn0007.deadlydinospt.item.DDDItems;
-import com.dragn0007.deadlydinospt.util.config.DeadlyDinosCommonConfig;
+import com.dragn0007.deadlydinospt.gui.DDPTMenuTypes;
+import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
@@ -44,14 +44,14 @@ public class DeadlyDinosPT
 
         RESOURCE_SERIALIZER_REGISTER.register(eventBus);
 
-        DDDItems.register(eventBus);
-        DDDBlocks.register(eventBus);
-        DDDBlocksDataGen.register(eventBus);
+        DDPTItems.register(eventBus);
+        DDPTBlocks.register(eventBus);
+        DDPTBlocksDataGen.register(eventBus);
         EntityTypes.ENTITY_TYPES.register(eventBus);
-        DDDMenuTypes.register(eventBus);
+        DDPTMenuTypes.register(eventBus);
 
         GeckoLib.initialize();
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosCommonConfig.SPEC, "deadlydinosparktycoon-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosPTCommonConfig.SPEC, "deadlydinosparktycoon-common.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
     }

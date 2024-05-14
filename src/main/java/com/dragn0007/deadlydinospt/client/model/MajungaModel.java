@@ -10,7 +10,8 @@ public class MajungaModel extends AnimatedGeoModel<Majunga> {
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/majungamale.png")),
         FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/majungafemale.png")),
-        SPECIAL(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/majungaspecial.png"));
+        SPECIAL(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/majungaspecial.png")),
+        RED(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/majungared.png"));
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

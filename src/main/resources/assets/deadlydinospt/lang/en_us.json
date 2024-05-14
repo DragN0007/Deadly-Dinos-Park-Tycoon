@@ -1,8 +1,8 @@
 {
-  "itemGroup.blockmodtab": "Deadly Dinos Blocks",
-  "itemGroup.foodmodtab": "Deadly Dinos Food",
-  "itemGroup.dinomodtab": "Deadly Dinos Entities",
-  "itemGroup.dddmodtab": "Deadly Dinos Items",
+  "itemGroup.blockmodtab": "Deadly Dinos Park Blocks",
+  "itemGroup.foodmodtab": "Deadly Dinos Park Food",
+  "itemGroup.dinomodtab": "Deadly Dinos Park Entities",
+  "itemGroup.dddmodtab": "Deadly Dinos Park Items",
 
   "item.deadlydinospt.acro_spawn_egg": "Acrocanthrosaurus Spawn Egg",
   "item.deadlydinospt.alberto_spawn_egg": "Albertosaurus Spawn Egg",
@@ -25,7 +25,6 @@
   "item.deadlydinospt.rex_spawn_egg": "Tyrannosaurus Spawn Egg",
   "item.deadlydinospt.utah_spawn_egg": "Utahraptor Spawn Egg",
 
-  
   "item.deadlydinospt.amarga_spawn_egg": "Amargasaurus Spawn Egg",
   "item.deadlydinospt.cropsnail_spawn_egg": "Giant Crop Snail Spawn Egg",
   "item.deadlydinospt.para_spawn_egg": "Parasaurolophus Spawn Egg",
@@ -39,6 +38,42 @@
   "item.deadlydinospt.ava_spawn_egg": "Avaceratops Spawn Egg",
   "item.deadlydinospt.grypo_spawn_egg": "Gryposaurus Spawn Egg",
   "item.deadlydinospt.ampelo_spawn_egg": "Ampelosaurus Spawn Egg",
+
+
+  "item.deadlydinospt.acro_egg": "Acrocanthrosaurus Egg",
+  "item.deadlydinospt.alberto_egg": "Albertosaurus Egg",
+  "item.deadlydinospt.allo_egg": "Allosaurus Egg",
+  "item.deadlydinospt.andal_egg": "Andalgalornis Egg",
+  "item.deadlydinospt.archae_egg": "Archaeopteryx Egg",
+  "item.deadlydinospt.austro_egg": "Austroraptor Egg",
+  "item.deadlydinospt.carchar_egg": "Carcharodontosaurus Egg",
+  "item.deadlydinospt.carno_egg": "Carnotaurus Egg",
+  "item.deadlydinospt.cerato_egg": "Ceratosaurus Egg",
+  "item.deadlydinospt.compy_egg": "Compsognathus Egg",
+  "item.deadlydinospt.deinon_egg": "Deinonychus Egg",
+  "item.deadlydinospt.dilo_egg": "Dilophosaurus Egg",
+  "item.deadlydinospt.giga_egg": "Giganotosaurus Egg",
+  "item.deadlydinospt.mahakala_egg": "Mahakala Egg",
+  "item.deadlydinospt.majunga_egg": "Majungasaurus Egg",
+  "item.deadlydinospt.spino_egg": "Spinosaurus Egg",
+  "item.deadlydinospt.tarbo_egg": "Tarbosaurus Egg",
+  "item.deadlydinospt.troodon_egg": "Troodon Egg",
+  "item.deadlydinospt.rex_egg": "Tyrannosaurus Egg",
+  "item.deadlydinospt.utah_egg": "Utahraptor Egg",
+
+  "item.deadlydinospt.amarga_egg": "Amargasaurus Egg",
+  "item.deadlydinospt.cropsnail_egg": "Giant Crop Snail Egg",
+  "item.deadlydinospt.para_egg": "Parasaurolophus Egg",
+  "item.deadlydinospt.theri_egg": "Therizinosaurus Egg",
+  "item.deadlydinospt.deinoch_egg": "Deinocherius Egg",
+  "item.deadlydinospt.stego_egg": "Stegosaurus Egg",
+  "item.deadlydinospt.shant_egg": "Shantungosaurus Egg",
+  "item.deadlydinospt.galli_egg": "Gallimimus Egg",
+  "item.deadlydinospt.sauro_egg": "Sauroposeidon Egg",
+  "item.deadlydinospt.anky_egg": "Ankylosaurus Egg",
+  "item.deadlydinospt.ava_egg": "Avaceratops Egg",
+  "item.deadlydinospt.grypo_egg": "Gryposaurus Egg",
+  "item.deadlydinospt.ampelo_egg": "Ampelosaurus Egg",
   
 
   "entity.deadlydinospt.acro_entity": "Acrocanthosaurus",
@@ -61,7 +96,6 @@
   "entity.deadlydinospt.troodon_entity": "Troodon",
   "entity.deadlydinospt.rex_entity": "Tyrannosaurus",
   "entity.deadlydinospt.utah_entity": "Utahraptor",
-  
 
   "entity.deadlydinospt.amarga_entity": "Amargasaurus",
   "entity.deadlydinospt.cropsnail_entity": "Giant Crop Snail",

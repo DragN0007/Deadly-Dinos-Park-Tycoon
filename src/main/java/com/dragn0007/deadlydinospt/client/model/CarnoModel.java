@@ -9,7 +9,8 @@ public class CarnoModel extends AnimatedGeoModel<Carno> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/carnomale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/carnofemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/carnofemale.png")),
+        BLACK(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/carnoblack.png"));
 
         public final ResourceLocation resourceLocation;
 

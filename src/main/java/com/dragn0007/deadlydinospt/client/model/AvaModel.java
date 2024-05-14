@@ -9,7 +9,8 @@ public class AvaModel extends AnimatedGeoModel<Ava> {
     
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/avamale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/avafemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/avafemale.png")),
+        SLATE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/avaslate.png"));
         
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

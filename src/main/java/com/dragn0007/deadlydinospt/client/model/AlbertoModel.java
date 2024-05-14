@@ -9,7 +9,8 @@ public class AlbertoModel extends AnimatedGeoModel<Alberto> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/albertomale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/albertofemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/albertofemale.png")),
+        PALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/albertopale.png"));
 
         public final ResourceLocation resourceLocation;
 

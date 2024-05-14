@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.item.custom;
 
-import com.dragn0007.deadlydinospt.item.util.DDDItemGroup;
-import com.dragn0007.deadlydinospt.util.config.DeadlyDinosCommonConfig;
+import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -15,7 +15,7 @@ public class TrophyItem extends Item {
     public MobEffectInstance[] effectInstances;
 
     public TrophyItem( MobEffectInstance... effectInstances) {
-        super(new Properties().durability(DeadlyDinosCommonConfig.TROPHYITEM_DURABILITY.get()).tab(DDDItemGroup.DDD_GROUP));
+        super(new Properties().durability(DeadlyDinosPTCommonConfig.TROPHYITEM_DURABILITY.get()).tab(DDPTItemGroup.DDD_GROUP));
         this.effectInstances = effectInstances;
     }
 

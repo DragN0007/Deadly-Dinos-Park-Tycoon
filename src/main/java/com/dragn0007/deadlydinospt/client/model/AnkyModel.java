@@ -9,7 +9,8 @@ public class AnkyModel extends AnimatedGeoModel<Anky> {
     
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ankymale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ankyfemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ankyfemale.png")),
+        FOREST(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/ankyforest.png"));
         
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

@@ -1,0 +1,171 @@
+package com.dragn0007.deadlydinospt.datagen;
+
+import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
+import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+
+import java.util.function.Consumer;
+
+public class DDPTRecipeMaker extends RecipeProvider implements IConditionBuilder {
+    public DDPTRecipeMaker(DataGenerator pGenerator) {
+        super(pGenerator);
+    }
+
+    @Override
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.DINO_ROAST.get())
+                .requires(DDPTTags.Items.MEATS)
+                .requires(DDPTTags.Items.VEGETABLES)
+                .requires(DDPTTags.Items.VEGETABLES)
+                .requires(DDPTBlocks.CYPERUS.get())
+                .requires(DDPTItems.BONE_MARROW.get())
+                .unlockedBy("has_meat", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.MEATS)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.CHICKEN_NOODLE_SOUP.get())
+                .requires(DDPTTags.Items.RAW_CHICKEN)
+                .requires(DDPTItems.BROTH.get())
+                .requires(DDPTTags.Items.DOUGH)
+                .unlockedBy("has_dough", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTItems.DOUGH.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.DINO_DUMPLING.get())
+                .requires(DDPTTags.Items.MEATS)
+                .requires(DDPTTags.Items.VEGETABLES)
+                .requires(DDPTTags.Items.DOUGH)
+                .unlockedBy("has_dough", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTItems.DOUGH.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.SMOOTHIE.get())
+                .requires(DDPTItems.TIGER_NUTS.get())
+                .requires(DDPTItems.YEW_PLUM.get())
+                .unlockedBy("has_plum", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTItems.YEW_PLUM.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.HEARTY_SALAD.get())
+                .requires(DDPTTags.Items.VEGETABLES)
+                .requires(DDPTTags.Items.VEGETABLES)
+                .requires(DDPTBlocks.COOKSONIA.get())
+                .requires(DDPTItems.TIGER_NUTS.get())
+                .unlockedBy("has_veggies", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.VEGETABLES)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.DOUGH.get())
+                .requires(Items.WHEAT)
+                .requires(Items.POTION)
+                .unlockedBy("has_wheat", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.WHEAT)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.BROTH.get())
+                .requires(DDPTItems.BONE_MARROW.get())
+                .unlockedBy("has_bone_marrow", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTItems.BONE_MARROW.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(DDPTTags.Items.BONES), DDPTItems.BONE_MARROW.get(), 0.35F, 200)
+                .unlockedBy("has_bone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.BONES).build()))
+                .save(pFinishedRecipeConsumer);
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(DDPTItems.DOUGH.get()), Items.BREAD, 0.35F, 200)
+                .unlockedBy("has_dough", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.DOUGH).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocks.DINO_NUGGETS_BOX.get())
+                .define('A', DDPTTags.Items.RAW_CHICKEN)
+                .define('B', Items.PAPER)
+                .define('C', Items.BREAD)
+                .pattern("BBB")
+                .pattern("AAA")
+                .pattern("CCC")
+                .unlockedBy("has_chicken", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.RAW_CHICKEN).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.SODA.get())
+                .define('A', Items.SUGAR)
+                .define('B', Items.IRON_NUGGET)
+                .define('C', Items.POTION)
+                .pattern(" B ")
+                .pattern(" AC")
+                .pattern(" B ")
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.SUGAR).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.MRE.get())
+                .define('A', DDPTTags.Items.MEATS)
+                .define('C', DDPTTags.Items.VEGETABLES)
+                .define('B', DDPTItems.CRACKER.get())
+                .pattern(" B ")
+                .pattern(" AC")
+                .pattern(" B ")
+                .unlockedBy("has_veggies", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.VEGETABLES).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.DINOSANDWICH.get())
+                .define('A', DDPTItems.COOKEDMEDIUMMEAT.get())
+                .define('C', DDPTTags.Items.VEGETABLES)
+                .define('B', Items.BREAD)
+                .pattern(" B ")
+                .pattern(" AC")
+                .pattern(" B ")
+                .unlockedBy("has_veggies", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.VEGETABLES).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.CANNEDVEGGIES.get())
+                .define('A', DDPTTags.Items.VEGETABLES)
+                .define('B', Items.IRON_NUGGET)
+                .pattern(" B ")
+                .pattern(" AA")
+                .pattern(" B ")
+                .unlockedBy("has_veggies", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.VEGETABLES).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.CANNEDSTEW.get())
+                .define('A', DDPTTags.Items.MEATS)
+                .define('C', DDPTTags.Items.VEGETABLES)
+                .define('B', Items.IRON_NUGGET)
+                .pattern(" B ")
+                .pattern(" AC")
+                .pattern(" B ")
+                .unlockedBy("has_meat", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.MEATS).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.CANNEDMEAT.get())
+                .define('A', DDPTTags.Items.MEATS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern(" B ")
+                .pattern(" AA")
+                .pattern(" B ")
+                .unlockedBy("has_meat", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.MEATS).build()))
+                .save(pFinishedRecipeConsumer);
+
+    }
+}

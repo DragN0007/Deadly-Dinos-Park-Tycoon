@@ -9,7 +9,8 @@ public class TheriModel extends AnimatedGeoModel<Theri> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/therimale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/therifemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/therifemale.png")),
+        RED(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/therired.png"));
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

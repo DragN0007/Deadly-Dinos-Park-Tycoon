@@ -9,7 +9,8 @@ public class DeinochModel extends AnimatedGeoModel<Deinoch> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/deinochmale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/deinochfemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/deinochfemale.png")),
+        PURPLE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/deinochpurple.png"));
 
         public final ResourceLocation resourceLocation;
 

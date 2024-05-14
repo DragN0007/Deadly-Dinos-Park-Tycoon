@@ -6,7 +6,7 @@ import com.dragn0007.deadlydinospt.entity.ai.DinoExtremeMeleeGoal;
 import com.dragn0007.deadlydinospt.entity.ai.TamableDestroyCropsGoal;
 import com.dragn0007.deadlydinospt.entity.menu.AmargaMenu;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
-import com.dragn0007.deadlydinospt.util.DDDTags;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -84,7 +84,7 @@ public class Amarga extends TamableAnimal implements ContainerListener, Saddleab
 
     private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Amarga.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> CHESTED = SynchedEntityData.defineId(Amarga.class, EntityDataSerializers.BOOLEAN);
-    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDDTags.Items.VEGETABLES);
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.VEGETABLES);
 
     public SimpleContainer inventory;
     private LazyOptional<?> itemHandler = null;

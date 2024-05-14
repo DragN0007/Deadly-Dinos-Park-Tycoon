@@ -1,15 +1,20 @@
 package com.dragn0007.deadlydinospt.item.custom;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.dispenser.DispenseItemBehavior;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -19,10 +24,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.IdentityHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Supplier;
 
 public class DinoEggItem extends SpawnEggItem
@@ -109,6 +111,41 @@ public class DinoEggItem extends SpawnEggItem
             MOD_EGGS.forEach(egg ->
                     event.getItemColors().register((stack, layer) -> egg.getColor(layer), egg)
             );
+        }
+    }
+
+
+    public Optional<Mob> spawnOffspringFromSpawnEgg(Player p_43216_, Mob p_43217_, EntityType<? extends Mob> p_43218_, ServerLevel p_43219_, Vec3 p_43220_, ItemStack p_43221_) {
+        if (!this.spawnsEntity(p_43221_.getTag(), p_43218_)) {
+            return Optional.empty();
+        } else {
+            Mob mob;
+            if (p_43217_ instanceof AgeableMob) {
+                mob = ((AgeableMob)p_43217_).getBreedOffspring(p_43219_, (AgeableMob)p_43217_);
+            } else {
+                mob = p_43218_.create(p_43219_);
+            }
+
+            if (mob == null) {
+                return Optional.empty();
+            } else {
+                mob.setBaby(true);
+                if (!mob.isBaby()) {
+                    return Optional.empty();
+                } else {
+                    mob.moveTo(p_43220_.x(), p_43220_.y(), p_43220_.z(), 0.0F, 0.0F);
+                    p_43219_.addFreshEntityWithPassengers(mob);
+                    if (p_43221_.hasCustomHoverName()) {
+                        mob.setCustomName(p_43221_.getHoverName());
+                    }
+
+                    if (!p_43216_.getAbilities().instabuild) {
+                        p_43221_.shrink(1);
+                    }
+
+                    return Optional.of(mob);
+                }
+            }
         }
     }
 }

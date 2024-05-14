@@ -9,7 +9,8 @@ public class ShantModel extends AnimatedGeoModel<Shant> {
     
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/shantmale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/shantfemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/shantfemale.png")),
+        ROYAL(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/shantroyal.png"));
         
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

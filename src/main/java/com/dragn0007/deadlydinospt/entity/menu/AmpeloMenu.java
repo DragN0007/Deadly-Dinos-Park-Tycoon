@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.entity.menu;
 
 import com.dragn0007.deadlydinospt.entity.herbi.Ampelo;
-import com.dragn0007.deadlydinospt.gui.DDDMenuTypes;
+import com.dragn0007.deadlydinospt.gui.DDPTMenuTypes;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,7 +18,7 @@ public class AmpeloMenu extends AbstractContainerMenu {
     public Ampelo ampelo;
 
     public AmpeloMenu(int containerId, Inventory inventory, Container container, Ampelo ampelo) {
-        super(DDDMenuTypes.AMARGA_MENU.get(), containerId);
+        super(DDPTMenuTypes.AMARGA_MENU.get(), containerId);
         this.container = container;
         this.ampelo = ampelo;
 

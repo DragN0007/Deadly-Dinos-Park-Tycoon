@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.entity.ai;
 
 
-import com.dragn0007.deadlydinospt.util.config.DeadlyDinosCommonConfig;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -61,9 +61,9 @@ public class DinoExtremeMeleeGoal extends MeleeAttackGoal {
         BlockPos base = entity.blockPosition().relative(direction, 1);
 
         // Define the size of the cube to break blocks within
-        int width = DeadlyDinosCommonConfig.BIG_DINO_BREAK_RADIUS.get();
-        int height = DeadlyDinosCommonConfig.BIG_DINO_BREAK_RADIUS.get();
-        int depth = DeadlyDinosCommonConfig.BIG_DINO_BREAK_RADIUS.get();
+        int width = DeadlyDinosPTCommonConfig.BIG_DINO_BREAK_RADIUS.get();
+        int height = DeadlyDinosPTCommonConfig.BIG_DINO_BREAK_RADIUS.get();
+        int depth = DeadlyDinosPTCommonConfig.BIG_DINO_BREAK_RADIUS.get();
 
         // Define the maximum reach distance
         int maxReachDistance = 8;

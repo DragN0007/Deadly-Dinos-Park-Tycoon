@@ -9,7 +9,8 @@ public class GigaModel extends AnimatedGeoModel<Giga> {
 
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/gigamale.png")),
-        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/gigafemale.png"));
+        FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/gigafemale.png")),
+        STONE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/gigastone.png"));
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

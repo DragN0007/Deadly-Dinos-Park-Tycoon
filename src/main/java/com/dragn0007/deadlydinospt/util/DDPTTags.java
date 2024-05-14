@@ -2,9 +2,11 @@ package com.dragn0007.deadlydinospt.util;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class DDPTTags {
 
@@ -29,6 +31,19 @@ public class DDPTTags {
         }
         private static TagKey<Item> forgeTag (String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
+        }
+    }
+
+    public static class Blocks {
+        public static final TagKey<Block> BRUSHABLE = tag("brushable");
+        public static final TagKey<Block> CHISELABLE = tag("chiselable");
+
+
+        private static TagKey<Block> tag (String name) {
+            return BlockTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
+        }
+        private static TagKey<Block> forgeTag (String name) {
+            return BlockTags.create(new ResourceLocation("forge", name));
         }
     }
 

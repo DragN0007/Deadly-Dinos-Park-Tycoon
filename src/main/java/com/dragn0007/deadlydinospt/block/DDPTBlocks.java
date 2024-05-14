@@ -146,9 +146,13 @@ public class DDPTBlocks {
 
     //Fossils
     public static final RegistryObject<Block> STONE_FOSSIL_MED_CARNI_1 = registerBlock("stone_fossil_med_carni_1",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
     public static final RegistryObject<Block> STONE_FOSSIL_MED_CARNI_2 = registerBlock("stone_fossil_med_carni_2",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+    public static final RegistryObject<Block> CHISELED_STONE_FOSSIL_MED_CARNI_1 = registerBlock("chiseled_stone_fossil_med_carni_1",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(0.5f, 3.0f)));
+    public static final RegistryObject<Block> CHISELED_STONE_FOSSIL_MED_CARNI_2 = registerBlock("chiseled_stone_fossil_med_carni_2",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(0.5f, 3.0f)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

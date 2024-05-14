@@ -75,6 +75,10 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.AMPELO_EGG.get());
 
 
+        handheldItem(DDPTItems.CHISEL.get());
+        handheldItem(DDPTItems.BRUSH.get());
+
+
         simpleSpriteBlockItem(DDPTBlocksDataGen.ASTEROXYLON.get());
         simpleSpriteBlockItem(DDPTBlocksDataGen.HORSETAIL.get());
     }

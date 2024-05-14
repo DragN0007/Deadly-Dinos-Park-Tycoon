@@ -2,14 +2,12 @@ package com.dragn0007.deadlydinospt.item;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
-import com.dragn0007.deadlydinospt.item.custom.DinoEggItem;
-import com.dragn0007.deadlydinospt.item.custom.SodaItem;
-import com.dragn0007.deadlydinospt.item.custom.TrophyItem;
+import com.dragn0007.deadlydinospt.item.custom.*;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -140,7 +138,7 @@ public class DDPTItems {
 
     //HERBIVORE EGGS
     public static final RegistryObject<Item> CROPSNAIL_EGG = ITEMS.register("cropsnail_egg",
-            () -> new DinoEggItem(EntityTypes.CROPSNAIL_ENTITY, 0x9648273, 0xbd864b, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+            () -> new DinoEggItem(EntityTypes.CROPSNAIL_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> AMARGA_EGG = ITEMS.register("amarga_egg",
             () -> new DinoEggItem(EntityTypes.AMARGA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> PARA_EGG = ITEMS.register("para_egg",
@@ -152,13 +150,13 @@ public class DDPTItems {
     public static final RegistryObject<Item> STEGO_EGG = ITEMS.register("stego_egg",
             () -> new DinoEggItem(EntityTypes.STEGO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> SHANT_EGG = ITEMS.register("shant_egg",
-            () -> new DinoEggItem(EntityTypes.SHANT_ENTITY, 0x3d4947, 0xf8ffff, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+            () -> new DinoEggItem(EntityTypes.SHANT_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> GALLI_EGG = ITEMS.register("galli_egg",
             () -> new DinoEggItem(EntityTypes.GALLI_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> SAURO_EGG = ITEMS.register("sauro_egg",
             () -> new DinoEggItem(EntityTypes.SAURO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> ANKY_EGG = ITEMS.register("anky_egg",
-            () -> new DinoEggItem(EntityTypes.ANKY_ENTITY, 0xb08260, 0xe3955d, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+            () -> new DinoEggItem(EntityTypes.ANKY_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> AVA_EGG = ITEMS.register("ava_egg",
             () -> new DinoEggItem(EntityTypes.AVA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> GRYPO_EGG = ITEMS.register("grypo_egg",
@@ -238,6 +236,15 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(1).build()).tab(DDPTItemGroup.FOOD_GROUP)));
     public static final RegistryObject<Item> DOUGH = ITEMS.register("dough",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(1).build()).tab(DDPTItemGroup.FOOD_GROUP)));
+
+
+    //TOOLS
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(Tiers.IRON, 1, -2.8F,
+                    new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BRUSH = ITEMS.register("brush",
+            () -> new BrushItem(Tiers.WOOD, 1, -2.8F,
+                    new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
 

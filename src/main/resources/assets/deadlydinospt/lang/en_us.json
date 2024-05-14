@@ -242,6 +242,11 @@
 
 
 
+  "item.deadlydinospt.chisel": "Chisel",
+  "item.deadlydinospt.brush": "Brush",
+
+
+
   "block.deadlydinospt.dino_gift_box": "Dino Gift Box",
   "block.deadlydinospt.para_plushy_1": "Female Parasaurolophus Plushy",
   "block.deadlydinospt.para_plushy_2": "Male Parasaurolophus Plushy",
@@ -284,6 +289,11 @@
   "block.deadlydinospt.rspruce_planks": "Reinforced Spruce Planks",
   "block.deadlydinospt.rwarped_planks": "Reinforced Warped Planks",
   "block.deadlydinospt.rcobblestone": "Reinforced Cobblestone",
+
+  "block.deadlydinospt.stone_fossil_med_carni_1": "Ceratosaurus Fossil",
+  "block.deadlydinospt.chiseled_stone_fossil_med_carni_1": "Chiseled Ceratosaurus Fossil",
+  "block.deadlydinospt.stone_fossil_med_carni_2": "Allosaurus Fossil",
+  "block.deadlydinospt.chiseled_stone_fossil_med_carni_2": "Chiseled Allosaurus Fossil",
 
   
   "block.deadlydinospt.cycas": "Cycas",

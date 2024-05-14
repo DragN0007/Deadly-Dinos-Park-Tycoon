@@ -290,10 +290,8 @@
   "block.deadlydinospt.rwarped_planks": "Reinforced Warped Planks",
   "block.deadlydinospt.rcobblestone": "Reinforced Cobblestone",
 
-  "block.deadlydinospt.stone_fossil_med_carni_1": "Ceratosaurus Fossil",
-  "block.deadlydinospt.chiseled_stone_fossil_med_carni_1": "Chiseled Ceratosaurus Fossil",
-  "block.deadlydinospt.stone_fossil_med_carni_2": "Allosaurus Fossil",
-  "block.deadlydinospt.chiseled_stone_fossil_med_carni_2": "Chiseled Allosaurus Fossil",
+  "block.deadlydinospt.allosaurus_fossil": "Allosaurus Fossil",
+  "block.deadlydinospt.chiseled_allosaurus_fossil": "Chiseled Allosaurus Fossil",
 
   
   "block.deadlydinospt.cycas": "Cycas",

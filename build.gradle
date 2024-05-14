@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.18.2-1.0'
 group = 'com.dragn0007.deadlydinospt'
-archivesBaseName = 'deadlydinosptParkTycoon'
+archivesBaseName = 'DeadlyDinosParkTycoon'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

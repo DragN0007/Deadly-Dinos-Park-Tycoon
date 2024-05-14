@@ -75,6 +75,14 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.AMPELO_EGG.get());
 
 
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_LEG.get());
+
         handheldItem(DDPTItems.CHISEL.get());
         handheldItem(DDPTItems.BRUSH.get());
 

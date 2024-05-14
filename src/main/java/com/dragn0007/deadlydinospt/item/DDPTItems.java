@@ -268,21 +268,19 @@ public class DDPTItems {
 
 
     //MEDIUM CARNI BONES
-    public static final RegistryObject<Item> MEDCARNITOOTH = ITEMS.register("medcarnitooth",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_TOOTH = ITEMS.register("allosaurus_fossil_tooth",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNISKULL = ITEMS.register("medcarniskull",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_SKULL = ITEMS.register("allosaurus_fossil_skull",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNIRIBS= ITEMS.register("medcarniribs",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_RIBS= ITEMS.register("allosaurus_fossil_ribs",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNICLAW = ITEMS.register("medcarniclaw",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_CLAW = ITEMS.register("allosaurus_fossil_claw",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNITAIL = ITEMS.register("medcarnitail",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_TAIL = ITEMS.register("allosaurus_fossil_tail",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDRAPTORCLAW = ITEMS.register("medraptorclaw",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_SPINE = ITEMS.register("allosaurus_fossil_spine",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNISPINE = ITEMS.register("medcarnispine",
-            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-    public static final RegistryObject<Item> MEDCARNILEG = ITEMS.register("medcarnileg",
+    public static final RegistryObject<Item> ALLOSAURUS_FOSSIL_LEG = ITEMS.register("allosaurus_fossil_leg",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 

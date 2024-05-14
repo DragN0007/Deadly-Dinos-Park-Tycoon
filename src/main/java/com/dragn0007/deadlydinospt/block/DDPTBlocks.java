@@ -1,6 +1,7 @@
 package com.dragn0007.deadlydinospt.block;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
+import com.dragn0007.deadlydinospt.block.other.ChiselableAlloFossil;
 import com.dragn0007.deadlydinospt.block.other.DinoNuggetBox;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
@@ -145,14 +146,10 @@ public class DDPTBlocks {
 
 
     //Fossils
-    public static final RegistryObject<Block> STONE_FOSSIL_MED_CARNI_1 = registerBlock("stone_fossil_med_carni_1",
+    public static final RegistryObject<Block> ALLOSAURUS_FOSSIL = registerBlock("allosaurus_fossil",
+            () -> new ChiselableAlloFossil(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ALLOSAURUS_FOSSIL = registerBlock("chiseled_allosaurus_fossil",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
-    public static final RegistryObject<Block> STONE_FOSSIL_MED_CARNI_2 = registerBlock("stone_fossil_med_carni_2",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
-    public static final RegistryObject<Block> CHISELED_STONE_FOSSIL_MED_CARNI_1 = registerBlock("chiseled_stone_fossil_med_carni_1",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(0.5f, 3.0f)));
-    public static final RegistryObject<Block> CHISELED_STONE_FOSSIL_MED_CARNI_2 = registerBlock("chiseled_stone_fossil_med_carni_2",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(0.5f, 3.0f)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

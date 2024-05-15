@@ -6,6 +6,7 @@ import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -20,6 +21,59 @@ public class DDPTRecipeMaker extends RecipeProvider implements IConditionBuilder
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+
+
+
+
+        //Small
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 2)
+                .requires(DDPTTags.Items.SMALL_BONES)
+                .unlockedBy("has_small_bone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.SMALL_BONES)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_small_bones"));
+
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 1)
+                .requires(DDPTTags.Items.SMALL_FOSSILS)
+                .unlockedBy("has_small_fossil", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.SMALL_FOSSILS)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_small_fossils"));
+
+        //Medium
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 4)
+                .requires(DDPTTags.Items.MEDIUM_BONES)
+                .unlockedBy("has_medium_bone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.MEDIUM_BONES)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_medium_bones"));
+
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 2)
+                .requires(DDPTTags.Items.MEDIUM_FOSSILS)
+                .unlockedBy("has_medium_fossil", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.MEDIUM_FOSSILS)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_medium_fossils"));
+
+        //Large
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 6)
+                .requires(DDPTTags.Items.LARGE_BONES)
+                .unlockedBy("has_large_bone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.LARGE_BONES)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_large_bones"));
+
+        ShapelessRecipeBuilder.shapeless(Items.BONE_MEAL, 3)
+                .requires(DDPTTags.Items.LARGE_FOSSILS)
+                .unlockedBy("has_large_fossil", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.LARGE_FOSSILS)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation("deadlydinospt", "bonemeal_from_large_fossils"));
+
+
+
+
+        //Food
         ShapelessRecipeBuilder.shapeless(DDPTItems.DINO_ROAST.get())
                 .requires(DDPTTags.Items.MEATS)
                 .requires(DDPTTags.Items.VEGETABLES)

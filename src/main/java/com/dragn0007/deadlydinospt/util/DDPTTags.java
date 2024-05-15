@@ -26,6 +26,35 @@ public class DDPTTags {
         public static final TagKey<Item> DOUGH = forgeTag("dough");
 
 
+        public static final TagKey<Item> LARGE_BONES = forgeTag("large_bones");
+        public static final TagKey<Item> MEDIUM_BONES = forgeTag("medium_bones");
+        public static final TagKey<Item> SMALL_BONES = forgeTag("small_bones");
+
+        public static final TagKey<Item> LARGE_FOSSILS = forgeTag("large_fossils");
+        public static final TagKey<Item> MEDIUM_FOSSILS = forgeTag("medium_fossils");
+        public static final TagKey<Item> SMALL_FOSSILS = forgeTag("small_fossils");
+
+
+
+        public static final TagKey<Item> ACROCANTHOSAURUS_BONES = tag("acrocanthosaurus_bones");
+        public static final TagKey<Item> ACROCANTHOSAURUS_FOSSILS = tag("acrocanthosaurus_fossils");
+
+        public static final TagKey<Item> ALBERTOSAURUS_BONES = tag("albertosaurus_bones");
+        public static final TagKey<Item> ALBERTOSAURUS_FOSSILS = tag("albertosaurus_fossils");
+
+        public static final TagKey<Item> ALLOSAURUS_BONES = tag("allosaurus_bones");
+        public static final TagKey<Item> ALLOSAURUS_FOSSILS = tag("allosaurus_fossils");
+
+        public static final TagKey<Item> ANDALGALORNIS_BONES = tag("andalgalornis_bones");
+        public static final TagKey<Item> ANDALGALORNIS_FOSSILS = tag("andalgalornis_fossils");
+
+        public static final TagKey<Item> CERATOSAURUS_BONES = tag("ceratosaurus_bones");
+        public static final TagKey<Item> CERATOSAURUS_FOSSILS = tag("ceratosaurus_fossils");
+
+        public static final TagKey<Item> ARCHAEOPTERYX_BONES = tag("archaeopteryx_bones");
+        public static final TagKey<Item> ARCHAEOPTERYX_FOSSILS = tag("archaeopteryx_fossils");
+
+
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
         }

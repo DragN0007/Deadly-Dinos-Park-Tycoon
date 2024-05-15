@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "deadlydinospt:allosaurus_fossil"
+    "deadlydinospt:albertosaurus_fossil",
+    "deadlydinospt:acrocanthosaurus_fossil",
+    "deadlydinospt:allosaurus_fossil",
+    "deadlydinospt:andalgalornis_fossil",
+    "deadlydinospt:ceratosaurus_fossil"
   ]
 }

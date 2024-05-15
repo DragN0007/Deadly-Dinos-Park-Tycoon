@@ -1,15 +1,59 @@
 package com.dragn0007.deadlydinospt.world.feature;
 
+import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.Holder;
+import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.placement.*;
+
+import java.util.List;
 
 import static net.minecraft.data.worldgen.placement.VegetationPlacements.treePlacement;
 
 public class DDPTPlacedFeatures {
+
+
+    //Pilocene
+    public static final Holder<PlacedFeature> ANDALGALORNIS_FOSSIL = PlacementUtils.register("andalgalornis_fossil_placed",
+            DDPTConfigFeatures.ANDALGALORNIS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
+
+    //Late Cretaceous
+    public static final Holder<PlacedFeature> ALBERTOSAURUS_FOSSIL = PlacementUtils.register("albertosaurus_fossil_placed",
+            DDPTConfigFeatures.ALBERTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+
+    //Early Cretaceous
+    public static final Holder<PlacedFeature> ACROCANTHOSAURUS_FOSSIL = PlacementUtils.register("acrocanthosaurus_fossil_placed",
+            DDPTConfigFeatures.ACROCANTHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+
+    //Late Jurassic
+    public static final Holder<PlacedFeature> ALLOSAURUS_FOSSIL = PlacementUtils.register("allosaurus_fossil_placed",
+            DDPTConfigFeatures.ALLOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
+    public static final Holder<PlacedFeature> CERATOSAURUS_FOSSIL = PlacementUtils.register("ceratosaurus_fossil_placed",
+            DDPTConfigFeatures.CERATOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
+
+    public static final Holder<PlacedFeature> ARCHAEOPTERYX_FOSSIL = PlacementUtils.register("archaeopteryx_fossil_placed",
+            DDPTConfigFeatures.ARCHAEOPTERYX_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
+
+
+    //Early Jurassic
+
+
+
+
+
+
 
     //TREES
     public static final Holder<PlacedFeature> CONIFER_PLACED =
@@ -26,7 +70,6 @@ public class DDPTPlacedFeatures {
             PlacementUtils.register("sequoia_placed",
                     DDPTConfigFeatures.SEQUOIA_SPAWN,
                     treePlacement(PlacementUtils.countExtra(0, 0.01F, 1)));
-
 
 
     //PLANTS

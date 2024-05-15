@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.block;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
-import com.dragn0007.deadlydinospt.block.other.ChiselableAlloFossil;
+import com.dragn0007.deadlydinospt.block.fossil.*;
 import com.dragn0007.deadlydinospt.block.other.DinoNuggetBox;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
@@ -146,10 +146,37 @@ public class DDPTBlocks {
 
 
     //Fossils
+    public static final RegistryObject<Block> ACROCANTHOSAURUS_FOSSIL = registerBlock("acrocanthosaurus_fossil",
+            () -> new ChiselableAcroFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ACROCANTHOSAURUS_FOSSIL = registerBlock("chiseled_acrocanthosaurus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> ALBERTOSAURUS_FOSSIL = registerBlock("albertosaurus_fossil",
+            () -> new ChiselableAlbertoFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ALBERTOSAURUS_FOSSIL = registerBlock("chiseled_albertosaurus_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
     public static final RegistryObject<Block> ALLOSAURUS_FOSSIL = registerBlock("allosaurus_fossil",
-            () -> new ChiselableAlloFossil(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+            () -> new ChiselableAlloFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_ALLOSAURUS_FOSSIL = registerBlock("chiseled_allosaurus_fossil",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> ANDALGALORNIS_FOSSIL = registerBlock("andalgalornis_fossil",
+            () -> new ChiselableAndalFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ANDALGALORNIS_FOSSIL = registerBlock("chiseled_andalgalornis_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> ARCHAEOPTERYX_FOSSIL = registerBlock("archaeopteryx_fossil",
+            () -> new ChiselableAlloFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ARCHAEOPTERYX_FOSSIL = registerBlock("chiseled_archaeopteryx_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> CERATOSAURUS_FOSSIL = registerBlock("ceratosaurus_fossil",
+            () -> new ChiselableCeratoFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_CERATOSAURUS_FOSSIL = registerBlock("chiseled_ceratosaurus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

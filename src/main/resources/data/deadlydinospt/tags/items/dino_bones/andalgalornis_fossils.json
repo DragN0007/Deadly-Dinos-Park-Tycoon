@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:andalgalornis_fossil_tooth",
+    "deadlydinospt:andalgalornis_fossil_skull",
+    "deadlydinospt:andalgalornis_fossil_ribs",
+    "deadlydinospt:andalgalornis_fossil_tail",
+    "deadlydinospt:andalgalornis_fossil_spine",
+    "deadlydinospt:andalgalornis_fossil_leg",
+    "deadlydinospt:andalgalornis_fossil_claw"
+  ]
+}

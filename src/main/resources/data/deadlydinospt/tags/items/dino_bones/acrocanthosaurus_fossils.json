@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:acrocanthosaurus_fossil_tooth",
+    "deadlydinospt:acrocanthosaurus_fossil_skull",
+    "deadlydinospt:acrocanthosaurus_fossil_ribs",
+    "deadlydinospt:acrocanthosaurus_fossil_tail",
+    "deadlydinospt:acrocanthosaurus_fossil_spine",
+    "deadlydinospt:acrocanthosaurus_fossil_leg",
+    "deadlydinospt:acrocanthosaurus_fossil_claw"
+  ]
+}

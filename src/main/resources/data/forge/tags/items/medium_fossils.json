@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:allosaurus_fossil_tooth",
+    "deadlydinospt:allosaurus_fossil_skull",
+    "deadlydinospt:allosaurus_fossil_ribs",
+    "deadlydinospt:allosaurus_fossil_tail",
+    "deadlydinospt:allosaurus_fossil_spine",
+    "deadlydinospt:allosaurus_fossil_leg",
+    "deadlydinospt:allosaurus_fossil_claw",
+
+    "deadlydinospt:andalgalornis_fossil_tooth",
+    "deadlydinospt:andalgalornis_fossil_skull",
+    "deadlydinospt:andalgalornis_fossil_ribs",
+    "deadlydinospt:andalgalornis_fossil_tail",
+    "deadlydinospt:andalgalornis_fossil_spine",
+    "deadlydinospt:andalgalornis_fossil_leg",
+    "deadlydinospt:andalgalornis_fossil_claw",
+
+    "deadlydinospt:ceratosaurus_fossil_tooth",
+    "deadlydinospt:ceratosaurus_fossil_skull",
+    "deadlydinospt:ceratosaurus_fossil_ribs",
+    "deadlydinospt:ceratosaurus_fossil_tail",
+    "deadlydinospt:ceratosaurus_fossil_spine",
+    "deadlydinospt:ceratosaurus_fossil_leg",
+    "deadlydinospt:ceratosaurus_fossil_claw"
+  ]
+}

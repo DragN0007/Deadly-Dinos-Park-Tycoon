@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:albertosaurus_tooth",
+    "deadlydinospt:albertosaurus_skull",
+    "deadlydinospt:albertosaurus_ribs",
+    "deadlydinospt:albertosaurus_tail",
+    "deadlydinospt:albertosaurus_spine",
+    "deadlydinospt:albertosaurus_leg",
+    "deadlydinospt:albertosaurus_claw"
+  ]
+}

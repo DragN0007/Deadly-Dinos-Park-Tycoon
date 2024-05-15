@@ -74,6 +74,47 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.GRYPO_EGG.get());
         simpleItem(DDPTItems.AMPELO_EGG.get());
 
+        handheldItem(DDPTItems.CHISEL.get());
+        handheldItem(DDPTItems.BRUSH.get());
+
+        simpleSpriteBlockItem(DDPTBlocksDataGen.ASTEROXYLON.get());
+        simpleSpriteBlockItem(DDPTBlocksDataGen.HORSETAIL.get());
+
+
+
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_FOSSIL_LEG.get());
+
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_TOOTH.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_SKULL.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_RIBS.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_CLAW.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_TAIL.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_SPINE.get());
+        simpleItem(DDPTItems.ACROCANTHOSAURUS_LEG.get());
+
+
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_FOSSIL_LEG.get());
+
+        simpleItem(DDPTItems.ALBERTOSAURUS_TOOTH.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_SKULL.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_RIBS.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_CLAW.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_TAIL.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_SPINE.get());
+        simpleItem(DDPTItems.ALBERTOSAURUS_LEG.get());
+
 
         simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_TOOTH.get());
         simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_SKULL.get());
@@ -83,12 +124,69 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_SPINE.get());
         simpleItem(DDPTItems.ALLOSAURUS_FOSSIL_LEG.get());
 
-        handheldItem(DDPTItems.CHISEL.get());
-        handheldItem(DDPTItems.BRUSH.get());
+        simpleItem(DDPTItems.ALLOSAURUS_TOOTH.get());
+        simpleItem(DDPTItems.ALLOSAURUS_SKULL.get());
+        simpleItem(DDPTItems.ALLOSAURUS_RIBS.get());
+        simpleItem(DDPTItems.ALLOSAURUS_CLAW.get());
+        simpleItem(DDPTItems.ALLOSAURUS_TAIL.get());
+        simpleItem(DDPTItems.ALLOSAURUS_SPINE.get());
+        simpleItem(DDPTItems.ALLOSAURUS_LEG.get());
 
 
-        simpleSpriteBlockItem(DDPTBlocksDataGen.ASTEROXYLON.get());
-        simpleSpriteBlockItem(DDPTBlocksDataGen.HORSETAIL.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_FOSSIL_LEG.get());
+
+        simpleItem(DDPTItems.ANDALGALORNIS_TOOTH.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_SKULL.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_RIBS.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_CLAW.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_TAIL.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_SPINE.get());
+        simpleItem(DDPTItems.ANDALGALORNIS_LEG.get());
+
+
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_LEG.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_FOSSIL_RAPTOR_CLAW.get());
+
+        simpleItem(DDPTItems.ARCHAEOPTERYX_TOOTH.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_SKULL.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_RIBS.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_CLAW.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_TAIL.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_SPINE.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_LEG.get());
+        simpleItem(DDPTItems.ARCHAEOPTERYX_RAPTOR_CLAW.get());
+
+
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_LEG.get());
+
+        simpleItem(DDPTItems.CERATOSAURUS_TOOTH.get());
+        simpleItem(DDPTItems.CERATOSAURUS_SKULL.get());
+        simpleItem(DDPTItems.CERATOSAURUS_RIBS.get());
+        simpleItem(DDPTItems.CERATOSAURUS_CLAW.get());
+        simpleItem(DDPTItems.CERATOSAURUS_TAIL.get());
+        simpleItem(DDPTItems.CERATOSAURUS_SPINE.get());
+        simpleItem(DDPTItems.CERATOSAURUS_LEG.get());
+
+
+
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {

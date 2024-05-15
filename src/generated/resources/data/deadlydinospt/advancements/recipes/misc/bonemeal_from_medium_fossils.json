@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "deadlydinospt:bonemeal_from_medium_fossils"
+    ]
+  },
+  "criteria": {
+    "has_medium_fossil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:medium_fossils"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "deadlydinospt:bonemeal_from_medium_fossils"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_medium_fossil",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "deadlydinospt:bonemeal_from_small_bones"
+    ]
+  },
+  "criteria": {
+    "has_small_bone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:small_bones"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "deadlydinospt:bonemeal_from_small_bones"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_small_bone",
+      "has_the_recipe"
+    ]
+  ]
+}

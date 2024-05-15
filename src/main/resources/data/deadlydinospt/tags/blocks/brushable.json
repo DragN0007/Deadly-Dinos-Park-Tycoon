@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "deadlydinospt:chiseled_allosaurus_fossil"
+    "deadlydinospt:chiseled_albertosaurus_fossil",
+    "deadlydinospt:chiseled_acrocanthosaurus_fossil",
+    "deadlydinospt:chiseled_allosaurus_fossil",
+    "deadlydinospt:chiseled_andalgalornis_fossil",
+    "deadlydinospt:chiseled_archaeopteryx_fossil",
+    "deadlydinospt:chiseled_ceratosaurus_fossil"
   ]
 }

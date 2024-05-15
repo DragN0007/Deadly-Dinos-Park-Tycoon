@@ -5,17 +5,16 @@ import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaPineFoliagePlacer;
@@ -23,11 +22,61 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.GiantTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.List;
 
 public class DDPTConfigFeatures {
+
+
+    //Pilocene (Stone)
+    public static final List<OreConfiguration.TargetBlockState> ANDALGALORNIS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.ANDALGALORNIS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ANDALGALORNIS_FOSSIL_ORE = FeatureUtils.register("andalgalornis_fossil_ore",
+            Feature.ORE, new OreConfiguration(ANDALGALORNIS_FOSSIL, 3));
+
+
+
+    //Late Cretaceous (Stone)
+    public static final List<OreConfiguration.TargetBlockState> ALBERTOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.ALBERTOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ALBERTOSAURUS_FOSSIL_ORE = FeatureUtils.register("albertosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(ALBERTOSAURUS_FOSSIL, 3));
+
+
+
+    //Early Cretaceous (Deepslate)
+    public static final List<OreConfiguration.TargetBlockState> ACROCANTHOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.ACROCANTHOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ACROCANTHOSAURUS_FOSSIL_ORE = FeatureUtils.register("acrocanthosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(ACROCANTHOSAURUS_FOSSIL, 3));
+
+
+
+    //Late Jurassic (Deepslate)
+    public static final List<OreConfiguration.TargetBlockState> ALLOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.ALLOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ALLOSAURUS_FOSSIL_ORE = FeatureUtils.register("allosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(ALLOSAURUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> CERATOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.CERATOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CERATOSAURUS_FOSSIL_ORE = FeatureUtils.register("ceratosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(CERATOSAURUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> ARCHAEOPTERYX_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.ARCHAEOPTERYX_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ARCHAEOPTERYX_FOSSIL_ORE = FeatureUtils.register("archaeopteryx_fossil_ore",
+            Feature.ORE, new OreConfiguration(ARCHAEOPTERYX_FOSSIL, 3));
+
+
+
+    //Early Jurassic (Deepslate)
+
+
+
+
 
 
     public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> COOKSONIA =

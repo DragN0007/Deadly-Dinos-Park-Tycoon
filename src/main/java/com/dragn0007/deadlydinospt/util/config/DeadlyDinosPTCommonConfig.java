@@ -9,6 +9,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> TROPHYITEM_DURABILITY;
     public static final ForgeConfigSpec.ConfigValue<Integer> BIG_DINO_BREAK_RADIUS;
     public static final ForgeConfigSpec.ConfigValue<Integer> SMALL_DINO_BREAK_RADIUS;
+    public static final ForgeConfigSpec.ConfigValue<Integer> FOSSIL_VEIN_PER_CHUNK;
 
 
 
@@ -30,6 +31,11 @@ public class DeadlyDinosPTCommonConfig {
         //Small Dinos - How many blocks should they break?
         SMALL_DINO_BREAK_RADIUS = BUILDER.comment("What should the radius be that Small Deadly Dinos can destroy when attacking? 3 Blocks is Default.")
                 .define("Small Dino destroy radius", 3);
+
+
+
+        FOSSIL_VEIN_PER_CHUNK = BUILDER.comment("How many fossil veins should attempt to spawn per chunk? Default is 1.")
+                .define("Fossil Vein Attempt Per Chunk", 1);
 
 
 

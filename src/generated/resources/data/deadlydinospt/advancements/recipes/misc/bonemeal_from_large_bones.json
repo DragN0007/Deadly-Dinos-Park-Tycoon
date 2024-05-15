@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "deadlydinospt:bonemeal_from_large_bones"
+    ]
+  },
+  "criteria": {
+    "has_large_bone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:large_bones"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "deadlydinospt:bonemeal_from_large_bones"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_large_bone",
+      "has_the_recipe"
+    ]
+  ]
+}

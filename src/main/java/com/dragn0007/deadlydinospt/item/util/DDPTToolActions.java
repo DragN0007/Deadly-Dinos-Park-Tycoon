@@ -1,10 +1,7 @@
 package com.dragn0007.deadlydinospt.item.util;
 
 import com.google.common.collect.Sets;
-import net.minecraft.world.item.DiggerItem;
 import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.extensions.IForgeBlock;
-import net.minecraftforge.common.extensions.IForgeItem;
 
 import java.util.Set;
 import java.util.stream.Collectors;

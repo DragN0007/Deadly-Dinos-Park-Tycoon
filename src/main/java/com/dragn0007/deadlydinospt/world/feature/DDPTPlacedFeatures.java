@@ -1,15 +1,10 @@
 package com.dragn0007.deadlydinospt.world.feature;
 
-import com.dragn0007.deadlydinospt.block.DDPTBlocks;
 import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.Holder;
-import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.placement.*;
-
-import java.util.List;
 
 import static net.minecraft.data.worldgen.placement.VegetationPlacements.treePlacement;
 

@@ -2,6 +2,9 @@ package com.dragn0007.deadlydinospt.entity.herbi;
 
 import com.dragn0007.deadlydinospt.client.model.CropSnailModel;
 import com.dragn0007.deadlydinospt.entity.ai.DestroyFarmGoal;
+import com.dragn0007.deadlydinospt.entity.carni.Alberto;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -12,8 +15,13 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.BreedGoal;
+import net.minecraft.world.entity.ai.goal.FollowParentGoal;
+import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import software.bernie.geckolib3.core.IAnimatable;
@@ -45,12 +53,18 @@ public class CropSnail extends Animal implements IAnimatable {
                 ;
     }
 
-
+    @Override
+    public float getStepHeight() {
+        return 1f;
+    }
 
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new WaterAvoidingRandomStrollGoal(this, 1));
         this.goalSelector.addGoal(1, new DestroyFarmGoal(this));
+        this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, FOOD_ITEMS, false));
+        this.goalSelector.addGoal(2, new BreedGoal(this, 1.0D));
+        this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.25D));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
@@ -68,6 +82,11 @@ public class CropSnail extends Animal implements IAnimatable {
         return factory;
     }
 
+    @Override
+    public boolean isFood(ItemStack itemStack) {
+        return FOOD_ITEMS.test(itemStack);
+    }
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.VEGETABLES);
 
 
     //Generates variant textures
@@ -111,12 +130,21 @@ public class CropSnail extends Animal implements IAnimatable {
         return super.finalizeSpawn(levelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
     }
 
-    @Nullable
-    @Override
-    public AgeableMob getBreedOffspring(ServerLevel p_241840_1_, AgeableMob p_241840_2_) {
-        return null;
+    public boolean canBeParent() {
+        return !this.isBaby() && this.getHealth() >= this.getMaxHealth() && this.isInLove();
     }
-
+    @Override
+    public boolean canMate(Animal animal) {
+        if (animal == this || !(animal instanceof Alberto)) {
+            return false;
+        } else {
+            return this.canBeParent() && ((CropSnail)animal).canBeParent();
+        }
+    }
+    @Override
+    public CropSnail getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.CROPSNAIL_ENTITY.get().create(level);
+    }
 
     @Override
     protected void defineSynchedData(){

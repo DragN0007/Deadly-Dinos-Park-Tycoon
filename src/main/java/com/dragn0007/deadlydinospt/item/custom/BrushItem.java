@@ -3,7 +3,10 @@ package com.dragn0007.deadlydinospt.item.custom;
 
 import com.dragn0007.deadlydinospt.item.util.DDPTToolActions;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.DiggerItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
 
 
 public class BrushItem extends DiggerItem {

@@ -1,6 +1,12 @@
 package com.dragn0007.deadlydinospt.entity.carni;
 
 import com.dragn0007.deadlydinospt.client.model.CompyModel;
+import com.dragn0007.deadlydinospt.entity.herbi.Amarga;
+import com.dragn0007.deadlydinospt.entity.herbi.Ampelo;
+import com.dragn0007.deadlydinospt.entity.herbi.Ava;
+import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -11,21 +17,26 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.*;
+import net.minecraft.world.entity.animal.*;
+import net.minecraft.world.entity.animal.horse.Donkey;
+import net.minecraft.world.entity.animal.horse.Horse;
+import net.minecraft.world.entity.animal.horse.Mule;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraftforge.event.ForgeEventFactory;
 import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -42,11 +53,11 @@ import java.util.Random;
 import java.util.function.Predicate;
 
 
-public class Compy extends Animal implements IAnimatable {
+public class Compy extends TamableAnimal implements IAnimatable {
 
     private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
-    public Compy(EntityType<? extends Animal> entityType, Level level) {
+    public Compy(EntityType<? extends Compy> entityType, Level level) {
         super(entityType, level);
         this.noCulling = true;
     }
@@ -76,7 +87,34 @@ public class Compy extends Animal implements IAnimatable {
         this.playSound(SoundEvents.CHICKEN_STEP, 0.15F, 1.0F);
     }
 
+    public static final Predicate<LivingEntity> PREY_SELECTOR = (p_30437_) -> {
+        EntityType<?> entitytype = p_30437_.getType();
+        return
+                entitytype == EntityTypes.ARCHAE_ENTITY.get()
+                        || entitytype == EntityTypes.AVA_ENTITY.get()
+                        || entitytype == EntityTypes.ALLO_ENTITY.get()
+                        || entitytype == EntityTypes.CERATO_ENTITY.get()
+                        || entitytype == EntityTypes.ANDAL_ENTITY.get()
+                        || entitytype == EntityTypes.GRYPO_ENTITY.get()
+                        || entitytype == EntityTypes.AMARGA_ENTITY.get()
+                        || entitytype == EntityTypes.AMPELO_ENTITY.get()
+                        || entitytype == EntityType.PLAYER
+                        || entitytype == EntityType.CAT
+                        || entitytype == EntityType.WOLF
+                        || entitytype == EntityType.HORSE
+                        || entitytype == EntityType.MULE
+                        || entitytype == EntityType.DONKEY
+                        || entitytype == EntityType.SHEEP
+                        || entitytype == EntityType.COW
+                        || entitytype == EntityType.CHICKEN
+                        || entitytype == EntityType.PIG
+                ;
+    };
 
+    @Override
+    public float getStepHeight() {
+        return 1f;
+    }
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
@@ -84,6 +122,13 @@ public class Compy extends Animal implements IAnimatable {
         this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.5, true));
         this.goalSelector.addGoal(3, new FloatGoal(this));
         this.goalSelector.addGoal(1, new WaterAvoidingRandomStrollGoal(this, 1));
+
+        this.targetSelector.addGoal(1, new NonTameRandomTargetGoal<>(this, LivingEntity.class, false, PREY_SELECTOR));
+        this.targetSelector.addGoal(0, new OwnerHurtByTargetGoal(this));
+        this.targetSelector.addGoal(0, new OwnerHurtTargetGoal(this));
+        this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, FOOD_ITEMS, false));
+        this.goalSelector.addGoal(2, new BreedGoal(this, 1.0D));
+        this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.25D));
 
         this.goalSelector.addGoal(0, new AvoidEntityGoal<>(this, LivingEntity.class, 15.0F, 2.0D, 2.0D, livingEntity
                 -> livingEntity instanceof Austro
@@ -93,6 +138,8 @@ public class Compy extends Animal implements IAnimatable {
                 || livingEntity instanceof Rex
                 || livingEntity instanceof Spino
         ));
+
+
 
         this.targetSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 10, true, true, new Predicate<LivingEntity>() {
             @Override
@@ -109,7 +156,41 @@ public class Compy extends Animal implements IAnimatable {
                     return false;
                 if (livingEntity instanceof Spino)
                     return false;
-                
+
+                if (livingEntity instanceof Player) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Ava) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Cerato) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Andal) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Grypo) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Amarga) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Ampelo) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Archae) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Cat) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Wolf) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Horse) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Mule) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Donkey) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Sheep) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Cow) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Chicken) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Pig) //<- taken care of by the prey selector
+                    return false;
                 return true;
             }
         }));
@@ -153,7 +234,46 @@ public class Compy extends Animal implements IAnimatable {
         return factory;
     }
 
+    @Override
+    public boolean isFood(ItemStack itemStack) {
+        return FOOD_ITEMS.test(itemStack);
+    }
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.MEATS);
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        ItemStack itemStack = player.getItemInHand(hand);
+        if (this.isTame()) {
+            if (this.isFood(itemStack)) {
+                if (this.getHealth() < this.getMaxHealth()) {
+                    // heal
+                    this.usePlayerItem(player, hand, itemStack);
+                    this.heal(itemStack.getFoodProperties(this).getNutrition());
+                    this.gameEvent(GameEvent.MOB_INTERACT, this.eyeBlockPosition());
+                    return InteractionResult.sidedSuccess(this.level.isClientSide);
+                } else if (this.canFallInLove() && !this.level.isClientSide) {
+                    // set to baby maker mode
+                    this.usePlayerItem(player, hand, itemStack);
+                    this.setInLove(player);
+                    this.gameEvent(GameEvent.MOB_INTERACT, this.eyeBlockPosition());
+                    return InteractionResult.SUCCESS;
+                }
+            }
+        } else if (this.isFood(itemStack) && !this.level.isClientSide && this.isBaby()) {
+            this.usePlayerItem(player, hand, itemStack);
+            // try to tame (33% chance to succeed)
+            if (this.random.nextInt(3) == 0 && !ForgeEventFactory.onAnimalTame(this, player)) {
+                this.tame(player);
+                return InteractionResult.SUCCESS;
+            }
 
+            if(this.isBaby()) {
+                // grow baby
+                this.ageUp(itemStack.getFoodProperties(this).getNutrition());
+                this.gameEvent(GameEvent.MOB_INTERACT, this.eyeBlockPosition());
+                return InteractionResult.SUCCESS;
+            }
+        }
+        return InteractionResult.sidedSuccess(this.level.isClientSide);
+    }
 
 
     //Generates variant textures
@@ -197,10 +317,20 @@ public class Compy extends Animal implements IAnimatable {
         return super.finalizeSpawn(levelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
     }
 
-    @Nullable
+    public boolean canBeParent() {
+        return !this.isBaby() && this.getHealth() >= this.getMaxHealth() && this.isInLove();
+    }
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel p_241840_1_, AgeableMob p_241840_2_) {
-        return null;
+    public boolean canMate(Animal animal) {
+        if (animal == this || !(animal instanceof Compy)) {
+            return false;
+        } else {
+            return this.canBeParent() && ((Compy)animal).canBeParent();
+        }
+    }
+    @Override
+    public Compy getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.COMPY_ENTITY.get().create(level);
     }
 
 

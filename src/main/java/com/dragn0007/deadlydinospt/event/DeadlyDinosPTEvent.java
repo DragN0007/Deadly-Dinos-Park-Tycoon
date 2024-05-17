@@ -45,6 +45,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         event.put(EntityTypes.CARCHAR_ENTITY.get(), Carchar.createAttributes().build());
         event.put(EntityTypes.ALLO_ENTITY.get(), Allo.createAttributes().build());
         event.put(EntityTypes.DILO_ENTITY.get(), Dilo.createAttributes().build());
+        event.put(EntityTypes.YUTY_ENTITY.get(), Yuty.createAttributes().build());
+        event.put(EntityTypes.CRYO_ENTITY.get(), Cryo.createAttributes().build());
+        event.put(EntityTypes.AUSTRALO_ENTITY.get(), Australo.createAttributes().build());
 
         event.put(EntityTypes.CROPSNAIL_ENTITY.get(), CropSnail.createAttributes().build());
         event.put(EntityTypes.AMARGA_ENTITY.get(), Amarga.createAttributes().build());
@@ -59,6 +62,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         event.put(EntityTypes.AVA_ENTITY.get(), Ava.createAttributes().build());
         event.put(EntityTypes.GRYPO_ENTITY.get(), Grypo.createAttributes().build());
         event.put(EntityTypes.AMPELO_ENTITY.get(), Ampelo.createAttributes().build());
+        event.put(EntityTypes.PACHYR_ENTITY.get(), Pachyr.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -84,6 +88,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         EntityRenderers.register(EntityTypes.CARCHAR_ENTITY.get(), CarcharRender::new);
         EntityRenderers.register(EntityTypes.ALLO_ENTITY.get(), AlloRender::new);
         EntityRenderers.register(EntityTypes.DILO_ENTITY.get(), DiloRender::new);
+        EntityRenderers.register(EntityTypes.YUTY_ENTITY.get(), YutyRender::new);
+        EntityRenderers.register(EntityTypes.CRYO_ENTITY.get(), CryoRender::new);
+        EntityRenderers.register(EntityTypes.AUSTRALO_ENTITY.get(), AustraloRender::new);
 
         EntityRenderers.register(EntityTypes.CROPSNAIL_ENTITY.get(), CropSnailRender::new);
         EntityRenderers.register(EntityTypes.AMARGA_ENTITY.get(), AmargaRender::new);
@@ -98,6 +105,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         EntityRenderers.register(EntityTypes.AVA_ENTITY.get(), AvaRender::new);
         EntityRenderers.register(EntityTypes.GRYPO_ENTITY.get(), GrypoRender::new);
         EntityRenderers.register(EntityTypes.AMPELO_ENTITY.get(), AmpeloRender::new);
+        EntityRenderers.register(EntityTypes.PACHYR_ENTITY.get(), PachyrRender::new);
 
 
 

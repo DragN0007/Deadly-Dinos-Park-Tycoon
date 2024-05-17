@@ -1,7 +1,10 @@
 package com.dragn0007.deadlydinospt.entity.carni;
 
 import com.dragn0007.deadlydinospt.client.model.AndalModel;
+import com.dragn0007.deadlydinospt.entity.herbi.Amarga;
+import com.dragn0007.deadlydinospt.entity.herbi.Ampelo;
 import com.dragn0007.deadlydinospt.entity.herbi.Ava;
+import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.google.common.collect.Sets;
@@ -23,8 +26,10 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
-import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.*;
+import net.minecraft.world.entity.animal.horse.Donkey;
 import net.minecraft.world.entity.animal.horse.Horse;
+import net.minecraft.world.entity.animal.horse.Mule;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeItem;
@@ -64,6 +69,11 @@ public class Andal extends TamableAnimal implements IAnimatable {
                         || entitytype == EntityTypes.AVA_ENTITY.get()
                         || entitytype == EntityTypes.ALLO_ENTITY.get()
                         || entitytype == EntityTypes.CERATO_ENTITY.get()
+                        || entitytype == EntityTypes.ANDAL_ENTITY.get()
+                        || entitytype == EntityTypes.GRYPO_ENTITY.get()
+                        || entitytype == EntityTypes.AMARGA_ENTITY.get()
+                        || entitytype == EntityTypes.AMPELO_ENTITY.get()
+                        || entitytype == EntityTypes.YUTY_ENTITY.get()
                         || entitytype == EntityType.PLAYER
                         || entitytype == EntityType.CAT
                         || entitytype == EntityType.WOLF
@@ -92,7 +102,10 @@ public class Andal extends TamableAnimal implements IAnimatable {
                 ;
 
     }
-
+    @Override
+    public float getStepHeight() {
+        return 1f;
+    }
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
@@ -126,8 +139,6 @@ public class Andal extends TamableAnimal implements IAnimatable {
                     return false;
                 if (livingEntity instanceof Acro)
                     return false;
-                if (livingEntity instanceof Ava)
-                    return false;
                 if (livingEntity instanceof Alberto)
                     return false;
                 if (livingEntity instanceof Giga)
@@ -136,13 +147,36 @@ public class Andal extends TamableAnimal implements IAnimatable {
                     return false;
                 if (livingEntity instanceof Spino)
                     return false;
-                if (livingEntity instanceof Player)
+
+                if (livingEntity instanceof Ava) //<- taken care of by the prey selector
                     return false;
-                if (livingEntity instanceof Horse)
+                if (livingEntity instanceof Cerato) //<- taken care of by the prey selector
                     return false;
-                if (livingEntity instanceof Mahakala)
+                if (livingEntity instanceof Grypo) //<- taken care of by the prey selector
                     return false;
-                if (livingEntity instanceof Archae)
+                if (livingEntity instanceof Amarga) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Ampelo) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Archae) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Cat) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Wolf) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Horse) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Mule) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Donkey) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Sheep) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Cow) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Chicken) //<- taken care of by the prey selector
+                    return false;
+                if (livingEntity instanceof Pig) //<- taken care of by the prey selector
                     return false;
                 
                 if (livingEntity instanceof Creeper)

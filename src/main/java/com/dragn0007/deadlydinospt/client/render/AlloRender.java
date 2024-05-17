@@ -22,6 +22,7 @@ public class AlloRender extends ExtendedGeoEntityRenderer<Allo> {
         super(renderManager, new AlloModel());
     }
 
+
     @Override
     public void render(GeoModel model, Allo animatable, float partialTick, RenderType type, PoseStack poseStack, MultiBufferSource bufferSource, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 
@@ -31,12 +32,6 @@ public class AlloRender extends ExtendedGeoEntityRenderer<Allo> {
         } else {
             model.getBone("Saddle").ifPresent(b -> b.setHidden(true));
             model.getBone("Saddle3").ifPresent(b -> b.setHidden(true));
-        }
-
-        if(animatable.isBannered()) {
-            model.getBone("Banner").ifPresent(b -> b.setHidden(false));
-        } else {
-            model.getBone("Banner").ifPresent(b -> b.setHidden(true));
         }
 
         super.render(model, animatable, partialTick, type, poseStack, bufferSource, buffer, packedLight, packedOverlay, red, green, blue, alpha);
@@ -50,9 +45,6 @@ public class AlloRender extends ExtendedGeoEntityRenderer<Allo> {
     @Nullable
     @Override
     protected ResourceLocation getTextureForBone(String boneName, Allo animatable) {
-        if(boneName.equals("Banner")) {
-            return AlloModel.white_banner;
-        }
         return null;
     }
 

@@ -21,6 +21,7 @@ public class DDPTTags {
 
         public static final TagKey<Item> MEATS = forgeTag("meats");
         public static final TagKey<Item> VEGETABLES = forgeTag("vegetables");
+        public static final TagKey<Item> FISH = forgeTag("fish");
 
         public static final TagKey<Item> BONES = forgeTag("bones");
         public static final TagKey<Item> DOUGH = forgeTag("dough");

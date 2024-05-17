@@ -27,6 +27,14 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.DILO_SPAWN_EGG.get());
         simpleItem(DDPTItems.AMPELOTROPHY.get());
         simpleItem(DDPTItems.AMPELO_SPAWN_EGG.get());
+        simpleItem(DDPTItems.YUTYTROPHY.get());
+        simpleItem(DDPTItems.YUTY_SPAWN_EGG.get());
+        simpleItem(DDPTItems.CRYOTROPHY.get());
+        simpleItem(DDPTItems.CRYO_SPAWN_EGG.get());
+        simpleItem(DDPTItems.PACHYRTROPHY.get());
+        simpleItem(DDPTItems.PACHYR_SPAWN_EGG.get());
+        simpleItem(DDPTItems.AUSTRALOTROPHY.get());
+        simpleItem(DDPTItems.AUSTRALO_SPAWN_EGG.get());
 
         simpleItem(DDPTItems.DINO_NUGGET_1.get());
         simpleItem(DDPTItems.DINO_NUGGET_2.get());
@@ -73,6 +81,10 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.AVA_EGG.get());
         simpleItem(DDPTItems.GRYPO_EGG.get());
         simpleItem(DDPTItems.AMPELO_EGG.get());
+        simpleItem(DDPTItems.YUTY_EGG.get());
+        simpleItem(DDPTItems.PACHYR_EGG.get());
+        simpleItem(DDPTItems.CRYO_EGG.get());
+        simpleItem(DDPTItems.AUSTRALO_EGG.get());
 
         handheldItem(DDPTItems.CHISEL.get());
         handheldItem(DDPTItems.BRUSH.get());

@@ -84,6 +84,33 @@ public class Mahakala extends ShoulderRidingEntity implements IAnimatable {
                 ;
     }
 
+    public static final Predicate<LivingEntity> PREY_SELECTOR = (p_30437_) -> {
+        EntityType<?> entitytype = p_30437_.getType();
+        return
+                entitytype == EntityTypes.ARCHAE_ENTITY.get()
+                        || entitytype == EntityTypes.AVA_ENTITY.get()
+                        || entitytype == EntityTypes.ALLO_ENTITY.get()
+                        || entitytype == EntityTypes.CERATO_ENTITY.get()
+                        || entitytype == EntityTypes.ANDAL_ENTITY.get()
+                        || entitytype == EntityTypes.GRYPO_ENTITY.get()
+                        || entitytype == EntityTypes.AMARGA_ENTITY.get()
+                        || entitytype == EntityTypes.AMPELO_ENTITY.get()
+                        || entitytype == EntityType.PLAYER
+                        || entitytype == EntityType.CAT
+                        || entitytype == EntityType.WOLF
+                        || entitytype == EntityType.HORSE
+                        || entitytype == EntityType.MULE
+                        || entitytype == EntityType.DONKEY
+                        || entitytype == EntityType.SHEEP
+                        || entitytype == EntityType.COW
+                        || entitytype == EntityType.CHICKEN
+                        || entitytype == EntityType.PIG
+                ;
+    };
+    @Override
+    public float getStepHeight() {
+        return 1.6f;
+    }
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));

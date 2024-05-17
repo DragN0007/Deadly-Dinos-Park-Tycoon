@@ -24,9 +24,6 @@ public class AlloModel extends AnimatedGeoModel<Allo> {
     public static final ResourceLocation model = new ResourceLocation(DeadlyDinosPT.MODID, "geo/allo.geo.json");
     public static final ResourceLocation animation = new ResourceLocation(DeadlyDinosPT.MODID, "animations/allo.animation.json");
 
-    public static final ResourceLocation white_banner = new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/banner/dino_banner_white.png");
-    public static final ResourceLocation black_banner = new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/banner/dino_banner_black.png");
-
 
     public static final ResourceLocation baby_model = new ResourceLocation(DeadlyDinosPT.MODID, "geo/baby_allo.geo.json");
     @Override

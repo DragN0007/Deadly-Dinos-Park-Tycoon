@@ -49,8 +49,14 @@ public class DinoExtremeMeleeGoal extends MeleeAttackGoal {
     }
 
 
+    private final Animal entity;
     public DinoExtremeMeleeGoal(Animal entity, double speedModifier, boolean followingTargetEvenIfNotSeen) {
         super(entity, speedModifier, followingTargetEvenIfNotSeen);
+        this.entity = entity;
+    }
+
+    public boolean canUse() {
+        return !entity.isBaby();
     }
 
 

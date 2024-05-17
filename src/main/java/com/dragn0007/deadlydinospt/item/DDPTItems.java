@@ -7,7 +7,8 @@ import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -62,6 +63,12 @@ public class DDPTItems {
             () -> new ForgeSpawnEggItem(EntityTypes.ALLO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> DILO_SPAWN_EGG = ITEMS.register("dilo_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityTypes.DILO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> YUTY_SPAWN_EGG = ITEMS.register("yuty_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.YUTY_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> CRYO_SPAWN_EGG = ITEMS.register("cryo_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.CRYO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> AUSTRALO_SPAWN_EGG = ITEMS.register("australo_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.AUSTRALO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
 
 
     //HERBIVORE SPAWN EGGS
@@ -91,6 +98,8 @@ public class DDPTItems {
             () -> new ForgeSpawnEggItem(EntityTypes.GRYPO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> AMPELO_SPAWN_EGG = ITEMS.register("ampelo_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityTypes.AMPELO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> PACHYR_SPAWN_EGG = ITEMS.register("pachyr_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.PACHYR_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
 
 
     //CARNIVORE EGGS
@@ -134,6 +143,12 @@ public class DDPTItems {
             () -> new DinoEggItem(EntityTypes.ALLO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> DILO_EGG = ITEMS.register("dilo_egg",
             () -> new DinoEggItem(EntityTypes.DILO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> YUTY_EGG = ITEMS.register("yuty_egg",
+            () -> new DinoEggItem(EntityTypes.YUTY_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> CRYO_EGG = ITEMS.register("cryo_egg",
+            () -> new DinoEggItem(EntityTypes.CRYO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> AUSTRALO_EGG = ITEMS.register("australo_egg",
+            () -> new DinoEggItem(EntityTypes.AUSTRALO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
 
 
     //HERBIVORE EGGS
@@ -163,6 +178,8 @@ public class DDPTItems {
             () -> new DinoEggItem(EntityTypes.GRYPO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
     public static final RegistryObject<Item> AMPELO_EGG = ITEMS.register("ampelo_egg",
             () -> new DinoEggItem(EntityTypes.AMPELO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> PACHYR_EGG = ITEMS.register("pachyr_egg",
+            () -> new DinoEggItem(EntityTypes.PACHYR_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
 
 
 
@@ -192,7 +209,7 @@ public class DDPTItems {
     public static final RegistryObject<Item> MRE = ITEMS.register("mre",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).build()).tab(DDPTItemGroup.FOOD_GROUP)));
 //    public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
-//            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(1).build()).tab(DDDItemGroup.FOOD_GROUP)));
+//            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(1).build()).tab(DDPTItemGroup.FOOD_GROUP)));
     public static final RegistryObject<Item> SODA = ITEMS.register("soda",
         () -> new SodaItem(
                 new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 1, true, false),
@@ -452,7 +469,7 @@ public class DDPTItems {
 
     //TODO;
 //    public static final RegistryObject<Item> ARCHAE_HARNESS = ITEMS.register("archae_harness",
-//            () -> new Item(new Item.Properties().tab(DDDItemGroup.DDD_GROUP)));
+//            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
     //TROPHIES
     public static final RegistryObject<TrophyItem> ACROTROPHY = ITEMS.register("acrotrophy",
@@ -484,37 +501,44 @@ public class DDPTItems {
                     new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
 
             ));
+    public static final RegistryObject<TrophyItem> AUSTRALOTROPHY = ITEMS.register("australotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
+
+            ));
     public static final RegistryObject<TrophyItem> AUSTROTROPHY = ITEMS.register("austrotrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
                     new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
 
             ));
-
     public static final RegistryObject<TrophyItem> CARCHARTROPHY = ITEMS.register("carchartrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
             ));
-
     public static final RegistryObject<TrophyItem> CARNOTROPHY = ITEMS.register("carnotrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
             ));
-
     public static final RegistryObject<TrophyItem> CERATOTROPHY = ITEMS.register("ceratotrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
                     new MobEffectInstance(MobEffects.REGENERATION, 2880, 3, true, false)
             ));
-
     public static final RegistryObject<TrophyItem> COMPYTROPHY = ITEMS.register("compytrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.SATURATION, 2880, 5,true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
             ));
 
+    public static final RegistryObject<TrophyItem> CRYOTROPHY = ITEMS.register("cryotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
     public static final RegistryObject<TrophyItem> DEINONTROPHY = ITEMS.register("deinontrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 5,true, false),
@@ -567,11 +591,22 @@ public class DDPTItems {
                     new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 3, true, false)
             ));
+    public static final RegistryObject<TrophyItem> YUTYTROPHY = ITEMS.register("yutytrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+
 
     public static final RegistryObject<TrophyItem> AMARGATROPHY = ITEMS.register("amargatrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> AMPELOTROPHY = ITEMS.register("ampelotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
             ));
     public static final RegistryObject<TrophyItem> ANKYTROPHY = ITEMS.register("ankytrophy",
             () -> new TrophyItem(
@@ -591,6 +626,16 @@ public class DDPTItems {
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> GRYPOTROPHY = ITEMS.register("grypotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.SATURATION, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> PACHYRTROPHY = ITEMS.register("pachyrtrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
             ));
     public static final RegistryObject<TrophyItem> PARATROPHY = ITEMS.register("paratrophy",
             () -> new TrophyItem(
@@ -617,16 +662,6 @@ public class DDPTItems {
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> GRYPOTROPHY = ITEMS.register("grypotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.SATURATION, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.HEAL, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> AMPELOTROPHY = ITEMS.register("ampelotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
             ));
 
 

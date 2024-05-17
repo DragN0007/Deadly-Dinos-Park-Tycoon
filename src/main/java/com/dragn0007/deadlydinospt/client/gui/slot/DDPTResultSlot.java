@@ -1,4 +1,4 @@
-package com.dragn0007.deadlydinospt.gui.slot;
+package com.dragn0007.deadlydinospt.client.gui.slot;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

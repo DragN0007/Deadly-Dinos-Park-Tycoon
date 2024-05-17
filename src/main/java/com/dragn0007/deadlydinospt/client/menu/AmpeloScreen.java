@@ -1,4 +1,4 @@
-package com.dragn0007.deadlydinospt.entity.menu;
+package com.dragn0007.deadlydinospt.client.menu;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -9,7 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class AmargaScreen extends AbstractContainerScreen<AmargaMenu> {
+public class AmpeloScreen extends AbstractContainerScreen<AmpeloMenu> {
 
     private static final ResourceLocation SADDLED = new ResourceLocation(DeadlyDinosPT.MODID, "textures/gui/grypo_gui.png");
     private static final ResourceLocation CHESTED = new ResourceLocation(DeadlyDinosPT.MODID, "textures/gui/grypo_chested_gui.png");
@@ -17,9 +17,9 @@ public class AmargaScreen extends AbstractContainerScreen<AmargaMenu> {
 
     private final ResourceLocation texture;
 
-    public AmargaScreen(AmargaMenu amargaMenu, Inventory inventory, Component component) {
-        super(amargaMenu, inventory, component);
-        this.texture = amargaMenu.amarga.isChested() ? CHESTED : SADDLED;
+    public AmpeloScreen(AmpeloMenu ampeloMenu, Inventory inventory, Component component) {
+        super(ampeloMenu, inventory, component);
+        this.texture = ampeloMenu.ampelo.isChested() ? CHESTED : SADDLED;
         this.imageWidth = 175;
         this.imageHeight = 221;
         this.inventoryLabelY = this.imageHeight - 94;

@@ -4,7 +4,7 @@ import com.dragn0007.deadlydinospt.client.model.AmpeloModel;
 import com.dragn0007.deadlydinospt.entity.Chestable;
 import com.dragn0007.deadlydinospt.entity.ai.DinoExtremeMeleeGoal;
 import com.dragn0007.deadlydinospt.entity.ai.TamableDestroyCropsGoal;
-import com.dragn0007.deadlydinospt.entity.menu.AmpeloMenu;
+import com.dragn0007.deadlydinospt.client.menu.AmpeloMenu;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;

@@ -1,4 +1,4 @@
-package com.dragn0007.deadlydinospt.entity.menu;
+package com.dragn0007.deadlydinospt.client.menu;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.mojang.blaze3d.systems.RenderSystem;

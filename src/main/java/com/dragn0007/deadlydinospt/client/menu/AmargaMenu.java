@@ -1,7 +1,7 @@
-package com.dragn0007.deadlydinospt.entity.menu;
+package com.dragn0007.deadlydinospt.client.menu;
 
 import com.dragn0007.deadlydinospt.entity.herbi.Amarga;
-import com.dragn0007.deadlydinospt.gui.DDPTMenuTypes;
+import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;

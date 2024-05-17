@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/cannedstew"
+    "layer0": "deadlydinospt:item/cannedstew"
   }
 }

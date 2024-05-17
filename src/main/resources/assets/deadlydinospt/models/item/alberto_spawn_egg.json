@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/alberto_spawn_egg"
+    "layer0": "deadlydinospt:item/alberto_spawn_egg"
   }
 }

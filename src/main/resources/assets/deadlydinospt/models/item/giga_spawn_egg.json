@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/giga_spawn_egg"
+    "layer0": "deadlydinospt:item/giga_spawn_egg"
   }
 }

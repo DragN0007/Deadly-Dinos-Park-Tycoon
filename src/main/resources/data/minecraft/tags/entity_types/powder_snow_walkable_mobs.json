@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "deadlydinos:yuty_entity",
-    "deadlydinos:cryo_entity"
+    "deadlydinospt:yuty_entity",
+    "deadlydinospt:cryo_entity"
   ]
 }

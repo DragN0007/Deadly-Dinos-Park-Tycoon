@@ -1,6 +1,9 @@
 package com.dragn0007.deadlydinospt.entity.herbi;
 
+
 import com.dragn0007.deadlydinospt.client.menu.ParaMenu;
+import com.dragn0007.deadlydinospt.client.menu.ParaMenu;
+import com.dragn0007.deadlydinospt.client.model.ParaModel;
 import com.dragn0007.deadlydinospt.client.model.ParaModel;
 import com.dragn0007.deadlydinospt.entity.Chestable;
 import com.dragn0007.deadlydinospt.entity.ai.DestroyWaterPlantsGoal;
@@ -81,8 +84,8 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
 
     }
 
-    private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Amarga.class, EntityDataSerializers.BOOLEAN);
-    private static final EntityDataAccessor<Boolean> CHESTED = SynchedEntityData.defineId(Amarga.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Para.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Boolean> CHESTED = SynchedEntityData.defineId(Para.class, EntityDataSerializers.BOOLEAN);
     private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.VEGETABLES);
 
     public SimpleContainer inventory;
@@ -108,7 +111,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
         this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
         this.goalSelector.addGoal(2, new DestroyWaterPlantsGoal(this));
-        this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 1, true));
+        this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 1.6, true));
         this.goalSelector.addGoal(4, new FloatGoal(this));
 
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, FOOD_ITEMS, false));
@@ -119,6 +122,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
     }
+
 
 
     //Animation
@@ -162,7 +166,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         return factory;
     }
 
-
     @Override
     public boolean isFood(ItemStack itemStack) {
         return FOOD_ITEMS.test(itemStack);
@@ -179,7 +182,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return super.hurt(damageSource, amount);
     }
-
 
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
@@ -239,6 +241,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return InteractionResult.sidedSuccess(this.level.isClientSide);
     }
+
 
     //Generates variant textures
 
@@ -326,16 +329,16 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
 
     @Override
     public boolean canMate(Animal animal) {
-        if (animal == this || !(animal instanceof Amarga)) {
+        if (animal == this || !(animal instanceof Para)) {
             return false;
         } else {
-            return this.canBeParent() && ((Amarga)animal).canBeParent();
+            return this.canBeParent() && ((Para)animal).canBeParent();
         }
     }
 
     @Override
-    public Amarga getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
-        return EntityTypes.AMARGA_ENTITY.get().create(level);
+    public Para getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.PARA_ENTITY.get().create(level);
     }
 
 
@@ -346,6 +349,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         this.entityData.define(SADDLED, false);
         this.entityData.define(CHESTED, false);
     }
+
 
 
     @Override

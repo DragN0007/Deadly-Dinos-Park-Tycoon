@@ -16,7 +16,6 @@ import software.bernie.geckolib3.core.processor.IBone;
 import software.bernie.geckolib3.geo.render.built.GeoBone;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.renderers.geo.ExtendedGeoEntityRenderer;
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
 public class ParaRender extends ExtendedGeoEntityRenderer<Para> {
     public ParaRender(EntityRendererProvider.Context renderManager) {

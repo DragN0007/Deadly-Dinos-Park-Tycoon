@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/albertosaurus_fossil_skull"
+    "layer0": "deadlydinospt:item/albertosaurus_fossil_skull"
   }
 }

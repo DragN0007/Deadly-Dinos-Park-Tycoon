@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "deadlydinospt:items/chisel"
+    "layer0": "deadlydinospt:item/chisel"
   }
 }

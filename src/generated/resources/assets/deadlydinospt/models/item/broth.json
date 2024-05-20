@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/broth"
+    "layer0": "deadlydinospt:item/broth"
   }
 }

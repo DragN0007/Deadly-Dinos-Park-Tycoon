@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/deinon_egg"
+    "layer0": "deadlydinospt:item/deinon_egg"
   }
 }

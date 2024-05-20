@@ -106,7 +106,6 @@ public class Allo extends TamableAnimal implements ContainerListener, Saddleable
         return
                 entitytype == EntityTypes.ARCHAE_ENTITY.get()
                         || entitytype == EntityTypes.AVA_ENTITY.get()
-                        || entitytype == EntityTypes.ALLO_ENTITY.get()
                         || entitytype == EntityTypes.CERATO_ENTITY.get()
                         || entitytype == EntityTypes.ANDAL_ENTITY.get()
                         || entitytype == EntityTypes.GRYPO_ENTITY.get()

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/allosaurus_fossil_tail"
+    "layer0": "deadlydinospt:item/allosaurus_fossil_tail"
   }
 }

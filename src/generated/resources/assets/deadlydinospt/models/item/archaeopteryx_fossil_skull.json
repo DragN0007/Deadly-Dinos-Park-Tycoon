@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/archaeopteryx_fossil_skull"
+    "layer0": "deadlydinospt:item/archaeopteryx_fossil_skull"
   }
 }

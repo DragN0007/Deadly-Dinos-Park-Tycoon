@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/andalgalornis_fossil_ribs"
+    "layer0": "deadlydinospt:item/andalgalornis_fossil_ribs"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/andalgalornis_tooth"
+    "layer0": "deadlydinospt:item/andalgalornis_tooth"
   }
 }

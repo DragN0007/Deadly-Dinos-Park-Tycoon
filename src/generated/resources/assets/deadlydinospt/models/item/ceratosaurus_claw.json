@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/ceratosaurus_claw"
+    "layer0": "deadlydinospt:item/ceratosaurus_claw"
   }
 }

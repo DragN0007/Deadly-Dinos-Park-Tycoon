@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/dino_nugget_2"
+    "layer0": "deadlydinospt:item/dino_nugget_2"
   }
 }

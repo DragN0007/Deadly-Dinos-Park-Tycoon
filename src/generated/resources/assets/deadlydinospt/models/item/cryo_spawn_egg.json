@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/cryo_spawn_egg"
+    "layer0": "deadlydinospt:item/cryo_spawn_egg"
   }
 }

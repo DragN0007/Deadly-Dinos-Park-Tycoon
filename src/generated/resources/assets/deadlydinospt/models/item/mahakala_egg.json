@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:items/mahakala_egg"
+    "layer0": "deadlydinospt:item/mahakala_egg"
   }
 }

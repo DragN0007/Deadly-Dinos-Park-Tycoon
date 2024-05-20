@@ -50,6 +50,11 @@ public class DDPTConfigFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ACROCANTHOSAURUS_FOSSIL_ORE = FeatureUtils.register("acrocanthosaurus_fossil_ore",
             Feature.ORE, new OreConfiguration(ACROCANTHOSAURUS_FOSSIL, 3));
 
+    public static final List<OreConfiguration.TargetBlockState> AUSTRALOVENATOR_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AUSTRALOVENATOR_FOSSIL_ORE = FeatureUtils.register("australovenator_fossil_ore",
+            Feature.ORE, new OreConfiguration(AUSTRALOVENATOR_FOSSIL, 3));
+
 
 
     //Late Jurassic (Deepslate)

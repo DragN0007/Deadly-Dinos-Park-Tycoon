@@ -181,6 +181,25 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.ARCHAEOPTERYX_RAPTOR_CLAW.get());
 
 
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_SKULL.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_RIBS.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_CLAW.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_TAIL.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_LEG.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_FOSSIL_RAPTOR_CLAW.get());
+
+        simpleItem(DDPTItems.AUSTRALOVENATOR_TOOTH.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_SKULL.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_RIBS.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_CLAW.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_TAIL.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_SPINE.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_LEG.get());
+        simpleItem(DDPTItems.AUSTRALOVENATOR_RAPTOR_CLAW.get());
+
+
         simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_TOOTH.get());
         simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_SKULL.get());
         simpleItem(DDPTItems.CERATOSAURUS_FOSSIL_RIBS.get());

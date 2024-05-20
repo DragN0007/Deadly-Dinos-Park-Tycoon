@@ -64,6 +64,16 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
 
 
 
+        simpleBlock(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll("australovenator_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));
+        simpleBlockItem(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll("chiseled_australovenator_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_carni_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_AUSTRALOVENATOR_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_carni_2")));
+
+
+
         simpleBlock(DDPTBlocks.CERATOSAURUS_FOSSIL.get(), models().cubeAll("ceratosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));
         simpleBlockItem(DDPTBlocks.CERATOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CERATOSAURUS_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));

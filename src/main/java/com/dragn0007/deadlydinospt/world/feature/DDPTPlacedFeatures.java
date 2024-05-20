@@ -28,6 +28,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.ACROCANTHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
+    public static final Holder<PlacedFeature> AUSTRALOVENATOR_FOSSIL = PlacementUtils.register("australovenator_fossil_placed",
+            DDPTConfigFeatures.AUSTRALOVENATOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
 
     //Late Jurassic
     public static final Holder<PlacedFeature> ALLOSAURUS_FOSSIL = PlacementUtils.register("allosaurus_fossil_placed",

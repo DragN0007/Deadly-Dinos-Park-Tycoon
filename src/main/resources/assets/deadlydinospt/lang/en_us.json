@@ -380,6 +380,28 @@
   "item.deadlydinospt.archaeopteryx_raptor_claw": "Archaeopteryx Talon",
 
 
+  "block.deadlydinospt.australovenator_fossil": "Australovenator Fossil",
+  "block.deadlydinospt.chiseled_australovenator_fossil": "Chiseled Australovenator Fossil",
+
+  "item.deadlydinospt.australovenator_fossil_tooth": "Australovenator Tooth Fossil",
+  "item.deadlydinospt.australovenator_fossil_skull": "Australovenator Skull Fossil",
+  "item.deadlydinospt.australovenator_fossil_ribs": "Australovenator Ribs Fossil",
+  "item.deadlydinospt.australovenator_fossil_claw": "Australovenator Claw Fossil",
+  "item.deadlydinospt.australovenator_fossil_tail": "Australovenator Tail Fossil",
+  "item.deadlydinospt.australovenator_fossil_spine": "Australovenator Spine Fossil",
+  "item.deadlydinospt.australovenator_fossil_leg": "Australovenator Leg Fossil",
+  "item.deadlydinospt.australovenator_fossil_raptor_claw": "Australovenator Talon Fossil",
+
+  "item.deadlydinospt.australovenator_tooth": "Australovenator Tooth",
+  "item.deadlydinospt.australovenator_skull": "Australovenator Skull",
+  "item.deadlydinospt.australovenator_ribs": "Australovenator Ribs",
+  "item.deadlydinospt.australovenator_claw": "Australovenator Claw",
+  "item.deadlydinospt.australovenator_tail": "Australovenator Tail",
+  "item.deadlydinospt.australovenator_spine": "Australovenator Spine",
+  "item.deadlydinospt.australovenator_leg": "Australovenator Leg",
+  "item.deadlydinospt.australovenator_raptor_claw": "Australovenator Talon",
+
+
   "block.deadlydinospt.ceratosaurus_fossil": "Ceratosaurus Fossil",
   "block.deadlydinospt.chiseled_ceratosaurus_fossil": "Chiseled Ceratosaurus Fossil",
 

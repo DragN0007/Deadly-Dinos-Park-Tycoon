@@ -18,6 +18,7 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.ALLOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.ANDALGALORNIS_FOSSIL);
         base.add(DDPTPlacedFeatures.ARCHAEOPTERYX_FOSSIL);
+        base.add(DDPTPlacedFeatures.AUSTRALOVENATOR_FOSSIL);
         base.add(DDPTPlacedFeatures.CERATOSAURUS_FOSSIL);
 
     }

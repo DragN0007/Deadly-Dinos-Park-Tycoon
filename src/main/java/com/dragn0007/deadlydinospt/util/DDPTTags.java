@@ -55,6 +55,9 @@ public class DDPTTags {
         public static final TagKey<Item> ARCHAEOPTERYX_BONES = tag("archaeopteryx_bones");
         public static final TagKey<Item> ARCHAEOPTERYX_FOSSILS = tag("archaeopteryx_fossils");
 
+        public static final TagKey<Item> AUSTRALOVENATOR_BONES = tag("australovenator_bones");
+        public static final TagKey<Item> AUSTRALOVENATOR_FOSSILS = tag("australovenator_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));

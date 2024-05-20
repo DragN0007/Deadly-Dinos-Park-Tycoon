@@ -62,7 +62,7 @@ public class Theri extends TamableAnimal implements IAnimatable {
 
     private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
-    public Theri(EntityType<? extends Theri> entityType, Level level) {
+    public Theri(EntityType<? extends TamableAnimal> entityType, Level level) {
         super(entityType, level);
         this.noCulling = true;
     }

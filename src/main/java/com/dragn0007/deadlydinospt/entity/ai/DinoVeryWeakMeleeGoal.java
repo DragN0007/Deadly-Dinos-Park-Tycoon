@@ -52,10 +52,6 @@ public class DinoVeryWeakMeleeGoal extends MeleeAttackGoal {
         this.entity = entity;
     }
 
-    public boolean canUse() {
-        return !entity.isBaby();
-    }
-
 
     @Override
     protected void checkAndPerformAttack(LivingEntity entity, double distance) {

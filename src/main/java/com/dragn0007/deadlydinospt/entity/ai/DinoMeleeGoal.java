@@ -47,14 +47,9 @@ public class DinoMeleeGoal extends MeleeAttackGoal {
                 ;
     }
 
-    private final Animal entity;
+
     public DinoMeleeGoal(Animal entity, double speedModifier, boolean followingTargetEvenIfNotSeen) {
         super(entity, speedModifier, followingTargetEvenIfNotSeen);
-        this.entity = entity;
-    }
-
-    public boolean canUse() {
-        return !entity.isBaby();
     }
 
     @Override

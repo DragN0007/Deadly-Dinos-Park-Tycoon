@@ -1,11 +1,14 @@
 package com.dragn0007.deadlydinospt.entity.herbi;
 
-
+import com.dragn0007.deadlydinospt.client.menu.AmpeloMenu;
 import com.dragn0007.deadlydinospt.client.menu.ParaMenu;
+import com.dragn0007.deadlydinospt.client.model.AmpeloModel;
 import com.dragn0007.deadlydinospt.client.model.ParaModel;
 import com.dragn0007.deadlydinospt.entity.Chestable;
-import com.dragn0007.deadlydinospt.entity.ai.DestroyWaterPlantsGoal;
+import com.dragn0007.deadlydinospt.entity.ai.DinoExtremeMeleeGoal;
 import com.dragn0007.deadlydinospt.entity.ai.DinoMeleeGoal;
+import com.dragn0007.deadlydinospt.entity.ai.TamableDestroyCropsGoal;
+import com.dragn0007.deadlydinospt.entity.ai.TamableDestroyWaterPlantsGoal;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
@@ -66,7 +69,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
 
     private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
-    public Para(EntityType<? extends Para> entityType, Level level) {
+    public Para(EntityType<? extends TamableAnimal> entityType, Level level) {
         super(entityType, level);
         this.noCulling = true;
         this.updateInventory();
@@ -76,11 +79,12 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 120)
                 .add(Attributes.ATTACK_DAMAGE, 14)
-                .add(Attributes.MOVEMENT_SPEED, 0.21)
+                .add(Attributes.MOVEMENT_SPEED, 0.27)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 1)
                 ;
 
     }
+
 
     private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Para.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> CHESTED = SynchedEntityData.defineId(Para.class, EntityDataSerializers.BOOLEAN);
@@ -89,11 +93,9 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
     public SimpleContainer inventory;
     private LazyOptional<?> itemHandler = null;
 
-
     protected SoundEvent getAmbientSound() {
         return SoundEvents.HORSE_BREATHE;
     }
-
     @Nullable
     protected SoundEvent getHurtSound(DamageSource p_184601_1_) {
         return SoundEvents.POLAR_BEAR_WARNING;
@@ -108,17 +110,18 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
         this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
-        this.goalSelector.addGoal(2, new DestroyWaterPlantsGoal(this));
-        this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 1.6, true));
+        this.goalSelector.addGoal(2, new TamableDestroyCropsGoal(this, this));
         this.goalSelector.addGoal(4, new FloatGoal(this));
 
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, FOOD_ITEMS, false));
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.0D));
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.25D));
         this.goalSelector.addGoal(0, new SitWhenOrderedToGoal(this));
-        this.goalSelector.addGoal(2, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F, false));
+        this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F, false));
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
+
+        this.goalSelector.addGoal(2, new DinoMeleeGoal(this, 1.0, true));
     }
 
 
@@ -163,7 +166,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         return factory;
     }
 
-
     @Override
     public boolean isFood(ItemStack itemStack) {
         return FOOD_ITEMS.test(itemStack);
@@ -180,7 +182,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return super.hurt(damageSource, amount);
     }
-
 
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
@@ -240,6 +241,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return InteractionResult.sidedSuccess(this.level.isClientSide);
     }
+
 
     //Generates variant textures
 

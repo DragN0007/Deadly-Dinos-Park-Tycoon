@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.client.menu;
 
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
-import com.dragn0007.deadlydinospt.entity.herbi.Amarga;
+import com.dragn0007.deadlydinospt.entity.herbi.Para;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -12,39 +12,39 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.network.IContainerFactory;
 
-public class AmargaMenu extends AbstractContainerMenu {
+public class ParaMenu extends AbstractContainerMenu {
 
     public Container container;
-    public Amarga amarga;
+    public Para para;
 
-    public AmargaMenu(int containerId, Inventory inventory, Container container, Amarga amarga) {
-        super(DDPTMenuTypes.AMARGA_MENU.get(), containerId);
+    public ParaMenu(int containerId, Inventory inventory, Container container, Para para) {
+        super(DDPTMenuTypes.PARA_MENU.get(), containerId);
         this.container = container;
-        this.amarga = amarga;
+        this.para = para;
 
-        int amargaSlots = 0;
-        this.addSlot(new Slot(this.container, amargaSlots++, 15, 26) {
+        int paraSlots = 0;
+        this.addSlot(new Slot(this.container, paraSlots++, 15, 26) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(Items.SADDLE) && !this.hasItem() && amarga.isSaddleable();
+                return itemStack.is(Items.SADDLE) && !this.hasItem() && para.isSaddleable();
             }
 
             @Override
             public boolean isActive() {
-                return amarga.isSaddleable();
+                return para.isSaddleable();
             }
         });
 
-        if(this.amarga.isChested()) {
+        if(this.para.isChested()) {
             for(int y = 0; y < 2; y++) {
                 for(int x = 0; x < 7; x++) {
-                    this.addSlot(new Slot(this.container, amargaSlots++, 44 + x * 18, 18 + y * 18));
+                    this.addSlot(new Slot(this.container, paraSlots++, 44 + x * 18, 18 + y * 18));
                 }
             }
 
             for(int y = 0; y < 4; y++) {
                 for(int x = 0; x < 9; x++) {
-                    this.addSlot(new Slot(this.container, amargaSlots++, 8 + x * 18, 54 + y * 18));
+                    this.addSlot(new Slot(this.container, paraSlots++, 8 + x * 18, 54 + y * 18));
                 }
             }
         }
@@ -63,7 +63,7 @@ public class AmargaMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return this.amarga.isAlive() && this.amarga.distanceTo(player) <= 8f;
+        return this.para.isAlive() && this.para.distanceTo(player) <= 8f;
     }
 
     @Override
@@ -91,11 +91,11 @@ public class AmargaMenu extends AbstractContainerMenu {
         return itemStack;
     }
 
-    public static IContainerFactory<AmargaMenu> create() {
+    public static IContainerFactory<ParaMenu> create() {
         return (windowId, inv, data) -> {
             int containerSize = data.readInt();
-            Amarga amarga1 = (Amarga) inv.player.level.getEntity(data.readInt());
-            return new AmargaMenu(windowId, inv, new SimpleContainer(containerSize), amarga1);
+            Para para1 = (Para) inv.player.level.getEntity(data.readInt());
+            return new ParaMenu(windowId, inv, new SimpleContainer(containerSize), para1);
         };
     }
 }

@@ -10,7 +10,11 @@ public class ParaModel extends AnimatedGeoModel<Para> {
     public enum Variant {
         MALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/paramale.png")),
         FEMALE(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/parafemale.png")),
-        PERIDOT(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/paraperidot.png"));
+        PERIDOT(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/paraperidot.png")),
+        FROGGYFRIEND_1(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/parafroggy.png")), //Texture funded by FroggyFriend
+        FROGGYFRIEND_2(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/parafroggy2.png")), //Texture funded by FroggyFriend
+        FROGGYFRIEND_3(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/parafroggy3.png")), //Texture funded by FroggyFriend
+        FROGGYFRIEND_4(new ResourceLocation(DeadlyDinosPT.MODID, "textures/entity/parafroggy4.png")); //Texture funded by FroggyFriend
 
         public final ResourceLocation resourceLocation;
         Variant(ResourceLocation resourceLocation) {

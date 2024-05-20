@@ -1,7 +1,7 @@
 package com.dragn0007.deadlydinospt.client.menu;
 
-import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
+import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;

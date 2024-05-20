@@ -2,8 +2,6 @@ package com.dragn0007.deadlydinospt.entity.herbi;
 
 
 import com.dragn0007.deadlydinospt.client.menu.ParaMenu;
-import com.dragn0007.deadlydinospt.client.menu.ParaMenu;
-import com.dragn0007.deadlydinospt.client.model.ParaModel;
 import com.dragn0007.deadlydinospt.client.model.ParaModel;
 import com.dragn0007.deadlydinospt.entity.Chestable;
 import com.dragn0007.deadlydinospt.entity.ai.DestroyWaterPlantsGoal;

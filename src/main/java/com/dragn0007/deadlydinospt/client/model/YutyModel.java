@@ -2,7 +2,6 @@ package com.dragn0007.deadlydinospt.client.model;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.entity.carni.Yuty;
-import com.dragn0007.deadlydinospt.entity.herbi.Pachyr;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

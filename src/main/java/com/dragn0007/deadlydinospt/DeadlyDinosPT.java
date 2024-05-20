@@ -2,8 +2,8 @@ package com.dragn0007.deadlydinospt;
 
 import com.dragn0007.deadlydinospt.block.DDPTBlocks;
 import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
-import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import com.mojang.logging.LogUtils;

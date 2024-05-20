@@ -122,7 +122,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
     }
 
 
-
     //Animation
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
@@ -164,6 +163,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         return factory;
     }
 
+
     @Override
     public boolean isFood(ItemStack itemStack) {
         return FOOD_ITEMS.test(itemStack);
@@ -180,6 +180,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return super.hurt(damageSource, amount);
     }
+
 
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
@@ -239,7 +240,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         }
         return InteractionResult.sidedSuccess(this.level.isClientSide);
     }
-
 
     //Generates variant textures
 
@@ -347,7 +347,6 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
         this.entityData.define(SADDLED, false);
         this.entityData.define(CHESTED, false);
     }
-
 
 
     @Override

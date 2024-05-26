@@ -59,11 +59,9 @@ public class DeadlyDinosPT
     private void setup(final FMLCommonSetupEvent event)
     {
     }
-
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
     }
-
     private void processIMC(final InterModProcessEvent event)
     {
     }

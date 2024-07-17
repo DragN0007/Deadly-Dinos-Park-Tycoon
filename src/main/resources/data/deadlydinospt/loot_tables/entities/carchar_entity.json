@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniskull"
+          "name": "deadlydinospt:carcharodontosaurus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnispine"
+          "name": "deadlydinospt:carcharodontosaurus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniribs"
+          "name": "deadlydinospt:carcharodontosaurus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnitail"
+          "name": "deadlydinospt:carcharodontosaurus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniclaw"
+          "name": "deadlydinospt:carcharodontosaurus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnitooth"
+          "name": "deadlydinospt:carcharodontosaurus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnileg"
+          "name": "deadlydinospt:carcharodontosaurus_leg"
         }
       ]
     },

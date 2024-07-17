@@ -22,6 +22,22 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.ALBERTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
+    public static final Holder<PlacedFeature> AUSTRORAPTOR_FOSSIL = PlacementUtils.register("austroraptor_fossil_placed",
+            DDPTConfigFeatures.AUSTRORAPTOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> CARCHARODONTOSAURUS_FOSSIL = PlacementUtils.register("carcharodontosaurus_fossil_placed",
+            DDPTConfigFeatures.CARCHARODONTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> CARNOTAURUS_FOSSIL = PlacementUtils.register("carnotaurus_fossil_placed",
+            DDPTConfigFeatures.CARNOTAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> GIGANOTOSAURUS_FOSSIL = PlacementUtils.register("giganotosaurus_fossil_placed",
+            DDPTConfigFeatures.GIGANOTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
 
     //Early Cretaceous
     public static final Holder<PlacedFeature> ACROCANTHOSAURUS_FOSSIL = PlacementUtils.register("acrocanthosaurus_fossil_placed",
@@ -30,6 +46,14 @@ public class DDPTPlacedFeatures {
 
     public static final Holder<PlacedFeature> AUSTRALOVENATOR_FOSSIL = PlacementUtils.register("australovenator_fossil_placed",
             DDPTConfigFeatures.AUSTRALOVENATOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+    public static final Holder<PlacedFeature> DEINONYCHUS_FOSSIL = PlacementUtils.register("deinonychus_fossil_placed",
+            DDPTConfigFeatures.DEINONYCHUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+    public static final Holder<PlacedFeature> MAHAKALA_FOSSIL = PlacementUtils.register("mahakala_fossil_placed",
+            DDPTConfigFeatures.MAHAKALA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
 
@@ -45,9 +69,19 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.ARCHAEOPTERYX_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
 
+    public static final Holder<PlacedFeature> COMPSOGNATHUS_FOSSIL = PlacementUtils.register("compsognathus_fossil_placed",
+            DDPTConfigFeatures.COMPSOGNATHUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
+
 
     //Early Jurassic
+    public static final Holder<PlacedFeature> CRYOLOPHOSAURUS_FOSSIL = PlacementUtils.register("cryolophosaurus_fossil_placed",
+            DDPTConfigFeatures.CRYOLOPHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
+    public static final Holder<PlacedFeature> DILOPHOSAURUS_FOSSIL = PlacementUtils.register("dilophosaurus_fossil_placed",
+            DDPTConfigFeatures.DILOPHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.FOSSIL_VEIN_PER_CHUNK.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
 
 

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:deinonychus_tooth",
+    "deadlydinospt:deinonychus_skull",
+    "deadlydinospt:deinonychus_ribs",
+    "deadlydinospt:deinonychus_tail",
+    "deadlydinospt:deinonychus_spine",
+    "deadlydinospt:deinonychus_leg",
+    "deadlydinospt:deinonychus_claw"
+  ]
+}

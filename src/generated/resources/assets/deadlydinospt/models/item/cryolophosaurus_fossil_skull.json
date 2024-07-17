@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "deadlydinospt:item/cryolophosaurus_fossil_skull"
+  }
+}

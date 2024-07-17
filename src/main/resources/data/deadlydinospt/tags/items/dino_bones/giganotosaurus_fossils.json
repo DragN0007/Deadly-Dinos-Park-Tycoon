@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:giganotosaurus_fossil_tooth",
+    "deadlydinospt:giganotosaurus_fossil_skull",
+    "deadlydinospt:giganotosaurus_fossil_ribs",
+    "deadlydinospt:giganotosaurus_fossil_tail",
+    "deadlydinospt:giganotosaurus_fossil_spine",
+    "deadlydinospt:giganotosaurus_fossil_leg",
+    "deadlydinospt:giganotosaurus_fossil_claw"
+  ]
+}

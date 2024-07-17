@@ -19,9 +19,15 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.ANDALGALORNIS_FOSSIL);
         base.add(DDPTPlacedFeatures.ARCHAEOPTERYX_FOSSIL);
         base.add(DDPTPlacedFeatures.AUSTRALOVENATOR_FOSSIL);
+        base.add(DDPTPlacedFeatures.AUSTRORAPTOR_FOSSIL);
+        base.add(DDPTPlacedFeatures.CARCHARODONTOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.CARNOTAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.CERATOSAURUS_FOSSIL);
-
+        base.add(DDPTPlacedFeatures.COMPSOGNATHUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.CRYOLOPHOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.DEINONYCHUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.DILOPHOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.GIGANOTOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.MAHAKALA_FOSSIL);
     }
-
-
 }

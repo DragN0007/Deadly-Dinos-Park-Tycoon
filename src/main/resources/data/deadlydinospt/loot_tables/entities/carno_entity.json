@@ -24,7 +24,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarniskull"
+          "name": "deadlydinospt:carnotaurus_skull"
         }
       ]
     },
@@ -50,7 +50,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarnispine"
+          "name": "deadlydinospt:carnotaurus_spine"
         }
       ]
     },
@@ -76,7 +76,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarniribs"
+          "name": "deadlydinospt:carnotaurus_ribs"
         }
       ]
     },
@@ -102,7 +102,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarnitail"
+          "name": "deadlydinospt:carnotaurus_tail"
         }
       ]
     },
@@ -128,7 +128,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarniclaw"
+          "name": "deadlydinospt:carnotaurus_claw"
         }
       ]
     },
@@ -154,7 +154,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarnitooth"
+          "name": "deadlydinospt:carnotaurus_tooth"
         }
       ]
     },
@@ -180,7 +180,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:medcarnileg"
+          "name": "deadlydinospt:carnotaurus_leg"
         }
       ]
     },

@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniskull"
+          "name": "deadlydinos:cryolophosaurus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnispine"
+          "name": "deadlydinos:cryolophosaurus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniribs"
+          "name": "deadlydinos:cryolophosaurus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnitail"
+          "name": "deadlydinos:cryolophosaurus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarniclaw"
+          "name": "deadlydinos:cryolophosaurus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnitooth"
+          "name": "deadlydinos:cryolophosaurus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:medcarnileg"
+          "name": "deadlydinos:cryolophosaurus_leg"
         }
       ]
     },

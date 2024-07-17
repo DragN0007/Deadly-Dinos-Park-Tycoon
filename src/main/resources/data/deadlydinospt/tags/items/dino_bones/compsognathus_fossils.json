@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:compsognathus_fossil_tooth",
+    "deadlydinospt:compsognathus_fossil_skull",
+    "deadlydinospt:compsognathus_fossil_ribs",
+    "deadlydinospt:compsognathus_fossil_tail",
+    "deadlydinospt:compsognathus_fossil_spine",
+    "deadlydinospt:compsognathus_fossil_leg",
+    "deadlydinospt:compsognathus_fossil_claw"
+  ]
+}

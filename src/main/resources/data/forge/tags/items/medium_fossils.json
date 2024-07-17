@@ -26,12 +26,45 @@
     "deadlydinospt:australovenator_fossil_claw",
     "deadlydinospt:australovenator_fossil_raptor_claw",
 
+    "deadlydinospt:austroraptor_fossil_tooth",
+    "deadlydinospt:austroraptor_fossil_skull",
+    "deadlydinospt:austroraptor_fossil_ribs",
+    "deadlydinospt:austroraptor_fossil_tail",
+    "deadlydinospt:austroraptor_fossil_spine",
+    "deadlydinospt:austroraptor_fossil_leg",
+    "deadlydinospt:austroraptor_fossil_claw",
+    "deadlydinospt:austroraptor_fossil_raptor_claw",
+
+    "deadlydinospt:carnotaurus_fossil_tooth",
+    "deadlydinospt:carnotaurus_fossil_skull",
+    "deadlydinospt:carnotaurus_fossil_ribs",
+    "deadlydinospt:carnotaurus_fossil_tail",
+    "deadlydinospt:carnotaurus_fossil_spine",
+    "deadlydinospt:carnotaurus_fossil_leg",
+    "deadlydinospt:carnotaurus_fossil_claw",
+
     "deadlydinospt:ceratosaurus_fossil_tooth",
     "deadlydinospt:ceratosaurus_fossil_skull",
     "deadlydinospt:ceratosaurus_fossil_ribs",
     "deadlydinospt:ceratosaurus_fossil_tail",
     "deadlydinospt:ceratosaurus_fossil_spine",
     "deadlydinospt:ceratosaurus_fossil_leg",
-    "deadlydinospt:ceratosaurus_fossil_claw"
+    "deadlydinospt:ceratosaurus_fossil_claw",
+
+    "deadlydinospt:cryolophosaurus_fossil_tooth",
+    "deadlydinospt:cryolophosaurus_fossil_skull",
+    "deadlydinospt:cryolophosaurus_fossil_ribs",
+    "deadlydinospt:cryolophosaurus_fossil_tail",
+    "deadlydinospt:cryolophosaurus_fossil_spine",
+    "deadlydinospt:cryolophosaurus_fossil_leg",
+    "deadlydinospt:cryolophosaurus_fossil_claw",
+
+    "deadlydinospt:dilophosaurus_fossil_tooth",
+    "deadlydinospt:dilophosaurus_fossil_skull",
+    "deadlydinospt:dilophosaurus_fossil_ribs",
+    "deadlydinospt:dilophosaurus_fossil_tail",
+    "deadlydinospt:dilophosaurus_fossil_spine",
+    "deadlydinospt:dilophosaurus_fossil_leg",
+    "deadlydinospt:dilophosaurus_fossil_claw"
   ]
 }

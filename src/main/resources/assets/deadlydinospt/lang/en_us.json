@@ -402,6 +402,68 @@
   "item.deadlydinospt.australovenator_raptor_claw": "Australovenator Talon",
 
 
+  "block.deadlydinospt.austroraptor_fossil": "Austroraptor Fossil",
+  "block.deadlydinospt.chiseled_austroraptor_fossil": "Chiseled Austroraptor Fossil",
+
+  "item.deadlydinospt.austroraptor_fossil_tooth": "Austroraptor Tooth Fossil",
+  "item.deadlydinospt.austroraptor_fossil_skull": "Austroraptor Skull Fossil",
+  "item.deadlydinospt.austroraptor_fossil_ribs": "Austroraptor Ribs Fossil",
+  "item.deadlydinospt.austroraptor_fossil_claw": "Austroraptor Claw Fossil",
+  "item.deadlydinospt.austroraptor_fossil_tail": "Austroraptor Tail Fossil",
+  "item.deadlydinospt.austroraptor_fossil_spine": "Austroraptor Spine Fossil",
+  "item.deadlydinospt.austroraptor_fossil_leg": "Austroraptor Leg Fossil",
+  "item.deadlydinospt.austroraptor_fossil_raptor_claw": "Austroraptor Talon Fossil",
+
+  "item.deadlydinospt.austroraptor_tooth": "Austroraptor Tooth",
+  "item.deadlydinospt.austroraptor_skull": "Austroraptor Skull",
+  "item.deadlydinospt.austroraptor_ribs": "Austroraptor Ribs",
+  "item.deadlydinospt.austroraptor_claw": "Austroraptor Claw",
+  "item.deadlydinospt.austroraptor_tail": "Austroraptor Tail",
+  "item.deadlydinospt.austroraptor_spine": "Austroraptor Spine",
+  "item.deadlydinospt.austroraptor_leg": "Austroraptor Leg",
+  "item.deadlydinospt.austroraptor_raptor_claw": "Austroraptor Talon",
+
+
+  "block.deadlydinospt.carcharodontosaurus_fossil": "Carcharodontosaurus Fossil",
+  "block.deadlydinospt.chiseled_carcharodontosaurus_fossil": "Chiseled Carcharodontosaurus Fossil",
+
+  "item.deadlydinospt.carcharodontosaurus_fossil_tooth": "Carcharodontosaurus Tooth Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_skull": "Carcharodontosaurus Skull Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_ribs": "Carcharodontosaurus Ribs Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_claw": "Carcharodontosaurus Claw Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_tail": "Carcharodontosaurus Tail Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_spine": "Carcharodontosaurus Spine Fossil",
+  "item.deadlydinospt.carcharodontosaurus_fossil_leg": "Carcharodontosaurus Leg Fossil",
+
+  "item.deadlydinospt.carcharodontosaurus_tooth": "Carcharodontosaurus Tooth",
+  "item.deadlydinospt.carcharodontosaurus_skull": "Carcharodontosaurus Skull",
+  "item.deadlydinospt.carcharodontosaurus_ribs": "Carcharodontosaurus Ribs",
+  "item.deadlydinospt.carcharodontosaurus_claw": "Carcharodontosaurus Claw",
+  "item.deadlydinospt.carcharodontosaurus_tail": "Carcharodontosaurus Tail",
+  "item.deadlydinospt.carcharodontosaurus_spine": "Carcharodontosaurus Spine",
+  "item.deadlydinospt.carcharodontosaurus_leg": "Carcharodontosaurus Leg",
+
+
+  "block.deadlydinospt.carnotaurus_fossil": "Carnotaurus Fossil",
+  "block.deadlydinospt.chiseled_carnotaurus_fossil": "Chiseled Carnotaurus Fossil",
+
+  "item.deadlydinospt.carnotaurus_fossil_tooth": "Carnotaurus Tooth Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_skull": "Carnotaurus Skull Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_ribs": "Carnotaurus Ribs Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_claw": "Carnotaurus Claw Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_tail": "Carnotaurus Tail Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_spine": "Carnotaurus Spine Fossil",
+  "item.deadlydinospt.carnotaurus_fossil_leg": "Carnotaurus Leg Fossil",
+
+  "item.deadlydinospt.carnotaurus_tooth": "Carnotaurus Tooth",
+  "item.deadlydinospt.carnotaurus_skull": "Carnotaurus Skull",
+  "item.deadlydinospt.carnotaurus_ribs": "Carnotaurus Ribs",
+  "item.deadlydinospt.carnotaurus_claw": "Carnotaurus Claw",
+  "item.deadlydinospt.carnotaurus_tail": "Carnotaurus Tail",
+  "item.deadlydinospt.carnotaurus_spine": "Carnotaurus Spine",
+  "item.deadlydinospt.carnotaurus_leg": "Carnotaurus Leg",
+
+
   "block.deadlydinospt.ceratosaurus_fossil": "Ceratosaurus Fossil",
   "block.deadlydinospt.chiseled_ceratosaurus_fossil": "Chiseled Ceratosaurus Fossil",
 
@@ -420,6 +482,130 @@
   "item.deadlydinospt.ceratosaurus_tail": "Ceratosaurus Tail",
   "item.deadlydinospt.ceratosaurus_spine": "Ceratosaurus Spine",
   "item.deadlydinospt.ceratosaurus_leg": "Ceratosaurus Leg",
+
+
+  "block.deadlydinospt.compsognathus_fossil": "Compsognathus Fossil",
+  "block.deadlydinospt.chiseled_compsognathus_fossil": "Chiseled Compsognathus Fossil",
+
+  "item.deadlydinospt.compsognathus_fossil_tooth": "Compsognathus Tooth Fossil",
+  "item.deadlydinospt.compsognathus_fossil_skull": "Compsognathus Skull Fossil",
+  "item.deadlydinospt.compsognathus_fossil_ribs": "Compsognathus Ribs Fossil",
+  "item.deadlydinospt.compsognathus_fossil_claw": "Compsognathus Claw Fossil",
+  "item.deadlydinospt.compsognathus_fossil_tail": "Compsognathus Tail Fossil",
+  "item.deadlydinospt.compsognathus_fossil_spine": "Compsognathus Spine Fossil",
+  "item.deadlydinospt.compsognathus_fossil_leg": "Compsognathus Leg Fossil",
+
+  "item.deadlydinospt.compsognathus_tooth": "Compsognathus Tooth",
+  "item.deadlydinospt.compsognathus_skull": "Compsognathus Skull",
+  "item.deadlydinospt.compsognathus_ribs": "Compsognathus Ribs",
+  "item.deadlydinospt.compsognathus_claw": "Compsognathus Claw",
+  "item.deadlydinospt.compsognathus_tail": "Compsognathus Tail",
+  "item.deadlydinospt.compsognathus_spine": "Compsognathus Spine",
+  "item.deadlydinospt.compsognathus_leg": "Compsognathus Leg",
+
+
+  "block.deadlydinospt.cryolophosaurus_fossil": "Cryolophosaurus Fossil",
+  "block.deadlydinospt.chiseled_cryolophosaurus_fossil": "Chiseled Cryolophosaurus Fossil",
+
+  "item.deadlydinospt.cryolophosaurus_fossil_tooth": "Cryolophosaurus Tooth Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_skull": "Cryolophosaurus Skull Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_ribs": "Cryolophosaurus Ribs Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_claw": "Cryolophosaurus Claw Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_tail": "Cryolophosaurus Tail Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_spine": "Cryolophosaurus Spine Fossil",
+  "item.deadlydinospt.cryolophosaurus_fossil_leg": "Cryolophosaurus Leg Fossil",
+
+  "item.deadlydinospt.cryolophosaurus_tooth": "Cryolophosaurus Tooth",
+  "item.deadlydinospt.cryolophosaurus_skull": "Cryolophosaurus Skull",
+  "item.deadlydinospt.cryolophosaurus_ribs": "Cryolophosaurus Ribs",
+  "item.deadlydinospt.cryolophosaurus_claw": "Cryolophosaurus Claw",
+  "item.deadlydinospt.cryolophosaurus_tail": "Cryolophosaurus Tail",
+  "item.deadlydinospt.cryolophosaurus_spine": "Cryolophosaurus Spine",
+  "item.deadlydinospt.cryolophosaurus_leg": "Cryolophosaurus Leg",
+
+
+  "block.deadlydinospt.deinonychus_fossil": "Deinonychus Fossil",
+  "block.deadlydinospt.chiseled_deinonychus_fossil": "Chiseled Deinonychus Fossil",
+
+  "item.deadlydinospt.deinonychus_fossil_tooth": "Deinonychus Tooth Fossil",
+  "item.deadlydinospt.deinonychus_fossil_skull": "Deinonychus Skull Fossil",
+  "item.deadlydinospt.deinonychus_fossil_ribs": "Deinonychus Ribs Fossil",
+  "item.deadlydinospt.deinonychus_fossil_claw": "Deinonychus Claw Fossil",
+  "item.deadlydinospt.deinonychus_fossil_tail": "Deinonychus Tail Fossil",
+  "item.deadlydinospt.deinonychus_fossil_spine": "Deinonychus Spine Fossil",
+  "item.deadlydinospt.deinonychus_fossil_leg": "Deinonychus Leg Fossil",
+  "item.deadlydinospt.deinonychus_fossil_raptor_claw": "Deinonychus Talon Fossil",
+
+  "item.deadlydinospt.deinonychus_tooth": "Deinonychus Tooth",
+  "item.deadlydinospt.deinonychus_skull": "Deinonychus Skull",
+  "item.deadlydinospt.deinonychus_ribs": "Deinonychus Ribs",
+  "item.deadlydinospt.deinonychus_claw": "Deinonychus Claw",
+  "item.deadlydinospt.deinonychus_tail": "Deinonychus Tail",
+  "item.deadlydinospt.deinonychus_spine": "Deinonychus Spine",
+  "item.deadlydinospt.deinonychus_leg": "Deinonychus Leg",
+  "item.deadlydinospt.deinonychus_raptor_claw": "Deinonychus Talon",
+
+
+  "block.deadlydinospt.dilophosaurus_fossil": "Dilophosaurus Fossil",
+  "block.deadlydinospt.chiseled_dilophosaurus_fossil": "Chiseled Dilophosaurus Fossil",
+
+  "item.deadlydinospt.dilophosaurus_fossil_tooth": "Dilophosaurus Tooth Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_skull": "Dilophosaurus Skull Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_ribs": "Dilophosaurus Ribs Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_claw": "Dilophosaurus Claw Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_tail": "Dilophosaurus Tail Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_spine": "Dilophosaurus Spine Fossil",
+  "item.deadlydinospt.dilophosaurus_fossil_leg": "Dilophosaurus Leg Fossil",
+
+  "item.deadlydinospt.dilophosaurus_tooth": "Dilophosaurus Tooth",
+  "item.deadlydinospt.dilophosaurus_skull": "Dilophosaurus Skull",
+  "item.deadlydinospt.dilophosaurus_ribs": "Dilophosaurus Ribs",
+  "item.deadlydinospt.dilophosaurus_claw": "Dilophosaurus Claw",
+  "item.deadlydinospt.dilophosaurus_tail": "Dilophosaurus Tail",
+  "item.deadlydinospt.dilophosaurus_spine": "Dilophosaurus Spine",
+  "item.deadlydinospt.dilophosaurus_leg": "Dilophosaurus Leg",
+
+
+  "block.deadlydinospt.giganotosaurus_fossil": "Giganotosaurus Fossil",
+  "block.deadlydinospt.chiseled_giganotosaurus_fossil": "Chiseled Giganotosaurus Fossil",
+
+  "item.deadlydinospt.giganotosaurus_fossil_tooth": "Giganotosaurus Tooth Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_skull": "Giganotosaurus Skull Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_ribs": "Giganotosaurus Ribs Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_claw": "Giganotosaurus Claw Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_tail": "Giganotosaurus Tail Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_spine": "Giganotosaurus Spine Fossil",
+  "item.deadlydinospt.giganotosaurus_fossil_leg": "Giganotosaurus Leg Fossil",
+
+  "item.deadlydinospt.giganotosaurus_tooth": "Giganotosaurus Tooth",
+  "item.deadlydinospt.giganotosaurus_skull": "Giganotosaurus Skull",
+  "item.deadlydinospt.giganotosaurus_ribs": "Giganotosaurus Ribs",
+  "item.deadlydinospt.giganotosaurus_claw": "Giganotosaurus Claw",
+  "item.deadlydinospt.giganotosaurus_tail": "Giganotosaurus Tail",
+  "item.deadlydinospt.giganotosaurus_spine": "Giganotosaurus Spine",
+  "item.deadlydinospt.giganotosaurus_leg": "Giganotosaurus Leg",
+
+
+  "block.deadlydinospt.mahakala_fossil": "Mahakala Fossil",
+  "block.deadlydinospt.chiseled_mahakala_fossil": "Chiseled Mahakala Fossil",
+
+  "item.deadlydinospt.mahakala_fossil_tooth": "Mahakala Tooth Fossil",
+  "item.deadlydinospt.mahakala_fossil_skull": "Mahakala Skull Fossil",
+  "item.deadlydinospt.mahakala_fossil_ribs": "Mahakala Ribs Fossil",
+  "item.deadlydinospt.mahakala_fossil_claw": "Mahakala Claw Fossil",
+  "item.deadlydinospt.mahakala_fossil_tail": "Mahakala Tail Fossil",
+  "item.deadlydinospt.mahakala_fossil_spine": "Mahakala Spine Fossil",
+  "item.deadlydinospt.mahakala_fossil_leg": "Mahakala Leg Fossil",
+  "item.deadlydinospt.mahakala_fossil_raptor_claw": "Mahakala Talon Fossil",
+
+  "item.deadlydinospt.mahakala_tooth": "Mahakala Tooth",
+  "item.deadlydinospt.mahakala_skull": "Mahakala Skull",
+  "item.deadlydinospt.mahakala_ribs": "Mahakala Ribs",
+  "item.deadlydinospt.mahakala_claw": "Mahakala Claw",
+  "item.deadlydinospt.mahakala_tail": "Mahakala Tail",
+  "item.deadlydinospt.mahakala_spine": "Mahakala Spine",
+  "item.deadlydinospt.mahakala_leg": "Mahakala Leg",
+  "item.deadlydinospt.mahakala_raptor_claw": "Mahakala Talon",
 
 
 

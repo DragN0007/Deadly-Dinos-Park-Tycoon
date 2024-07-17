@@ -8,6 +8,33 @@
     "deadlydinospt:archaeopteryx_spine",
     "deadlydinospt:archaeopteryx_leg",
     "deadlydinospt:archaeopteryx_claw",
-    "deadlydinospt:archaeopteryx_raptor_claw"
+    "deadlydinospt:archaeopteryx_raptor_claw",
+
+    "deadlydinospt:compsognathus_tooth",
+    "deadlydinospt:compsognathus_skull",
+    "deadlydinospt:compsognathus_ribs",
+    "deadlydinospt:compsognathus_tail",
+    "deadlydinospt:compsognathus_spine",
+    "deadlydinospt:compsognathus_leg",
+    "deadlydinospt:compsognathus_claw",
+    "deadlydinospt:compsognathus_raptor_claw",
+
+    "deadlydinospt:deinonychus_tooth",
+    "deadlydinospt:deinonychus_skull",
+    "deadlydinospt:deinonychus_ribs",
+    "deadlydinospt:deinonychus_tail",
+    "deadlydinospt:deinonychus_spine",
+    "deadlydinospt:deinonychus_leg",
+    "deadlydinospt:deinonychus_claw",
+    "deadlydinospt:deinonychus_raptor_claw",
+
+    "deadlydinospt:mahakala_tooth",
+    "deadlydinospt:mahakala_skull",
+    "deadlydinospt:mahakala_ribs",
+    "deadlydinospt:mahakala_tail",
+    "deadlydinospt:mahakala_spine",
+    "deadlydinospt:mahakala_leg",
+    "deadlydinospt:mahakala_claw",
+    "deadlydinospt:mahakala_raptor_claw"
   ]
 }

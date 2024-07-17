@@ -52,14 +52,41 @@ public class DDPTTags {
         public static final TagKey<Item> ANDALGALORNIS_BONES = tag("andalgalornis_bones");
         public static final TagKey<Item> ANDALGALORNIS_FOSSILS = tag("andalgalornis_fossils");
 
-        public static final TagKey<Item> CERATOSAURUS_BONES = tag("ceratosaurus_bones");
-        public static final TagKey<Item> CERATOSAURUS_FOSSILS = tag("ceratosaurus_fossils");
-
         public static final TagKey<Item> ARCHAEOPTERYX_BONES = tag("archaeopteryx_bones");
         public static final TagKey<Item> ARCHAEOPTERYX_FOSSILS = tag("archaeopteryx_fossils");
 
         public static final TagKey<Item> AUSTRALOVENATOR_BONES = tag("australovenator_bones");
         public static final TagKey<Item> AUSTRALOVENATOR_FOSSILS = tag("australovenator_fossils");
+
+        public static final TagKey<Item> AUSTRORAPTOR_BONES = tag("austroraptor_bones");
+        public static final TagKey<Item> AUSTRORAPTOR_FOSSILS = tag("austroraptor_fossils");
+
+        public static final TagKey<Item> CARCHARODONTOSAURUS_BONES = tag("carcharodontosaurus_bones");
+        public static final TagKey<Item> CARCHARODONTOSAURUS_FOSSILS = tag("carcharodontosaurus_fossils");
+
+        public static final TagKey<Item> CARNOTAURUS_BONES = tag("carnotaurus_bones");
+        public static final TagKey<Item> CARNOTAURUS_FOSSILS = tag("carnotaurus_fossils");
+
+        public static final TagKey<Item> CERATOSAURUS_BONES = tag("ceratosaurus_bones");
+        public static final TagKey<Item> CERATOSAURUS_FOSSILS = tag("ceratosaurus_fossils");
+
+        public static final TagKey<Item> COMPSOGNATHUS_BONES = tag("compsognathus_bones");
+        public static final TagKey<Item> COMPSOGNATHUS_FOSSILS = tag("compsognathus_fossils");
+
+        public static final TagKey<Item> CRYOLOPHOSAURUS_BONES = tag("cryolophosaurus_bones");
+        public static final TagKey<Item> CRYOLOPHOSAURUS_FOSSILS = tag("cryolophosaurus_fossils");
+
+        public static final TagKey<Item> DEINONYCHUS_BONES = tag("deinonychus_bones");
+        public static final TagKey<Item> DEINONYCHUS_FOSSILS = tag("deinonychus_fossils");
+
+        public static final TagKey<Item> DILOPHOSAURUS_BONES = tag("dilophosaurus_bones");
+        public static final TagKey<Item> DILOPHOSAURUS_FOSSILS = tag("dilophosaurus_fossils");
+
+        public static final TagKey<Item> GIGANOTOSAURUS_BONES = tag("giganotosaurus_bones");
+        public static final TagKey<Item> GIGANOTOSAURUS_FOSSILS = tag("giganotosaurus_fossils");
+
+        public static final TagKey<Item> MAHAKALA_BONES = tag("mahakala_bones");
+        public static final TagKey<Item> MAHAKALA_FOSSILS = tag("mahakala_fossils");
 
 
         private static TagKey<Item> tag (String name) {

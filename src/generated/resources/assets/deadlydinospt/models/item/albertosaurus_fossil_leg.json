@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "deadlydinospt:item/albertosaurus_fossil_leg"
+    "layer0": "deadlydinospt:item/large_carni_fossil_leg"
   }
 }

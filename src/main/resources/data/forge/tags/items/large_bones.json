@@ -15,6 +15,22 @@
     "deadlydinospt:albertosaurus_tail",
     "deadlydinospt:albertosaurus_spine",
     "deadlydinospt:albertosaurus_leg",
-    "deadlydinospt:albertosaurus_claw"
+    "deadlydinospt:albertosaurus_claw",
+
+    "deadlydinospt:carcharodontosaurus_tooth",
+    "deadlydinospt:carcharodontosaurus_skull",
+    "deadlydinospt:carcharodontosaurus_ribs",
+    "deadlydinospt:carcharodontosaurus_tail",
+    "deadlydinospt:carcharodontosaurus_spine",
+    "deadlydinospt:carcharodontosaurus_leg",
+    "deadlydinospt:carcharodontosaurus_claw",
+
+    "deadlydinospt:giganotosaurus_tooth",
+    "deadlydinospt:giganotosaurus_skull",
+    "deadlydinospt:giganotosaurus_ribs",
+    "deadlydinospt:giganotosaurus_tail",
+    "deadlydinospt:giganotosaurus_spine",
+    "deadlydinospt:giganotosaurus_leg",
+    "deadlydinospt:giganotosaurus_claw"
   ]
 }

@@ -8,6 +8,33 @@
     "deadlydinospt:archaeopteryx_fossil_spine",
     "deadlydinospt:archaeopteryx_fossil_leg",
     "deadlydinospt:archaeopteryx_fossil_claw",
-    "deadlydinospt:archaeopteryx_fossil_raptor_claw"
+    "deadlydinospt:archaeopteryx_fossil_raptor_claw",
+
+    "deadlydinospt:compsognathus_fossil_tooth",
+    "deadlydinospt:compsognathus_fossil_skull",
+    "deadlydinospt:compsognathus_fossil_ribs",
+    "deadlydinospt:compsognathus_fossil_tail",
+    "deadlydinospt:compsognathus_fossil_spine",
+    "deadlydinospt:compsognathus_fossil_leg",
+    "deadlydinospt:compsognathus_fossil_claw",
+    "deadlydinospt:compsognathus_fossil_raptor_claw",
+
+    "deadlydinospt:deinonychus_fossil_tooth",
+    "deadlydinospt:deinonychus_fossil_skull",
+    "deadlydinospt:deinonychus_fossil_ribs",
+    "deadlydinospt:deinonychus_fossil_tail",
+    "deadlydinospt:deinonychus_fossil_spine",
+    "deadlydinospt:deinonychus_fossil_leg",
+    "deadlydinospt:deinonychus_fossil_claw",
+    "deadlydinospt:deinonychus_fossil_raptor_claw",
+
+    "deadlydinospt:mahakala_fossil_tooth",
+    "deadlydinospt:mahakala_fossil_skull",
+    "deadlydinospt:mahakala_fossil_ribs",
+    "deadlydinospt:mahakala_fossil_tail",
+    "deadlydinospt:mahakala_fossil_spine",
+    "deadlydinospt:mahakala_fossil_leg",
+    "deadlydinospt:mahakala_fossil_claw",
+    "deadlydinospt:mahakala_fossil_raptor_claw"
   ]
 }

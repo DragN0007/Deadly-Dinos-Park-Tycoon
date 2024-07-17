@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:carnotaurus_tooth",
+    "deadlydinospt:carnotaurus_skull",
+    "deadlydinospt:carnotaurus_ribs",
+    "deadlydinospt:carnotaurus_tail",
+    "deadlydinospt:carnotaurus_spine",
+    "deadlydinospt:carnotaurus_leg",
+    "deadlydinospt:carnotaurus_claw"
+  ]
+}

@@ -1,21 +1,21 @@
 package com.dragn0007.deadlydinospt.entity.carni;
 
+import com.dragn0007.deadlydinospt.client.menu.YutyMenu;
 import com.dragn0007.deadlydinospt.client.model.YutyModel;
+import com.dragn0007.deadlydinospt.entity.Chestable;
 import com.dragn0007.deadlydinospt.entity.ai.DinoWeakMeleeGoal;
-import com.dragn0007.deadlydinospt.entity.herbi.Amarga;
-import com.dragn0007.deadlydinospt.entity.herbi.Ampelo;
-import com.dragn0007.deadlydinospt.entity.herbi.Ava;
-import com.dragn0007.deadlydinospt.entity.herbi.Grypo;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -26,10 +26,10 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.*;
-import net.minecraft.world.entity.animal.*;
-import net.minecraft.world.entity.animal.horse.Donkey;
-import net.minecraft.world.entity.animal.horse.Horse;
-import net.minecraft.world.entity.animal.horse.Mule;
+import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.Dolphin;
+import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.DismountHelper;
@@ -46,6 +46,8 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.wrapper.InvWrapper;
+import net.minecraftforge.network.NetworkHooks;
 import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -61,28 +63,37 @@ import javax.annotation.Nullable;
 import java.util.Random;
 import java.util.function.Predicate;
 
-public class Yuty extends TamableAnimal implements ContainerListener, Saddleable, IAnimatable {
+public class Yuty extends TamableAnimal implements ContainerListener, Saddleable, IAnimatable, Chestable {
 
     private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
     public Yuty(EntityType<? extends Yuty> entityType, Level level) {
         super(entityType, level);
         this.noCulling = true;
+        this.updateInventory();
     }
 
     private static final EntityDataAccessor<Boolean> SADDLED = SynchedEntityData.defineId(Yuty.class, EntityDataSerializers.BOOLEAN);
-    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.MEATS);
+    private static final EntityDataAccessor<Boolean> CHESTED = SynchedEntityData.defineId(Yuty.class, EntityDataSerializers.BOOLEAN);
+    private static final Ingredient FOOD_ITEMS = Ingredient.of(DDPTTags.Items.RAW_DINO_MEATS);
 
     public SimpleContainer inventory;
     private LazyOptional<?> itemHandler = null;
 
+    @Override
+    public Vec3 getLeashOffset() {
+        return new Vec3(0D, (double)this.getEyeHeight() * 0.8F, (double)(this.getBbWidth() * 1.4F));
+        //                      ^ Side offset                             ^ Height offset                  ^ Length offset
+    }
 
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 65)
                 .add(Attributes.ATTACK_DAMAGE, 6)
+                .add(Attributes.ATTACK_KNOCKBACK, 2)
                 .add(Attributes.MOVEMENT_SPEED, 0.22)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0.4)
+                .add(Attributes.ARMOR, 3)
                 ;
     }
 
@@ -99,7 +110,6 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
     protected void playStepSound(BlockPos p_180429_1_, BlockState p_180429_2_) {
         this.playSound(SoundEvents.POLAR_BEAR_STEP, 0.15F, 1.0F);
     }
-
 
     public static final Predicate<LivingEntity> PREY_SELECTOR = (entity) -> {
         if (entity instanceof TamableAnimal && ((TamableAnimal) entity).isTame()) {
@@ -133,7 +143,7 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
 
         this.goalSelector.addGoal(1, new WaterAvoidingRandomStrollGoal(this, 1));
 
-        this.targetSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 10, true, true, new Predicate<LivingEntity>() {
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 10, true, true, new Predicate<LivingEntity>() {
             @Override
             public boolean test(@Nullable LivingEntity livingEntity) {
                 if (livingEntity instanceof Mahakala)
@@ -148,41 +158,9 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
                     return false;
                 if (livingEntity instanceof Dolphin)
                     return false;
+                if (livingEntity instanceof TamableAnimal) //<- taken care of by the prey selector
+                    return false;
                 if (livingEntity instanceof Player) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Ava) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cerato) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Andal) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Grypo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Amarga) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Ampelo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Archae) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Allo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cat) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Wolf) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Horse) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Mule) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Donkey) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Sheep) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cow) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Chicken) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Pig) //<- taken care of by the prey selector
                     return false;
                 return true;
             }
@@ -234,22 +212,24 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
 
 
     public boolean hurt(DamageSource damageSource, float amount) {
-        if (damageSource.getEntity() instanceof Player player && player.isShiftKeyDown()) {
-            if (!this.level.isClientSide && this.isTame() && this.isSaddled()) {
-                ItemStack saddle = new ItemStack(Items.SADDLE);
-                player.addItem(saddle);
-                this.setSaddled(false);
-
-                return false;
+        if (damageSource.getEntity() instanceof Player player && player.isCrouching()) {
+            if (this.isOrderedToSit()) {
+                this.setOrderedToSit(false);
+            } else {
+                this.setOrderedToSit(true);
             }
+            return false;
         }
         return super.hurt(damageSource, amount);
     }
 
+
+    @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
         ItemStack itemStack = player.getItemInHand(hand);
-        if (this.isTame()) {
-            if (this.isFood(itemStack)) {
+
+        if(this.isTame()) {
+            if(this.isFood(itemStack)) {
                 if (this.getHealth() < this.getMaxHealth()) {
                     // heal
                     this.usePlayerItem(player, hand, itemStack);
@@ -263,27 +243,46 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
                     this.gameEvent(GameEvent.MOB_INTERACT, this.eyeBlockPosition());
                     return InteractionResult.SUCCESS;
                 }
-            } else if (itemStack.is(Items.SADDLE) && this.isSaddleable()) {
+            } else if(itemStack.is(Items.SADDLE) && this.isSaddleable()) {
                 itemStack.interactLivingEntity(player, this, hand);
                 this.setSaddled(true);
+                this.updateInventory();
                 return InteractionResult.sidedSuccess(this.level.isClientSide);
-            } else if (player.isCrouching()) {
-                // sit if crouch clicking
-                if (this.isOrderedToSit()) {
-                    this.setOrderedToSit(false);
-                } else {
-                    this.setOrderedToSit(true);
+            } else if(itemStack.is(Items.CHEST) && this.isChestable()) {
+                // equip chest
+                this.setChested(true);
+                this.equipChest(SoundSource.NEUTRAL);
+                this.updateInventory();
+                return InteractionResult.sidedSuccess(this.level.isClientSide);
+
+            } else if(!this.level.isClientSide) {
+                if(player.isShiftKeyDown()) {
+                    // open chest inventory
+                    NetworkHooks.openGui((ServerPlayer) player, new SimpleMenuProvider((containerId, inventory, serverPlayer) -> {
+                        return new YutyMenu(containerId, inventory, this.inventory, this);
+                    }, this.getDisplayName()), (data) -> {
+                        data.writeInt(this.getInventorySize());
+                        data.writeInt(this.getId());
+                    });
+                    return InteractionResult.SUCCESS;
+                } else if(this.isSaddled() && !this.isOrderedToSit()) {
+                    // hop on
+                    this.doPlayerRide(player);
+                    return InteractionResult.SUCCESS;
                 }
-                return InteractionResult.SUCCESS;
-            } else if (this.isSaddled() && !this.isOrderedToSit()) {
-                // hop on
-                this.doPlayerRide(player);
-                return InteractionResult.SUCCESS;
             }
-        } else if (this.isFood(itemStack) && !this.level.isClientSide) {
+        } else if (this.isFood(itemStack) && !this.level.isClientSide && this.isBaby()) {
+            this.usePlayerItem(player, hand, itemStack);
             // try to tame (33% chance to succeed)
             if (this.random.nextInt(3) == 0 && !ForgeEventFactory.onAnimalTame(this, player)) {
                 this.tame(player);
+                return InteractionResult.SUCCESS;
+            }
+
+            if(this.isBaby()) {
+                // grow baby
+                this.ageUp(itemStack.getFoodProperties(this).getNutrition());
+                this.gameEvent(GameEvent.MOB_INTERACT, this.eyeBlockPosition());
                 return InteractionResult.SUCCESS;
             }
         }
@@ -325,6 +324,22 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
             this.setSaddled(tag.getBoolean("Saddled"));
         }
 
+        if(tag.contains("Chested")) {
+            this.setChested(tag.getBoolean("Chested"));
+        }
+
+        this.updateInventory();
+        if(this.isChested()) {
+            ListTag listTag = tag.getList("Items", 10);
+
+            for(int i = 0; i < listTag.size(); i++) {
+                CompoundTag compoundTag = listTag.getCompound(i);
+                int j = compoundTag.getByte("Slot") & 255;
+                if(j < this.inventory.getContainerSize()) {
+                    this.inventory.setItem(j, ItemStack.of(compoundTag));
+                }
+            }
+        }
     }
 
     @Override
@@ -332,6 +347,22 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
         super.addAdditionalSaveData(tag);
         tag.putInt("Variant", getVariant());
         tag.putBoolean("Saddled", this.isSaddled());
+        tag.putBoolean("Chested", this.isChested());
+
+        if(this.isChested()) {
+            ListTag listTag = new ListTag();
+
+            for(int i = 0; i < this.inventory.getContainerSize(); i++) {
+                ItemStack itemStack = this.inventory.getItem(i);
+                if(!itemStack.isEmpty()) {
+                    CompoundTag compoundTag = new CompoundTag();
+                    compoundTag.putByte("Slot", (byte) i);
+                    itemStack.save(compoundTag);
+                    listTag.add(compoundTag);
+                }
+            }
+            tag.put("Items", listTag);
+        }
     }
 
     @Nullable
@@ -367,10 +398,32 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
         super.defineSynchedData();
         this.entityData.define(VARIANT, 0);
         this.entityData.define(SADDLED, false);
+        this.entityData.define(CHESTED, false);
     }
 
 
+    private int getInventorySize() {
+        return this.isChested() ? 51 : 1;
+    }
 
+    private void updateInventory() {
+        SimpleContainer tempInventory = this.inventory;
+        this.inventory = new SimpleContainer(this.getInventorySize());
+
+        if(tempInventory != null) {
+            tempInventory.removeListener(this);
+            int maxSize = Math.min(tempInventory.getContainerSize(), this.inventory.getContainerSize());
+
+            for(int i = 0; i < maxSize; i++) {
+                ItemStack itemStack = tempInventory.getItem(i);
+                if(!itemStack.isEmpty()) {
+                    this.inventory.setItem(i, itemStack.copy());
+                }
+            }
+        }
+        this.inventory.addListener(this);
+        this.itemHandler = LazyOptional.of(() -> new InvWrapper(this.inventory));
+    }
 
     @Override
     public void positionRider(Entity entity) {
@@ -398,6 +451,10 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
     protected void dropEquipment() {
         if(!this.level.isClientSide) {
             super.dropEquipment();
+            if(this.isChested()) {
+                this.spawnAtLocation(Items.CHEST);
+            }
+            Containers.dropContents(this.level, this, this.inventory);
         }
     }
 
@@ -488,6 +545,27 @@ public class Yuty extends TamableAnimal implements ContainerListener, Saddleable
 
     private void setSaddled(boolean saddled) {
         this.entityData.set(SADDLED, saddled);
+    }
+
+    @Override
+    public boolean isChestable() {
+        return this.isAlive() && !this.isBaby() && this.isTame();
+    }
+
+    @Override
+    public void equipChest(@Nullable SoundSource soundSource) {
+        if(soundSource != null) {
+            this.level.playSound(null, this, SoundEvents.MULE_CHEST, soundSource, 0.5f, 1f);
+        }
+    }
+
+    @Override
+    public boolean isChested() {
+        return this.entityData.get(CHESTED);
+    }
+
+    private void setChested(boolean chested) {
+        this.entityData.set(CHESTED, chested);
     }
 
     protected void doPlayerRide(Player p_30634_) {

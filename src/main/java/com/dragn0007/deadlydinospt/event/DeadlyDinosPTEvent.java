@@ -7,6 +7,7 @@ import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
 import com.dragn0007.deadlydinospt.client.menu.AmargaScreen;
 import com.dragn0007.deadlydinospt.client.menu.GrypoScreen;
 import com.dragn0007.deadlydinospt.client.menu.ParaScreen;
+import com.dragn0007.deadlydinospt.client.menu.YutyScreen;
 import com.dragn0007.deadlydinospt.client.render.*;
 import com.dragn0007.deadlydinospt.entity.carni.*;
 import com.dragn0007.deadlydinospt.entity.herbi.*;
@@ -49,6 +50,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         event.put(EntityTypes.YUTY_ENTITY.get(), Yuty.createAttributes().build());
         event.put(EntityTypes.CRYO_ENTITY.get(), Cryo.createAttributes().build());
         event.put(EntityTypes.AUSTRALO_ENTITY.get(), Australo.createAttributes().build());
+//        event.put(EntityTypes.ATROCI_ENTITY.get(), Atroci.createAttributes().build());
+//        event.put(EntityTypes.ICHTHY_ENTITY.get(), Ichthy.createAttributes().build());
+//        event.put(EntityTypes.MEGARAP_ENTITY.get(), Megarap.createAttributes().build());
+//        event.put(EntityTypes.EOCARCHAR_ENTITY.get(), Megarap.createAttributes().build());
 
         event.put(EntityTypes.CROPSNAIL_ENTITY.get(), CropSnail.createAttributes().build());
         event.put(EntityTypes.AMARGA_ENTITY.get(), Amarga.createAttributes().build());
@@ -64,6 +69,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         event.put(EntityTypes.GRYPO_ENTITY.get(), Grypo.createAttributes().build());
         event.put(EntityTypes.AMPELO_ENTITY.get(), Ampelo.createAttributes().build());
         event.put(EntityTypes.PACHYR_ENTITY.get(), Pachyr.createAttributes().build());
+//        event.put(EntityTypes.EDMONTO_ENTITY.get(), Edmonto.createAttributes().build());
+//        event.put(EntityTypes.IGUA_ENTITY.get(), Igua.createAttributes().build());
+//        event.put(EntityTypes.TRIKE_ENTITY.get(), Trike.createAttributes().build());
+//
+//        event.put(EntityTypes.MOSA_ENTITY.get(), Mosa.createAttributes().build());
+//        event.put(EntityTypes.HELI_ENTITY.get(), Heli.createAttributes().build());
+//        event.put(EntityTypes.GAR_ENTITY.get(), Gar.createAttributes().build());
+//        event.put(EntityTypes.DUNKLEO_ENTITY.get(), Dunkleo.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -92,6 +105,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         EntityRenderers.register(EntityTypes.YUTY_ENTITY.get(), YutyRender::new);
         EntityRenderers.register(EntityTypes.CRYO_ENTITY.get(), CryoRender::new);
         EntityRenderers.register(EntityTypes.AUSTRALO_ENTITY.get(), AustraloRender::new);
+//        EntityRenderers.register(EntityTypes.ATROCI_ENTITY.get(), AtrociRender::new);
+//        EntityRenderers.register(EntityTypes.ICHTHY_ENTITY.get(), IchthyRender::new);
+//        EntityRenderers.register(EntityTypes.MEGARAP_ENTITY.get(), MegarapRender::new);
+//        EntityRenderers.register(EntityTypes.EOCARCHAR_ENTITY.get(), EocarcharRender::new);
 
         EntityRenderers.register(EntityTypes.CROPSNAIL_ENTITY.get(), CropSnailRender::new);
         EntityRenderers.register(EntityTypes.AMARGA_ENTITY.get(), AmargaRender::new);
@@ -107,7 +124,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         EntityRenderers.register(EntityTypes.GRYPO_ENTITY.get(), GrypoRender::new);
         EntityRenderers.register(EntityTypes.AMPELO_ENTITY.get(), AmpeloRender::new);
         EntityRenderers.register(EntityTypes.PACHYR_ENTITY.get(), PachyrRender::new);
-
+//        EntityRenderers.register(EntityTypes.EDMONTO_ENTITY.get(), EdmontoRender::new);
+//        EntityRenderers.register(EntityTypes.IGUA_ENTITY.get(), IguaRender::new);
+//        EntityRenderers.register(EntityTypes.TRIKE_ENTITY.get(), TrikeRender::new);
+//
+//        EntityRenderers.register(EntityTypes.MOSA_ENTITY.get(), MosaRender::new);
+//        EntityRenderers.register(EntityTypes.HELI_ENTITY.get(), HeliRender::new);
+//        EntityRenderers.register(EntityTypes.GAR_ENTITY.get(), GarRender::new);
+//        EntityRenderers.register(EntityTypes.DUNKLEO_ENTITY.get(), DunkleoRender::new);
 
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.RGLASS.get(), RenderType.cutout());
@@ -130,6 +154,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         MenuScreens.register(DDPTMenuTypes.GRYPO_MENU.get(), GrypoScreen::new);
         MenuScreens.register(DDPTMenuTypes.AMARGA_MENU.get(), AmargaScreen::new);
         MenuScreens.register(DDPTMenuTypes.PARA_MENU.get(), ParaScreen::new);
+        MenuScreens.register(DDPTMenuTypes.YUTY_MENU.get(), YutyScreen::new);
+//        MenuScreens.register(DDPTMenuTypes.ICHTHY_MENU.get(), IchthyScreen::new);
+//        MenuScreens.register(DDPTMenuTypes.IGUA_MENU.get(), IguaScreen::new);
+//        MenuScreens.register(DDPTMenuTypes.TRIKE_MENU.get(), TrikeScreen::new);
     }
 }
 

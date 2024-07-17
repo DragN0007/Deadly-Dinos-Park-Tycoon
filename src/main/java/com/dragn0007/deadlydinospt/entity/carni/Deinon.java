@@ -78,29 +78,17 @@ public class Deinon extends TamableAnimal implements IAnimatable {
 
     }
 
-    public static final Predicate<LivingEntity> PREY_SELECTOR = (p_30437_) -> {
-        EntityType<?> entitytype = p_30437_.getType();
-        return
-                entitytype == EntityTypes.ARCHAE_ENTITY.get()
-                        || entitytype == EntityTypes.AVA_ENTITY.get()
-                        || entitytype == EntityTypes.ALLO_ENTITY.get()
-                        || entitytype == EntityTypes.CERATO_ENTITY.get()
-                        || entitytype == EntityTypes.ANDAL_ENTITY.get()
-                        || entitytype == EntityTypes.GRYPO_ENTITY.get()
-                        || entitytype == EntityTypes.AMARGA_ENTITY.get()
-                        || entitytype == EntityTypes.AMPELO_ENTITY.get()
-                        || entitytype == EntityTypes.PARA_ENTITY.get()
-                        || entitytype == EntityType.PLAYER
-                        || entitytype == EntityType.CAT
-                        || entitytype == EntityType.WOLF
-                        || entitytype == EntityType.HORSE
-                        || entitytype == EntityType.MULE
-                        || entitytype == EntityType.DONKEY
-                        || entitytype == EntityType.SHEEP
-                        || entitytype == EntityType.COW
-                        || entitytype == EntityType.CHICKEN
-                        || entitytype == EntityType.PIG
-                ;
+    public static final Predicate<LivingEntity> PREY_SELECTOR = (entity) -> {
+        if (entity instanceof TamableAnimal && ((TamableAnimal) entity).isTame()) {
+            return false;
+        }
+        if (entity.getType() == EntityType.PLAYER) {
+            return false;
+        }
+        if (entity.getType() == EntityTypes.DEINON_ENTITY.get()) {
+            return false;
+        }
+        return true;
     };
 
     private static final Predicate<Mob> NOT_MAHAKALA_PREDICATE = new Predicate<Mob>() {

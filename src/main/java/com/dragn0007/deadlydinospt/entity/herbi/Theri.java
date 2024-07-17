@@ -90,18 +90,17 @@ public class Theri extends TamableAnimal implements IAnimatable {
         this.playSound(SoundEvents.POLAR_BEAR_STEP, 0.15F, 0.5F);
     }
 
-    public static final Predicate<LivingEntity> PREY_SELECTOR = (p_30437_) -> {
-        EntityType<?> entitytype = p_30437_.getType();
-        return
-                entitytype == EntityTypes.ARCHAE_ENTITY.get()
-                        || entitytype == EntityTypes.ALLO_ENTITY.get()
-                        || entitytype == EntityTypes.CERATO_ENTITY.get()
-                        || entitytype == EntityTypes.ANDAL_ENTITY.get()
-                        || entitytype == EntityTypes.YUTY_ENTITY.get()
-                        || entitytype == EntityType.PLAYER
-                        || entitytype == EntityType.CAT
-                        || entitytype == EntityType.WOLF
-                ;
+    public static final Predicate<LivingEntity> PREY_SELECTOR = (entity) -> {
+        if (entity instanceof TamableAnimal && ((TamableAnimal) entity).isTame()) {
+            return false;
+        }
+        if (entity.getType() == EntityType.PLAYER) {
+            return false;
+        }
+        if (entity.getType() == EntityTypes.THERI_ENTITY.get()) {
+            return false;
+        }
+        return true;
     };
     @Override
     public float getStepHeight() {

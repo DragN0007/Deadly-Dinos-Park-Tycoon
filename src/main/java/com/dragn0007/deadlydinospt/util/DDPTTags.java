@@ -36,6 +36,9 @@ public class DDPTTags {
         public static final TagKey<Item> SMALL_FOSSILS = forgeTag("small_fossils");
 
 
+        public static final TagKey<Item> SEMI_AQUATIC_FOOD = tag("semi_aquatic_food");
+        public static final TagKey<Item> HERBI_FOOD = tag("herbi_food");
+
 
         public static final TagKey<Item> ACROCANTHOSAURUS_BONES = tag("acrocanthosaurus_bones");
         public static final TagKey<Item> ACROCANTHOSAURUS_FOSSILS = tag("acrocanthosaurus_fossils");

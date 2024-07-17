@@ -523,7 +523,7 @@ public class Amarga extends TamableAnimal implements ContainerListener, Saddleab
 
     @Nullable
     public Entity getControllingPassenger() {
-        return this.getFirstPassenger();
+        return this.getOwner() == this.getFirstPassenger() ? this.getFirstPassenger() : null;
     }
 
     @Nullable

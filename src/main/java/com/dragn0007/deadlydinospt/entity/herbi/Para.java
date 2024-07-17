@@ -528,7 +528,7 @@ public class Para extends TamableAnimal implements ContainerListener, Saddleable
 
     @Nullable
     public Entity getControllingPassenger() {
-        return this.getFirstPassenger();
+        return this.getOwner() == this.getFirstPassenger() ? this.getFirstPassenger() : null;
     }
 
     @Nullable

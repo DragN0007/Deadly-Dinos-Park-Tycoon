@@ -6,6 +6,7 @@ import com.dragn0007.deadlydinospt.entity.ai.DinoMeleeGoal;
 import com.dragn0007.deadlydinospt.entity.carni.Andal;
 import com.dragn0007.deadlydinospt.entity.carni.Archae;
 import com.dragn0007.deadlydinospt.entity.carni.Cerato;
+import com.dragn0007.deadlydinospt.entity.carni.Mahakala;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
@@ -125,71 +126,42 @@ public class Theri extends TamableAnimal implements IAnimatable {
         this.targetSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 10, true, true, new Predicate<LivingEntity>() {
             @Override
             public boolean test(@Nullable LivingEntity livingEntity) {
-                if (livingEntity instanceof Theri)
+                if (livingEntity
+                        instanceof Theri
+                        || livingEntity instanceof Mahakala
+                        || livingEntity instanceof ArmorStand
+                        || livingEntity instanceof AbstractFish
+                        || livingEntity instanceof Squid
+                        || livingEntity instanceof Deinoch
+                        || livingEntity instanceof Ava
+                        || livingEntity instanceof Amarga
+                        || livingEntity instanceof Ampelo
+                        || livingEntity instanceof Anky
+                        || livingEntity instanceof CropSnail
+                        || livingEntity instanceof Galli
+                        || livingEntity instanceof Grypo
+                        || livingEntity instanceof Pachyr
+                        || livingEntity instanceof Para
+                        || livingEntity instanceof Sauro
+                        || livingEntity instanceof Shant
+                        || livingEntity instanceof Stego
+                        || livingEntity instanceof Cow
+                        || livingEntity instanceof Chicken
+                        || livingEntity instanceof Pig
+                        || livingEntity instanceof Horse
+                        || livingEntity instanceof Donkey
+                        || livingEntity instanceof Mule
+                        || livingEntity instanceof Sheep
+                        || livingEntity instanceof Fox
+                        || livingEntity instanceof Wolf
+                        || livingEntity instanceof Cat
+                        || livingEntity instanceof Ocelot
+                        || livingEntity instanceof Parrot
+                        || livingEntity instanceof Panda
+                        || livingEntity instanceof TamableAnimal
+                ){
                     return false;
-                
-                if (livingEntity instanceof ArmorStand)
-                    return false;
-                if (livingEntity instanceof AbstractFish)
-                    return false;
-                if (livingEntity instanceof Squid)
-                    return false;
-                if (livingEntity instanceof Dolphin)
-                    return false;
-                if (livingEntity instanceof Amarga)
-                    return false;
-                if (livingEntity instanceof Para)
-                    return false;
-                if (livingEntity instanceof Stego)
-                    return false;
-                if (livingEntity instanceof CropSnail)
-                    return false;
-                if (livingEntity instanceof Cow)
-                    return false;
-                if (livingEntity instanceof Sheep)
-                    return false;
-                if (livingEntity instanceof Pig)
-                    return false;
-                if (livingEntity instanceof Parrot)
-                    return false;
-                if (livingEntity instanceof Horse)
-                    return false;
-                if (livingEntity instanceof Anky)
-                    return false;
-                if (livingEntity instanceof Ava)
-                    return false;
-                if (livingEntity instanceof Shant)
-                    return false;
-                if (livingEntity instanceof Sauro)
-                    return false;
-                if (livingEntity instanceof Galli)
-                    return false;
-                if (livingEntity instanceof Deinoch)
-                    return false;
-                if (livingEntity instanceof Rabbit)
-                    return false;
-                if (livingEntity instanceof Player) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cerato) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Andal) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Grypo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Ampelo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Archae) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cat) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Wolf) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Mule) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Donkey) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Chicken) //<- taken care of by the prey selector
-                    return false;
+                }
                 return true;
             }
         }));

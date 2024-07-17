@@ -29,6 +29,7 @@ import net.minecraft.world.entity.animal.*;
 import net.minecraft.world.entity.animal.horse.Donkey;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.animal.horse.Mule;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -133,53 +134,17 @@ public class Compy extends TamableAnimal implements IAnimatable {
         this.targetSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 10, true, true, new Predicate<LivingEntity>() {
             @Override
             public boolean test(@Nullable LivingEntity livingEntity) {
-                if (livingEntity instanceof Compy)
+                if (livingEntity
+                        instanceof Compy
+                        || livingEntity instanceof Mahakala
+                        || livingEntity instanceof ArmorStand
+                        || livingEntity instanceof AbstractFish
+                        || livingEntity instanceof Squid
+                        || livingEntity instanceof Dolphin
+                        || livingEntity instanceof TamableAnimal
+                ){
                     return false;
-                if (livingEntity instanceof Acro)
-                    return false;
-                if (livingEntity instanceof Alberto)
-                    return false;
-                if (livingEntity instanceof Giga)
-                    return false;
-                if (livingEntity instanceof Rex)
-                    return false;
-                if (livingEntity instanceof Spino)
-                    return false;
-
-                if (livingEntity instanceof Player) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Ava) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cerato) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Andal) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Grypo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Amarga) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Ampelo) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Archae) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cat) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Wolf) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Horse) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Mule) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Donkey) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Sheep) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Cow) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Chicken) //<- taken care of by the prey selector
-                    return false;
-                if (livingEntity instanceof Pig) //<- taken care of by the prey selector
-                    return false;
+                }
                 return true;
             }
         }));

@@ -232,7 +232,11 @@ public class EntityTypes {
                     .sized(2f,2.5f)
                     .build(new ResourceLocation(MODID,"pachyr").toString()));
 
-
+    public static final RegistryObject<EntityType<Trike>> TRIKE_ENTITY = ENTITY_TYPES.register("trike_entity",
+            () -> EntityType.Builder.of(Trike::new,
+                            MobCategory.CREATURE)
+                    .sized(2f,4f)
+                    .build(new ResourceLocation(MODID,"trike").toString()));
 
 
 }

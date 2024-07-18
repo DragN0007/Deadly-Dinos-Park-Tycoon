@@ -3,7 +3,6 @@ package com.dragn0007.deadlydinospt.block;
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.fossil.*;
 import com.dragn0007.deadlydinospt.block.other.DinoNuggetBox;
-import com.dragn0007.deadlydinospt.entity.carni.Mahakala;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import com.dragn0007.deadlydinospt.world.feature.tree.ConiferTreeGrower;

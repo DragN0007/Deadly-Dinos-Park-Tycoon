@@ -208,6 +208,11 @@ public class DDPTItems {
     public static final RegistryObject<Item> PACHYR_EGG = ITEMS.register("pachyr_egg",
             () -> new DinoEggItem(EntityTypes.PACHYR_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
 
+    public static final RegistryObject<Item> TRIKE_SPAWN_EGG = ITEMS.register("trike_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.TRIKE_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> TRIKE_EGG = ITEMS.register("trike_egg",
+            () -> new DinoEggItem(EntityTypes.TRIKE_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DINO_GROUP)));
+
 
 
     //FOOD ITEMS
@@ -1021,6 +1026,11 @@ public class DDPTItems {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
             ));
 
+    public static final RegistryObject<TrophyItem> TRIKETROPHY = ITEMS.register("triketrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
+            ));
 
 
     //TODO;

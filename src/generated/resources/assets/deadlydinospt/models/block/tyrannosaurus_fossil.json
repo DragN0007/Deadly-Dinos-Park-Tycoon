@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "deadlydinospt:block/stone_fossil_large_carni_2"
+  }
+}

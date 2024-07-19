@@ -296,6 +296,207 @@ public class DDPTItems {
                     new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //TROPHIES
+    public static final RegistryObject<TrophyItem> ACROTROPHY = ITEMS.register("acrotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 3,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> ALBERTOTROPHY = ITEMS.register("albertotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 3,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 5, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> ALLOTROPHY = ITEMS.register("allotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> ANDALTROPHY = ITEMS.register("andaltrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 1,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> ARCHAETROPHY = ITEMS.register("archaetrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> AUSTRALOTROPHY = ITEMS.register("australotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> AUSTROTROPHY = ITEMS.register("austrotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
+
+            ));
+    public static final RegistryObject<TrophyItem> CARCHARTROPHY = ITEMS.register("carchartrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> CARNOTROPHY = ITEMS.register("carnotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> CERATOTROPHY = ITEMS.register("ceratotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> COMPYTROPHY = ITEMS.register("compytrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.SATURATION, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
+
+    public static final RegistryObject<TrophyItem> CRYOTROPHY = ITEMS.register("cryotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> DEINONTROPHY = ITEMS.register("deinontrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> DILOTROPHY = ITEMS.register("dilotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.INVISIBILITY, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> GIGATROPHY = ITEMS.register("gigatrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 3, true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> MAHAKALATROPHY = ITEMS.register("mahakalatrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> MAJUNGATROPHY = ITEMS.register("majungatrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> REXTROPHY = ITEMS.register("rextrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 5, true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> SPINOTROPHY = ITEMS.register("spinotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 2880, 1,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> TARBOTROPHY = ITEMS.register("tarbotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 1,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> TROODONTROPHY = ITEMS.register("troodontrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> UTAHTROPHY = ITEMS.register("utahtrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> YUTYTROPHY = ITEMS.register("yutytrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+
+
+    public static final RegistryObject<TrophyItem> AMARGATROPHY = ITEMS.register("amargatrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.SATURATION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> AMPELOTROPHY = ITEMS.register("ampelotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> ANKYTROPHY = ITEMS.register("ankytrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> AVATROPHY = ITEMS.register("avatrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 2,true, false)
+            ));
+    public static final RegistryObject<TrophyItem> DEINOCHTROPHY = ITEMS.register("deinochtrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> GALLITROPHY = ITEMS.register("gallitrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> GRYPOTROPHY = ITEMS.register("grypotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.SATURATION, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> PACHYRTROPHY = ITEMS.register("pachyrtrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> PARATROPHY = ITEMS.register("paratrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> SAUROTROPHY = ITEMS.register("saurotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false),
+                    new MobEffectInstance(MobEffects.SATURATION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> SHANTTROPHY = ITEMS.register("shanttrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> STEGOTROPHY = ITEMS.register("stegotrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
+            ));
+    public static final RegistryObject<TrophyItem> THERITROPHY = ITEMS.register("theritrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
+            ));
+
+    public static final RegistryObject<TrophyItem> TRIKETROPHY = ITEMS.register("triketrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
+            ));
+
+
+
     //TODO; DINO BONES
 
     //ACROCANTHOSAURUS
@@ -830,214 +1031,237 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //MAJUNGASAURUS
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_TOOTH = ITEMS.register("majungasaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_SKULL = ITEMS.register("majungasaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_RIBS= ITEMS.register("majungasaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_CLAW = ITEMS.register("majungasaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_TAIL = ITEMS.register("majungasaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_SPINE = ITEMS.register("majungasaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_FOSSIL_LEG = ITEMS.register("majungasaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> MAJUNGASAURUS_TOOTH = ITEMS.register("majungasaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_SKULL = ITEMS.register("majungasaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_RIBS= ITEMS.register("majungasaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_CLAW = ITEMS.register("majungasaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_TAIL = ITEMS.register("majungasaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_SPINE = ITEMS.register("majungasaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MAJUNGASAURUS_LEG = ITEMS.register("majungasaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //TYRANNOSAURUS
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_TOOTH = ITEMS.register("tyrannosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_SKULL = ITEMS.register("tyrannosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_RIBS= ITEMS.register("tyrannosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_CLAW = ITEMS.register("tyrannosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_TAIL = ITEMS.register("tyrannosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_SPINE = ITEMS.register("tyrannosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_FOSSIL_LEG = ITEMS.register("tyrannosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> TYRANNOSAURUS_TOOTH = ITEMS.register("tyrannosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_SKULL = ITEMS.register("tyrannosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_RIBS= ITEMS.register("tyrannosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_CLAW = ITEMS.register("tyrannosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_TAIL = ITEMS.register("tyrannosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_SPINE = ITEMS.register("tyrannosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TYRANNOSAURUS_LEG = ITEMS.register("tyrannosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //SPINOSAURUS
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_TOOTH = ITEMS.register("spinosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_SKULL = ITEMS.register("spinosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_RIBS= ITEMS.register("spinosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_CLAW = ITEMS.register("spinosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_TAIL = ITEMS.register("spinosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_SPINE = ITEMS.register("spinosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_FOSSIL_LEG = ITEMS.register("spinosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> SPINOSAURUS_TOOTH = ITEMS.register("spinosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_SKULL = ITEMS.register("spinosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_RIBS= ITEMS.register("spinosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_CLAW = ITEMS.register("spinosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_TAIL = ITEMS.register("spinosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_SPINE = ITEMS.register("spinosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SPINOSAURUS_LEG = ITEMS.register("spinosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //TARBOSAURUS
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_TOOTH = ITEMS.register("tarbosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_SKULL = ITEMS.register("tarbosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_RIBS= ITEMS.register("tarbosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_CLAW = ITEMS.register("tarbosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_TAIL = ITEMS.register("tarbosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_SPINE = ITEMS.register("tarbosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_FOSSIL_LEG = ITEMS.register("tarbosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> TARBOSAURUS_TOOTH = ITEMS.register("tarbosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_SKULL = ITEMS.register("tarbosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_RIBS= ITEMS.register("tarbosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_CLAW = ITEMS.register("tarbosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_TAIL = ITEMS.register("tarbosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_SPINE = ITEMS.register("tarbosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TARBOSAURUS_LEG = ITEMS.register("tarbosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //TROODON
+    public static final RegistryObject<Item> TROODON_FOSSIL_TOOTH = ITEMS.register("troodon_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_SKULL = ITEMS.register("troodon_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_RIBS= ITEMS.register("troodon_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_CLAW = ITEMS.register("troodon_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_TAIL = ITEMS.register("troodon_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_SPINE = ITEMS.register("troodon_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_LEG = ITEMS.register("troodon_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_FOSSIL_RAPTOR_CLAW = ITEMS.register("troodon_fossil_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> TROODON_TOOTH = ITEMS.register("troodon_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_SKULL = ITEMS.register("troodon_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_RIBS= ITEMS.register("troodon_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_CLAW = ITEMS.register("troodon_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_TAIL = ITEMS.register("troodon_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_SPINE = ITEMS.register("troodon_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_LEG = ITEMS.register("troodon_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TROODON_RAPTOR_CLAW = ITEMS.register("troodon_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //UTAHRAPTOR
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_TOOTH = ITEMS.register("utahraptor_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_SKULL = ITEMS.register("utahraptor_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_RIBS= ITEMS.register("utahraptor_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_CLAW = ITEMS.register("utahraptor_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_TAIL = ITEMS.register("utahraptor_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_SPINE = ITEMS.register("utahraptor_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_LEG = ITEMS.register("utahraptor_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_FOSSIL_RAPTOR_CLAW = ITEMS.register("utahraptor_fossil_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> UTAHRAPTOR_TOOTH = ITEMS.register("utahraptor_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_SKULL = ITEMS.register("utahraptor_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_RIBS= ITEMS.register("utahraptor_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_CLAW = ITEMS.register("utahraptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_TAIL = ITEMS.register("utahraptor_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_SPINE = ITEMS.register("utahraptor_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_LEG = ITEMS.register("utahraptor_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> UTAHRAPTOR_RAPTOR_CLAW = ITEMS.register("utahraptor_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //YUTYRANNUS
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_TOOTH = ITEMS.register("yutyrannus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_SKULL = ITEMS.register("yutyrannus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_RIBS= ITEMS.register("yutyrannus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_CLAW = ITEMS.register("yutyrannus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_TAIL = ITEMS.register("yutyrannus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_SPINE = ITEMS.register("yutyrannus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_FOSSIL_LEG = ITEMS.register("yutyrannus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> YUTYRANNUS_TOOTH = ITEMS.register("yutyrannus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_SKULL = ITEMS.register("yutyrannus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_RIBS= ITEMS.register("yutyrannus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_CLAW = ITEMS.register("yutyrannus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_TAIL = ITEMS.register("yutyrannus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_SPINE = ITEMS.register("yutyrannus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YUTYRANNUS_LEG = ITEMS.register("yutyrannus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
-
-    //TROPHIES
-    public static final RegistryObject<TrophyItem> ACROTROPHY = ITEMS.register("acrotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 3,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> ALBERTOTROPHY = ITEMS.register("albertotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 3,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 5, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> ALLOTROPHY = ITEMS.register("allotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> ANDALTROPHY = ITEMS.register("andaltrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 1,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> ARCHAETROPHY = ITEMS.register("archaetrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> AUSTRALOTROPHY = ITEMS.register("australotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> AUSTROTROPHY = ITEMS.register("austrotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
-
-            ));
-    public static final RegistryObject<TrophyItem> CARCHARTROPHY = ITEMS.register("carchartrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> CARNOTROPHY = ITEMS.register("carnotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> CERATOTROPHY = ITEMS.register("ceratotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> COMPYTROPHY = ITEMS.register("compytrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.SATURATION, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-            ));
-
-    public static final RegistryObject<TrophyItem> CRYOTROPHY = ITEMS.register("cryotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> DEINONTROPHY = ITEMS.register("deinontrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> DILOTROPHY = ITEMS.register("dilotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.INVISIBILITY, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.LUCK, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> GIGATROPHY = ITEMS.register("gigatrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 3, true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> MAHAKALATROPHY = ITEMS.register("mahakalatrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> MAJUNGATROPHY = ITEMS.register("majungatrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> REXTROPHY = ITEMS.register("rextrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 5, true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> SPINOTROPHY = ITEMS.register("spinotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 2880, 1,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> TARBOTROPHY = ITEMS.register("tarbotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 1,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> TROODONTROPHY = ITEMS.register("troodontrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.LUCK, 2880, 5,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 2, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> UTAHTROPHY = ITEMS.register("utahtrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> YUTYTROPHY = ITEMS.register("yutytrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-
-
-    public static final RegistryObject<TrophyItem> AMARGATROPHY = ITEMS.register("amargatrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.SATURATION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> AMPELOTROPHY = ITEMS.register("ampelotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> ANKYTROPHY = ITEMS.register("ankytrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> AVATROPHY = ITEMS.register("avatrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 2,true, false)
-            ));
-    public static final RegistryObject<TrophyItem> DEINOCHTROPHY = ITEMS.register("deinochtrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.WATER_BREATHING, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> GALLITROPHY = ITEMS.register("gallitrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.JUMP, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> GRYPOTROPHY = ITEMS.register("grypotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.SATURATION, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.HEAL, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> PACHYRTROPHY = ITEMS.register("pachyrtrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.HEAL, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> PARATROPHY = ITEMS.register("paratrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> SAUROTROPHY = ITEMS.register("saurotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false),
-                    new MobEffectInstance(MobEffects.SATURATION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> SHANTTROPHY = ITEMS.register("shanttrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> STEGOTROPHY = ITEMS.register("stegotrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.REGENERATION, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 3, true, false)
-            ));
-    public static final RegistryObject<TrophyItem> THERITROPHY = ITEMS.register("theritrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
-            ));
-
-    public static final RegistryObject<TrophyItem> TRIKETROPHY = ITEMS.register("triketrophy",
-            () -> new TrophyItem(
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 3, true, false)
-            ));
 
 
     //TODO;
 //    public static final RegistryObject<Item> ARCHAE_HARNESS = ITEMS.register("archae_harness",
 //            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
-
-
 
 
 

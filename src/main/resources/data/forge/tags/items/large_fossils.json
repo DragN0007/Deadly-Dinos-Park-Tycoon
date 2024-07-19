@@ -31,6 +31,30 @@
     "deadlydinospt:giganotosaurus_fossil_tail",
     "deadlydinospt:giganotosaurus_fossil_spine",
     "deadlydinospt:giganotosaurus_fossil_leg",
-    "deadlydinospt:giganotosaurus_fossil_claw"
+    "deadlydinospt:giganotosaurus_fossil_claw",
+
+    "deadlydinospt:tyrannosaurus_fossil_tooth",
+    "deadlydinospt:tyrannosaurus_fossil_skull",
+    "deadlydinospt:tyrannosaurus_fossil_ribs",
+    "deadlydinospt:tyrannosaurus_fossil_tail",
+    "deadlydinospt:tyrannosaurus_fossil_spine",
+    "deadlydinospt:tyrannosaurus_fossil_leg",
+    "deadlydinospt:tyrannosaurus_fossil_claw",
+
+    "deadlydinospt:spinosaurus_fossil_tooth",
+    "deadlydinospt:spinosaurus_fossil_skull",
+    "deadlydinospt:spinosaurus_fossil_ribs",
+    "deadlydinospt:spinosaurus_fossil_tail",
+    "deadlydinospt:spinosaurus_fossil_spine",
+    "deadlydinospt:spinosaurus_fossil_leg",
+    "deadlydinospt:spinosaurus_fossil_claw",
+
+    "deadlydinospt:tarbosaurus_fossil_tooth",
+    "deadlydinospt:tarbosaurus_fossil_skull",
+    "deadlydinospt:tarbosaurus_fossil_ribs",
+    "deadlydinospt:tarbosaurus_fossil_tail",
+    "deadlydinospt:tarbosaurus_fossil_spine",
+    "deadlydinospt:tarbosaurus_fossil_leg",
+    "deadlydinospt:tarbosaurus_fossil_claw"
   ]
 }

@@ -88,6 +88,27 @@ public class DDPTTags {
         public static final TagKey<Item> MAHAKALA_BONES = tag("mahakala_bones");
         public static final TagKey<Item> MAHAKALA_FOSSILS = tag("mahakala_fossils");
 
+        public static final TagKey<Item> MAJUNGASAURUS_BONES = tag("majungasaurus_bones");
+        public static final TagKey<Item> MAJUNGASAURUS_FOSSILS = tag("majungasaurus_fossils");
+
+        public static final TagKey<Item> TYRANNOSAURUS_BONES = tag("tyrannosaurus_bones");
+        public static final TagKey<Item> TYRANNOSAURUS_FOSSILS = tag("tyrannosaurus_fossils");
+
+        public static final TagKey<Item> SPINOSAURUS_BONES = tag("spinosaurus_bones");
+        public static final TagKey<Item> SPINOSAURUS_FOSSILS = tag("spinosaurus_fossils");
+
+        public static final TagKey<Item> TARBOSAURUS_BONES = tag("tarbosaurus_bones");
+        public static final TagKey<Item> TARBOSAURUS_FOSSILS = tag("tarbosaurus_fossils");
+
+        public static final TagKey<Item> TROODON_BONES = tag("troodon_bones");
+        public static final TagKey<Item> TROODON_FOSSILS = tag("troodon_fossils");
+
+        public static final TagKey<Item> UTAHRAPTOR_BONES = tag("utahraptor_bones");
+        public static final TagKey<Item> UTAHRAPTOR_FOSSILS = tag("utahraptor_fossils");
+
+        public static final TagKey<Item> YUTYRANNUS_BONES = tag("yutyrannus_bones");
+        public static final TagKey<Item> YUTYRANNUS_FOSSILS = tag("yutyrannus_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));

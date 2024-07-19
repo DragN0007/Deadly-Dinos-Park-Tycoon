@@ -17,7 +17,6 @@
     "deadlydinospt:compsognathus_fossil_spine",
     "deadlydinospt:compsognathus_fossil_leg",
     "deadlydinospt:compsognathus_fossil_claw",
-    "deadlydinospt:compsognathus_fossil_raptor_claw",
 
     "deadlydinospt:deinonychus_fossil_tooth",
     "deadlydinospt:deinonychus_fossil_skull",
@@ -35,6 +34,15 @@
     "deadlydinospt:mahakala_fossil_spine",
     "deadlydinospt:mahakala_fossil_leg",
     "deadlydinospt:mahakala_fossil_claw",
-    "deadlydinospt:mahakala_fossil_raptor_claw"
+    "deadlydinospt:mahakala_fossil_raptor_claw",
+
+    "deadlydinospt:troodon_fossil_tooth",
+    "deadlydinospt:troodon_fossil_skull",
+    "deadlydinospt:troodon_fossil_ribs",
+    "deadlydinospt:troodon_fossil_tail",
+    "deadlydinospt:troodon_fossil_spine",
+    "deadlydinospt:troodon_fossil_leg",
+    "deadlydinospt:troodon_fossil_claw",
+    "deadlydinospt:troodon_fossil_raptor_claw"
   ]
 }

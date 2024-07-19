@@ -65,6 +65,31 @@
     "deadlydinospt:dilophosaurus_fossil_tail",
     "deadlydinospt:dilophosaurus_fossil_spine",
     "deadlydinospt:dilophosaurus_fossil_leg",
-    "deadlydinospt:dilophosaurus_fossil_claw"
+    "deadlydinospt:dilophosaurus_fossil_claw",
+
+    "deadlydinospt:majungasaurus_fossil_tooth",
+    "deadlydinospt:majungasaurus_fossil_skull",
+    "deadlydinospt:majungasaurus_fossil_ribs",
+    "deadlydinospt:majungasaurus_fossil_tail",
+    "deadlydinospt:majungasaurus_fossil_spine",
+    "deadlydinospt:majungasaurus_fossil_leg",
+    "deadlydinospt:majungasaurus_fossil_claw",
+
+    "deadlydinospt:utahraptor_fossil_tooth",
+    "deadlydinospt:utahraptor_fossil_skull",
+    "deadlydinospt:utahraptor_fossil_ribs",
+    "deadlydinospt:utahraptor_fossil_tail",
+    "deadlydinospt:utahraptor_fossil_spine",
+    "deadlydinospt:utahraptor_fossil_leg",
+    "deadlydinospt:utahraptor_fossil_claw",
+    "deadlydinospt:utahraptor_fossil_raptor_claw",
+
+    "deadlydinospt:yutyrannus_fossil_tooth",
+    "deadlydinospt:yutyrannus_fossil_skull",
+    "deadlydinospt:yutyrannus_fossil_ribs",
+    "deadlydinospt:yutyrannus_fossil_tail",
+    "deadlydinospt:yutyrannus_fossil_spine",
+    "deadlydinospt:yutyrannus_fossil_leg",
+    "deadlydinospt:yutyrannus_fossil_claw"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:troodon_fossil_tooth",
+    "deadlydinospt:troodon_fossil_skull",
+    "deadlydinospt:troodon_fossil_ribs",
+    "deadlydinospt:troodon_fossil_tail",
+    "deadlydinospt:troodon_fossil_spine",
+    "deadlydinospt:troodon_fossil_leg",
+    "deadlydinospt:troodon_fossil_claw",
+    "deadlydinospt:troodon_raptor_claw"
+  ]
+}

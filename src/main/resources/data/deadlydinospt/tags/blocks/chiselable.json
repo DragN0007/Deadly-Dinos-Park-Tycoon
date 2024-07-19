@@ -16,6 +16,13 @@
     "deadlydinospt:deinonychus_fossil",
     "deadlydinospt:dilophosaurus_fossil",
     "deadlydinospt:giganotosaurus_fossil",
-    "deadlydinospt:mahakala_fossil"
+    "deadlydinospt:mahakala_fossil",
+    "deadlydinospt:majungasaurus_fossil",
+    "deadlydinospt:tyrannosaurus_fossil",
+    "deadlydinospt:spinosaurus_fossil",
+    "deadlydinospt:tarbosaurus_fossil",
+    "deadlydinospt:troodon_fossil",
+    "deadlydinospt:utahraptor_fossil",
+    "deadlydinospt:yutyrannus_fossil"
   ]
 }

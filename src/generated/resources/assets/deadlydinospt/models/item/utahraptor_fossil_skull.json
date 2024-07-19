@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "deadlydinospt:item/utahraptor_fossil_skull"
+  }
+}

@@ -613,6 +613,150 @@
   "item.deadlydinospt.mahakala_raptor_claw": "Mahakala Talon",
 
 
+  "block.deadlydinospt.majungasaurus_fossil": "Majungasaurus Fossil",
+  "block.deadlydinospt.chiseled_majungasaurus_fossil": "Chiseled Majungasaurus Fossil",
+
+  "item.deadlydinospt.majungasaurus_fossil_tooth": "Majungasaurus Tooth Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_skull": "Majungasaurus Skull Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_ribs": "Majungasaurus Ribs Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_claw": "Majungasaurus Claw Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_tail": "Majungasaurus Tail Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_spine": "Majungasaurus Spine Fossil",
+  "item.deadlydinospt.majungasaurus_fossil_leg": "Majungasaurus Leg Fossil",
+
+  "item.deadlydinospt.majungasaurus_tooth": "Majungasaurus Tooth",
+  "item.deadlydinospt.majungasaurus_skull": "Majungasaurus Skull",
+  "item.deadlydinospt.majungasaurus_ribs": "Majungasaurus Ribs",
+  "item.deadlydinospt.majungasaurus_claw": "Majungasaurus Claw",
+  "item.deadlydinospt.majungasaurus_tail": "Majungasaurus Tail",
+  "item.deadlydinospt.majungasaurus_spine": "Majungasaurus Spine",
+  "item.deadlydinospt.majungasaurus_leg": "Majungasaurus Leg",
+
+
+  "block.deadlydinospt.tyrannosaurus_fossil": "Tyrannosaurus Fossil",
+  "block.deadlydinospt.chiseled_tyrannosaurus_fossil": "Chiseled Tyrannosaurus Fossil",
+
+  "item.deadlydinospt.tyrannosaurus_fossil_tooth": "Tyrannosaurus Tooth Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_skull": "Tyrannosaurus Skull Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_ribs": "Tyrannosaurus Ribs Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_claw": "Tyrannosaurus Claw Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_tail": "Tyrannosaurus Tail Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_spine": "Tyrannosaurus Spine Fossil",
+  "item.deadlydinospt.tyrannosaurus_fossil_leg": "Tyrannosaurus Leg Fossil",
+
+  "item.deadlydinospt.tyrannosaurus_tooth": "Tyrannosaurus Tooth",
+  "item.deadlydinospt.tyrannosaurus_skull": "Tyrannosaurus Skull",
+  "item.deadlydinospt.tyrannosaurus_ribs": "Tyrannosaurus Ribs",
+  "item.deadlydinospt.tyrannosaurus_claw": "Tyrannosaurus Claw",
+  "item.deadlydinospt.tyrannosaurus_tail": "Tyrannosaurus Tail",
+  "item.deadlydinospt.tyrannosaurus_spine": "Tyrannosaurus Spine",
+  "item.deadlydinospt.tyrannosaurus_leg": "Tyrannosaurus Leg",
+
+
+  "block.deadlydinospt.spinosaurus_fossil": "Spinosaurus Fossil",
+  "block.deadlydinospt.chiseled_spinosaurus_fossil": "Chiseled Spinosaurus Fossil",
+
+  "item.deadlydinospt.spinosaurus_fossil_tooth": "Spinosaurus Tooth Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_skull": "Spinosaurus Skull Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_ribs": "Spinosaurus Ribs Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_claw": "Spinosaurus Claw Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_tail": "Spinosaurus Tail Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_spine": "Spinosaurus Spine Fossil",
+  "item.deadlydinospt.spinosaurus_fossil_leg": "Spinosaurus Leg Fossil",
+
+  "item.deadlydinospt.spinosaurus_tooth": "Spinosaurus Tooth",
+  "item.deadlydinospt.spinosaurus_skull": "Spinosaurus Skull",
+  "item.deadlydinospt.spinosaurus_ribs": "Spinosaurus Ribs",
+  "item.deadlydinospt.spinosaurus_claw": "Spinosaurus Claw",
+  "item.deadlydinospt.spinosaurus_tail": "Spinosaurus Tail",
+  "item.deadlydinospt.spinosaurus_spine": "Spinosaurus Spine",
+  "item.deadlydinospt.spinosaurus_leg": "Spinosaurus Leg",
+
+
+  "block.deadlydinospt.tarbosaurus_fossil": "Tarbosaurus Fossil",
+  "block.deadlydinospt.chiseled_tarbosaurus_fossil": "Chiseled Tarbosaurus Fossil",
+
+  "item.deadlydinospt.tarbosaurus_fossil_tooth": "Tarbosaurus Tooth Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_skull": "Tarbosaurus Skull Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_ribs": "Tarbosaurus Ribs Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_claw": "Tarbosaurus Claw Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_tail": "Tarbosaurus Tail Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_spine": "Tarbosaurus Spine Fossil",
+  "item.deadlydinospt.tarbosaurus_fossil_leg": "Tarbosaurus Leg Fossil",
+
+  "item.deadlydinospt.tarbosaurus_tooth": "Tarbosaurus Tooth",
+  "item.deadlydinospt.tarbosaurus_skull": "Tarbosaurus Skull",
+  "item.deadlydinospt.tarbosaurus_ribs": "Tarbosaurus Ribs",
+  "item.deadlydinospt.tarbosaurus_claw": "Tarbosaurus Claw",
+  "item.deadlydinospt.tarbosaurus_tail": "Tarbosaurus Tail",
+  "item.deadlydinospt.tarbosaurus_spine": "Tarbosaurus Spine",
+  "item.deadlydinospt.tarbosaurus_leg": "Tarbosaurus Leg",
+
+
+  "block.deadlydinospt.troodon_fossil": "Troodon Fossil",
+  "block.deadlydinospt.chiseled_troodon_fossil": "Chiseled Troodon Fossil",
+
+  "item.deadlydinospt.troodon_fossil_tooth": "Troodon Tooth Fossil",
+  "item.deadlydinospt.troodon_fossil_skull": "Troodon Skull Fossil",
+  "item.deadlydinospt.troodon_fossil_ribs": "Troodon Ribs Fossil",
+  "item.deadlydinospt.troodon_fossil_claw": "Troodon Claw Fossil",
+  "item.deadlydinospt.troodon_fossil_tail": "Troodon Tail Fossil",
+  "item.deadlydinospt.troodon_fossil_spine": "Troodon Spine Fossil",
+  "item.deadlydinospt.troodon_fossil_leg": "Troodon Leg Fossil",
+  "item.deadlydinospt.troodon_fossil_raptor_claw": "Troodon Talon Fossil",
+
+  "item.deadlydinospt.troodon_tooth": "Troodon Tooth",
+  "item.deadlydinospt.troodon_skull": "Troodon Skull",
+  "item.deadlydinospt.troodon_ribs": "Troodon Ribs",
+  "item.deadlydinospt.troodon_claw": "Troodon Claw",
+  "item.deadlydinospt.troodon_tail": "Troodon Tail",
+  "item.deadlydinospt.troodon_spine": "Troodon Spine",
+  "item.deadlydinospt.troodon_leg": "Troodon Leg",
+  "item.deadlydinospt.troodon_raptor_claw": "Troodon Talon",
+
+
+  "block.deadlydinospt.utahraptor_fossil": "Utahraptor Fossil",
+  "block.deadlydinospt.chiseled_utahraptor_fossil": "Chiseled Utahraptor Fossil",
+
+  "item.deadlydinospt.utahraptor_fossil_tooth": "Utahraptor Tooth Fossil",
+  "item.deadlydinospt.utahraptor_fossil_skull": "Utahraptor Skull Fossil",
+  "item.deadlydinospt.utahraptor_fossil_ribs": "Utahraptor Ribs Fossil",
+  "item.deadlydinospt.utahraptor_fossil_claw": "Utahraptor Claw Fossil",
+  "item.deadlydinospt.utahraptor_fossil_tail": "Utahraptor Tail Fossil",
+  "item.deadlydinospt.utahraptor_fossil_spine": "Utahraptor Spine Fossil",
+  "item.deadlydinospt.utahraptor_fossil_leg": "Utahraptor Leg Fossil",
+  "item.deadlydinospt.utahraptor_fossil_raptor_claw": "Utahraptor Talon Fossil",
+
+  "item.deadlydinospt.utahraptor_tooth": "Utahraptor Tooth",
+  "item.deadlydinospt.utahraptor_skull": "Utahraptor Skull",
+  "item.deadlydinospt.utahraptor_ribs": "Utahraptor Ribs",
+  "item.deadlydinospt.utahraptor_claw": "Utahraptor Claw",
+  "item.deadlydinospt.utahraptor_tail": "Utahraptor Tail",
+  "item.deadlydinospt.utahraptor_spine": "Utahraptor Spine",
+  "item.deadlydinospt.utahraptor_leg": "Utahraptor Leg",
+  "item.deadlydinospt.utahraptor_raptor_claw": "Utahraptor Talon",
+
+
+  "block.deadlydinospt.yutyrannus_fossil": "Yutyrannus Fossil",
+  "block.deadlydinospt.chiseled_yutyrannus_fossil": "Chiseled Yutyrannus Fossil",
+
+  "item.deadlydinospt.yutyrannus_fossil_tooth": "Yutyrannus Tooth Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_skull": "Yutyrannus Skull Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_ribs": "Yutyrannus Ribs Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_claw": "Yutyrannus Claw Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_tail": "Yutyrannus Tail Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_spine": "Yutyrannus Spine Fossil",
+  "item.deadlydinospt.yutyrannus_fossil_leg": "Yutyrannus Leg Fossil",
+
+  "item.deadlydinospt.yutyrannus_tooth": "Yutyrannus Tooth",
+  "item.deadlydinospt.yutyrannus_skull": "Yutyrannus Skull",
+  "item.deadlydinospt.yutyrannus_ribs": "Yutyrannus Ribs",
+  "item.deadlydinospt.yutyrannus_claw": "Yutyrannus Claw",
+  "item.deadlydinospt.yutyrannus_tail": "Yutyrannus Tail",
+  "item.deadlydinospt.yutyrannus_spine": "Yutyrannus Spine",
+  "item.deadlydinospt.yutyrannus_leg": "Yutyrannus Leg",
+
+
 
   "block.deadlydinospt.cycas": "Cycas",
   "block.deadlydinospt.cycads": "Cycads",

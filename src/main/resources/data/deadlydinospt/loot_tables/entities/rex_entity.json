@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniskull"
+          "name": "deadlydinospt:tyrannosaurus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnispine"
+          "name": "deadlydinospt:tyrannosaurus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniribs"
+          "name": "deadlydinospt:tyrannosaurus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnitail"
+          "name": "deadlydinospt:tyrannosaurus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarniclaw"
+          "name": "deadlydinospt:tyrannosaurus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnitooth"
+          "name": "deadlydinospt:tyrannosaurus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largecarnileg"
+          "name": "deadlydinospt:tyrannosaurus_leg"
         }
       ]
     },

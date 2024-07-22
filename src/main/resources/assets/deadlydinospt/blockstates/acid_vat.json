@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "deadlydinospt:block/science/acid_vat",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "deadlydinospt:block/science/acid_vat"
+    },
+    "facing=south": {
+      "model": "deadlydinospt:block/science/acid_vat",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "deadlydinospt:block/science/acid_vat",
+      "y": 270
+    }
+  }
+}

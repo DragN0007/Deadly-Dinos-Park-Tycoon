@@ -3,7 +3,6 @@ package com.dragn0007.deadlydinospt.block;
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.fossil.*;
 import com.dragn0007.deadlydinospt.block.other.DinoNuggetBox;
-import com.dragn0007.deadlydinospt.entity.carni.Troodon;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import com.dragn0007.deadlydinospt.world.feature.tree.ConiferTreeGrower;
@@ -42,6 +41,8 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> RCOBBLESTONE = registerBlock("rcobblestone",
             () -> new Block(Block.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+
+
 
 
     //WOOD

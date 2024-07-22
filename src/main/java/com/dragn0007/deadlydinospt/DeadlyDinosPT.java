@@ -2,6 +2,7 @@ package com.dragn0007.deadlydinospt;
 
 import com.dragn0007.deadlydinospt.block.DDPTBlocks;
 import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
+import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
@@ -48,6 +49,7 @@ public class DeadlyDinosPT
         DDPTBlocksDataGen.register(eventBus);
         EntityTypes.ENTITY_TYPES.register(eventBus);
         DDPTMenuTypes.register(eventBus);
+        DDPTBlockEntities.register(eventBus);
 
         GeckoLib.initialize();
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosPTCommonConfig.SPEC, "deadlydinosparktycoon-common.toml");

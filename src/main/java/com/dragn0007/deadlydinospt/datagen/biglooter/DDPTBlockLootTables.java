@@ -13,6 +13,10 @@ public class DDPTBlockLootTables extends BlockLoot {
         this.dropSelf(DDPTBlocksDataGen.ACRO_PLUSHY_1.get());
         this.dropSelf(DDPTBlocksDataGen.ACRO_PLUSHY_2.get());
 
+        this.dropSelf(DDPTBlocksDataGen.ACID_VAT.get());
+        this.dropSelf(DDPTBlocksDataGen.DNA_EXTRACTOR.get());
+        this.dropSelf(DDPTBlocksDataGen.EMBRYO_INITIATOR.get());
+        this.dropSelf(DDPTBlocksDataGen.EMBRYO_INJECTOR.get());
 
         this.dropSelf(DDPTBlocksDataGen.ASTEROXYLON.get());
         this.dropSelf(DDPTBlocksDataGen.HORSETAIL.get());

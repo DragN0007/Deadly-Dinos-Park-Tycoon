@@ -237,6 +237,13 @@
   "item.deadlydinospt.chisel": "Chisel",
   "item.deadlydinospt.brush": "Brush",
 
+  "item.deadlydinospt.acid_bucket": "Acid Bucket",
+  "item.deadlydinospt.embryo": "Embryo",
+  "item.deadlydinospt.fossilized_soft_tissue": "Fossilized Soft Tissue",
+  "item.deadlydinospt.petri_dish": "Petri Dish",
+  "item.deadlydinospt.dna_petri_dish": "DNA Petri Dish",
+  "item.deadlydinospt.test_tube": "Test Tube",
+
 
   "block.deadlydinospt.dino_gift_box": "Dino Gift Box",
   "block.deadlydinospt.para_plushy_1": "Female Parasaurolophus Plushy",
@@ -246,6 +253,11 @@
 
 
   "block.deadlydinospt.dino_nuggets_box": "Box of Dino Nuggets",
+
+  "block.deadlydinospt.acid_vat": "Acid Vat",
+  "block.deadlydinospt.dna_extractor": "DNA Extractor",
+  "block.deadlydinospt.embryo_initiator": "Embryo Initiator",
+  "block.deadlydinospt.embryo_injector": "Embryo Injector",
 
   
   "block.deadlydinospt.sequoia_planks": "Grand Sequoia Planks",

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "deadlydinospt:block/science/embryo_initiator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "deadlydinospt:block/science/embryo_initiator"
+    },
+    "facing=south": {
+      "model": "deadlydinospt:block/science/embryo_initiator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "deadlydinospt:block/science/embryo_initiator",
+      "y": 270
+    }
+  }
+}

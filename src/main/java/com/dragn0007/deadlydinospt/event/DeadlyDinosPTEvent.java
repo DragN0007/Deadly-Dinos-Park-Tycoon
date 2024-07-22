@@ -4,10 +4,7 @@ import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.DDPTBlocks;
 import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
-import com.dragn0007.deadlydinospt.client.menu.AmargaScreen;
-import com.dragn0007.deadlydinospt.client.menu.GrypoScreen;
-import com.dragn0007.deadlydinospt.client.menu.ParaScreen;
-import com.dragn0007.deadlydinospt.client.menu.YutyScreen;
+import com.dragn0007.deadlydinospt.client.menu.*;
 import com.dragn0007.deadlydinospt.client.render.*;
 import com.dragn0007.deadlydinospt.entity.carni.*;
 import com.dragn0007.deadlydinospt.entity.herbi.*;
@@ -135,6 +132,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.RGLASS.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocksDataGen.ACID_VAT.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.CONIFERLEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.CONIFERSAPLING.get(), RenderType.cutout());
@@ -158,6 +156,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 //        MenuScreens.register(DDPTMenuTypes.ICHTHY_MENU.get(), IchthyScreen::new);
 //        MenuScreens.register(DDPTMenuTypes.IGUA_MENU.get(), IguaScreen::new);
 //        MenuScreens.register(DDPTMenuTypes.TRIKE_MENU.get(), TrikeScreen::new);
+
+        MenuScreens.register(DDPTMenuTypes.ACID_VAT_MENU.get(), AcidVatScreen::new);
     }
 }
 

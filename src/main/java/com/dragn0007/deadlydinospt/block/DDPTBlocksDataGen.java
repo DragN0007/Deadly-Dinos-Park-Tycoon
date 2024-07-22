@@ -2,14 +2,17 @@ package com.dragn0007.deadlydinospt.block;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.other.Plushy;
+import com.dragn0007.deadlydinospt.block.science.*;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,6 +37,14 @@ public class DDPTBlocksDataGen {
             () -> new Plushy());
 
 
+    public static final RegistryObject<Block> ACID_VAT = registerBlock("acid_vat",
+            () -> new AcidVat(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> DNA_EXTRACTOR = registerBlock("dna_extractor",
+            () -> new DNAExtractor());
+    public static final RegistryObject<Block> EMBRYO_INITIATOR = registerBlock("embryo_initiator",
+            () -> new EmbryoInitiator());
+    public static final RegistryObject<Block> EMBRYO_INJECTOR = registerBlock("embryo_injector",
+            () -> new EmbryoInjector());
 
 
     public static final RegistryObject<FlowerBlock> ASTEROXYLON = registerBlock("asteroxylon",

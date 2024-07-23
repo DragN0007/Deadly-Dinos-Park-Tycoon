@@ -2,7 +2,10 @@ package com.dragn0007.deadlydinospt.block;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.other.Plushy;
-import com.dragn0007.deadlydinospt.block.science.*;
+import com.dragn0007.deadlydinospt.block.science.AcidVat;
+import com.dragn0007.deadlydinospt.block.science.DNAExtractor;
+import com.dragn0007.deadlydinospt.block.science.EmbryoInitiator;
+import com.dragn0007.deadlydinospt.block.science.EmbryoInjector;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.world.effect.MobEffects;

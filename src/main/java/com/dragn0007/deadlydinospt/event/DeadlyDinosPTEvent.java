@@ -133,6 +133,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.RGLASS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocksDataGen.ACID_VAT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocksDataGen.EMBRYO_INITIATOR.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.CONIFERLEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.CONIFERSAPLING.get(), RenderType.cutout());

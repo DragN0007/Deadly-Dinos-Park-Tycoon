@@ -2,8 +2,8 @@
 	"credit": "DragN0007",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "deadlydinospt:block/embroyo_injector",
-		"particle": "deadlydinospt:block/embroyo_injector"
+		"0": "deadlydinospt:block/embryo_injector",
+		"particle": "deadlydinospt:block/embryo_injector"
 	},
 	"elements": [
 		{

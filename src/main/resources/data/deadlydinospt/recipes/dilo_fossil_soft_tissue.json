@@ -1,0 +1,12 @@
+{
+  "type": "deadlydinospt:dissolve_fossils",
+  "ingredients": [
+    {
+      "tag": "deadlydinospt:dilophosaurus_fossils"
+    }
+  ],
+  "output": {
+    "item": "deadlydinospt:soft_tissue",
+    "chance": "1"
+  }
+}

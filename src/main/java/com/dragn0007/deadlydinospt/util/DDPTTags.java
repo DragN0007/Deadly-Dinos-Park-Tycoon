@@ -27,6 +27,8 @@ public class DDPTTags {
         public static final TagKey<Item> DOUGH = forgeTag("dough");
 
 
+        public static final TagKey<Item> DINO_BONES = forgeTag("dino_bones");
+
         public static final TagKey<Item> LARGE_BONES = forgeTag("large_bones");
         public static final TagKey<Item> MEDIUM_BONES = forgeTag("medium_bones");
         public static final TagKey<Item> SMALL_BONES = forgeTag("small_bones");

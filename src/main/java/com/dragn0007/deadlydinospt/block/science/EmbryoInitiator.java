@@ -14,19 +14,19 @@ public class EmbryoInitiator extends StrongDecorRotator {
     }
 
     public static final VoxelShape NORTH = Stream.of(
-            Block.box(2, 0, 2, 14, 8.5, 14)
+            Block.box(1, 0, 1, 15, 10, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
     public static final VoxelShape EAST = Stream.of(
-            Block.box(2, 0, 2, 14, 8.5, 14)
+            Block.box(1, 0, 1, 15, 10, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
 
     public static final VoxelShape SOUTH = Stream.of(
-            Block.box(2, 0, 2, 14, 8.5, 14)
+            Block.box(1, 0, 1, 15, 10, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
 
     public static final VoxelShape WEST = Stream.of(
-            Block.box(2, 0, 2, 14, 8.5, 14)
+            Block.box(1, 0, 1, 15, 10, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
 
 

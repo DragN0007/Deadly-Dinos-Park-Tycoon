@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:large_bones",
+    "#forge:large_fossils",
+    "#forge:medium_bones",
+    "#forge:medium_fossils",
+    "#forge:small_bones",
+    "#forge:small_fossils"
+  ]
+    }

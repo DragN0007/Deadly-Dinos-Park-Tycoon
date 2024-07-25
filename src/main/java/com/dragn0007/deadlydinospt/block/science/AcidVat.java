@@ -18,10 +18,14 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.stream.Stream;
 
 public class AcidVat extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -30,14 +34,16 @@ public class AcidVat extends BaseEntityBlock {
         super(properties);
     }
 
-    private static final VoxelShape SHAPE =  Block.box(0, 0, 0, 16, 8, 16);
+    public static final VoxelShape SHAPE = Stream.of(
+            Block.box(1, 0, 1, 15, 2, 15),
+            Block.box(1, 16, 1, 15, 18, 15),
+            Block.box(3, 2, 3, 13, 16, 13)
+    ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return SHAPE;
     }
-
-    /* FACING */
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
@@ -58,8 +64,6 @@ public class AcidVat extends BaseEntityBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(FACING);
     }
-
-    /* BLOCK ENTITY */
 
     @Override
     public RenderShape getRenderShape(BlockState pState) {
@@ -105,32 +109,3 @@ public class AcidVat extends BaseEntityBlock {
                 AcidVatEntity::tick);
     }
 }
-
-
-//    public AcidVat() {
-//        super(NORTH, EAST, SOUTH, WEST);
-//    }
-//    public static final VoxelShape NORTH = Stream.of(
-//            Block.box(1, 0, 1, 15, 2, 15),
-//            Block.box(1, 16, 1, 15, 18, 15),
-//            Block.box(3, 2, 3, 13, 16, 13)
-//    ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
-//
-//    public static final VoxelShape EAST = Stream.of(
-//            Block.box(1, 0, 1, 15, 2, 15),
-//            Block.box(1, 16, 1, 15, 18, 15),
-//            Block.box(3, 2, 3, 13, 16, 13)
-//    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
-//
-//    public static final VoxelShape SOUTH = Stream.of(
-//            Block.box(1, 0, 1, 15, 2, 15),
-//            Block.box(1, 16, 1, 15, 18, 15),
-//            Block.box(3, 2, 3, 13, 16, 13)
-//    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
-//
-//    public static final VoxelShape WEST = Stream.of(
-//            Block.box(1, 0, 1, 15, 2, 15),
-//            Block.box(1, 16, 1, 15, 18, 15),
-//            Block.box(3, 2, 3, 13, 16, 13)
-//    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
-//}

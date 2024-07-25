@@ -1,33 +1,110 @@
 package com.dragn0007.deadlydinospt.block.science;
 
 import com.dragn0007.deadlydinospt.block.rot.StrongDecorRotator;
-import net.minecraft.world.level.block.Block;
+import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.BooleanOp;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
 
-public class DNAExtractor extends StrongDecorRotator {
-    public DNAExtractor() {
-        super(NORTH, EAST, SOUTH, WEST);
+public class DNAExtractor extends BaseEntityBlock {
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+
+    public DNAExtractor(Properties properties) {
+        super(properties);
     }
 
-    public static final VoxelShape NORTH = Stream.of(
-            Block.box(3, 0, 3, 13, 16, 15)
+    public static final VoxelShape SHAPE = Stream.of(
+            Block.box(1, 0, 1, 15, 16, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
-    public static final VoxelShape EAST = Stream.of(
-            Block.box(3, 0, 3, 13, 16, 15)
-    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
+    @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
+    }
 
-    public static final VoxelShape SOUTH = Stream.of(
-            Block.box(3, 0, 3, 13, 16, 15)
-    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
+    }
 
-    public static final VoxelShape WEST = Stream.of(
-            Block.box(3, 0, 3, 13, 16, 15)
-    ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
+    @Override
+    public BlockState rotate(BlockState pState, Rotation pRotation) {
+        return pState.setValue(FACING, pRotation.rotate(pState.getValue(FACING)));
+    }
 
+    @Override
+    public BlockState mirror(BlockState pState, Mirror pMirror) {
+        return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
+    }
 
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(FACING);
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
+    }
+
+    @Override
+    public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+        if (pState.getBlock() != pNewState.getBlock()) {
+            BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+            if (blockEntity instanceof AcidVatEntity) {
+                ((AcidVatEntity) blockEntity).drops();
+            }
+        }
+        super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+    }
+
+    @Override
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos,
+                                 Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+        if (!pLevel.isClientSide()) {
+            BlockEntity entity = pLevel.getBlockEntity(pPos);
+            if(entity instanceof AcidVatEntity) {
+                NetworkHooks.openGui(((ServerPlayer)pPlayer), (AcidVatEntity)entity, pPos);
+            } else {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
+        }
+
+        return InteractionResult.sidedSuccess(pLevel.isClientSide());
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new AcidVatEntity(pPos, pState);
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        return createTickerHelper(pBlockEntityType, DDPTBlockEntities.ACID_VAT.get(),
+                AcidVatEntity::tick);
+    }
 }

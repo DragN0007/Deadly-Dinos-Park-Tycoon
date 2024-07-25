@@ -1,21 +1,8 @@
 {
   "replace": false,
   "values": [
-    "deadlydinospt:acrocanthosaurus_tooth",
-    "deadlydinospt:acrocanthosaurus_skull",
-    "deadlydinospt:acrocanthosaurus_ribs",
-    "deadlydinospt:acrocanthosaurus_tail",
-    "deadlydinospt:acrocanthosaurus_spine",
-    "deadlydinospt:acrocanthosaurus_leg",
-    "deadlydinospt:acrocanthosaurus_claw",
-
-    "deadlydinospt:albertosaurus_tooth",
-    "deadlydinospt:albertosaurus_skull",
-    "deadlydinospt:albertosaurus_ribs",
-    "deadlydinospt:albertosaurus_tail",
-    "deadlydinospt:albertosaurus_spine",
-    "deadlydinospt:albertosaurus_leg",
-    "deadlydinospt:albertosaurus_claw",
+    "#deadlydinospt:acrocanthosaurus_bones",
+    "#deadlydinospt:albertosaurus_bones",
 
     "deadlydinospt:carcharodontosaurus_tooth",
     "deadlydinospt:carcharodontosaurus_skull",

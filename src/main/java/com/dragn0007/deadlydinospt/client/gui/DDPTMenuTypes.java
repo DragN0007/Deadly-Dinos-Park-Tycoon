@@ -19,11 +19,18 @@ public class DDPTMenuTypes {
     public static final RegistryObject<MenuType<ParaMenu>> PARA_MENU = MENU_TYPES.register("para_menu", () -> new MenuType<>(ParaMenu.create()));
     public static final RegistryObject<MenuType<YutyMenu>> YUTY_MENU = MENU_TYPES.register("yuty_menu", () -> new MenuType<>(YutyMenu.create()));
     public static final RegistryObject<MenuType<TrikeMenu>> TRIKE_MENU = MENU_TYPES.register("trike_menu", () -> new MenuType<>(TrikeMenu.create()));
-    public static final RegistryObject<MenuType<AcidVatMenu>> ACID_VAT_MENU = registerMenuType(AcidVatMenu::new, "acid_vat_menu");
 
-    private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
+
+    public static final RegistryObject<MenuType<AcidVatMenu>> ACID_VAT_MENU = registerMenuType("acid_vat_menu", AcidVatMenu::new);
+    public static final RegistryObject<MenuType<DNAExtractorMenu>> DNA_EXTRACTOR_MENU = registerMenuType("dna_extractor_menu", DNAExtractorMenu::new);
+    public static final RegistryObject<MenuType<EmbryoInjectorMenu>> EMBRYO_INJECTOR_MENU = registerMenuType("embryo_injector_menu", EmbryoInjectorMenu::new);
+    public static final RegistryObject<MenuType<EmbryoInitiatorMenu>> EMBRYO_INITIATOR_MENU = registerMenuType("embryo_initiator_menu", EmbryoInitiatorMenu::new);
+
+
+    private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return MENU_TYPES.register(name, () -> IForgeMenuType.create(factory));
     }
+
     public static void register(IEventBus eventBus) {
         MENU_TYPES.register(eventBus);
     }

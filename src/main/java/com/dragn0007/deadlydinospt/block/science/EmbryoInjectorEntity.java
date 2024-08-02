@@ -1,8 +1,9 @@
 package com.dragn0007.deadlydinospt.block.science;
 
 import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
-import com.dragn0007.deadlydinospt.client.menu.DNAExtractorMenu;
+import com.dragn0007.deadlydinospt.client.menu.EmbryoInjectorMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -14,31 +15,31 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
+public class EmbryoInjectorEntity extends BaseContainerBlockEntity {
+    public static final int MAX_INJECT_TIME = 20 * 10;
+    public static final int EMBRYO_SLOT = 0;
+    public static final int EGG_SLOT = 1;
+    public static final int DINO_EGG_SLOT = 2;
 
-public class DNAExtractorEntity extends BaseContainerBlockEntity {
-    public static final int MAX_EXTRACT_TIME = 20 * 10;
-    public static final int PETRI_SLOT = 0;
-    public static final int TISSUE_SLOT = 1;
-    public static final int DNA_PETRI_SLOT = 2;
-
-    public static final int EXTRACTION_CHANCE = 33; // 33%
+    public static final int INJECTOR_CHANCE = 75; // 75%
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
-    public int extractTime = 0;
+    public int injectTime = 0;
     public final ContainerData containerData = new ContainerData() {
         @Override
         public int get(int i) {
-            return DNAExtractorEntity.this.extractTime;
+            return EmbryoInjectorEntity.this.injectTime;
         }
 
         @Override
         public void set(int i, int value) {
-            DNAExtractorEntity.this.extractTime = value;
+            EmbryoInjectorEntity.this.injectTime = value;
         }
 
         @Override
@@ -47,18 +48,18 @@ public class DNAExtractorEntity extends BaseContainerBlockEntity {
         }
     };
 
-    public DNAExtractorEntity(BlockPos pos, BlockState state) {
-        super(DDPTBlockEntities.DNA_EXTRACTOR.get(), pos, state);
+    public EmbryoInjectorEntity(BlockPos pos, BlockState state) {
+        super(DDPTBlockEntities.EMBRYO_INJECTOR.get(), pos, state);
     }
 
     @Override
-    public Component getDefaultName() {
-        return new TranslatableComponent("container.dna_extractor");
+    protected Component getDefaultName() {
+        return new TranslatableComponent("container.embryo_injector");
     }
 
     @Override
-    public AbstractContainerMenu createMenu(int containerId, Inventory inventory) {
-        return new DNAExtractorMenu(containerId, inventory, this, this.containerData);
+    protected AbstractContainerMenu createMenu(int containerId, Inventory inventory) {
+        return new EmbryoInjectorMenu(containerId, inventory, this, this.containerData);
     }
 
     @Override
@@ -97,11 +98,11 @@ public class DNAExtractorEntity extends BaseContainerBlockEntity {
         if (itemStack.getCount() > this.getMaxStackSize()) {
             itemStack.setCount(this.getMaxStackSize());
         }
-        
+
         ItemStack currentItemStack = this.items.get(i);
         boolean isSameItem = !itemStack.isEmpty() && itemStack.sameItem(currentItemStack) && ItemStack.tagMatches(itemStack, currentItemStack);
-        if(i != DNA_PETRI_SLOT && !isSameItem) {
-            this.extractTime = 0;
+        if(i != DINO_EGG_SLOT && !isSameItem) {
+            this.injectTime = 0;
             this.setChanged();
         }
     }
@@ -120,52 +121,49 @@ public class DNAExtractorEntity extends BaseContainerBlockEntity {
         this.items.clear();
     }
 
-    public static void tick(Level level, BlockPos pos, BlockState state, DNAExtractorEntity extractorEntity) {
+    public static void tick(Level level, BlockPos pos, BlockState state, EmbryoInjectorEntity injectorEntity) {
         if(level.isClientSide) {
             return;
         }
 
-        if(extractorEntity.extractTime == MAX_EXTRACT_TIME) {
-            if(level.random.nextInt(100) <= EXTRACTION_CHANCE) {
-                CompoundTag speciesTag = extractorEntity.getItem(TISSUE_SLOT).getOrCreateTag();
-                ItemStack DNAPetriItem = new ItemStack(DDPTItems.DNA_PETRI_DISH.get());
-                DNAPetriItem.getOrCreateTag().merge(speciesTag);
-
-                if(extractorEntity.getItem(DNA_PETRI_SLOT).isEmpty()) {
-                    extractorEntity.setItem(DNA_PETRI_SLOT, DNAPetriItem);
-                } else if(ItemStack.isSameItemSameTags(extractorEntity.getItem(DNA_PETRI_SLOT), DNAPetriItem)){
-                    extractorEntity.getItem(DNA_PETRI_SLOT).grow(1);
+        if(injectorEntity.injectTime == MAX_INJECT_TIME) {
+            if(level.random.nextInt(100) <= INJECTOR_CHANCE) {
+                CompoundTag speciesTag = injectorEntity.getItem(EMBRYO_SLOT).getOrCreateTag();
+                ItemStack egg = DDPTTags.Items.fossilTagToEgg(speciesTag);
+                if(injectorEntity.getItem(DINO_EGG_SLOT).isEmpty()) {
+                    injectorEntity.setItem(DINO_EGG_SLOT, egg);
+                } else if(ItemStack.isSameItemSameTags(injectorEntity.getItem(DINO_EGG_SLOT), egg)) {
+                    injectorEntity.getItem(DINO_EGG_SLOT).grow(1);
                 }
             }
 
-            extractorEntity.getItem(PETRI_SLOT).shrink(1);
-            extractorEntity.getItem(TISSUE_SLOT).shrink(1);
-            extractorEntity.extractTime = 0;
+            injectorEntity.getItem(EMBRYO_SLOT).shrink(1);
+            injectorEntity.getItem(EGG_SLOT).shrink(1);
+            injectorEntity.injectTime = 0;
             setChanged(level, pos, state);
-        } else if(extractorEntity.extractTime < MAX_EXTRACT_TIME
-                && extractorEntity.getItem(PETRI_SLOT).is(DDPTItems.PETRI_DISH.get())
-                && extractorEntity.getItem(TISSUE_SLOT).is(DDPTItems.FOSSILIZED_SOFT_TISSUE.get())
-                && extractorEntity.getItem(DNA_PETRI_SLOT).getCount() < extractorEntity.getItem(DNA_PETRI_SLOT).getMaxStackSize()
-                && (extractorEntity.getItem(DNA_PETRI_SLOT).isEmpty() ||
-                        ItemStack.tagMatches(extractorEntity.getItem(TISSUE_SLOT), extractorEntity.getItem(DNA_PETRI_SLOT)))
+        } else if(injectorEntity.injectTime < MAX_INJECT_TIME
+                && injectorEntity.getItem(EMBRYO_SLOT).is(DDPTItems.EMBRYO.get())
+                && injectorEntity.getItem(EGG_SLOT).is(Items.TURTLE_EGG)
+                && injectorEntity.getItem(DINO_EGG_SLOT).getCount() < injectorEntity.getItem(DINO_EGG_SLOT).getMaxStackSize()
+                && (injectorEntity.getItem(DINO_EGG_SLOT).isEmpty() ||
+                    ItemStack.isSame(DDPTTags.Items.fossilTagToEgg(injectorEntity.getItem(EMBRYO_SLOT).getTag()), injectorEntity.getItem(DINO_EGG_SLOT)))
         ) {
-            extractorEntity.extractTime++;
+            injectorEntity.injectTime++;
             setChanged(level, pos, state);
         }
-
     }
 
     @Override
     public void load(CompoundTag compoundTag) {
         super.load(compoundTag);
         ContainerHelper.loadAllItems(compoundTag, this.items);
-        this.extractTime = compoundTag.getInt("ExtractTime");
+        this.injectTime = compoundTag.getInt("InjectTime");
     }
 
     @Override
     protected void saveAdditional(CompoundTag compoundTag) {
         super.saveAdditional(compoundTag);
         ContainerHelper.saveAllItems(compoundTag, this.items);
-        compoundTag.putInt("ExtractTime", this.extractTime);
+        compoundTag.putInt("InjectTime", this.injectTime);
     }
 }

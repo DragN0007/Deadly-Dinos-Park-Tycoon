@@ -159,6 +159,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 //        MenuScreens.register(DDPTMenuTypes.TRIKE_MENU.get(), TrikeScreen::new);
 
         MenuScreens.register(DDPTMenuTypes.ACID_VAT_MENU.get(), AcidVatScreen::new);
+        MenuScreens.register(DDPTMenuTypes.DNA_EXTRACTOR_MENU.get(), DNAExtractorScreen::new);
+        MenuScreens.register(DDPTMenuTypes.EMBRYO_INJECTOR_MENU.get(), EmbryoInjectorScreen::new);
+        MenuScreens.register(DDPTMenuTypes.EMBRYO_INITIATOR_MENU.get(), EmbryoInitiatorScreen::new);
     }
 }
 

@@ -781,5 +781,11 @@
   
   "entity.deadlydinospt.car_entity": "Car",
   "entity.deadlydinospt.carside_entity": "Car",
-  "entity.deadlydinospt.carflipped_entity": "Car"
+  "entity.deadlydinospt.carflipped_entity": "Car",
+
+
+  "container.dna_extractor": "DNA Extractor",
+  "container.acid_vat": "Acid Vat",
+  "container.embryo_injector": "Embryo Injector",
+  "container.embryo_initiator": "Embryo Initiator"
 }

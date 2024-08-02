@@ -1,12 +1,21 @@
 package com.dragn0007.deadlydinospt.util;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
+import com.dragn0007.deadlydinospt.item.DDPTItems;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.registries.RegistryObject;
+import org.checkerframework.checker.units.qual.C;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class DDPTTags {
 
@@ -117,6 +126,68 @@ public class DDPTTags {
         }
         private static TagKey<Item> forgeTag (String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
+        }
+
+        //TODO (EVNGLX): If the array causes performance issues, see if there are alternatives
+        //TODO (EVNGLX): Are this all the dinos...?
+        public static final Map<TagKey<Item>, RegistryObject<Item>> FOSSIL_TO_EGG_MAP = new HashMap<>() {{
+            put(ACROCANTHOSAURUS_FOSSILS, DDPTItems.ACRO_EGG);
+            put(ALBERTOSAURUS_FOSSILS, DDPTItems.ALBERTO_EGG);
+            put(ALLOSAURUS_FOSSILS, DDPTItems.ALLO_EGG);
+            put(ANDALGALORNIS_FOSSILS, DDPTItems.ANDAL_EGG);
+            put(ARCHAEOPTERYX_FOSSILS, DDPTItems.ARCHAE_EGG);
+            put(AUSTRALOVENATOR_FOSSILS, DDPTItems.AUSTRALO_EGG);
+            put(AUSTRORAPTOR_FOSSILS, DDPTItems.AUSTRO_EGG);
+            put(CARCHARODONTOSAURUS_FOSSILS, DDPTItems.CARCHAR_EGG);
+            put(CARNOTAURUS_FOSSILS, DDPTItems.CARNO_EGG);
+            put(CERATOSAURUS_FOSSILS, DDPTItems.CERATO_EGG);
+            put(COMPSOGNATHUS_FOSSILS, DDPTItems.COMPY_EGG);
+            put(CRYOLOPHOSAURUS_FOSSILS, DDPTItems.CRYO_EGG);
+            put(DEINONYCHUS_FOSSILS, DDPTItems.DEINON_EGG);
+            put(DILOPHOSAURUS_FOSSILS, DDPTItems.DILO_EGG);
+            put(GIGANOTOSAURUS_FOSSILS, DDPTItems.GIGA_EGG);
+            put(MAHAKALA_FOSSILS, DDPTItems.MAHAKALA_EGG);
+            put(MAJUNGASAURUS_FOSSILS, DDPTItems.MAJUNGA_EGG);
+            put(TYRANNOSAURUS_FOSSILS, DDPTItems.REX_EGG);
+            put(SPINOSAURUS_FOSSILS, DDPTItems.SPINO_EGG);
+            put(TARBOSAURUS_FOSSILS, DDPTItems.TARBO_EGG);
+            put(TROODON_FOSSILS, DDPTItems.TROODON_EGG);
+            put(UTAHRAPTOR_FOSSILS, DDPTItems.UTAH_EGG);
+            put(YUTYRANNUS_FOSSILS, DDPTItems.YUTY_EGG);
+        }};
+
+        public static CompoundTag fossilItemToTag(ItemStack fossil) {
+            // it is VERY confusing that mc uses both "TAG" for nbt internally and "TAG" for the usual meaning of tag...devs
+            for(TagKey<Item> fossilTag : FOSSIL_TO_EGG_MAP.keySet()) {
+                if(fossil.is(fossilTag)) {
+                    CompoundTag tag = new CompoundTag();
+                    tag.putString("SpeciesTag", fossilTag.toString());
+                    return tag;
+                }
+            }
+            DeadlyDinosPT.LOGGER.warn("uhh... did you like, discover a new dino or something? We can't get tissue from that, man!");
+            return new CompoundTag();
+        }
+
+        public static ItemStack fossilTagToEgg(CompoundTag tag) {
+            if(tag == null || !tag.contains("SpeciesTag")) {
+                DeadlyDinosPT.LOGGER.warn("Gonna be honest, I don't know how you managed to make an species-less embryo...");
+                return ItemStack.EMPTY;
+            }
+
+            TagKey<Item> fossilTag = null;
+            for(TagKey<Item> fossilEntry : FOSSIL_TO_EGG_MAP.keySet()) {
+                if(tag.getString("SpeciesTag").equals(fossilEntry.toString())) {
+                    fossilTag = fossilEntry;
+                }
+            }
+
+            if(fossilTag == null) {
+                DeadlyDinosPT.LOGGER.warn("So...you made an embryo but of an unknown species...we, uh, can't really do anything with that.");
+                return ItemStack.EMPTY;
+            }
+
+            return FOSSIL_TO_EGG_MAP.get(fossilTag).get().getDefaultInstance();
         }
     }
 

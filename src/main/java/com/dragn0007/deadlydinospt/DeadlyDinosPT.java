@@ -32,7 +32,7 @@ import static com.dragn0007.deadlydinospt.entity.util.Serializers.SERIALIZERS;
 public class DeadlyDinosPT
 {
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static final String MODID = "deadlydinospt";
 
     public DeadlyDinosPT()

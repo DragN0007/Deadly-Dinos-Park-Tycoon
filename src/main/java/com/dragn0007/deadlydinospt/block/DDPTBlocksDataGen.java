@@ -43,11 +43,11 @@ public class DDPTBlocksDataGen {
     public static final RegistryObject<Block> ACID_VAT = registerBlock("acid_vat",
             () -> new AcidVat(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> DNA_EXTRACTOR = registerBlock("dna_extractor",
-            () -> new DNAExtractor());
+            () -> new DNAExtractor(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(3.5F)));
     public static final RegistryObject<Block> EMBRYO_INITIATOR = registerBlock("embryo_initiator",
-            () -> new EmbryoInitiator());
+            () -> new EmbryoInitiator(BlockBehaviour.Properties.of(Material.WOOD).requiresCorrectToolForDrops().strength(1f)));
     public static final RegistryObject<Block> EMBRYO_INJECTOR = registerBlock("embryo_injector",
-            () -> new EmbryoInjector());
+            () -> new EmbryoInjector(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1f)));
 
 
     public static final RegistryObject<FlowerBlock> ASTEROXYLON = registerBlock("asteroxylon",

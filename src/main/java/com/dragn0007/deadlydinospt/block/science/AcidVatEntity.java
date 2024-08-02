@@ -3,247 +3,209 @@ package com.dragn0007.deadlydinospt.block.science;
 import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.menu.AcidVatMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
-import com.dragn0007.deadlydinospt.recipes.AcidVatRecipe;
+import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.world.Containers;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nonnull;
-import java.util.Optional;
-import java.util.Random;
 public class AcidVatEntity extends BaseContainerBlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+    public static final int MAX_BOIL_TIME = 20 * 10;
+    public static final int MAX_ACID_LEVEL = 16;
+    public static final int FUEL_SLOT = 0;
+    public static final int FOSSIL_SLOT = 1;
+    public static final int TISSUE_SLOT = 2;
+    public static final int BONEMEAL_SLOT = 3;
+
+    public static final int TISSUE_CHANCE = 33; // 33%
+
+
+    public NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
+    public int acidLevel = 0;
+    public int boilTime = 0;
+
+    public final ContainerData containerData = new ContainerData() {
         @Override
-        protected void onContentsChanged(int slot) {
-            setChanged();
+        public int get(int index) {
+            switch(index) {
+                case 0: return AcidVatEntity.this.acidLevel;
+                case 1: return AcidVatEntity.this.boilTime;
+            }
+            return 0;
+        }
+
+        @Override
+        public void set(int index, int value) {
+            switch(index) {
+                case 0:
+                    AcidVatEntity.this.acidLevel = value;
+                    break;
+                case 1:
+                    AcidVatEntity.this.boilTime = value;
+                    break;
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
         }
     };
 
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-
-    protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 72;
-
-    public AcidVatEntity(BlockPos pWorldPosition, BlockState pBlockState) {
-        super(DDPTBlockEntities.ACID_VAT.get(), pWorldPosition, pBlockState);
-        this.data = new ContainerData() {
-            public int get(int index) {
-                switch (index) {
-                    case 0: return AcidVatEntity.this.progress;
-                    case 1: return AcidVatEntity.this.maxProgress;
-                    default: return 0;
-                }
-            }
-
-            public void set(int index, int value) {
-                switch(index) {
-                    case 0: AcidVatEntity.this.progress = value; break;
-                    case 1: AcidVatEntity.this.maxProgress = value; break;
-                }
-            }
-
-            public int getCount() {
-                return 2;
-            }
-        };
-    }
-
-    @Override
-    public Component getDisplayName() {
-        return new TextComponent("Acid Vat");
+    public AcidVatEntity(BlockPos pos, BlockState state) {
+        super(DDPTBlockEntities.ACID_VAT.get(), pos, state);
     }
 
     @Override
     protected Component getDefaultName() {
-        return null;
-    }
-
-    @Nullable
-    @Override
-    public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer) {
-        return new AcidVatMenu(pContainerId, pInventory, this, this.data, this);
+        return new TranslatableComponent("container.acid_vat");
     }
 
     @Override
-    protected AbstractContainerMenu createMenu(int p_58627_, Inventory p_58628_) {
-        return null;
-    }
-
-    @Nonnull
-    @Override
-    public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side) {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
-            return lazyItemHandler.cast();
-        }
-
-        return super.getCapability(cap, side);
-    }
-
-    @Override
-    public void onLoad() {
-        super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
-    }
-
-    @Override
-    public void invalidateCaps()  {
-        super.invalidateCaps();
-        lazyItemHandler.invalidate();
-    }
-
-    @Override
-    protected void saveAdditional(@NotNull CompoundTag tag) {
-        tag.put("inventory", itemHandler.serializeNBT());
-        tag.putInt("acid_vat.progress", progress);
-        super.saveAdditional(tag);
-    }
-
-    @Override
-    public void load(CompoundTag nbt) {
-        super.load(nbt);
-        itemHandler.deserializeNBT(nbt.getCompound("inventory"));
-        progress = nbt.getInt("acid_vat.progress");
-    }
-
-    public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
-        }
-
-        Containers.dropContents(this.level, this.worldPosition, inventory);
-    }
-
-    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, AcidVatEntity pBlockEntity) {
-        if(hasRecipe(pBlockEntity)) {
-            pBlockEntity.progress++;
-            setChanged(pLevel, pPos, pState);
-            if(pBlockEntity.progress > pBlockEntity.maxProgress) {
-                craftItem(pBlockEntity);
-            }
-        } else {
-            pBlockEntity.resetProgress();
-            setChanged(pLevel, pPos, pState);
-        }
-    }
-
-    private static boolean hasRecipe(AcidVatEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        Optional<AcidVatRecipe> match = level.getRecipeManager()
-                .getRecipeFor(AcidVatRecipe.Type.INSTANCE, inventory, level);
-
-        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
-                && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem())
-                && hasWaterInWaterSlot(entity) && hasToolsInToolSlot(entity);
-    }
-
-    private static boolean hasWaterInWaterSlot(AcidVatEntity entity) {
-        return PotionUtils.getPotion(entity.itemHandler.getStackInSlot(0)) == Potions.WATER;
-    }
-
-    private static boolean hasToolsInToolSlot(AcidVatEntity entity) {
-        return entity.itemHandler.getStackInSlot(2).getItem() == DDPTItems.ACID_BUCKET.get();
-    }
-
-    private static void craftItem(AcidVatEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        Optional<AcidVatRecipe> match = level.getRecipeManager()
-                .getRecipeFor(AcidVatRecipe.Type.INSTANCE, inventory, level);
-
-        if(match.isPresent()) {
-            entity.itemHandler.extractItem(0,1, false);
-            entity.itemHandler.extractItem(1,1, false);
-            entity.itemHandler.getStackInSlot(2).hurt(1, new Random(), null);
-
-            entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(),
-                    entity.itemHandler.getStackInSlot(3).getCount() + 1));
-
-            entity.resetProgress();
-        }
-    }
-
-    private void resetProgress() {
-        this.progress = 0;
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output) {
-        return inventory.getItem(3).getItem() == output.getItem() || inventory.getItem(3).isEmpty();
-    }
-
-    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(3).getMaxStackSize() > inventory.getItem(3).getCount();
+    public AbstractContainerMenu createMenu(int containerId, Inventory inventory) {
+        return new AcidVatMenu(containerId, inventory, this, this.containerData);
     }
 
     @Override
     public int getContainerSize() {
-        return 0;
+        return this.items.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        for (ItemStack itemStack : this.items) {
+            if (!itemStack.isEmpty()) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
-    public ItemStack getItem(int p_18941_) {
-        return null;
+    public ItemStack getItem(int i) {
+        return this.items.get(i);
     }
 
     @Override
-    public ItemStack removeItem(int p_18942_, int p_18943_) {
-        return null;
+    public ItemStack removeItem(int i, int j) {
+        return ContainerHelper.removeItem(this.items, i, j);
     }
 
     @Override
-    public ItemStack removeItemNoUpdate(int p_18951_) {
-        return null;
+    public ItemStack removeItemNoUpdate(int i) {
+        return ContainerHelper.takeItem(this.items, i);
     }
 
     @Override
-    public void setItem(int p_18944_, ItemStack p_18945_) {
+    public void setItem(int i, ItemStack itemStack) {
+        this.items.set(i, itemStack);
+        if (itemStack.getCount() > this.getMaxStackSize()) {
+            itemStack.setCount(this.getMaxStackSize());
+        }
 
+        ItemStack currentItemStack = this.items.get(i);
+        boolean isSameItem = !itemStack.isEmpty() && itemStack.sameItem(currentItemStack) && ItemStack.tagMatches(itemStack, currentItemStack);
+        if(i != TISSUE_SLOT && i != BONEMEAL_SLOT && !isSameItem) {
+            this.boilTime = 0;
+            this.setChanged();
+        }
     }
 
     @Override
-    public boolean stillValid(Player p_18946_) {
-        return false;
+    public boolean stillValid(Player player) {
+        if (this.level != null && this.level.getBlockEntity(this.worldPosition) != this) {
+            return false;
+        } else {
+            return player.distanceToSqr((double)this.worldPosition.getX() + 0.5D, (double)this.worldPosition.getY() + 0.5D, (double)this.worldPosition.getZ() + 0.5D) <= 64.0D;
+        }
     }
 
     @Override
     public void clearContent() {
+        this.items.clear();
+    }
 
+    public static ItemStack nextTissueResult(AcidVatEntity acidVatEntity) {
+        ItemStack fossil = acidVatEntity.getItem(FOSSIL_SLOT);
+        CompoundTag tag = DDPTTags.Items.fossilItemToTag(fossil);
+
+        ItemStack possibleTissue = new ItemStack(DDPTItems.FOSSILIZED_SOFT_TISSUE.get());
+        possibleTissue.getOrCreateTag().merge(tag);
+        return possibleTissue;
+    }
+
+    public static void tick(Level level, BlockPos pos, BlockState state, AcidVatEntity acidVatEntity) {
+        if(level.isClientSide) {
+            return;
+        }
+
+        if(acidVatEntity.acidLevel > 0 && acidVatEntity.boilTime == MAX_BOIL_TIME) {
+            if(level.random.nextInt(100) <= TISSUE_CHANCE) {
+                ItemStack tissueItem = nextTissueResult(acidVatEntity);
+                if(acidVatEntity.getItem(TISSUE_SLOT).isEmpty()) {
+                    acidVatEntity.setItem(TISSUE_SLOT, tissueItem);
+                } else if(ItemStack.isSameItemSameTags(acidVatEntity.getItem(TISSUE_SLOT), tissueItem)) {
+                    acidVatEntity.getItem(TISSUE_SLOT).grow(1);
+                }
+            }
+
+            int bonemealCount = 1 + level.random.nextInt(2);
+            if(acidVatEntity.getItem(BONEMEAL_SLOT).isEmpty()) {
+                acidVatEntity.setItem(BONEMEAL_SLOT, new ItemStack(Items.BONE_MEAL, bonemealCount));
+            } else {
+                acidVatEntity.getItem(BONEMEAL_SLOT).grow(bonemealCount);
+            }
+
+            acidVatEntity.getItem(FOSSIL_SLOT).shrink(1);
+            acidVatEntity.boilTime = 0;
+            acidVatEntity.acidLevel--;
+            setChanged(level, pos, state);
+        }
+
+        if(acidVatEntity.acidLevel > 0 && acidVatEntity.boilTime < MAX_BOIL_TIME
+                && acidVatEntity.getItem(BONEMEAL_SLOT).getCount() < acidVatEntity.getItem(BONEMEAL_SLOT).getMaxStackSize()
+                && acidVatEntity.getItem(TISSUE_SLOT).getCount() < acidVatEntity.getItem(TISSUE_SLOT).getMaxStackSize()
+                && acidVatEntity.getItem(FOSSIL_SLOT).is(DDPTTags.Items.DINO_BONES)
+                && (acidVatEntity.getItem(TISSUE_SLOT).isEmpty() ||
+                        ItemStack.isSame(nextTissueResult(acidVatEntity), acidVatEntity.getItem(TISSUE_SLOT)))
+        ) {
+            acidVatEntity.boilTime++;
+            setChanged(level, pos, state);
+        }
+
+        if(acidVatEntity.acidLevel == 0 && acidVatEntity.getItem(FUEL_SLOT).is(DDPTItems.ACID_BUCKET.get())) {
+            acidVatEntity.acidLevel = MAX_ACID_LEVEL;
+            acidVatEntity.getItem(FUEL_SLOT).shrink(1);
+            setChanged(level, pos, state);
+        }
+    }
+
+    @Override
+    public void load(CompoundTag compoundTag) {
+        super.load(compoundTag);
+        ContainerHelper.loadAllItems(compoundTag, this.items);
+        this.acidLevel = compoundTag.getInt("AcidLevel");
+        this.boilTime = compoundTag.getInt("BoilTime");
+    }
+
+    @Override
+    protected void saveAdditional(CompoundTag compoundTag) {
+        super.saveAdditional(compoundTag);
+        ContainerHelper.saveAllItems(compoundTag, this.items);
+        compoundTag.putInt("AcidLevel", this.acidLevel);
+        compoundTag.putInt("BoilTime", this.boilTime);
     }
 }

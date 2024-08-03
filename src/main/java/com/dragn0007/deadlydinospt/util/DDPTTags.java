@@ -132,28 +132,50 @@ public class DDPTTags {
         //TODO (EVNGLX): Are this all the dinos...?
         public static final Map<TagKey<Item>, RegistryObject<Item>> FOSSIL_TO_EGG_MAP = new HashMap<>() {{
             put(ACROCANTHOSAURUS_FOSSILS, DDPTItems.ACRO_EGG);
+            put(ACROCANTHOSAURUS_BONES, DDPTItems.ACRO_EGG);
             put(ALBERTOSAURUS_FOSSILS, DDPTItems.ALBERTO_EGG);
+            put(ALBERTOSAURUS_BONES, DDPTItems.ALBERTO_EGG);
             put(ALLOSAURUS_FOSSILS, DDPTItems.ALLO_EGG);
+            put(ALBERTOSAURUS_BONES, DDPTItems.ALLO_EGG);
             put(ANDALGALORNIS_FOSSILS, DDPTItems.ANDAL_EGG);
+            put(ANDALGALORNIS_BONES, DDPTItems.ANDAL_EGG);
             put(ARCHAEOPTERYX_FOSSILS, DDPTItems.ARCHAE_EGG);
+            put(ARCHAEOPTERYX_BONES, DDPTItems.ARCHAE_EGG);
             put(AUSTRALOVENATOR_FOSSILS, DDPTItems.AUSTRALO_EGG);
+            put(AUSTRALOVENATOR_BONES, DDPTItems.AUSTRALO_EGG);
             put(AUSTRORAPTOR_FOSSILS, DDPTItems.AUSTRO_EGG);
+            put(AUSTRORAPTOR_BONES, DDPTItems.AUSTRO_EGG);
             put(CARCHARODONTOSAURUS_FOSSILS, DDPTItems.CARCHAR_EGG);
+            put(CARCHARODONTOSAURUS_BONES, DDPTItems.CARCHAR_EGG);
             put(CARNOTAURUS_FOSSILS, DDPTItems.CARNO_EGG);
+            put(CARNOTAURUS_BONES, DDPTItems.CARNO_EGG);
             put(CERATOSAURUS_FOSSILS, DDPTItems.CERATO_EGG);
+            put(CERATOSAURUS_BONES, DDPTItems.CERATO_EGG);
             put(COMPSOGNATHUS_FOSSILS, DDPTItems.COMPY_EGG);
+            put(COMPSOGNATHUS_BONES, DDPTItems.COMPY_EGG);
             put(CRYOLOPHOSAURUS_FOSSILS, DDPTItems.CRYO_EGG);
+            put(CRYOLOPHOSAURUS_BONES, DDPTItems.CRYO_EGG);
             put(DEINONYCHUS_FOSSILS, DDPTItems.DEINON_EGG);
+            put(DEINONYCHUS_BONES, DDPTItems.DEINON_EGG);
             put(DILOPHOSAURUS_FOSSILS, DDPTItems.DILO_EGG);
+            put(DILOPHOSAURUS_BONES, DDPTItems.DILO_EGG);
             put(GIGANOTOSAURUS_FOSSILS, DDPTItems.GIGA_EGG);
+            put(GIGANOTOSAURUS_BONES, DDPTItems.GIGA_EGG);
             put(MAHAKALA_FOSSILS, DDPTItems.MAHAKALA_EGG);
+            put(MAHAKALA_BONES, DDPTItems.MAHAKALA_EGG);
             put(MAJUNGASAURUS_FOSSILS, DDPTItems.MAJUNGA_EGG);
+            put(MAJUNGASAURUS_BONES, DDPTItems.MAJUNGA_EGG);
             put(TYRANNOSAURUS_FOSSILS, DDPTItems.REX_EGG);
             put(SPINOSAURUS_FOSSILS, DDPTItems.SPINO_EGG);
+            put(SPINOSAURUS_BONES, DDPTItems.SPINO_EGG);
             put(TARBOSAURUS_FOSSILS, DDPTItems.TARBO_EGG);
+            put(TARBOSAURUS_BONES, DDPTItems.TARBO_EGG);
             put(TROODON_FOSSILS, DDPTItems.TROODON_EGG);
+            put(TROODON_BONES, DDPTItems.TROODON_EGG);
             put(UTAHRAPTOR_FOSSILS, DDPTItems.UTAH_EGG);
+            put(UTAHRAPTOR_BONES, DDPTItems.UTAH_EGG);
             put(YUTYRANNUS_FOSSILS, DDPTItems.YUTY_EGG);
+            put(YUTYRANNUS_BONES, DDPTItems.YUTY_EGG);
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

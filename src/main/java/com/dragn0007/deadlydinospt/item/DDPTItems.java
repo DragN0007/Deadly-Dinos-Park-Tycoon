@@ -290,20 +290,20 @@ public class DDPTItems {
     //ITEMS
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(Tiers.IRON, 1, -2.8F,
-                    new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+                    new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> BRUSH = ITEMS.register("brush",
             () -> new BrushItem(Tiers.WOOD, 1, -2.8F,
-                    new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+                    new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
-            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+            () -> new Item(new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> EMBRYO = ITEMS.register("embryo",
-            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+            () -> new SpeciesNBTItem());
     public static final RegistryObject<Item> FOSSILIZED_SOFT_TISSUE = ITEMS.register("fossilized_soft_tissue",
-            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+            () -> new SpeciesNBTItem());
     public static final RegistryObject<Item> PETRI_DISH = ITEMS.register("petri_dish",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> DNA_PETRI_DISH = ITEMS.register("dna_petri_dish",
-            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+            () -> new SpeciesNBTItem());
     public static final RegistryObject<Item> TEST_TUBE = ITEMS.register("test_tube",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 

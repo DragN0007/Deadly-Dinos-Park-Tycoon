@@ -165,7 +165,7 @@ public class DDPTTags {
                     return tag;
                 }
             }
-            DeadlyDinosPT.LOGGER.warn("uhh... did you like, discover a new dino or something? We can't get tissue from that, man!");
+            DeadlyDinosPT.LOGGER.warn("Uhh... did you like, discover a new dino or something? We can't get tissue from that, man!");
             return new CompoundTag();
         }
 

@@ -18,7 +18,11 @@ public class DDPTMenuTypes {
     public static final RegistryObject<MenuType<AmargaMenu>> AMARGA_MENU = MENU_TYPES.register("amarga_menu", () -> new MenuType<>(AmargaMenu.create()));
     public static final RegistryObject<MenuType<ParaMenu>> PARA_MENU = MENU_TYPES.register("para_menu", () -> new MenuType<>(ParaMenu.create()));
     public static final RegistryObject<MenuType<YutyMenu>> YUTY_MENU = MENU_TYPES.register("yuty_menu", () -> new MenuType<>(YutyMenu.create()));
+    public static final RegistryObject<MenuType<IchthyMenu>> ICHTHY_MENU = MENU_TYPES.register("ichthy_menu", () -> new MenuType<>(IchthyMenu.create()));
+    public static final RegistryObject<MenuType<IguaMenu>> IGUA_MENU = MENU_TYPES.register("igua_menu", () -> new MenuType<>(IguaMenu.create()));
     public static final RegistryObject<MenuType<TrikeMenu>> TRIKE_MENU = MENU_TYPES.register("trike_menu", () -> new MenuType<>(TrikeMenu.create()));
+    public static final RegistryObject<MenuType<EocarcharMenu>> EOCARCHAR_MENU = MENU_TYPES.register("eocarchar_menu", () -> new MenuType<>(EocarcharMenu.create()));
+    public static final RegistryObject<MenuType<AnkyMenu>> ANKY_MENU = MENU_TYPES.register("anky_menu", () -> new MenuType<>(AnkyMenu.create()));
 
 
     public static final RegistryObject<MenuType<AcidVatMenu>> ACID_VAT_MENU = registerMenuType("acid_vat_menu", AcidVatMenu::new);

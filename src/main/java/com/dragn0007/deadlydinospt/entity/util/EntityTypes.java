@@ -154,6 +154,36 @@ public class EntityTypes {
                     .sized(0.8f,1.8f)
                     .build(new ResourceLocation(MODID,"australo").toString()));
 
+    public static final RegistryObject<EntityType<Atroci>> ATROCI_ENTITY = ENTITY_TYPES.register("atroci_entity",
+            () -> EntityType.Builder.of(Atroci::new,
+                            MobCategory.CREATURE)
+                    .sized(0.5f,1f)
+                    .build(new ResourceLocation(MODID,"atroci").toString()));
+
+    public static final RegistryObject<EntityType<Ichthy>> ICHTHY_ENTITY = ENTITY_TYPES.register("ichthy_entity",
+            () -> EntityType.Builder.of(Ichthy::new,
+                            MobCategory.CREATURE)
+                    .sized(1.5f,2.5f)
+                    .build(new ResourceLocation(MODID,"ichthy").toString()));
+
+    public static final RegistryObject<EntityType<Megarap>> MEGARAP_ENTITY = ENTITY_TYPES.register("megarap_entity",
+            () -> EntityType.Builder.of(Megarap::new,
+                            MobCategory.CREATURE)
+                    .sized(1.5f,2.5f)
+                    .build(new ResourceLocation(MODID,"megarap").toString()));
+
+    public static final RegistryObject<EntityType<Eocarchar>> EOCARCHAR_ENTITY = ENTITY_TYPES.register("eocarchar_entity",
+            () -> EntityType.Builder.of(Eocarchar::new,
+                            MobCategory.CREATURE)
+                    .sized(1.5f,2.5f)
+                    .build(new ResourceLocation(MODID,"eocarchar").toString()));
+
+    public static final RegistryObject<EntityType<Bary>> BARY_ENTITY = ENTITY_TYPES.register("bary_entity",
+            () -> EntityType.Builder.of(Bary::new,
+                            MobCategory.CREATURE)
+                    .sized(1.5f,2.5f)
+                    .build(new ResourceLocation(MODID,"bary").toString()));
+
 
 
     //Herbivores
@@ -232,12 +262,28 @@ public class EntityTypes {
                     .sized(2f,2.5f)
                     .build(new ResourceLocation(MODID,"pachyr").toString()));
 
+    public static final RegistryObject<EntityType<Edmonto>> EDMONTO_ENTITY = ENTITY_TYPES.register("edmonto_entity",
+            () -> EntityType.Builder.of(Edmonto::new,
+                            MobCategory.CREATURE)
+                    .sized(2f,4.5f)
+                    .build(new ResourceLocation(MODID,"edmonto").toString()));
+
+    public static final RegistryObject<EntityType<Igua>> IGUA_ENTITY = ENTITY_TYPES.register("igua_entity",
+            () -> EntityType.Builder.of(Igua::new,
+                            MobCategory.CREATURE)
+                    .sized(2f,4f)
+                    .build(new ResourceLocation(MODID,"igua").toString()));
+
     public static final RegistryObject<EntityType<Trike>> TRIKE_ENTITY = ENTITY_TYPES.register("trike_entity",
             () -> EntityType.Builder.of(Trike::new,
                             MobCategory.CREATURE)
                     .sized(2f,4f)
                     .build(new ResourceLocation(MODID,"trike").toString()));
 
-
+    public static final RegistryObject<EntityType<Pachy>> PACHY_ENTITY = ENTITY_TYPES.register("pachy_entity",
+            () -> EntityType.Builder.of(Pachy::new,
+                            MobCategory.CREATURE)
+                    .sized(1f,2f)
+                    .build(new ResourceLocation(MODID,"pachy").toString()));
 }
 

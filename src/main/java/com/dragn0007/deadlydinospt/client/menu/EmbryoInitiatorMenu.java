@@ -1,6 +1,5 @@
 package com.dragn0007.deadlydinospt.client.menu;
 
-import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.block.science.EmbryoInitiatorEntity;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
 import com.dragn0007.deadlydinospt.item.DDPTItems;

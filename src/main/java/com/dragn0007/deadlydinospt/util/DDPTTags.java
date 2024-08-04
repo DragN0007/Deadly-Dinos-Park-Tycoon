@@ -3,7 +3,6 @@ package com.dragn0007.deadlydinospt.util;
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.StringTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -12,7 +11,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
-import org.checkerframework.checker.units.qual.C;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,6 +47,7 @@ public class DDPTTags {
 
         public static final TagKey<Item> SEMI_AQUATIC_FOOD = tag("semi_aquatic_food");
         public static final TagKey<Item> HERBI_FOOD = tag("herbi_food");
+        public static final TagKey<Item> BEDROLL_BEDS = forgeTag("bedroll_beds");
 
 
         public static final TagKey<Item> ACROCANTHOSAURUS_BONES = tag("acrocanthosaurus_bones");

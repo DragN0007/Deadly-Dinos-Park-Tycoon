@@ -81,9 +81,6 @@ public class Austro extends TamableAnimal implements IAnimatable {
         if (entity.getType() == EntityType.PLAYER) {
             return false;
         }
-        if (entity.getType() == EntityTypes.AUSTRO_ENTITY.get()) {
-            return false;
-        }
         return true;
     };
 
@@ -190,7 +187,6 @@ public class Austro extends TamableAnimal implements IAnimatable {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
         this.goalSelector.addGoal(0, new OpenDoorGoal(this, true));
-        this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, 25, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(0, new DinoVeryWeakMeleeGoal(this, 2.5, true));
         this.goalSelector.addGoal(4, new FloatGoal(this));
         this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, 0.4F));

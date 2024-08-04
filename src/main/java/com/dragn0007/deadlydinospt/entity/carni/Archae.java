@@ -85,9 +85,6 @@ public class Archae extends TamableAnimal implements IAnimatable {
         if (entity.getType() == EntityType.PLAYER) {
             return false;
         }
-        if (entity.getType() == EntityTypes.ARCHAE_ENTITY.get()) {
-            return false;
-        }
         return true;
     };
     @Override

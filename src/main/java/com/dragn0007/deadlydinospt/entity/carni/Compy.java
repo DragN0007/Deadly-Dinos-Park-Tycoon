@@ -104,7 +104,6 @@ public class Compy extends TamableAnimal implements IAnimatable {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.5, true));
         this.goalSelector.addGoal(3, new FloatGoal(this));
         this.goalSelector.addGoal(1, new WaterAvoidingRandomStrollGoal(this, 1));

@@ -92,9 +92,6 @@ public class Atroci extends TamableAnimal implements IAnimatable {
         if (entity.getType() == EntityType.PLAYER) {
             return false;
         }
-        if (entity.getType() == EntityTypes.ATROCI_ENTITY.get()) {
-            return false;
-        }
         return true;
     };
 

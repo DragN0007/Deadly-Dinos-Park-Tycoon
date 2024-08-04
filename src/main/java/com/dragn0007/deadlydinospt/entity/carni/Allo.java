@@ -104,16 +104,12 @@ public class Allo extends TamableAnimal implements ContainerListener, Saddleable
         if (entity.getType() == EntityType.PLAYER) {
             return false;
         }
-        if (entity.getType() == EntityTypes.ALLO_ENTITY.get()) {
-            return false;
-        }
         return true;
     };
 
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(1, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, 40, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(2, new BreakDoorGoal(this, (x) -> x == Difficulty.EASY || x == Difficulty.NORMAL || x == Difficulty.HARD));
         this.goalSelector.addGoal(3, new DinoMeleeGoal(this, 1.8, true));
         this.goalSelector.addGoal(4, new FloatGoal(this));

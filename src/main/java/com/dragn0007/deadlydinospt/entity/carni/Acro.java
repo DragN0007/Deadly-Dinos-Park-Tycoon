@@ -91,9 +91,6 @@ public class Acro extends TamableAnimal implements IAnimatable {
         if (entity.getType() == EntityType.PLAYER) {
             return false;
         }
-        if (entity.getType() == EntityTypes.ACRO_ENTITY.get()) {
-            return false;
-        }
         return true;
     };
 
@@ -104,7 +101,6 @@ public class Acro extends TamableAnimal implements IAnimatable {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(  1, new NearestAttackableTargetGoal<Player>(this, Player.class, 35, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 2, true));
         this.goalSelector.addGoal(3, new BreakDoorGoal(this, (x) -> x == Difficulty.EASY || x == Difficulty.NORMAL || x == Difficulty.HARD));
         this.goalSelector.addGoal(4, new FloatGoal(this));

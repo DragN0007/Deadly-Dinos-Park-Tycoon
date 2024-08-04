@@ -106,7 +106,6 @@ public class Theri extends TamableAnimal implements IAnimatable {
     }
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, Player.class, 15, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(2, new BreakDoorGoal(this, (x) -> x == Difficulty.EASY || x == Difficulty.NORMAL || x == Difficulty.HARD));
         this.goalSelector.addGoal(2, new DestroyCropsGoal(this));
         this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 1.4, true));

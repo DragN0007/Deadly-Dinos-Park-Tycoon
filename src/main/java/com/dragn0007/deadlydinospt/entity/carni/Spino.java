@@ -114,8 +114,7 @@ public class Spino extends TamableAnimal implements IAnimatable {
         super.registerGoals();
         this.goalSelector.addGoal(0, new BreathAirGoal(this));
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, Player.class, 15, true, true, LivingEntity::attackable));
-        this.goalSelector.addGoal(1, new TryFindWaterGoal(this));
+         this.goalSelector.addGoal(1, new TryFindWaterGoal(this));
         this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 1.0D, 10));
         this.goalSelector.addGoal(4, new FollowBoatGoal(this));
         this.goalSelector.addGoal(0, new DinoMeleeGoal(this, 1, true));

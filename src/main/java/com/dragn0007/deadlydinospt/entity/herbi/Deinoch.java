@@ -106,7 +106,6 @@ public class Deinoch extends TamableAnimal implements IAnimatable {
     }
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
         this.goalSelector.addGoal(2, new BreakDoorGoal(this, (x) -> x == Difficulty.EASY || x == Difficulty.NORMAL || x == Difficulty.HARD));
         this.goalSelector.addGoal(2, new DestroyWaterPlantsGoal(this));

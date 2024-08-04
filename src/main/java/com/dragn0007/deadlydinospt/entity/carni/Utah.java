@@ -103,7 +103,6 @@ public class Utah extends TamableAnimal implements IAnimatable {
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(0, new HurtByTargetGoal(this));
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<>(this, Player.class, 30, true, true, LivingEntity::attackable));
         this.goalSelector.addGoal(1, new OpenDoorGoal(this, true));
         this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, 0.7f));
         this.goalSelector.addGoal(0, new DinoVeryWeakMeleeGoal(this, 2.7, true));

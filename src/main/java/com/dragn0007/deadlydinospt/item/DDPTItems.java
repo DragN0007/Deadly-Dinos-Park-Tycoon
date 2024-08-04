@@ -816,6 +816,42 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //ATROCIRAPTOR
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_TOOTH = ITEMS.register("atrociraptor_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_SKULL = ITEMS.register("atrociraptor_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_RIBS= ITEMS.register("atrociraptor_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_CLAW = ITEMS.register("atrociraptor_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_TAIL = ITEMS.register("atrociraptor_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_SPINE = ITEMS.register("atrociraptor_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_LEG = ITEMS.register("atrociraptor_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_FOSSIL_RAPTOR_CLAW = ITEMS.register("atrociraptor_fossil_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> ATROCIRAPTOR_TOOTH = ITEMS.register("atrociraptor_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_SKULL = ITEMS.register("atrociraptor_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_RIBS= ITEMS.register("atrociraptor_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_CLAW = ITEMS.register("atrociraptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_TAIL = ITEMS.register("atrociraptor_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_SPINE = ITEMS.register("atrociraptor_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_LEG = ITEMS.register("atrociraptor_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ATROCIRAPTOR_RAPTOR_CLAW = ITEMS.register("atrociraptor_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
     //AUSTRALOVENATOR
     public static final RegistryObject<Item> AUSTRALOVENATOR_FOSSIL_TOOTH = ITEMS.register("australovenator_fossil_tooth",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
@@ -885,6 +921,38 @@ public class DDPTItems {
     public static final RegistryObject<Item> AUSTRORAPTOR_LEG = ITEMS.register("austroraptor_leg",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> AUSTRORAPTOR_RAPTOR_CLAW = ITEMS.register("austroraptor_raptor_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //BARYONYX
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_TOOTH = ITEMS.register("baryonyx_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_SKULL = ITEMS.register("baryonyx_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_RIBS= ITEMS.register("baryonyx_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_CLAW = ITEMS.register("baryonyx_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_TAIL = ITEMS.register("baryonyx_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_SPINE = ITEMS.register("baryonyx_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_FOSSIL_LEG = ITEMS.register("baryonyx_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> BARYONYX_TOOTH = ITEMS.register("baryonyx_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_SKULL = ITEMS.register("baryonyx_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_RIBS= ITEMS.register("baryonyx_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_CLAW = ITEMS.register("baryonyx_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_TAIL = ITEMS.register("baryonyx_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_SPINE = ITEMS.register("baryonyx_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BARYONYX_LEG = ITEMS.register("baryonyx_leg",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
@@ -1113,6 +1181,38 @@ public class DDPTItems {
     public static final RegistryObject<Item> DILOPHOSAURUS_SPINE = ITEMS.register("dilophosaurus_spine",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> DILOPHOSAURUS_LEG = ITEMS.register("dilophosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //EOCARCHARIA
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_TOOTH = ITEMS.register("eocarcharia_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_SKULL = ITEMS.register("eocarcharia_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_RIBS= ITEMS.register("eocarcharia_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_CLAW = ITEMS.register("eocarcharia_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_TAIL = ITEMS.register("eocarcharia_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_SPINE = ITEMS.register("eocarcharia_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_FOSSIL_LEG = ITEMS.register("eocarcharia_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> EOCARCHARIA_TOOTH = ITEMS.register("eocarcharia_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_SKULL = ITEMS.register("eocarcharia_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_RIBS= ITEMS.register("eocarcharia_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_CLAW = ITEMS.register("eocarcharia_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_TAIL = ITEMS.register("eocarcharia_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_SPINE = ITEMS.register("eocarcharia_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> EOCARCHARIA_LEG = ITEMS.register("eocarcharia_leg",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 

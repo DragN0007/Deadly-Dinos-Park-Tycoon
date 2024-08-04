@@ -21,6 +21,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> AUSTRALO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> AUSTRO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> AVA_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> BARY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CARCHAR_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CARNO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CERATO_FOSSIL_WEIGHT;
@@ -111,6 +112,9 @@ public class DeadlyDinosPTCommonConfig {
 
         AVA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("AVA Fossil Spawn Weight", 1);
+
+        BARY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("BARY Fossil Spawn Weight", 1);
 
         CARCHAR_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("CARCHAR Fossil Spawn Weight", 1);

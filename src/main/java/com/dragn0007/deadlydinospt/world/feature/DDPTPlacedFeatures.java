@@ -22,6 +22,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.ALBERTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ALBERTO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
+    public static final Holder<PlacedFeature> ATROCIRAPTOR_FOSSIL = PlacementUtils.register("atrociraptor_fossil_placed",
+            DDPTConfigFeatures.ATROCIRAPTOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ATROCI_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
     public static final Holder<PlacedFeature> AUSTRORAPTOR_FOSSIL = PlacementUtils.register("austroraptor_fossil_placed",
             DDPTConfigFeatures.AUSTRORAPTOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.AUSTRO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
@@ -68,8 +72,16 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.AUSTRALOVENATOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.AUSTRALO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
+    public static final Holder<PlacedFeature> BARYONYX_FOSSIL = PlacementUtils.register("baryonyx_fossil_placed",
+            DDPTConfigFeatures.BARYONYX_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.BARY_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
     public static final Holder<PlacedFeature> DEINONYCHUS_FOSSIL = PlacementUtils.register("deinonychus_fossil_placed",
             DDPTConfigFeatures.DEINONYCHUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.DEINON_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+    public static final Holder<PlacedFeature> EOCARCHARIA_FOSSIL = PlacementUtils.register("eocarcharia_fossil_placed",
+            DDPTConfigFeatures.EOCARCHARIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.BARY_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
     public static final Holder<PlacedFeature> MAHAKALA_FOSSIL = PlacementUtils.register("mahakala_fossil_placed",

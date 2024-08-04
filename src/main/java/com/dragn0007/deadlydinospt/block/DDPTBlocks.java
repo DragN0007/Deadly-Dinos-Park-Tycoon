@@ -173,6 +173,11 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> CHISELED_ARCHAEOPTERYX_FOSSIL = registerBlock("chiseled_archaeopteryx_fossil",
             () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
+    public static final RegistryObject<Block> ATROCIRAPTOR_FOSSIL = registerBlock("atrociraptor_fossil",
+            () -> new ChiselableAtrociFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ATROCIRAPTOR_FOSSIL = registerBlock("chiseled_atrociraptor_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
     public static final RegistryObject<Block> AUSTRALOVENATOR_FOSSIL = registerBlock("australovenator_fossil",
             () -> new ChiselableAustraloFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_AUSTRALOVENATOR_FOSSIL = registerBlock("chiseled_australovenator_fossil",
@@ -182,6 +187,11 @@ public class DDPTBlocks {
             () -> new ChiselableAustroFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_AUSTRORAPTOR_FOSSIL = registerBlock("chiseled_austroraptor_fossil",
             () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> BARYONYX_FOSSIL = registerBlock("baryonyx_fossil",
+            () -> new ChiselableBaryFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_BARYONYX_FOSSIL = registerBlock("chiseled_baryonyx_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
     public static final RegistryObject<Block> CARCHARODONTOSAURUS_FOSSIL = registerBlock("carcharodontosaurus_fossil",
             () -> new ChiselableCarcharFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
@@ -216,6 +226,11 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> DILOPHOSAURUS_FOSSIL = registerBlock("dilophosaurus_fossil",
             () -> new ChiselableDiloFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_DILOPHOSAURUS_FOSSIL = registerBlock("chiseled_dilophosaurus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> EOCARCHARIA_FOSSIL = registerBlock("eocarcharia_fossil",
+            () -> new ChiselableEocarFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_EOCARCHARIA_FOSSIL = registerBlock("chiseled_eocarcharia_fossil",
             () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
     public static final RegistryObject<Block> GIGANOTOSAURUS_FOSSIL = registerBlock("giganotosaurus_fossil",

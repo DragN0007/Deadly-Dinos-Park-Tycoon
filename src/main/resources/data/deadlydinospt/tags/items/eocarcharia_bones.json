@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:eocarcharia_tooth",
+    "deadlydinospt:eocarcharia_skull",
+    "deadlydinospt:eocarcharia_ribs",
+    "deadlydinospt:eocarcharia_tail",
+    "deadlydinospt:eocarcharia_spine",
+    "deadlydinospt:eocarcharia_leg",
+    "deadlydinospt:eocarcharia_claw"
+  ]
+}

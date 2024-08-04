@@ -64,6 +64,16 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
 
 
 
+        simpleBlock(DDPTBlocks.ATROCIRAPTOR_FOSSIL.get(), models().cubeAll("atrociraptor_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_small_carni_2")));
+        simpleBlockItem(DDPTBlocks.ATROCIRAPTOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.ATROCIRAPTOR_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_small_carni_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_ATROCIRAPTOR_FOSSIL.get(), models().cubeAll("chiseled_atrociraptor_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_small_carni_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_ATROCIRAPTOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_ATROCIRAPTOR_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_small_carni_2")));
+
+
+
         simpleBlock(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll("australovenator_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));
         simpleBlockItem(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.AUSTRALOVENATOR_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_carni_2")));
@@ -81,6 +91,16 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
         simpleBlock(DDPTBlocks.CHISELED_AUSTRORAPTOR_FOSSIL.get(), models().cubeAll("chiseled_austroraptor_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_carni_1")));
         simpleBlockItem(DDPTBlocks.CHISELED_AUSTRORAPTOR_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_AUSTRORAPTOR_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_carni_1")));
+
+
+
+        simpleBlock(DDPTBlocks.BARYONYX_FOSSIL.get(), models().cubeAll("baryonyx_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_med_carni_2")));
+        simpleBlockItem(DDPTBlocks.BARYONYX_FOSSIL.get(), models().cubeAll(DDPTBlocks.BARYONYX_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_med_carni_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_BARYONYX_FOSSIL.get(), models().cubeAll("chiseled_baryonyx_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_carni_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_BARYONYX_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_BARYONYX_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_carni_2")));
 
 
 
@@ -151,6 +171,16 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
         simpleBlock(DDPTBlocks.CHISELED_DILOPHOSAURUS_FOSSIL.get(), models().cubeAll("chiseled_dilophosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_carni_2")));
         simpleBlockItem(DDPTBlocks.CHISELED_DILOPHOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_DILOPHOSAURUS_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_carni_2")));
+
+
+
+        simpleBlock(DDPTBlocks.EOCARCHARIA_FOSSIL.get(), models().cubeAll("eocarcharia_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_carni_2")));
+        simpleBlockItem(DDPTBlocks.EOCARCHARIA_FOSSIL.get(), models().cubeAll(DDPTBlocks.EOCARCHARIA_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_carni_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_EOCARCHARIA_FOSSIL.get(), models().cubeAll("chiseled_eocarcharia_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_carni_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_EOCARCHARIA_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_EOCARCHARIA_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_carni_2")));
 
 
 

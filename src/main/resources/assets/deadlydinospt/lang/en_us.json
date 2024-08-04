@@ -483,6 +483,28 @@
   "item.deadlydinospt.archaeopteryx_raptor_claw": "Archaeopteryx Talon",
 
 
+  "block.deadlydinospt.atrociraptor_fossil": "Atrociraptor Fossil",
+  "block.deadlydinospt.chiseled_atrociraptor_fossil": "Chiseled Atrociraptor Fossil",
+
+  "item.deadlydinospt.atrociraptor_fossil_tooth": "Atrociraptor Tooth Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_skull": "Atrociraptor Skull Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_ribs": "Atrociraptor Ribs Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_claw": "Atrociraptor Claw Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_tail": "Atrociraptor Tail Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_spine": "Atrociraptor Spine Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_leg": "Atrociraptor Leg Fossil",
+  "item.deadlydinospt.atrociraptor_fossil_raptor_claw": "Atrociraptor Talon Fossil",
+
+  "item.deadlydinospt.atrociraptor_tooth": "Atrociraptor Tooth",
+  "item.deadlydinospt.atrociraptor_skull": "Atrociraptor Skull",
+  "item.deadlydinospt.atrociraptor_ribs": "Atrociraptor Ribs",
+  "item.deadlydinospt.atrociraptor_claw": "Atrociraptor Claw",
+  "item.deadlydinospt.atrociraptor_tail": "Atrociraptor Tail",
+  "item.deadlydinospt.atrociraptor_spine": "Atrociraptor Spine",
+  "item.deadlydinospt.atrociraptor_leg": "Atrociraptor Leg",
+  "item.deadlydinospt.atrociraptor_raptor_claw": "Atrociraptor Talon",
+
+
   "block.deadlydinospt.australovenator_fossil": "Australovenator Fossil",
   "block.deadlydinospt.chiseled_australovenator_fossil": "Chiseled Australovenator Fossil",
 
@@ -525,6 +547,26 @@
   "item.deadlydinospt.austroraptor_spine": "Austroraptor Spine",
   "item.deadlydinospt.austroraptor_leg": "Austroraptor Leg",
   "item.deadlydinospt.austroraptor_raptor_claw": "Austroraptor Talon",
+
+
+  "block.deadlydinospt.baryonyx_fossil": "Baryonyx Fossil",
+  "block.deadlydinospt.chiseled_baryonyx_fossil": "Chiseled Baryonyx Fossil",
+
+  "item.deadlydinospt.baryonyx_fossil_tooth": "Baryonyx Tooth Fossil",
+  "item.deadlydinospt.baryonyx_fossil_skull": "Baryonyx Skull Fossil",
+  "item.deadlydinospt.baryonyx_fossil_ribs": "Baryonyx Ribs Fossil",
+  "item.deadlydinospt.baryonyx_fossil_claw": "Baryonyx Claw Fossil",
+  "item.deadlydinospt.baryonyx_fossil_tail": "Baryonyx Tail Fossil",
+  "item.deadlydinospt.baryonyx_fossil_spine": "Baryonyx Spine Fossil",
+  "item.deadlydinospt.baryonyx_fossil_leg": "Baryonyx Leg Fossil",
+
+  "item.deadlydinospt.baryonyx_tooth": "Baryonyx Tooth",
+  "item.deadlydinospt.baryonyx_skull": "Baryonyx Skull",
+  "item.deadlydinospt.baryonyx_ribs": "Baryonyx Ribs",
+  "item.deadlydinospt.baryonyx_claw": "Baryonyx Claw",
+  "item.deadlydinospt.baryonyx_tail": "Baryonyx Tail",
+  "item.deadlydinospt.baryonyx_spine": "Baryonyx Spine",
+  "item.deadlydinospt.baryonyx_leg": "Baryonyx Leg",
 
 
   "block.deadlydinospt.carcharodontosaurus_fossil": "Carcharodontosaurus Fossil",
@@ -667,6 +709,26 @@
   "item.deadlydinospt.dilophosaurus_tail": "Dilophosaurus Tail",
   "item.deadlydinospt.dilophosaurus_spine": "Dilophosaurus Spine",
   "item.deadlydinospt.dilophosaurus_leg": "Dilophosaurus Leg",
+
+
+  "block.deadlydinospt.eocarcharia_fossil": "Eocarcharia Fossil",
+  "block.deadlydinospt.chiseled_eocarcharia_fossil": "Chiseled Eocarcharia Fossil",
+
+  "item.deadlydinospt.eocarcharia_fossil_tooth": "Eocarcharia Tooth Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_skull": "Eocarcharia Skull Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_ribs": "Eocarcharia Ribs Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_claw": "Eocarcharia Claw Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_tail": "Eocarcharia Tail Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_spine": "Eocarcharia Spine Fossil",
+  "item.deadlydinospt.eocarcharia_fossil_leg": "Eocarcharia Leg Fossil",
+
+  "item.deadlydinospt.eocarcharia_tooth": "Eocarcharia Tooth",
+  "item.deadlydinospt.eocarcharia_skull": "Eocarcharia Skull",
+  "item.deadlydinospt.eocarcharia_ribs": "Eocarcharia Ribs",
+  "item.deadlydinospt.eocarcharia_claw": "Eocarcharia Claw",
+  "item.deadlydinospt.eocarcharia_tail": "Eocarcharia Tail",
+  "item.deadlydinospt.eocarcharia_spine": "Eocarcharia Spine",
+  "item.deadlydinospt.eocarcharia_leg": "Eocarcharia Leg",
 
 
   "block.deadlydinospt.giganotosaurus_fossil": "Giganotosaurus Fossil",

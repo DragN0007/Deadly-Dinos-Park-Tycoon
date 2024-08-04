@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:baryonyx_tooth",
+    "deadlydinospt:baryonyx_skull",
+    "deadlydinospt:baryonyx_ribs",
+    "deadlydinospt:baryonyx_tail",
+    "deadlydinospt:baryonyx_spine",
+    "deadlydinospt:baryonyx_leg",
+    "deadlydinospt:baryonyx_claw"
+  ]
+}

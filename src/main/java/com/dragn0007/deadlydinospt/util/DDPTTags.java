@@ -65,11 +65,17 @@ public class DDPTTags {
         public static final TagKey<Item> ARCHAEOPTERYX_BONES = tag("archaeopteryx_bones");
         public static final TagKey<Item> ARCHAEOPTERYX_FOSSILS = tag("archaeopteryx_fossils");
 
+        public static final TagKey<Item> ATROCIRAPTOR_BONES = tag("atrociraptor_bones");
+        public static final TagKey<Item> ATROCIRAPTOR_FOSSILS = tag("atrociraptor_fossils");
+
         public static final TagKey<Item> AUSTRALOVENATOR_BONES = tag("australovenator_bones");
         public static final TagKey<Item> AUSTRALOVENATOR_FOSSILS = tag("australovenator_fossils");
 
         public static final TagKey<Item> AUSTRORAPTOR_BONES = tag("austroraptor_bones");
         public static final TagKey<Item> AUSTRORAPTOR_FOSSILS = tag("austroraptor_fossils");
+
+        public static final TagKey<Item> BARYONYX_BONES = tag("baryonyx_bones");
+        public static final TagKey<Item> BARYONYX_FOSSILS = tag("baryonyx_fossils");
 
         public static final TagKey<Item> CARCHARODONTOSAURUS_BONES = tag("carcharodontosaurus_bones");
         public static final TagKey<Item> CARCHARODONTOSAURUS_FOSSILS = tag("carcharodontosaurus_fossils");
@@ -91,6 +97,9 @@ public class DDPTTags {
 
         public static final TagKey<Item> DILOPHOSAURUS_BONES = tag("dilophosaurus_bones");
         public static final TagKey<Item> DILOPHOSAURUS_FOSSILS = tag("dilophosaurus_fossils");
+
+        public static final TagKey<Item> EOCARCHARIA_BONES = tag("eocarcharia_bones");
+        public static final TagKey<Item> EOCARCHARIA_FOSSILS = tag("eocarcharia_fossils");
 
         public static final TagKey<Item> GIGANOTOSAURUS_BONES = tag("giganotosaurus_bones");
         public static final TagKey<Item> GIGANOTOSAURUS_FOSSILS = tag("giganotosaurus_fossils");
@@ -140,10 +149,14 @@ public class DDPTTags {
             put(ANDALGALORNIS_BONES, DDPTItems.ANDAL_EGG);
             put(ARCHAEOPTERYX_FOSSILS, DDPTItems.ARCHAE_EGG);
             put(ARCHAEOPTERYX_BONES, DDPTItems.ARCHAE_EGG);
+            put(ATROCIRAPTOR_FOSSILS, DDPTItems.ATROCI_EGG);
+            put(ATROCIRAPTOR_BONES, DDPTItems.ATROCI_EGG);
             put(AUSTRALOVENATOR_FOSSILS, DDPTItems.AUSTRALO_EGG);
             put(AUSTRALOVENATOR_BONES, DDPTItems.AUSTRALO_EGG);
             put(AUSTRORAPTOR_FOSSILS, DDPTItems.AUSTRO_EGG);
             put(AUSTRORAPTOR_BONES, DDPTItems.AUSTRO_EGG);
+            put(BARYONYX_FOSSILS, DDPTItems.BARY_EGG);
+            put(BARYONYX_BONES, DDPTItems.BARY_EGG);
             put(CARCHARODONTOSAURUS_FOSSILS, DDPTItems.CARCHAR_EGG);
             put(CARCHARODONTOSAURUS_BONES, DDPTItems.CARCHAR_EGG);
             put(CARNOTAURUS_FOSSILS, DDPTItems.CARNO_EGG);
@@ -158,6 +171,8 @@ public class DDPTTags {
             put(DEINONYCHUS_BONES, DDPTItems.DEINON_EGG);
             put(DILOPHOSAURUS_FOSSILS, DDPTItems.DILO_EGG);
             put(DILOPHOSAURUS_BONES, DDPTItems.DILO_EGG);
+            put(EOCARCHARIA_FOSSILS, DDPTItems.EOCARCHAR_EGG);
+            put(EOCARCHARIA_BONES, DDPTItems.EOCARCHAR_EGG);
             put(GIGANOTOSAURUS_FOSSILS, DDPTItems.GIGA_EGG);
             put(GIGANOTOSAURUS_BONES, DDPTItems.GIGA_EGG);
             put(MAHAKALA_FOSSILS, DDPTItems.MAHAKALA_EGG);

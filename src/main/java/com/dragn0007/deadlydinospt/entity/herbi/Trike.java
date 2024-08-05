@@ -307,7 +307,7 @@ public class Trike extends TamableAnimal implements ContainerListener, Saddleabl
 
     public static final String PROTOCOL_VERSION = "1";
     public static final SimpleChannel INSTANCE = NetworkRegistry.newSimpleChannel(
-            new ResourceLocation(DeadlyDinosPT.MODID, "network"),
+            new ResourceLocation(DeadlyDinosPT.MODID, "trike_network"),
             () -> PROTOCOL_VERSION,
             PROTOCOL_VERSION::equals,
             PROTOCOL_VERSION::equals

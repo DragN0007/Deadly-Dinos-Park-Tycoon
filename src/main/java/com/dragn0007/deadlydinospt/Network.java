@@ -39,7 +39,7 @@ public class Network {
 
     public static final String PROTOCOL_VERSION = "1";
     public static final SimpleChannel INSTANCE = NetworkRegistry.newSimpleChannel(
-            new ResourceLocation(DeadlyDinosPT.MODID, "ddd_network"),
+            new ResourceLocation(DeadlyDinosPT.MODID, "ddpt_network"),
             () -> PROTOCOL_VERSION,
             PROTOCOL_VERSION::equals,
             PROTOCOL_VERSION::equals

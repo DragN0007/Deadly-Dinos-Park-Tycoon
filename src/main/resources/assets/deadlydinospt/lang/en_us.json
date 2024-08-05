@@ -751,6 +751,26 @@
   "item.deadlydinospt.giganotosaurus_leg": "Giganotosaurus Leg",
 
 
+  "block.deadlydinospt.ichthyovenator_fossil": "Ichthyovenator Fossil",
+  "block.deadlydinospt.chiseled_ichthyovenator_fossil": "Chiseled Ichthyovenator Fossil",
+
+  "item.deadlydinospt.ichthyovenator_fossil_tooth": "Ichthyovenator Tooth Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_skull": "Ichthyovenator Skull Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_ribs": "Ichthyovenator Ribs Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_claw": "Ichthyovenator Claw Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_tail": "Ichthyovenator Tail Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_spine": "Ichthyovenator Spine Fossil",
+  "item.deadlydinospt.ichthyovenator_fossil_leg": "Ichthyovenator Leg Fossil",
+
+  "item.deadlydinospt.ichthyovenator_tooth": "Ichthyovenator Tooth",
+  "item.deadlydinospt.ichthyovenator_skull": "Ichthyovenator Skull",
+  "item.deadlydinospt.ichthyovenator_ribs": "Ichthyovenator Ribs",
+  "item.deadlydinospt.ichthyovenator_claw": "Ichthyovenator Claw",
+  "item.deadlydinospt.ichthyovenator_tail": "Ichthyovenator Tail",
+  "item.deadlydinospt.ichthyovenator_spine": "Ichthyovenator Spine",
+  "item.deadlydinospt.ichthyovenator_leg": "Ichthyovenator Leg",
+
+
   "block.deadlydinospt.mahakala_fossil": "Mahakala Fossil",
   "block.deadlydinospt.chiseled_mahakala_fossil": "Chiseled Mahakala Fossil",
 
@@ -791,6 +811,28 @@
   "item.deadlydinospt.majungasaurus_tail": "Majungasaurus Tail",
   "item.deadlydinospt.majungasaurus_spine": "Majungasaurus Spine",
   "item.deadlydinospt.majungasaurus_leg": "Majungasaurus Leg",
+
+
+  "block.deadlydinospt.megaraptor_fossil": "Megaraptor Fossil",
+  "block.deadlydinospt.chiseled_megaraptor_fossil": "Chiseled Megaraptor Fossil",
+
+  "item.deadlydinospt.megaraptor_fossil_tooth": "Megaraptor Tooth Fossil",
+  "item.deadlydinospt.megaraptor_fossil_skull": "Megaraptor Skull Fossil",
+  "item.deadlydinospt.megaraptor_fossil_ribs": "Megaraptor Ribs Fossil",
+  "item.deadlydinospt.megaraptor_fossil_claw": "Megaraptor Claw Fossil",
+  "item.deadlydinospt.megaraptor_fossil_tail": "Megaraptor Tail Fossil",
+  "item.deadlydinospt.megaraptor_fossil_spine": "Megaraptor Spine Fossil",
+  "item.deadlydinospt.megaraptor_fossil_leg": "Megaraptor Leg Fossil",
+  "item.deadlydinospt.megaraptor_fossil_raptor_claw": "Megaraptor Talon Fossil",
+
+  "item.deadlydinospt.megaraptor_tooth": "Megaraptor Tooth",
+  "item.deadlydinospt.megaraptor_skull": "Megaraptor Skull",
+  "item.deadlydinospt.megaraptor_ribs": "Megaraptor Ribs",
+  "item.deadlydinospt.megaraptor_claw": "Megaraptor Claw",
+  "item.deadlydinospt.megaraptor_tail": "Megaraptor Tail",
+  "item.deadlydinospt.megaraptor_spine": "Megaraptor Spine",
+  "item.deadlydinospt.megaraptor_leg": "Megaraptor Leg",
+  "item.deadlydinospt.megaraptor_raptor_claw": "Megaraptor Talon",
 
 
   "block.deadlydinospt.tyrannosaurus_fossil": "Tyrannosaurus Fossil",

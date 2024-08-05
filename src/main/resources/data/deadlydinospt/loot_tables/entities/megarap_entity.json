@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_skull"
+          "name": "deadlydinospt:megaraptor_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_spine"
+          "name": "deadlydinospt:megaraptor_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_ribs"
+          "name": "deadlydinospt:megaraptor_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_tail"
+          "name": "deadlydinospt:megaraptor_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_claw"
+          "name": "deadlydinospt:megaraptor_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_tooth"
+          "name": "deadlydinospt:megaraptor_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_raptor_claw"
+          "name": "deadlydinospt:megaraptor_raptor_claw"
         }
       ]
     },
@@ -205,7 +205,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:australovenator_leg"
+          "name": "deadlydinospt:megaraptor_leg"
         }
       ]
     },
@@ -280,7 +280,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinospt:australotrophy"
+          "name": "deadlydinospt:megaraptrophy"
         }
       ],
       "conditions": [

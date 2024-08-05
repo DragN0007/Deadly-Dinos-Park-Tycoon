@@ -72,6 +72,11 @@ public class DDPTConfigFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MAJUNGASAURUS_FOSSIL_ORE = FeatureUtils.register("majungasaurus_fossil_ore",
             Feature.ORE, new OreConfiguration(MAJUNGASAURUS_FOSSIL, 3));
 
+    public static final List<OreConfiguration.TargetBlockState> MEGARAPTOR_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.MEGARAPTOR_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MEGARAPTOR_FOSSIL_ORE = FeatureUtils.register("megaraptor_fossil_ore",
+            Feature.ORE, new OreConfiguration(MEGARAPTOR_FOSSIL, 3));
+
     public static final List<OreConfiguration.TargetBlockState> TYRANNOSAURUS_FOSSIL = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.TYRANNOSAURUS_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TYRANNOSAURUS_FOSSIL_ORE = FeatureUtils.register("tyrannosaurus_fossil_ore",
@@ -119,6 +124,11 @@ public class DDPTConfigFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.EOCARCHARIA_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> EOCARCHARIA_FOSSIL_ORE = FeatureUtils.register("eocarcharia_fossil_ore",
             Feature.ORE, new OreConfiguration(EOCARCHARIA_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> ICHTHYOVENATOR_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.ICHTHYOVENATOR_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ICHTHYOVENATOR_FOSSIL_ORE = FeatureUtils.register("ichthyovenator_fossil_ore",
+            Feature.ORE, new OreConfiguration(ICHTHYOVENATOR_FOSSIL, 3));
 
     public static final List<OreConfiguration.TargetBlockState> MAHAKALA_FOSSIL = List.of(
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.MAHAKALA_FOSSIL.get().defaultBlockState()));

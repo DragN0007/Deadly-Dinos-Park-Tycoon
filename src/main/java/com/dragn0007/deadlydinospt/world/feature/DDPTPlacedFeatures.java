@@ -46,6 +46,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.MAJUNGASAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.MAJUNGA_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
+    public static final Holder<PlacedFeature> MEGARAPTOR_FOSSIL = PlacementUtils.register("megaraptor_fossil_placed",
+            DDPTConfigFeatures.MEGARAPTOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.MEGARAP_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
     public static final Holder<PlacedFeature> TYRANNOSAURUS_FOSSIL = PlacementUtils.register("tyrannosaurus_fossil_placed",
             DDPTConfigFeatures.TYRANNOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.REX_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
@@ -82,6 +86,10 @@ public class DDPTPlacedFeatures {
 
     public static final Holder<PlacedFeature> EOCARCHARIA_FOSSIL = PlacementUtils.register("eocarcharia_fossil_placed",
             DDPTConfigFeatures.EOCARCHARIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.BARY_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+    public static final Holder<PlacedFeature> ICHTHYOVENATOR_FOSSIL = PlacementUtils.register("ichthyovenator_fossil_placed",
+            DDPTConfigFeatures.ICHTHYOVENATOR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ICHTHY_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
     public static final Holder<PlacedFeature> MAHAKALA_FOSSIL = PlacementUtils.register("mahakala_fossil_placed",

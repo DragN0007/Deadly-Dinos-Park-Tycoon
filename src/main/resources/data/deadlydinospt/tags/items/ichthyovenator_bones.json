@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:ichthyovenator_tooth",
+    "deadlydinospt:ichthyovenator_skull",
+    "deadlydinospt:ichthyovenator_ribs",
+    "deadlydinospt:ichthyovenator_tail",
+    "deadlydinospt:ichthyovenator_spine",
+    "deadlydinospt:ichthyovenator_leg",
+    "deadlydinospt:ichthyovenator_claw"
+  ]
+}

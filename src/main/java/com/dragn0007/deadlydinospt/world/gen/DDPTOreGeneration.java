@@ -31,8 +31,10 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.DILOPHOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.EOCARCHARIA_FOSSIL);
         base.add(DDPTPlacedFeatures.GIGANOTOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.ICHTHYOVENATOR_FOSSIL);
         base.add(DDPTPlacedFeatures.MAHAKALA_FOSSIL);
         base.add(DDPTPlacedFeatures.MAJUNGASAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.MEGARAPTOR_FOSSIL);
         base.add(DDPTPlacedFeatures.TYRANNOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.SPINOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.TARBOSAURUS_FOSSIL);

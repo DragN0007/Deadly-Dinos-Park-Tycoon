@@ -471,6 +471,23 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         advancedItem(DDPTItems.GIGANOTOSAURUS_LEG.get(), "large_carni_leg");
 
 
+        simpleItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_TOOTH.get(), "medium_carni_fossil_tooth");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_RIBS.get(), "medium_carni_fossil_ribs");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_CLAW.get(), "medium_carni_fossil_claw");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_TAIL.get(), "medium_carni_fossil_tail");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_SPINE.get(), "medium_carni_fossil_spine");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_FOSSIL_LEG.get(), "medium_carni_fossil_leg");
+
+        simpleItem(DDPTItems.ICHTHYOVENATOR_SKULL.get());
+        advancedItem(DDPTItems.ICHTHYOVENATOR_TOOTH.get(), "medium_carni_tooth");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_RIBS.get(), "medium_carni_ribs");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_CLAW.get(), "medium_carni_claw");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_TAIL.get(), "medium_carni_tail");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_SPINE.get(), "medium_carni_spine");
+        advancedItem(DDPTItems.ICHTHYOVENATOR_LEG.get(), "medium_carni_leg");
+
+
         simpleItem(DDPTItems.MAHAKALA_FOSSIL_SKULL.get());
         advancedItem(DDPTItems.MAHAKALA_FOSSIL_TOOTH.get(), "small_carni_fossil_tooth");
         advancedItem(DDPTItems.MAHAKALA_FOSSIL_RIBS.get(), "small_carni_fossil_ribs");
@@ -505,6 +522,25 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         advancedItem(DDPTItems.MAJUNGASAURUS_TAIL.get(), "medium_carni_tail");
         advancedItem(DDPTItems.MAJUNGASAURUS_SPINE.get(), "medium_carni_spine");
         advancedItem(DDPTItems.MAJUNGASAURUS_LEG.get(), "medium_carni_leg");
+
+
+        simpleItem(DDPTItems.MEGARAPTOR_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_TOOTH.get(), "medium_carni_fossil_tooth");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_RIBS.get(), "medium_carni_fossil_ribs");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_CLAW.get(), "medium_carni_fossil_claw");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_TAIL.get(), "medium_carni_fossil_tail");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_SPINE.get(), "medium_carni_fossil_spine");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_LEG.get(), "medium_carni_fossil_leg");
+        advancedItem(DDPTItems.MEGARAPTOR_FOSSIL_RAPTOR_CLAW.get(), "medium_carni_fossil_raptor_claw");
+
+        simpleItem(DDPTItems.MEGARAPTOR_SKULL.get());
+        advancedItem(DDPTItems.MEGARAPTOR_TOOTH.get(), "medium_carni_tooth");
+        advancedItem(DDPTItems.MEGARAPTOR_RIBS.get(), "medium_carni_ribs");
+        advancedItem(DDPTItems.MEGARAPTOR_CLAW.get(), "medium_carni_claw");
+        advancedItem(DDPTItems.MEGARAPTOR_TAIL.get(), "medium_carni_tail");
+        advancedItem(DDPTItems.MEGARAPTOR_SPINE.get(), "medium_carni_spine");
+        advancedItem(DDPTItems.MEGARAPTOR_LEG.get(), "medium_carni_leg");
+        advancedItem(DDPTItems.MEGARAPTOR_RAPTOR_CLAW.get(), "medium_carni_raptor_claw");
 
 
         simpleItem(DDPTItems.TYRANNOSAURUS_FOSSIL_SKULL.get());

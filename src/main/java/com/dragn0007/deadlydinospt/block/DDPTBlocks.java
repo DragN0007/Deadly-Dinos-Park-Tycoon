@@ -238,6 +238,11 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> CHISELED_GIGANOTOSAURUS_FOSSIL = registerBlock("chiseled_giganotosaurus_fossil",
             () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
+    public static final RegistryObject<Block> ICHTHYOVENATOR_FOSSIL = registerBlock("ichthyovenator_fossil",
+            () -> new ChiselableIchthyFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ICHTHYOVENATOR_FOSSIL = registerBlock("chiseled_ichthyovenator_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
     public static final RegistryObject<Block> MAHAKALA_FOSSIL = registerBlock("mahakala_fossil",
             () -> new ChiselableMahakalaFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_MAHAKALA_FOSSIL = registerBlock("chiseled_mahakala_fossil",
@@ -246,6 +251,11 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> MAJUNGASAURUS_FOSSIL = registerBlock("majungasaurus_fossil",
             () -> new ChiselableMajungaFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
     public static final RegistryObject<Block> CHISELED_MAJUNGASAURUS_FOSSIL = registerBlock("chiseled_majungasaurus_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> MEGARAPTOR_FOSSIL = registerBlock("megaraptor_fossil",
+            () -> new ChiselableMegarapFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_MEGARAPTOR_FOSSIL = registerBlock("chiseled_megaraptor_fossil",
             () -> new BrushableStoneFossil(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
     public static final RegistryObject<Block> TYRANNOSAURUS_FOSSIL = registerBlock("tyrannosaurus_fossil",

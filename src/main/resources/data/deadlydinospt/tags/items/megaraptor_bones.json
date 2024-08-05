@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:megaraptor_tooth",
+    "deadlydinospt:megaraptor_skull",
+    "deadlydinospt:megaraptor_ribs",
+    "deadlydinospt:megaraptor_tail",
+    "deadlydinospt:megaraptor_spine",
+    "deadlydinospt:megaraptor_leg",
+    "deadlydinospt:megaraptor_claw",
+    "deadlydinospt:megaraptor_raptor_claw"
+  ]
+}

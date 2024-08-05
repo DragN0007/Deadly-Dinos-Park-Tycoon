@@ -104,11 +104,17 @@ public class DDPTTags {
         public static final TagKey<Item> GIGANOTOSAURUS_BONES = tag("giganotosaurus_bones");
         public static final TagKey<Item> GIGANOTOSAURUS_FOSSILS = tag("giganotosaurus_fossils");
 
+        public static final TagKey<Item> ICHTHYOVENATOR_BONES = tag("ichthyovenator_bones");
+        public static final TagKey<Item> ICHTHYOVENATOR_FOSSILS = tag("ichthyovenator_fossils");
+
         public static final TagKey<Item> MAHAKALA_BONES = tag("mahakala_bones");
         public static final TagKey<Item> MAHAKALA_FOSSILS = tag("mahakala_fossils");
 
         public static final TagKey<Item> MAJUNGASAURUS_BONES = tag("majungasaurus_bones");
         public static final TagKey<Item> MAJUNGASAURUS_FOSSILS = tag("majungasaurus_fossils");
+
+        public static final TagKey<Item> MEGARAPTOR_BONES = tag("megaraptor_bones");
+        public static final TagKey<Item> MEGARAPTOR_FOSSILS = tag("megaraptor_fossils");
 
         public static final TagKey<Item> TYRANNOSAURUS_BONES = tag("tyrannosaurus_bones");
         public static final TagKey<Item> TYRANNOSAURUS_FOSSILS = tag("tyrannosaurus_fossils");
@@ -175,11 +181,16 @@ public class DDPTTags {
             put(EOCARCHARIA_BONES, DDPTItems.EOCARCHAR_EGG);
             put(GIGANOTOSAURUS_FOSSILS, DDPTItems.GIGA_EGG);
             put(GIGANOTOSAURUS_BONES, DDPTItems.GIGA_EGG);
+            put(ICHTHYOVENATOR_FOSSILS, DDPTItems.ICHTHY_EGG);
+            put(ICHTHYOVENATOR_BONES, DDPTItems.ICHTHY_EGG);
             put(MAHAKALA_FOSSILS, DDPTItems.MAHAKALA_EGG);
             put(MAHAKALA_BONES, DDPTItems.MAHAKALA_EGG);
             put(MAJUNGASAURUS_FOSSILS, DDPTItems.MAJUNGA_EGG);
             put(MAJUNGASAURUS_BONES, DDPTItems.MAJUNGA_EGG);
+            put(MEGARAPTOR_FOSSILS, DDPTItems.MEGARAP_EGG);
+            put(MEGARAPTOR_BONES, DDPTItems.MEGARAP_EGG);
             put(TYRANNOSAURUS_FOSSILS, DDPTItems.REX_EGG);
+            put(TYRANNOSAURUS_BONES, DDPTItems.REX_EGG);
             put(SPINOSAURUS_FOSSILS, DDPTItems.SPINO_EGG);
             put(SPINOSAURUS_BONES, DDPTItems.SPINO_EGG);
             put(TARBOSAURUS_FOSSILS, DDPTItems.TARBO_EGG);

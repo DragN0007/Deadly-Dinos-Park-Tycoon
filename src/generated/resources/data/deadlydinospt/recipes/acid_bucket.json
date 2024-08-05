@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "deadlydinospt:acid_bucket"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCB",
+    "C C",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "deadlydinospt:dna_extractor"
+  }
+}

@@ -8,6 +8,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -350,7 +351,7 @@ public class DDPTItems {
             () -> new BrushItem(Tiers.WOOD, 1, -2.8F,
                     new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
-            () -> new Item(new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));
+            () -> new Item(new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET).tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> EMBRYO = ITEMS.register("embryo",
             () -> new SpeciesNBTItem());
     public static final RegistryObject<Item> FOSSILIZED_SOFT_TISSUE = ITEMS.register("fossilized_soft_tissue",

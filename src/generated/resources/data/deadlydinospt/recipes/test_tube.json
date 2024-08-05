@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "C C",
+    "CCC"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:iron_nugget"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "deadlydinospt:test_tube"
+  }
+}

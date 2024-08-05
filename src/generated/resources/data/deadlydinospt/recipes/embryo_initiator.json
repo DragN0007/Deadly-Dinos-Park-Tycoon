@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "ACA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:planks"
+    },
+    "B": {
+      "item": "deadlydinospt:test_tube"
+    },
+    "C": {
+      "item": "deadlydinospt:petri_dish"
+    }
+  },
+  "result": {
+    "item": "deadlydinospt:embryo_initiator"
+  }
+}

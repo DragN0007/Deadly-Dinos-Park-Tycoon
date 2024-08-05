@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "CCC",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_block"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "deadlydinospt:acid_vat"
+  }
+}

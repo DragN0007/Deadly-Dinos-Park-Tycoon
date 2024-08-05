@@ -33,6 +33,7 @@ public class DDPTTags {
         public static final TagKey<Item> BONES = forgeTag("bones");
         public static final TagKey<Item> DOUGH = forgeTag("dough");
 
+        public static final TagKey<Item> PLANKS = forgeTag("planks");
 
         public static final TagKey<Item> DINO_BONES = forgeTag("dino_bones");
 
@@ -150,7 +151,7 @@ public class DDPTTags {
             put(ALBERTOSAURUS_FOSSILS, DDPTItems.ALBERTO_EGG);
             put(ALBERTOSAURUS_BONES, DDPTItems.ALBERTO_EGG);
             put(ALLOSAURUS_FOSSILS, DDPTItems.ALLO_EGG);
-            put(ALBERTOSAURUS_BONES, DDPTItems.ALLO_EGG);
+            put(ALLOSAURUS_BONES, DDPTItems.ALLO_EGG);
             put(ANDALGALORNIS_FOSSILS, DDPTItems.ANDAL_EGG);
             put(ANDALGALORNIS_BONES, DDPTItems.ANDAL_EGG);
             put(ARCHAEOPTERYX_FOSSILS, DDPTItems.ARCHAE_EGG);

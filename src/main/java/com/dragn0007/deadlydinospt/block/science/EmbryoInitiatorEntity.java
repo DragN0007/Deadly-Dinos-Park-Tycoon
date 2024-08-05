@@ -150,9 +150,9 @@ public class EmbryoInitiatorEntity extends BaseContainerBlockEntity {
             initiatorEntity.initializationTime = 0;
             setChanged(level, pos, state);
         } else if(initiatorEntity.initializationTime < MAX_INITIALIZATION_TIME
-                && (initiatorEntity.getItem(TOP_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(TOP_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(TOP_SLOT).is(Items.TURTLE_EGG))
-                && (initiatorEntity.getItem(MIDDLE_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(MIDDLE_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(MIDDLE_SLOT).is(Items.TURTLE_EGG))
-                && (initiatorEntity.getItem(BOTTOM_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(BOTTOM_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(BOTTOM_SLOT).is(Items.TURTLE_EGG))
+                && (initiatorEntity.getItem(TOP_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(TOP_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(TOP_SLOT).is(Items.EGG))
+                && (initiatorEntity.getItem(MIDDLE_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(MIDDLE_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(MIDDLE_SLOT).is(Items.EGG))
+                && (initiatorEntity.getItem(BOTTOM_SLOT).is(Items.CHICKEN) || initiatorEntity.getItem(BOTTOM_SLOT).is(Items.FEATHER) || initiatorEntity.getItem(BOTTOM_SLOT).is(Items.EGG))
                 && initiatorEntity.getItem(PETRI_SLOT).is(DDPTItems.DNA_PETRI_DISH.get())
                 && initiatorEntity.getItem(TEST_TUBE_SLOT).is(DDPTItems.TEST_TUBE.get())
                 && initiatorEntity.getItem(EMBRYO_SLOT).getCount() < initiatorEntity.getItem(EMBRYO_SLOT).getMaxStackSize()

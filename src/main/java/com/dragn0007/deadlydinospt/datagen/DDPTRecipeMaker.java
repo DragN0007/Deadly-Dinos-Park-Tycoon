@@ -1,6 +1,7 @@
 package com.dragn0007.deadlydinospt.datagen;
 
 import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -9,6 +10,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -21,6 +23,107 @@ public class DDPTRecipeMaker extends RecipeProvider implements IConditionBuilder
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapedRecipeBuilder.shaped(DDPTItems.EOCARCHARIA_ARMOR.get())
+                .define('A', Items.LEATHER)
+                .define('B', Items.IRON_BLOCK)
+                .pattern("BBB")
+                .pattern("BA ")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_BLOCK).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        //Benches, crafting
+        ShapedRecipeBuilder.shaped(DDPTBlocksDataGen.ACID_VAT.get())
+                .define('A', Items.IRON_BLOCK)
+                .define('B', Items.IRON_INGOT)
+                .define('C', Items.GLASS_PANE)
+                .pattern("BBB")
+                .pattern("CCC")
+                .pattern("ABA")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocksDataGen.DNA_EXTRACTOR.get())
+                .define('B', Items.IRON_INGOT)
+                .define('C', Items.GLASS_PANE)
+                .pattern("BCB")
+                .pattern("C C")
+                .pattern("BBB")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocksDataGen.EMBRYO_INITIATOR.get())
+                .define('A', DDPTTags.Items.PLANKS)
+                .define('B', DDPTItems.TEST_TUBE.get())
+                .define('C', DDPTItems.PETRI_DISH.get())
+                .pattern("BBB")
+                .pattern("ACA")
+                .pattern("AAA")
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(DDPTTags.Items.PLANKS).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocksDataGen.EMBRYO_INJECTOR.get())
+                .define('B', Items.IRON_INGOT)
+                .define('C', DDPTItems.TEST_TUBE.get())
+                .pattern(" C ")
+                .pattern("BBB")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.TEST_TUBE.get())
+                .define('B', Items.IRON_NUGGET)
+                .define('C', Items.GLASS_PANE)
+                .pattern("CBC")
+                .pattern("C C")
+                .pattern("CCC")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.PETRI_DISH.get())
+                .define('B', Items.IRON_INGOT)
+                .define('C', Items.GLASS_PANE)
+                .pattern("CBC")
+                .pattern("CCC")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(DDPTItems.ACID_BUCKET.get())
+                .requires(Items.REDSTONE)
+                .requires(Items.GUNPOWDER)
+                .requires(Items.FERMENTED_SPIDER_EYE)
+                .requires(Items.WATER_BUCKET)
+                .unlockedBy("has_water_bucket", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.WATER_BUCKET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.CHISEL.get())
+                .define('A', Items.IRON_NUGGET)
+                .define('B', Items.IRON_INGOT)
+                .define('C', Items.STICK)
+                .pattern("A")
+                .pattern("B")
+                .pattern("C")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTItems.BRUSH.get())
+                .define('A', Items.WHEAT)
+                .define('B', Items.IRON_INGOT)
+                .define('C', Items.STICK)
+                .pattern("A")
+                .pattern("B")
+                .pattern("C")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
 
 
 

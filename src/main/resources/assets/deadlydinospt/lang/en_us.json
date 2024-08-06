@@ -4,9 +4,6 @@
   "itemGroup.dinomodtab": "Deadly Dinos:PT Entities",
   "itemGroup.dddmodtab": "Deadly Dinos:PT Items",
 
-  "speciesname.deadlydinospt.giganotosaurus": "Giganotosaurus",
-
-
   "entity.deadlydinospt.acro_entity": "Acrocanthosaurus",
   "item.deadlydinospt.acro_spawn_egg": "Acrocanthosaurus Spawn Egg",
   "item.deadlydinospt.acrotrophy": "Acrocanthosaurus Tooth Trophy",
@@ -960,6 +957,7 @@
 
 
 
+
   "block.deadlydinospt.cycas": "Cycas",
   "block.deadlydinospt.cycads": "Cycads",
   "block.deadlydinospt.zoster": "Zosterophyllum",
@@ -968,11 +966,11 @@
   "block.deadlydinospt.horsetail": "Horsetail",
   "block.deadlydinospt.asteroxylon": "Asteroxylon",
   "block.deadlydinospt.calamites": "Calamites",
-  
-  "entity.deadlydinospt.car_entity": "Car",
-  "entity.deadlydinospt.carside_entity": "Car",
-  "entity.deadlydinospt.carflipped_entity": "Car",
 
+  "block.deadlydinospt.wire_fence_1": "Heavy Paddock Fence",
+  "block.deadlydinospt.wire_fence_2": "Moderate Paddock Fence",
+  "block.deadlydinospt.wire_fence_3": "Light Paddock Fence",
+  "block.deadlydinospt.wire_fence_4": "Minimal Paddock Fence",
 
   "container.dna_extractor": "DNA Extractor",
   "container.acid_vat": "Acid Vat",

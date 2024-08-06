@@ -1,0 +1,100 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft:block/iron_bars_post_ends"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "south": "false",
+        "east": "false"
+      },
+      "apply": {
+        "model": "minecraft:block/iron_bars_post"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "west": "false",
+        "south": "false",
+        "east": "false"
+      },
+      "apply": {
+        "model": "minecraft:block/iron_bars_cap"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "south": "false",
+        "east": "true"
+      },
+      "apply": {
+        "model": "minecraft:block/iron_bars_cap",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "south": "true",
+        "east": "false"
+      },
+      "apply": {
+        "model": "minecraft:block/iron_bars_cap_alt"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "true",
+        "south": "false",
+        "east": "false"
+      },
+      "apply": {
+        "model": "minecraft:block/iron_bars_cap_alt",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "deadlydinospt:block/park_decor/wire_fence_1"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "deadlydinospt:block/park_decor/wire_fence_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "deadlydinospt:block/park_decor/wire_fence_1_alt"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "deadlydinospt:block/park_decor/wire_fence_1_alt",
+        "y": 90
+      }
+    }
+  ]
+}

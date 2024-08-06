@@ -147,6 +147,16 @@ public class DDPTBlocks {
             () -> new TallFlowerBlock(Block.Properties.of(Material.REPLACEABLE_PLANT).sound(SoundType.GRASS).noCollission()));
 
 
+    //Decor
+    public static final RegistryObject<Block> WIRE_FENCE_1 = registerBlock("wire_fence_1",
+            () -> new IronBarsBlock(Block.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> WIRE_FENCE_2 = registerBlock("wire_fence_2",
+            () -> new IronBarsBlock(Block.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> WIRE_FENCE_3 = registerBlock("wire_fence_3",
+            () -> new IronBarsBlock(Block.Properties.copy(Blocks.IRON_BARS)));
+    public static final RegistryObject<Block> WIRE_FENCE_4 = registerBlock("wire_fence_4",
+            () -> new IronBarsBlock(Block.Properties.copy(Blocks.IRON_BARS)));
+
     //Fossils
     public static final RegistryObject<Block> ACROCANTHOSAURUS_FOSSIL = registerBlock("acrocanthosaurus_fossil",
             () -> new ChiselableAcroFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));

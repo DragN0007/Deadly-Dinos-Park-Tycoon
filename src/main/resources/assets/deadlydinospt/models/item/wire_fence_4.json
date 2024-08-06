@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "deadlydinospt:block/wire_fence_4"
+  }
+}

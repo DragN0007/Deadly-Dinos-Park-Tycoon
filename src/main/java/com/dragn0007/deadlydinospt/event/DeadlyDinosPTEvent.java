@@ -151,6 +151,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocksDataGen.ASTEROXYLON.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocksDataGen.HORSETAIL.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.CALAMITES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.WIRE_FENCE_1.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.WIRE_FENCE_2.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.WIRE_FENCE_3.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.WIRE_FENCE_4.get(), RenderType.cutout());
 
         MenuScreens.register(DDPTMenuTypes.GRYPO_MENU.get(), GrypoScreen::new);
         MenuScreens.register(DDPTMenuTypes.AMARGA_MENU.get(), AmargaScreen::new);

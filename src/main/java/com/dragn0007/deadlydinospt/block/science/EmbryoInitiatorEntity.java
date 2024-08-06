@@ -28,7 +28,7 @@ public class EmbryoInitiatorEntity extends BaseContainerBlockEntity {
     public static final int TEST_TUBE_SLOT = 4;
     public static final int EMBRYO_SLOT = 5;
 
-    public static final int INITIALIZATION_CHANCE = 12; // 12%
+    public static final int INITIALIZATION_CHANCE = 25; // 25%
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(6, ItemStack.EMPTY);

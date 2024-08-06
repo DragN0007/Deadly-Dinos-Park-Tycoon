@@ -8,6 +8,7 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -15,7 +16,7 @@ import net.minecraft.world.level.material.PushReaction;
 
 import javax.annotation.Nullable;
 
-public class BrushableDeepslateFossil extends Block {
+public class BrushableDeepslateFossil extends FallingBlock {
     public BrushableDeepslateFossil(Properties properties) {
         super(properties);
     }
@@ -24,16 +25,12 @@ public class BrushableDeepslateFossil extends Block {
         super.playerDestroy(p_54157_, p_54158_, p_54159_, p_54160_, p_54161_, p_54162_);
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, p_54162_) == 0) {
 
-            Material material = p_54157_.getBlockState(p_54159_.below()).getMaterial();
-            if (material.blocksMotion()) {
                 p_54157_.setBlockAndUpdate(p_54159_, Blocks.COBBLED_DEEPSLATE.defaultBlockState()) ;
             }
         }
 
-    }
-
     public PushReaction getPistonPushReaction(BlockState p_54173_) {
-        return PushReaction.NORMAL;
+        return PushReaction.IGNORE;
     }
 }
 

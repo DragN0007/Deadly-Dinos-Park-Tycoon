@@ -24,16 +24,12 @@ public class ChiselableTroodonFossil extends Block {
         super.playerDestroy(p_54157_, p_54158_, p_54159_, p_54160_, p_54161_, p_54162_);
         if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, p_54162_) == 0) {
 
-            Material material = p_54157_.getBlockState(p_54159_.below()).getMaterial();
-            if (material.blocksMotion()) {
                 p_54157_.setBlockAndUpdate(p_54159_, DDPTBlocks.CHISELED_TROODON_FOSSIL.get().defaultBlockState()) ;
             }
         }
 
-    }
-
     public PushReaction getPistonPushReaction(BlockState p_54173_) {
-        return PushReaction.NORMAL;
+        return PushReaction.IGNORE;
     }
 }
 

@@ -37,7 +37,7 @@ public class EmbryoInitiatorMenu extends AbstractContainerMenu {
                         EmbryoInitiatorMenu.this.slots.get(EmbryoInitiatorEntity.BOTTOM_SLOT).getItem().sameItem(itemStack)) {
                     return false;
                 } else {
-                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.TURTLE_EGG);
+                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.EGG);
                 }
             }
         });
@@ -49,7 +49,7 @@ public class EmbryoInitiatorMenu extends AbstractContainerMenu {
                         EmbryoInitiatorMenu.this.slots.get(EmbryoInitiatorEntity.BOTTOM_SLOT).getItem().sameItem(itemStack)) {
                     return false;
                 } else {
-                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.TURTLE_EGG);
+                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.EGG);
                 }
             }
         });
@@ -63,7 +63,7 @@ public class EmbryoInitiatorMenu extends AbstractContainerMenu {
 
                     return false;
                 } else {
-                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.TURTLE_EGG);
+                    return itemStack.is(Items.CHICKEN) || itemStack.is(Items.FEATHER) || itemStack.is(Items.EGG);
                 }
             }
         });

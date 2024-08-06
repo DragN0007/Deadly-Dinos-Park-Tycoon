@@ -2,6 +2,7 @@ package com.dragn0007.deadlydinospt.util;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -145,63 +146,63 @@ public class DDPTTags {
 
         //TODO (EVNGLX): If the array causes performance issues, see if there are alternatives
         //TODO (EVNGLX): Are this all the dinos...?
-        public static final Map<TagKey<Item>, RegistryObject<Item>> FOSSIL_TO_EGG_MAP = new HashMap<>() {{
-            put(ACROCANTHOSAURUS_FOSSILS, DDPTItems.ACRO_EGG);
-            put(ACROCANTHOSAURUS_BONES, DDPTItems.ACRO_EGG);
-            put(ALBERTOSAURUS_FOSSILS, DDPTItems.ALBERTO_EGG);
-            put(ALBERTOSAURUS_BONES, DDPTItems.ALBERTO_EGG);
-            put(ALLOSAURUS_FOSSILS, DDPTItems.ALLO_EGG);
-            put(ALLOSAURUS_BONES, DDPTItems.ALLO_EGG);
-            put(ANDALGALORNIS_FOSSILS, DDPTItems.ANDAL_EGG);
-            put(ANDALGALORNIS_BONES, DDPTItems.ANDAL_EGG);
-            put(ARCHAEOPTERYX_FOSSILS, DDPTItems.ARCHAE_EGG);
-            put(ARCHAEOPTERYX_BONES, DDPTItems.ARCHAE_EGG);
-            put(ATROCIRAPTOR_FOSSILS, DDPTItems.ATROCI_EGG);
-            put(ATROCIRAPTOR_BONES, DDPTItems.ATROCI_EGG);
-            put(AUSTRALOVENATOR_FOSSILS, DDPTItems.AUSTRALO_EGG);
-            put(AUSTRALOVENATOR_BONES, DDPTItems.AUSTRALO_EGG);
-            put(AUSTRORAPTOR_FOSSILS, DDPTItems.AUSTRO_EGG);
-            put(AUSTRORAPTOR_BONES, DDPTItems.AUSTRO_EGG);
-            put(BARYONYX_FOSSILS, DDPTItems.BARY_EGG);
-            put(BARYONYX_BONES, DDPTItems.BARY_EGG);
-            put(CARCHARODONTOSAURUS_FOSSILS, DDPTItems.CARCHAR_EGG);
-            put(CARCHARODONTOSAURUS_BONES, DDPTItems.CARCHAR_EGG);
-            put(CARNOTAURUS_FOSSILS, DDPTItems.CARNO_EGG);
-            put(CARNOTAURUS_BONES, DDPTItems.CARNO_EGG);
-            put(CERATOSAURUS_FOSSILS, DDPTItems.CERATO_EGG);
-            put(CERATOSAURUS_BONES, DDPTItems.CERATO_EGG);
-            put(COMPSOGNATHUS_FOSSILS, DDPTItems.COMPY_EGG);
-            put(COMPSOGNATHUS_BONES, DDPTItems.COMPY_EGG);
-            put(CRYOLOPHOSAURUS_FOSSILS, DDPTItems.CRYO_EGG);
-            put(CRYOLOPHOSAURUS_BONES, DDPTItems.CRYO_EGG);
-            put(DEINONYCHUS_FOSSILS, DDPTItems.DEINON_EGG);
-            put(DEINONYCHUS_BONES, DDPTItems.DEINON_EGG);
-            put(DILOPHOSAURUS_FOSSILS, DDPTItems.DILO_EGG);
-            put(DILOPHOSAURUS_BONES, DDPTItems.DILO_EGG);
-            put(EOCARCHARIA_FOSSILS, DDPTItems.EOCARCHAR_EGG);
-            put(EOCARCHARIA_BONES, DDPTItems.EOCARCHAR_EGG);
-            put(GIGANOTOSAURUS_FOSSILS, DDPTItems.GIGA_EGG);
-            put(GIGANOTOSAURUS_BONES, DDPTItems.GIGA_EGG);
-            put(ICHTHYOVENATOR_FOSSILS, DDPTItems.ICHTHY_EGG);
-            put(ICHTHYOVENATOR_BONES, DDPTItems.ICHTHY_EGG);
-            put(MAHAKALA_FOSSILS, DDPTItems.MAHAKALA_EGG);
-            put(MAHAKALA_BONES, DDPTItems.MAHAKALA_EGG);
-            put(MAJUNGASAURUS_FOSSILS, DDPTItems.MAJUNGA_EGG);
-            put(MAJUNGASAURUS_BONES, DDPTItems.MAJUNGA_EGG);
-            put(MEGARAPTOR_FOSSILS, DDPTItems.MEGARAP_EGG);
-            put(MEGARAPTOR_BONES, DDPTItems.MEGARAP_EGG);
-            put(TYRANNOSAURUS_FOSSILS, DDPTItems.REX_EGG);
-            put(TYRANNOSAURUS_BONES, DDPTItems.REX_EGG);
-            put(SPINOSAURUS_FOSSILS, DDPTItems.SPINO_EGG);
-            put(SPINOSAURUS_BONES, DDPTItems.SPINO_EGG);
-            put(TARBOSAURUS_FOSSILS, DDPTItems.TARBO_EGG);
-            put(TARBOSAURUS_BONES, DDPTItems.TARBO_EGG);
-            put(TROODON_FOSSILS, DDPTItems.TROODON_EGG);
-            put(TROODON_BONES, DDPTItems.TROODON_EGG);
-            put(UTAHRAPTOR_FOSSILS, DDPTItems.UTAH_EGG);
-            put(UTAHRAPTOR_BONES, DDPTItems.UTAH_EGG);
-            put(YUTYRANNUS_FOSSILS, DDPTItems.YUTY_EGG);
-            put(YUTYRANNUS_BONES, DDPTItems.YUTY_EGG);
+        public static final Map<TagKey<Item>, Pair<RegistryObject<Item>, String>> FOSSIL_TO_EGG_MAP = new HashMap<>() {{
+            put(ACROCANTHOSAURUS_FOSSILS, new Pair<>(DDPTItems.ACRO_EGG, "Acrocanthosaurus"));
+            put(ACROCANTHOSAURUS_BONES, new Pair<> (DDPTItems.ACRO_EGG,"Acrocanthosaurus"));
+            put(ALBERTOSAURUS_FOSSILS,new Pair<> (DDPTItems.ALBERTO_EGG,"Albertosaurus"));
+            put(ALBERTOSAURUS_BONES,new Pair<> (DDPTItems.ALBERTO_EGG,"Albertosaurus"));
+            put(ALLOSAURUS_FOSSILS,new Pair<> (DDPTItems.ALLO_EGG,"Allosaurus"));
+            put(ALLOSAURUS_BONES,new Pair<> (DDPTItems.ALLO_EGG,"Allosaurus"));
+            put(ANDALGALORNIS_FOSSILS,new Pair<> (DDPTItems.ANDAL_EGG,"Andalgalornis"));
+            put(ANDALGALORNIS_BONES,new Pair<> (DDPTItems.ANDAL_EGG,"Andalgalornis"));
+            put(ARCHAEOPTERYX_FOSSILS,new Pair<> (DDPTItems.ARCHAE_EGG,"Archaeopteryx"));
+            put(ARCHAEOPTERYX_BONES,new Pair<> (DDPTItems.ARCHAE_EGG,"Archaeopteryx"));
+            put(ATROCIRAPTOR_FOSSILS,new Pair<> (DDPTItems.ATROCI_EGG,"Atrociraptor"));
+            put(ATROCIRAPTOR_BONES,new Pair<> (DDPTItems.ATROCI_EGG,"Atrociraptor"));
+            put(AUSTRALOVENATOR_FOSSILS,new Pair<> (DDPTItems.AUSTRALO_EGG,"Australovenator"));
+            put(AUSTRALOVENATOR_BONES,new Pair<> (DDPTItems.AUSTRALO_EGG,"Australovenator"));
+            put(AUSTRORAPTOR_FOSSILS,new Pair<> (DDPTItems.AUSTRO_EGG,"Austroraptor"));
+            put(AUSTRORAPTOR_BONES,new Pair<> (DDPTItems.AUSTRO_EGG,"Austroraptor"));
+            put(BARYONYX_FOSSILS,new Pair<> (DDPTItems.BARY_EGG,"Baryonyx"));
+            put(BARYONYX_BONES,new Pair<> (DDPTItems.BARY_EGG,"Baryonyx"));
+            put(CARCHARODONTOSAURUS_FOSSILS,new Pair<> (DDPTItems.CARCHAR_EGG,"Carcharodontosaurus"));
+            put(CARCHARODONTOSAURUS_BONES,new Pair<> (DDPTItems.CARCHAR_EGG,"Carcharodontosaurus"));
+            put(CARNOTAURUS_FOSSILS,new Pair<> (DDPTItems.CARNO_EGG,"Carnotaurus"));
+            put(CARNOTAURUS_BONES,new Pair<> (DDPTItems.CARNO_EGG,"Carnotaurus"));
+            put(CERATOSAURUS_FOSSILS,new Pair<> (DDPTItems.CERATO_EGG,"Ceratosaurus"));
+            put(CERATOSAURUS_BONES,new Pair<> (DDPTItems.CERATO_EGG,"Ceratosaurus"));
+            put(COMPSOGNATHUS_FOSSILS,new Pair<> (DDPTItems.COMPY_EGG,"Compsognathus"));
+            put(COMPSOGNATHUS_BONES,new Pair<> (DDPTItems.COMPY_EGG,"Compsognathus"));
+            put(CRYOLOPHOSAURUS_FOSSILS,new Pair<> (DDPTItems.CRYO_EGG,"Cryolophosaurus"));
+            put(CRYOLOPHOSAURUS_BONES,new Pair<> (DDPTItems.CRYO_EGG,"Cryolophosaurus"));
+            put(DEINONYCHUS_FOSSILS,new Pair<> (DDPTItems.DEINON_EGG,"Deinonychus"));
+            put(DEINONYCHUS_BONES,new Pair<> (DDPTItems.DEINON_EGG,"Deinonychus"));
+            put(DILOPHOSAURUS_FOSSILS,new Pair<> (DDPTItems.DILO_EGG,"Dilophosaurus"));
+            put(DILOPHOSAURUS_BONES,new Pair<> (DDPTItems.DILO_EGG,"Dilophosaurus"));
+            put(EOCARCHARIA_FOSSILS,new Pair<> (DDPTItems.EOCARCHAR_EGG,"Eocarcharia"));
+            put(EOCARCHARIA_BONES,new Pair<> (DDPTItems.EOCARCHAR_EGG,"Eocarcharia"));
+            put(GIGANOTOSAURUS_FOSSILS,new Pair<> (DDPTItems.GIGA_EGG,"Giganotosaurus"));
+            put(GIGANOTOSAURUS_BONES,new Pair<> (DDPTItems.GIGA_EGG,"Giganotosaurus"));
+            put(ICHTHYOVENATOR_FOSSILS,new Pair<> (DDPTItems.ICHTHY_EGG,"Ichthyovenator"));
+            put(ICHTHYOVENATOR_BONES,new Pair<> (DDPTItems.ICHTHY_EGG,"Ichthyovenator"));
+            put(MAHAKALA_FOSSILS,new Pair<> (DDPTItems.MAHAKALA_EGG,"Mahakala"));
+            put(MAHAKALA_BONES,new Pair<> (DDPTItems.MAHAKALA_EGG,"Mahakala"));
+            put(MAJUNGASAURUS_FOSSILS,new Pair<> (DDPTItems.MAJUNGA_EGG,"Majungasaurus"));
+            put(MAJUNGASAURUS_BONES,new Pair<> (DDPTItems.MAJUNGA_EGG,"Majungasaurus"));
+            put(MEGARAPTOR_FOSSILS,new Pair<> (DDPTItems.MEGARAP_EGG,"Megaraptor"));
+            put(MEGARAPTOR_BONES,new Pair<> (DDPTItems.MEGARAP_EGG,"Megaraptor"));
+            put(TYRANNOSAURUS_FOSSILS,new Pair<> (DDPTItems.REX_EGG,"Tyrannosaurus"));
+            put(TYRANNOSAURUS_BONES,new Pair<> (DDPTItems.REX_EGG,"Tyrannosaurus"));
+            put(SPINOSAURUS_FOSSILS,new Pair<> (DDPTItems.SPINO_EGG,"Spinosaurus"));
+            put(SPINOSAURUS_BONES,new Pair<> (DDPTItems.SPINO_EGG,"Spinosaurus"));
+            put(TARBOSAURUS_FOSSILS,new Pair<> (DDPTItems.TARBO_EGG,"Tarbosaurus"));
+            put(TARBOSAURUS_BONES,new Pair<> (DDPTItems.TARBO_EGG,"Tarbosaurus"));
+            put(TROODON_FOSSILS,new Pair<> (DDPTItems.TROODON_EGG,"Troodon"));
+            put(TROODON_BONES,new Pair<> (DDPTItems.TROODON_EGG,"Troodon"));
+            put(UTAHRAPTOR_FOSSILS,new Pair<> (DDPTItems.UTAH_EGG,"Utahraptor"));
+            put(UTAHRAPTOR_BONES,new Pair<> (DDPTItems.UTAH_EGG,"Utahraptor"));
+            put(YUTYRANNUS_FOSSILS,new Pair<> (DDPTItems.YUTY_EGG,"Yutyrannus"));
+            put(YUTYRANNUS_BONES,new Pair<> (DDPTItems.YUTY_EGG,"Yutyrannus"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {
@@ -235,7 +236,7 @@ public class DDPTTags {
                 return ItemStack.EMPTY;
             }
 
-            return FOSSIL_TO_EGG_MAP.get(fossilTag).get().getDefaultInstance();
+            return FOSSIL_TO_EGG_MAP.get(fossilTag).getFirst().get().getDefaultInstance();
         }
     }
 

@@ -50,6 +50,47 @@
     "deadlydinospt:tarbosaurus_fossil_tail",
     "deadlydinospt:tarbosaurus_fossil_spine",
     "deadlydinospt:tarbosaurus_fossil_leg",
-    "deadlydinospt:tarbosaurus_fossil_claw"
+    "deadlydinospt:tarbosaurus_fossil_claw",
+
+
+    "deadlydinospt:amargasaurus_fossil_tooth",
+    "deadlydinospt:amargasaurus_fossil_skull",
+    "deadlydinospt:amargasaurus_fossil_ribs",
+    "deadlydinospt:amargasaurus_fossil_tail",
+    "deadlydinospt:amargasaurus_fossil_spine",
+    "deadlydinospt:amargasaurus_fossil_leg",
+    "deadlydinospt:amargasaurus_fossil_claw",
+
+    "deadlydinospt:ampelosaurus_fossil_tooth",
+    "deadlydinospt:ampelosaurus_fossil_skull",
+    "deadlydinospt:ampelosaurus_fossil_ribs",
+    "deadlydinospt:ampelosaurus_fossil_tail",
+    "deadlydinospt:ampelosaurus_fossil_spine",
+    "deadlydinospt:ampelosaurus_fossil_leg",
+    "deadlydinospt:ampelosaurus_fossil_claw",
+
+    "deadlydinospt:ankylosaurus_fossil_tooth",
+    "deadlydinospt:ankylosaurus_fossil_skull",
+    "deadlydinospt:ankylosaurus_fossil_ribs",
+    "deadlydinospt:ankylosaurus_fossil_tail",
+    "deadlydinospt:ankylosaurus_fossil_spine",
+    "deadlydinospt:ankylosaurus_fossil_leg",
+    "deadlydinospt:ankylosaurus_fossil_claw",
+
+    "deadlydinospt:edmontosaurus_fossil_tooth",
+    "deadlydinospt:edmontosaurus_fossil_skull",
+    "deadlydinospt:edmontosaurus_fossil_ribs",
+    "deadlydinospt:edmontosaurus_fossil_tail",
+    "deadlydinospt:edmontosaurus_fossil_spine",
+    "deadlydinospt:edmontosaurus_fossil_leg",
+    "deadlydinospt:edmontosaurus_fossil_claw",
+
+    "deadlydinospt:iguanodon_fossil_tooth",
+    "deadlydinospt:iguanodon_fossil_skull",
+    "deadlydinospt:iguanodon_fossil_ribs",
+    "deadlydinospt:iguanodon_fossil_tail",
+    "deadlydinospt:iguanodon_fossil_spine",
+    "deadlydinospt:iguanodon_fossil_leg",
+    "deadlydinospt:iguanodon_fossil_claw"
   ]
 }

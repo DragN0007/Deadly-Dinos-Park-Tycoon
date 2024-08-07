@@ -28,6 +28,17 @@
     "deadlydinospt:tarbosaurus_fossil",
     "deadlydinospt:troodon_fossil",
     "deadlydinospt:utahraptor_fossil",
-    "deadlydinospt:yutyrannus_fossil"
+    "deadlydinospt:yutyrannus_fossil",
+
+    "deadlydinospt:amargasaurus_fossil",
+    "deadlydinospt:ampelosaurus_fossil",
+    "deadlydinospt:ankylosaurus_fossil",
+    "deadlydinospt:avaceratops_fossil",
+    "deadlydinospt:crop_snail_fossil",
+    "deadlydinospt:deinocherius_fossil",
+    "deadlydinospt:edmontosaurus_fossil",
+    "deadlydinospt:gallimimus_fossil",
+    "deadlydinospt:gryposaurus_fossil",
+    "deadlydinospt:iguanodon_fossil"
   ]
 }

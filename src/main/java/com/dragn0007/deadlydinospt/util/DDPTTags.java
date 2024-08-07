@@ -137,6 +137,38 @@ public class DDPTTags {
         public static final TagKey<Item> YUTYRANNUS_FOSSILS = tag("yutyrannus_fossils");
 
 
+
+        public static final TagKey<Item> AMARGASAURUS_BONES = tag("amargasaurus_bones");
+        public static final TagKey<Item> AMARGASAURUS_FOSSILS = tag("amargasaurus_fossils");
+
+        public static final TagKey<Item> AMPELOSAURUS_BONES = tag("ampelosaurus_bones");
+        public static final TagKey<Item> AMPELOSAURUS_FOSSILS = tag("ampelosaurus_fossils");
+
+        public static final TagKey<Item> ANKYLOSAURUS_BONES = tag("ankylosaurus_bones");
+        public static final TagKey<Item> ANKYLOSAURUS_FOSSILS = tag("ankylosaurus_fossils");
+
+        public static final TagKey<Item> AVACERATOPS_BONES = tag("avaceratops_bones");
+        public static final TagKey<Item> AVACERATOPS_FOSSILS = tag("avaceratops_fossils");
+
+        public static final TagKey<Item> CROP_SNAIL_BONES = tag("crop_snail_bones");
+        public static final TagKey<Item> CROP_SNAIL_FOSSILS = tag("crop_snail_fossils");
+
+        public static final TagKey<Item> DEINOCHERIUS_BONES = tag("deinocherius_bones");
+        public static final TagKey<Item> DEINOCHERIUS_FOSSILS = tag("deinocherius_fossils");
+
+        public static final TagKey<Item> EDMONTOSAURUS_BONES = tag("edmontosaurus_bones");
+        public static final TagKey<Item> EDMONTOSAURUS_FOSSILS = tag("edmontosaurus_fossils");
+
+        public static final TagKey<Item> GALLIMIMUS_BONES = tag("gallimimus_bones");
+        public static final TagKey<Item> GALLIMIMUS_FOSSILS = tag("gallimimus_fossils");
+
+        public static final TagKey<Item> GRYPOSAURUS_BONES = tag("gryposaurus_bones");
+        public static final TagKey<Item> GRYPOSAURUS_FOSSILS = tag("gryposaurus_fossils");
+
+        public static final TagKey<Item> IGUANODON_BONES = tag("iguanodon_bones");
+        public static final TagKey<Item> IGUANODON_FOSSILS = tag("iguanodon_fossils");
+
+
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
         }
@@ -203,6 +235,27 @@ public class DDPTTags {
             put(UTAHRAPTOR_BONES,new Pair<> (DDPTItems.UTAH_EGG,"Utahraptor"));
             put(YUTYRANNUS_FOSSILS,new Pair<> (DDPTItems.YUTY_EGG,"Yutyrannus"));
             put(YUTYRANNUS_BONES,new Pair<> (DDPTItems.YUTY_EGG,"Yutyrannus"));
+
+            put(AMARGASAURUS_FOSSILS,new Pair<> (DDPTItems.AMARGA_EGG,"Amargasaurus"));
+            put(AMARGASAURUS_BONES,new Pair<> (DDPTItems.AMARGA_EGG,"Amargasaurus"));
+            put(AMPELOSAURUS_FOSSILS,new Pair<> (DDPTItems.AMPELO_EGG,"Ampelosaurus"));
+            put(AMPELOSAURUS_BONES,new Pair<> (DDPTItems.AMPELO_EGG,"Ampelosaurus"));
+            put(ANKYLOSAURUS_FOSSILS,new Pair<> (DDPTItems.ANKY_EGG,"Ankylosaurus"));
+            put(ANKYLOSAURUS_BONES,new Pair<> (DDPTItems.ANKY_EGG,"Ankylosaurus"));
+            put(AVACERATOPS_FOSSILS,new Pair<> (DDPTItems.AVA_EGG,"Avaceratops"));
+            put(AVACERATOPS_BONES,new Pair<> (DDPTItems.AVA_EGG,"Avaceratops"));
+            put(CROP_SNAIL_FOSSILS,new Pair<> (DDPTItems.CROPSNAIL_EGG,"Crop Snail"));
+            put(CROP_SNAIL_BONES,new Pair<> (DDPTItems.CROPSNAIL_EGG,"Crop Snail"));
+            put(DEINOCHERIUS_FOSSILS,new Pair<> (DDPTItems.DEINOCH_EGG,"Deinocherius"));
+            put(DEINOCHERIUS_BONES,new Pair<> (DDPTItems.DEINOCH_EGG,"Deinocherius"));
+            put(EDMONTOSAURUS_FOSSILS,new Pair<> (DDPTItems.EDMONTO_EGG,"Edmontosaurus"));
+            put(EDMONTOSAURUS_BONES,new Pair<> (DDPTItems.EDMONTO_EGG,"Edmontosaurus"));
+            put(GALLIMIMUS_FOSSILS,new Pair<> (DDPTItems.GALLI_EGG,"Gallimimus"));
+            put(GALLIMIMUS_BONES,new Pair<> (DDPTItems.GALLI_EGG,"Gallimimus"));
+            put(GRYPOSAURUS_FOSSILS,new Pair<> (DDPTItems.GRYPO_EGG,"Gryposaurus"));
+            put(GRYPOSAURUS_BONES,new Pair<> (DDPTItems.GRYPO_EGG,"Gryposaurus"));
+            put(IGUANODON_FOSSILS,new Pair<> (DDPTItems.IGUA_EGG,"Iguanodon"));
+            put(IGUANODON_BONES,new Pair<> (DDPTItems.IGUA_EGG,"Iguanodon"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

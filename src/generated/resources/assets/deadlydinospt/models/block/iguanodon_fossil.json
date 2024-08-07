@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "deadlydinospt:block/deepslate_fossil_large_herbi_2"
+  }
+}

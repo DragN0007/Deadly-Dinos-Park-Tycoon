@@ -16,6 +16,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.ANDALGALORNIS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ANDAL_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
 
+    public static final Holder<PlacedFeature> CROP_SNAIL_FOSSIL = PlacementUtils.register("crop_snail_fossil_placed",
+            DDPTConfigFeatures.CROP_SNAIL_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.CROPSNAIL_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
 
     //Late Cretaceous
     public static final Holder<PlacedFeature> ALBERTOSAURUS_FOSSIL = PlacementUtils.register("albertosaurus_fossil_placed",
@@ -67,6 +71,35 @@ public class DDPTPlacedFeatures {
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
 
+    public static final Holder<PlacedFeature> AMPELOSAURUS_FOSSIL = PlacementUtils.register("ampelosaurus_fossil_placed",
+            DDPTConfigFeatures.AMPELOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.AMPELO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> ANKYLOSAURUS_FOSSIL = PlacementUtils.register("ankylosaurus_fossil_placed",
+            DDPTConfigFeatures.ANKYLOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ANKY_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> AVACERATOPS_FOSSIL = PlacementUtils.register("avaceratops_fossil_placed",
+            DDPTConfigFeatures.AVACERATOPS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.AVA_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> DEINOCHERIUS_FOSSIL = PlacementUtils.register("deinocherius_fossil_placed",
+            DDPTConfigFeatures.DEINOCHERIUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.DEINOCH_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> EDMONTOSAURUS_FOSSIL = PlacementUtils.register("edmontosaurus_fossil_placed",
+            DDPTConfigFeatures.EDMONTOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.EDMONTO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> GALLIMIMUS_FOSSIL = PlacementUtils.register("gallimimus_fossil_placed",
+            DDPTConfigFeatures.GALLIMIMUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.GALLI_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> GRYPOSAURUS_FOSSIL = PlacementUtils.register("gryposaurus_fossil_placed",
+            DDPTConfigFeatures.GRYPOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.GRYPO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+
     //Early Cretaceous
     public static final Holder<PlacedFeature> ACROCANTHOSAURUS_FOSSIL = PlacementUtils.register("acrocanthosaurus_fossil_placed",
             DDPTConfigFeatures.ACROCANTHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ACRO_FOSSIL_WEIGHT.get(),
@@ -85,7 +118,7 @@ public class DDPTPlacedFeatures {
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
     public static final Holder<PlacedFeature> EOCARCHARIA_FOSSIL = PlacementUtils.register("eocarcharia_fossil_placed",
-            DDPTConfigFeatures.EOCARCHARIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.BARY_FOSSIL_WEIGHT.get(),
+            DDPTConfigFeatures.EOCARCHARIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.EOCARCHAR_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
     public static final Holder<PlacedFeature> ICHTHYOVENATOR_FOSSIL = PlacementUtils.register("ichthyovenator_fossil_placed",
@@ -103,6 +136,16 @@ public class DDPTPlacedFeatures {
     public static final Holder<PlacedFeature> YUTYRANNUS_FOSSIL = PlacementUtils.register("yutyrannus_fossil_placed",
             DDPTConfigFeatures.YUTYRANNUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.YUTY_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+
+    public static final Holder<PlacedFeature> AMARGASAURUS_FOSSIL = PlacementUtils.register("amargasaurus_fossil_placed",
+            DDPTConfigFeatures.AMARGASAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.AMARGA_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
+    public static final Holder<PlacedFeature> IGUANODON_FOSSIL = PlacementUtils.register("iguanodon_fossil_placed",
+            DDPTConfigFeatures.IGUANODON_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.IGUA_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
 
 
     //Late Jurassic

@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiskull"
+          "name": "deadlydinospt:ampelosaurus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbispine"
+          "name": "deadlydinospt:ampelosaurus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiribs"
+          "name": "deadlydinospt:ampelosaurus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbitail"
+          "name": "deadlydinospt:ampelosaurus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiclaw"
+          "name": "deadlydinospt:ampelosaurus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbitooth"
+          "name": "deadlydinospt:ampelosaurus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbileg"
+          "name": "deadlydinospt:ampelosaurus_leg"
         }
       ]
     },

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:gallimimus_fossil_tooth",
+    "deadlydinospt:gallimimus_fossil_skull",
+    "deadlydinospt:gallimimus_fossil_ribs",
+    "deadlydinospt:gallimimus_fossil_tail",
+    "deadlydinospt:gallimimus_fossil_spine",
+    "deadlydinospt:gallimimus_fossil_leg",
+    "deadlydinospt:gallimimus_fossil_claw"
+  ]
+}

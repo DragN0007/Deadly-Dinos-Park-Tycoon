@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:deinocherius_fossil_tooth",
+    "deadlydinospt:deinocherius_fossil_skull",
+    "deadlydinospt:deinocherius_fossil_ribs",
+    "deadlydinospt:deinocherius_fossil_tail",
+    "deadlydinospt:deinocherius_fossil_spine",
+    "deadlydinospt:deinocherius_fossil_leg",
+    "deadlydinospt:deinocherius_fossil_claw"
+  ]
+}

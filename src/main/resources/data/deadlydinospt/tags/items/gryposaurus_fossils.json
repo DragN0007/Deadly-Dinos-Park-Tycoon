@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:gryposaurus_fossil_tooth",
+    "deadlydinospt:gryposaurus_fossil_skull",
+    "deadlydinospt:gryposaurus_fossil_ribs",
+    "deadlydinospt:gryposaurus_fossil_tail",
+    "deadlydinospt:gryposaurus_fossil_spine",
+    "deadlydinospt:gryposaurus_fossil_leg",
+    "deadlydinospt:gryposaurus_fossil_claw"
+  ]
+}

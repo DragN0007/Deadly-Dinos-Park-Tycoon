@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:edmontosaurus_tooth",
+    "deadlydinospt:edmontosaurus_skull",
+    "deadlydinospt:edmontosaurus_ribs",
+    "deadlydinospt:edmontosaurus_tail",
+    "deadlydinospt:edmontosaurus_spine",
+    "deadlydinospt:edmontosaurus_leg",
+    "deadlydinospt:edmontosaurus_claw"
+  ]
+}

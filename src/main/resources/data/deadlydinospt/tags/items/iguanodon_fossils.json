@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:iguanodon_fossil_tooth",
+    "deadlydinospt:iguanodon_fossil_skull",
+    "deadlydinospt:iguanodon_fossil_ribs",
+    "deadlydinospt:iguanodon_fossil_tail",
+    "deadlydinospt:iguanodon_fossil_spine",
+    "deadlydinospt:iguanodon_fossil_leg",
+    "deadlydinospt:iguanodon_fossil_claw"
+  ]
+}

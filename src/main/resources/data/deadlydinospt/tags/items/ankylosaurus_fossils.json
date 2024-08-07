@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:ankylosaurus_fossil_tooth",
+    "deadlydinospt:ankylosaurus_fossil_skull",
+    "deadlydinospt:ankylosaurus_fossil_ribs",
+    "deadlydinospt:ankylosaurus_fossil_tail",
+    "deadlydinospt:ankylosaurus_fossil_spine",
+    "deadlydinospt:ankylosaurus_fossil_leg",
+    "deadlydinospt:ankylosaurus_fossil_claw"
+  ]
+}

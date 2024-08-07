@@ -115,6 +115,31 @@
     "deadlydinospt:yutyrannus_tail",
     "deadlydinospt:yutyrannus_spine",
     "deadlydinospt:yutyrannus_leg",
-    "deadlydinospt:yutyrannus_claw"
+    "deadlydinospt:yutyrannus_claw",
+
+
+    "deadlydinospt:ankylosaurus_tooth",
+    "deadlydinospt:ankylosaurus_skull",
+    "deadlydinospt:ankylosaurus_ribs",
+    "deadlydinospt:ankylosaurus_tail",
+    "deadlydinospt:ankylosaurus_spine",
+    "deadlydinospt:ankylosaurus_leg",
+    "deadlydinospt:ankylosaurus_claw",
+
+    "deadlydinospt:deinocherius_tooth",
+    "deadlydinospt:deinocherius_skull",
+    "deadlydinospt:deinocherius_ribs",
+    "deadlydinospt:deinocherius_tail",
+    "deadlydinospt:deinocherius_spine",
+    "deadlydinospt:deinocherius_leg",
+    "deadlydinospt:deinocherius_claw",
+
+    "deadlydinospt:gryposaurus_tooth",
+    "deadlydinospt:gryposaurus_skull",
+    "deadlydinospt:gryposaurus_ribs",
+    "deadlydinospt:gryposaurus_tail",
+    "deadlydinospt:gryposaurus_spine",
+    "deadlydinospt:gryposaurus_leg",
+    "deadlydinospt:gryposaurus_claw"
   ]
 }

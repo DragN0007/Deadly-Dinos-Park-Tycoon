@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_tooth",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_skull",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_ribs",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_claw",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_tail",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_spine",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:amargasaurus_fossil_leg",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {}
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "deadlydinospt:chiseled_amargasaurus_fossil",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:silk_touch",
+                    "levels": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

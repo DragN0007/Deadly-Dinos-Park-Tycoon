@@ -52,6 +52,17 @@
     "deadlydinospt:troodon_spine",
     "deadlydinospt:troodon_leg",
     "deadlydinospt:troodon_claw",
-    "deadlydinospt:troodon_raptor_claw"
+    "deadlydinospt:troodon_raptor_claw",
+
+
+    "deadlydinospt:avaceratops_tooth",
+    "deadlydinospt:avaceratops_skull",
+    "deadlydinospt:avaceratops_ribs",
+    "deadlydinospt:avaceratops_tail",
+    "deadlydinospt:avaceratops_spine",
+    "deadlydinospt:avaceratops_leg",
+    "deadlydinospt:avaceratops_claw",
+
+    "deadlydinospt:crop_snail_shell"
   ]
 }

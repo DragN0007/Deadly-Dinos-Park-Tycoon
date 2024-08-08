@@ -211,6 +211,27 @@
   "item.deadlydinospt.megaraptrophy": "Megaraptor Claw Trophy",
   "item.deadlydinospt.megarap_egg": "Megaraptor Egg",
 
+  "entity.deadlydinospt.edmonto_entity": "Edmontosaurus",
+  "item.deadlydinospt.edmonto_spawn_egg": "Edmontosaurus Spawn Egg",
+  "item.deadlydinospt.edmontotrophy": "Edmontosaurus Claw Trophy",
+  "item.deadlydinospt.edmonto_egg": "Edmontosaurus Egg",
+
+  "entity.deadlydinospt.igua_entity": "Iguanodon",
+  "item.deadlydinospt.igua_spawn_egg": "Iguanodon Spawn Egg",
+  "item.deadlydinospt.iguatrophy": "Iguanodon Claw Trophy",
+  "item.deadlydinospt.igua_egg": "Iguanodon Egg",
+
+  "entity.deadlydinospt.bary_entity": "Baryonyx",
+  "item.deadlydinospt.bary_spawn_egg": "Baryonyx Spawn Egg",
+  "item.deadlydinospt.barytrophy": "Baryonyx Tooth Trophy",
+  "item.deadlydinospt.bary_egg": "Baryonyx Egg",
+
+  "entity.deadlydinospt.pachy_entity": "Pachycephalosaurus",
+  "item.deadlydinospt.pachy_spawn_egg": "Pachycephalosaurus Spawn Egg",
+  "item.deadlydinospt.pachytrophy": "Pachycephalosaurus Crest Trophy",
+  "item.deadlydinospt.pachy_egg": "Pachycephalosaurus Egg",
+
+
   "entity.deadlydinospt.mosa_entity": "Mosasaurus",
   "item.deadlydinospt.mosa_spawn_egg": "Mosasaurus Spawn Egg",
   "item.deadlydinospt.mosatrophy": "Mosasaurus Tooth Trophy",
@@ -236,16 +257,6 @@
   "item.deadlydinospt.leedtrophy": "Leedsichthys Fin Trophy",
   "item.deadlydinospt.leed_egg": "Leedsichthys Egg",
 
-  "entity.deadlydinospt.bary_entity": "Baryonyx",
-  "item.deadlydinospt.bary_spawn_egg": "Baryonyx Spawn Egg",
-  "item.deadlydinospt.barytrophy": "Baryonyx Tooth Trophy",
-  "item.deadlydinospt.bary_egg": "Baryonyx Egg",
-
-  "entity.deadlydinospt.pachy_entity": "Pachycephalosaurus",
-  "item.deadlydinospt.pachy_spawn_egg": "Pachycephalosaurus Spawn Egg",
-  "item.deadlydinospt.pachytrophy": "Pachycephalosaurus Crest Trophy",
-  "item.deadlydinospt.pachy_egg": "Pachycephalosaurus Egg",
-
   "entity.deadlydinospt.basilo_entity": "Basilosaurus",
   "item.deadlydinospt.basilo_spawn_egg": "Basilosaurus Spawn Egg",
   "item.deadlydinospt.basilotrophy": "Basilosaurus Tooth Trophy",
@@ -255,16 +266,6 @@
   "item.deadlydinospt.meg_spawn_egg": "Megalodon Spawn Egg",
   "item.deadlydinospt.megtrophy": "Megalodon Tooth Trophy",
   "item.deadlydinospt.meg_egg": "Megalodon Egg",
-
-  "entity.deadlydinospt.edmonto_entity": "Edmontosaurus",
-  "item.deadlydinospt.edmonto_spawn_egg": "Edmontosaurus Spawn Egg",
-  "item.deadlydinospt.edmontotrophy": "Edmontosaurus Claw Trophy",
-  "item.deadlydinospt.edmonto_egg": "Edmontosaurus Egg",
-
-  "entity.deadlydinospt.igua_entity": "Iguanodon",
-  "item.deadlydinospt.igua_spawn_egg": "Iguanodon Spawn Egg",
-  "item.deadlydinospt.iguatrophy": "Iguanodon Claw Trophy",
-  "item.deadlydinospt.igua_egg": "Iguanodon Egg",
 
   "entity.deadlydinospt.gar_entity": "Alligator Gar",
   "item.deadlydinospt.gar_spawn_egg": "Alligator Gar Spawn Egg",

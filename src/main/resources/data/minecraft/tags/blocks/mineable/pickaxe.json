@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:wire_fence_1",
+    "deadlydinospt:wire_fence_2",
+    "deadlydinospt:wire_fence_3",
+    "deadlydinospt:wire_fence_4",
+    "deadlydinospt:rstonebricks",
+    "deadlydinospt:rcobblestone",
+    "deadlydinospt:rglass"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:sauroposeidon_fossil_tooth",
+    "deadlydinospt:sauroposeidon_fossil_skull",
+    "deadlydinospt:sauroposeidon_fossil_ribs",
+    "deadlydinospt:sauroposeidon_fossil_tail",
+    "deadlydinospt:sauroposeidon_fossil_spine",
+    "deadlydinospt:sauroposeidon_fossil_leg",
+    "deadlydinospt:sauroposeidon_fossil_claw"
+  ]
+}

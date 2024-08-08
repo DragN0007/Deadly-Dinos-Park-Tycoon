@@ -806,6 +806,91 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         advancedItem(DDPTItems.IGUANODON_TAIL.get(), "large_herbi_tail");
         advancedItem(DDPTItems.IGUANODON_SPINE.get(), "large_herbi_spine");
         advancedItem(DDPTItems.IGUANODON_LEG.get(), "large_herbi_leg");
+
+
+        simpleItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_TOOTH.get(), "small_herbi_fossil_tooth");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_RIBS.get(), "small_herbi_fossil_ribs");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_CLAW.get(), "small_herbi_fossil_claw");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_TAIL.get(), "small_herbi_fossil_tail");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_SPINE.get(), "small_herbi_fossil_spine");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_FOSSIL_LEG.get(), "small_herbi_fossil_leg");
+
+        simpleItem(DDPTItems.PACHYCEPHALOSAURUS_SKULL.get());
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_TOOTH.get(), "small_herbi_tooth");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_RIBS.get(), "small_herbi_ribs");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_CLAW.get(), "small_herbi_claw");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_TAIL.get(), "small_herbi_tail");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_SPINE.get(), "small_herbi_spine");
+        advancedItem(DDPTItems.PACHYCEPHALOSAURUS_LEG.get(), "small_herbi_leg");
+
+
+        simpleItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_TOOTH.get(), "medium_herbi_fossil_tooth");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_RIBS.get(), "medium_herbi_fossil_ribs");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_CLAW.get(), "medium_herbi_fossil_claw");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_TAIL.get(), "medium_herbi_fossil_tail");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_SPINE.get(), "medium_herbi_fossil_spine");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_FOSSIL_LEG.get(), "medium_herbi_fossil_leg");
+
+        simpleItem(DDPTItems.PACHYRHINOSAURUS_SKULL.get());
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_TOOTH.get(), "medium_herbi_tooth");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_RIBS.get(), "medium_herbi_ribs");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_CLAW.get(), "medium_herbi_claw");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_TAIL.get(), "medium_herbi_tail");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_SPINE.get(), "medium_herbi_spine");
+        advancedItem(DDPTItems.PACHYRHINOSAURUS_LEG.get(), "medium_herbi_leg");
+
+
+        simpleItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_TOOTH.get(), "large_herbi_fossil_tooth");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_RIBS.get(), "large_herbi_fossil_ribs");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_CLAW.get(), "large_herbi_fossil_claw");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_TAIL.get(), "large_herbi_fossil_tail");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_SPINE.get(), "large_herbi_fossil_spine");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_FOSSIL_LEG.get(), "large_herbi_fossil_leg");
+
+        simpleItem(DDPTItems.PARASAUROLOPHUS_SKULL.get());
+        advancedItem(DDPTItems.PARASAUROLOPHUS_TOOTH.get(), "large_herbi_tooth");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_RIBS.get(), "large_herbi_ribs");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_CLAW.get(), "large_herbi_claw");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_TAIL.get(), "large_herbi_tail");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_SPINE.get(), "large_herbi_spine");
+        advancedItem(DDPTItems.PARASAUROLOPHUS_LEG.get(), "large_herbi_leg");
+
+
+        simpleItem(DDPTItems.SAUROPOSEIDON_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_TOOTH.get(), "large_herbi_fossil_tooth");
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_RIBS.get(), "large_herbi_fossil_ribs");
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_CLAW.get(), "large_herbi_fossil_claw");
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_TAIL.get(), "large_herbi_fossil_tail");
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_SPINE.get(), "large_herbi_fossil_spine");
+        advancedItem(DDPTItems.SAUROPOSEIDON_FOSSIL_LEG.get(), "large_herbi_fossil_leg");
+
+        simpleItem(DDPTItems.SAUROPOSEIDON_SKULL.get());
+        advancedItem(DDPTItems.SAUROPOSEIDON_TOOTH.get(), "large_herbi_tooth");
+        advancedItem(DDPTItems.SAUROPOSEIDON_RIBS.get(), "large_herbi_ribs");
+        advancedItem(DDPTItems.SAUROPOSEIDON_CLAW.get(), "large_herbi_claw");
+        advancedItem(DDPTItems.SAUROPOSEIDON_TAIL.get(), "large_herbi_tail");
+        advancedItem(DDPTItems.SAUROPOSEIDON_SPINE.get(), "large_herbi_spine");
+        advancedItem(DDPTItems.SAUROPOSEIDON_LEG.get(), "large_herbi_leg");
+
+
+        simpleItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_SKULL.get());
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_TOOTH.get(), "large_herbi_fossil_tooth");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_RIBS.get(), "large_herbi_fossil_ribs");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_CLAW.get(), "large_herbi_fossil_claw");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_TAIL.get(), "large_herbi_fossil_tail");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_SPINE.get(), "large_herbi_fossil_spine");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_FOSSIL_LEG.get(), "large_herbi_fossil_leg");
+
+        simpleItem(DDPTItems.SHANTUNGOSAURUS_SKULL.get());
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_TOOTH.get(), "large_herbi_tooth");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_RIBS.get(), "large_herbi_ribs");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_CLAW.get(), "large_herbi_claw");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_TAIL.get(), "large_herbi_tail");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_SPINE.get(), "large_herbi_spine");
+        advancedItem(DDPTItems.SHANTUNGOSAURUS_LEG.get(), "large_herbi_leg");
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {

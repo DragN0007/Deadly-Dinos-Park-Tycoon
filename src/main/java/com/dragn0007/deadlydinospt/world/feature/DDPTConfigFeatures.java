@@ -33,6 +33,7 @@ public class DDPTConfigFeatures {
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.ANDALGALORNIS_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ANDALGALORNIS_FOSSIL_ORE = FeatureUtils.register("andalgalornis_fossil_ore",
             Feature.ORE, new OreConfiguration(ANDALGALORNIS_FOSSIL, 3));
+
     public static final List<OreConfiguration.TargetBlockState> CROP_SNAIL_FOSSIL = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.CROP_SNAIL_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CROP_SNAIL_FOSSIL_ORE = FeatureUtils.register("crop_snail_fossil_ore",
@@ -137,6 +138,26 @@ public class DDPTConfigFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> GRYPOSAURUS_FOSSIL_ORE = FeatureUtils.register("gryposaurus_fossil_ore",
             Feature.ORE, new OreConfiguration(GRYPOSAURUS_FOSSIL, 3));
 
+    public static final List<OreConfiguration.TargetBlockState> PACHYCEPHALOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.PACHYCEPHALOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> PACHYCEPHALOSAURUS_FOSSIL_ORE = FeatureUtils.register("pachycephalosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(PACHYCEPHALOSAURUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> PACHYRHINOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.PACHYRHINOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> PACHYRHINOSAURUS_FOSSIL_ORE = FeatureUtils.register("pachyrhinosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(PACHYRHINOSAURUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> PARASAUROLOPHUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.PARASAUROLOPHUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> PARASAUROLOPHUS_FOSSIL_ORE = FeatureUtils.register("parasaurolophus_fossil_ore",
+            Feature.ORE, new OreConfiguration(PARASAUROLOPHUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> SHANTUNGOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.SHANTUNGOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> SHANTUNGOSAURUS_FOSSIL_ORE = FeatureUtils.register("shantungosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(SHANTUNGOSAURUS_FOSSIL, 3));
+
 
 
     //Early Cretaceous (Deepslate)
@@ -195,6 +216,11 @@ public class DDPTConfigFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.IGUANODON_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> IGUANODON_FOSSIL_ORE = FeatureUtils.register("iguanodon_fossil_ore",
             Feature.ORE, new OreConfiguration(IGUANODON_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> SAUROPOSEIDON_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.SAUROPOSEIDON_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> SAUROPOSEIDON_FOSSIL_ORE = FeatureUtils.register("sauroposeidon_fossil_ore",
+            Feature.ORE, new OreConfiguration(SAUROPOSEIDON_FOSSIL, 3));
 
 
 

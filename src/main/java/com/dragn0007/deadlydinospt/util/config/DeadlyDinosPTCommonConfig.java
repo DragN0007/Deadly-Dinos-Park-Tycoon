@@ -45,6 +45,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> MAJUNGA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MEGARAP_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MOSA_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> PACHY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> PACHYR_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> PARA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> REX_FOSSIL_WEIGHT;
@@ -184,6 +185,9 @@ public class DeadlyDinosPTCommonConfig {
 
         MOSA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("MOSA Fossil Spawn Weight", 1);
+
+        PACHY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("PACHY Fossil Spawn Weight", 1);
 
         PACHYR_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("PACHYR Fossil Spawn Weight", 1);

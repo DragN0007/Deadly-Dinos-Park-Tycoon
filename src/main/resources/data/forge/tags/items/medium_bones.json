@@ -140,6 +140,14 @@
     "deadlydinospt:gryposaurus_tail",
     "deadlydinospt:gryposaurus_spine",
     "deadlydinospt:gryposaurus_leg",
-    "deadlydinospt:gryposaurus_claw"
+    "deadlydinospt:gryposaurus_claw",
+
+    "deadlydinospt:pachyrhinosaurus_tooth",
+    "deadlydinospt:pachyrhinosaurus_skull",
+    "deadlydinospt:pachyrhinosaurus_ribs",
+    "deadlydinospt:pachyrhinosaurus_tail",
+    "deadlydinospt:pachyrhinosaurus_spine",
+    "deadlydinospt:pachyrhinosaurus_leg",
+    "deadlydinospt:pachyrhinosaurus_claw"
   ]
 }

@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_skull"
+          "name": "deadlydinospt:cryolophosaurus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_spine"
+          "name": "deadlydinospt:cryolophosaurus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_ribs"
+          "name": "deadlydinospt:cryolophosaurus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_tail"
+          "name": "deadlydinospt:cryolophosaurus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_claw"
+          "name": "deadlydinospt:cryolophosaurus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_tooth"
+          "name": "deadlydinospt:cryolophosaurus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:cryolophosaurus_leg"
+          "name": "deadlydinospt:cryolophosaurus_leg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawmediummeat"
+          "name": "deadlydinospt:rawmediummeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:cryotrophy"
+          "name": "deadlydinospt:cryotrophy"
         }
       ],
       "conditions": [

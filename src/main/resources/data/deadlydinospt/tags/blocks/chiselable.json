@@ -39,6 +39,11 @@
     "deadlydinospt:edmontosaurus_fossil",
     "deadlydinospt:gallimimus_fossil",
     "deadlydinospt:gryposaurus_fossil",
-    "deadlydinospt:iguanodon_fossil"
+    "deadlydinospt:iguanodon_fossil",
+    "deadlydinospt:pachycephalosaurus_fossil",
+    "deadlydinospt:pachyrhinosaurus_fossil",
+    "deadlydinospt:parasaurolophus_fossil",
+    "deadlydinospt:sauroposeidon_fossil",
+    "deadlydinospt:shantungosaurus_fossil"
   ]
 }

@@ -1144,6 +1144,107 @@
   "item.deadlydinospt.iguanodon_leg": "Iguanodon Leg",
 
 
+  "block.deadlydinospt.pachycephalosaurus_fossil": "Pachycephalosaurus Fossil",
+  "block.deadlydinospt.chiseled_pachycephalosaurus_fossil": "Chiseled Pachycephalosaurus Fossil",
+
+  "item.deadlydinospt.pachycephalosaurus_fossil_tooth": "Pachycephalosaurus Tooth Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_skull": "Pachycephalosaurus Skull Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_ribs": "Pachycephalosaurus Ribs Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_claw": "Pachycephalosaurus Claw Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_tail": "Pachycephalosaurus Tail Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_spine": "Pachycephalosaurus Spine Fossil",
+  "item.deadlydinospt.pachycephalosaurus_fossil_leg": "Pachycephalosaurus Leg Fossil",
+
+  "item.deadlydinospt.pachycephalosaurus_tooth": "Pachycephalosaurus Tooth",
+  "item.deadlydinospt.pachycephalosaurus_skull": "Pachycephalosaurus Skull",
+  "item.deadlydinospt.pachycephalosaurus_ribs": "Pachycephalosaurus Ribs",
+  "item.deadlydinospt.pachycephalosaurus_claw": "Pachycephalosaurus Claw",
+  "item.deadlydinospt.pachycephalosaurus_tail": "Pachycephalosaurus Tail",
+  "item.deadlydinospt.pachycephalosaurus_spine": "Pachycephalosaurus Spine",
+  "item.deadlydinospt.pachycephalosaurus_leg": "Pachycephalosaurus Leg",
+
+
+  "block.deadlydinospt.pachyrhinosaurus_fossil": "Pachyrhinosaurus Fossil",
+  "block.deadlydinospt.chiseled_pachyrhinosaurus_fossil": "Chiseled Pachyrhinosaurus Fossil",
+
+  "item.deadlydinospt.pachyrhinosaurus_fossil_tooth": "Pachyrhinosaurus Tooth Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_skull": "Pachyrhinosaurus Skull Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_ribs": "Pachyrhinosaurus Ribs Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_claw": "Pachyrhinosaurus Claw Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_tail": "Pachyrhinosaurus Tail Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_spine": "Pachyrhinosaurus Spine Fossil",
+  "item.deadlydinospt.pachyrhinosaurus_fossil_leg": "Pachyrhinosaurus Leg Fossil",
+
+  "item.deadlydinospt.pachyrhinosaurus_tooth": "Pachyrhinosaurus Tooth",
+  "item.deadlydinospt.pachyrhinosaurus_skull": "Pachyrhinosaurus Skull",
+  "item.deadlydinospt.pachyrhinosaurus_ribs": "Pachyrhinosaurus Ribs",
+  "item.deadlydinospt.pachyrhinosaurus_claw": "Pachyrhinosaurus Claw",
+  "item.deadlydinospt.pachyrhinosaurus_tail": "Pachyrhinosaurus Tail",
+  "item.deadlydinospt.pachyrhinosaurus_spine": "Pachyrhinosaurus Spine",
+  "item.deadlydinospt.pachyrhinosaurus_leg": "Pachyrhinosaurus Leg",
+
+
+  "block.deadlydinospt.parasaurolophus_fossil": "Parasaurolophus Fossil",
+  "block.deadlydinospt.chiseled_parasaurolophus_fossil": "Chiseled Parasaurolophus Fossil",
+
+  "item.deadlydinospt.parasaurolophus_fossil_tooth": "Parasaurolophus Tooth Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_skull": "Parasaurolophus Skull Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_ribs": "Parasaurolophus Ribs Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_claw": "Parasaurolophus Claw Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_tail": "Parasaurolophus Tail Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_spine": "Parasaurolophus Spine Fossil",
+  "item.deadlydinospt.parasaurolophus_fossil_leg": "Parasaurolophus Leg Fossil",
+
+  "item.deadlydinospt.parasaurolophus_tooth": "Parasaurolophus Tooth",
+  "item.deadlydinospt.parasaurolophus_skull": "Parasaurolophus Skull",
+  "item.deadlydinospt.parasaurolophus_ribs": "Parasaurolophus Ribs",
+  "item.deadlydinospt.parasaurolophus_claw": "Parasaurolophus Claw",
+  "item.deadlydinospt.parasaurolophus_tail": "Parasaurolophus Tail",
+  "item.deadlydinospt.parasaurolophus_spine": "Parasaurolophus Spine",
+  "item.deadlydinospt.parasaurolophus_leg": "Parasaurolophus Leg",
+
+
+  "block.deadlydinospt.sauroposeidon_fossil": "Sauroposeidon Fossil",
+  "block.deadlydinospt.chiseled_sauroposeidon_fossil": "Chiseled Sauroposeidon Fossil",
+
+  "item.deadlydinospt.sauroposeidon_fossil_tooth": "Sauroposeidon Tooth Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_skull": "Sauroposeidon Skull Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_ribs": "Sauroposeidon Ribs Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_claw": "Sauroposeidon Claw Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_tail": "Sauroposeidon Tail Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_spine": "Sauroposeidon Spine Fossil",
+  "item.deadlydinospt.sauroposeidon_fossil_leg": "Sauroposeidon Leg Fossil",
+
+  "item.deadlydinospt.sauroposeidon_tooth": "Sauroposeidon Tooth",
+  "item.deadlydinospt.sauroposeidon_skull": "Sauroposeidon Skull",
+  "item.deadlydinospt.sauroposeidon_ribs": "Sauroposeidon Ribs",
+  "item.deadlydinospt.sauroposeidon_claw": "Sauroposeidon Claw",
+  "item.deadlydinospt.sauroposeidon_tail": "Sauroposeidon Tail",
+  "item.deadlydinospt.sauroposeidon_spine": "Sauroposeidon Spine",
+  "item.deadlydinospt.sauroposeidon_leg": "Sauroposeidon Leg",
+
+
+  "block.deadlydinospt.shantungosaurus_fossil": "Shantungosaurus Fossil",
+  "block.deadlydinospt.chiseled_shantungosaurus_fossil": "Chiseled Shantungosaurus Fossil",
+
+  "item.deadlydinospt.shantungosaurus_fossil_tooth": "Shantungosaurus Tooth Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_skull": "Shantungosaurus Skull Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_ribs": "Shantungosaurus Ribs Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_claw": "Shantungosaurus Claw Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_tail": "Shantungosaurus Tail Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_spine": "Shantungosaurus Spine Fossil",
+  "item.deadlydinospt.shantungosaurus_fossil_leg": "Shantungosaurus Leg Fossil",
+
+  "item.deadlydinospt.shantungosaurus_tooth": "Shantungosaurus Tooth",
+  "item.deadlydinospt.shantungosaurus_skull": "Shantungosaurus Skull",
+  "item.deadlydinospt.shantungosaurus_ribs": "Shantungosaurus Ribs",
+  "item.deadlydinospt.shantungosaurus_claw": "Shantungosaurus Claw",
+  "item.deadlydinospt.shantungosaurus_tail": "Shantungosaurus Tail",
+  "item.deadlydinospt.shantungosaurus_spine": "Shantungosaurus Spine",
+  "item.deadlydinospt.shantungosaurus_leg": "Shantungosaurus Leg",
+
+
+
 
 
   "block.deadlydinospt.cycas": "Cycas",

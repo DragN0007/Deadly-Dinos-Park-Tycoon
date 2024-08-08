@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_skull"
+          "name": "deadlydinospt:ichthyovenator_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_spine"
+          "name": "deadlydinospt:ichthyovenator_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_ribs"
+          "name": "deadlydinospt:ichthyovenator_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_tail"
+          "name": "deadlydinospt:ichthyovenator_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_claw"
+          "name": "deadlydinospt:ichthyovenator_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_tooth"
+          "name": "deadlydinospt:ichthyovenator_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:ichthyovenator_leg"
+          "name": "deadlydinospt:ichthyovenator_leg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawmediummeat"
+          "name": "deadlydinospt:rawmediummeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:ichthytrophy"
+          "name": "deadlydinospt:ichthytrophy"
         }
       ],
       "conditions": [
@@ -269,7 +269,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:ichthy_egg"
+          "name": "deadlydinospt:ichthy_egg"
         }
       ],
       "conditions": [

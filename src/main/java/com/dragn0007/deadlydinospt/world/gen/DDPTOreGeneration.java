@@ -52,5 +52,10 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.GALLIMIMUS_FOSSIL);
         base.add(DDPTPlacedFeatures.GRYPOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.IGUANODON_FOSSIL);
+        base.add(DDPTPlacedFeatures.PACHYCEPHALOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.PACHYRHINOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.PARASAUROLOPHUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.SAUROPOSEIDON_FOSSIL);
+        base.add(DDPTPlacedFeatures.SHANTUNGOSAURUS_FOSSIL);
     }
 }

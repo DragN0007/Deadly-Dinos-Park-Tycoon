@@ -395,5 +395,55 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
         simpleBlockItem(DDPTBlocks.CHISELED_IGUANODON_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_IGUANODON_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_herbi_2")));
 
+
+
+        simpleBlock(DDPTBlocks.PACHYCEPHALOSAURUS_FOSSIL.get(), models().cubeAll("pachycephalosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_small_herbi_1")));
+        simpleBlockItem(DDPTBlocks.PACHYCEPHALOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.PACHYCEPHALOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_small_herbi_1")));
+
+        simpleBlock(DDPTBlocks.CHISELED_PACHYCEPHALOSAURUS_FOSSIL.get(), models().cubeAll("chiseled_pachycephalosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_small_herbi_1")));
+        simpleBlockItem(DDPTBlocks.CHISELED_PACHYCEPHALOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_PACHYCEPHALOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_small_herbi_1")));
+
+
+
+        simpleBlock(DDPTBlocks.PACHYRHINOSAURUS_FOSSIL.get(), models().cubeAll("pachyrhinosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_med_herbi_2")));
+        simpleBlockItem(DDPTBlocks.PACHYRHINOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.PACHYRHINOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_med_herbi_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_PACHYRHINOSAURUS_FOSSIL.get(), models().cubeAll("chiseled_pachyrhinosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_herbi_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_PACHYRHINOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_PACHYRHINOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_med_herbi_2")));
+
+
+
+        simpleBlock(DDPTBlocks.PARASAUROLOPHUS_FOSSIL.get(), models().cubeAll("parasaurolophus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_herbi_1")));
+        simpleBlockItem(DDPTBlocks.PARASAUROLOPHUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.PARASAUROLOPHUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_herbi_1")));
+
+        simpleBlock(DDPTBlocks.CHISELED_PARASAUROLOPHUS_FOSSIL.get(), models().cubeAll("chiseled_parasaurolophus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_herbi_1")));
+        simpleBlockItem(DDPTBlocks.CHISELED_PARASAUROLOPHUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_PARASAUROLOPHUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_herbi_1")));
+
+
+
+        simpleBlock(DDPTBlocks.SAUROPOSEIDON_FOSSIL.get(), models().cubeAll("sauroposeidon_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_herbi_2")));
+        simpleBlockItem(DDPTBlocks.SAUROPOSEIDON_FOSSIL.get(), models().cubeAll(DDPTBlocks.SAUROPOSEIDON_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_large_herbi_2")));
+
+        simpleBlock(DDPTBlocks.CHISELED_SAUROPOSEIDON_FOSSIL.get(), models().cubeAll("chiseled_sauroposeidon_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_herbi_2")));
+        simpleBlockItem(DDPTBlocks.CHISELED_SAUROPOSEIDON_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_SAUROPOSEIDON_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_large_herbi_2")));
+
+
+
+        simpleBlock(DDPTBlocks.SHANTUNGOSAURUS_FOSSIL.get(), models().cubeAll("shantungosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_large_herbi_1")));
+        simpleBlockItem(DDPTBlocks.SHANTUNGOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.SHANTUNGOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_large_herbi_1")));
+
+        simpleBlock(DDPTBlocks.CHISELED_SHANTUNGOSAURUS_FOSSIL.get(), models().cubeAll("chiseled_shantungosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_large_herbi_1")));
+        simpleBlockItem(DDPTBlocks.CHISELED_SHANTUNGOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_SHANTUNGOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_large_herbi_1")));
+
     }
 }

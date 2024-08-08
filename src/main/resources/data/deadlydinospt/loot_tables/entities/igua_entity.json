@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_skull"
+          "name": "deadlydinospt:iguanodon_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_spine"
+          "name": "deadlydinospt:iguanodon_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_ribs"
+          "name": "deadlydinospt:iguanodon_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_tail"
+          "name": "deadlydinospt:iguanodon_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_claw"
+          "name": "deadlydinospt:iguanodon_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_tooth"
+          "name": "deadlydinospt:iguanodon_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:iguanodon_leg"
+          "name": "deadlydinospt:iguanodon_leg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawlargemeat"
+          "name": "deadlydinospt:rawlargemeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:iguatrophy"
+          "name": "deadlydinospt:iguatrophy"
         }
       ],
       "conditions": [
@@ -269,7 +269,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:igua_egg"
+          "name": "deadlydinospt:igua_egg"
         }
       ],
       "conditions": [

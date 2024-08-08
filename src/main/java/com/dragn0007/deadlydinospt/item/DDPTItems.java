@@ -1876,6 +1876,166 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //PACHYCEPHALOSAURUS
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_TOOTH = ITEMS.register("pachycephalosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_SKULL = ITEMS.register("pachycephalosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_RIBS= ITEMS.register("pachycephalosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_CLAW = ITEMS.register("pachycephalosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_TAIL = ITEMS.register("pachycephalosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_SPINE = ITEMS.register("pachycephalosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_FOSSIL_LEG = ITEMS.register("pachycephalosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_TOOTH = ITEMS.register("pachycephalosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_SKULL = ITEMS.register("pachycephalosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_RIBS= ITEMS.register("pachycephalosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_CLAW = ITEMS.register("pachycephalosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_TAIL = ITEMS.register("pachycephalosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_SPINE = ITEMS.register("pachycephalosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYCEPHALOSAURUS_LEG = ITEMS.register("pachycephalosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //PACHYRHINOSAURUS
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_TOOTH = ITEMS.register("pachyrhinosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_SKULL = ITEMS.register("pachyrhinosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_RIBS= ITEMS.register("pachyrhinosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_CLAW = ITEMS.register("pachyrhinosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_TAIL = ITEMS.register("pachyrhinosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_SPINE = ITEMS.register("pachyrhinosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_FOSSIL_LEG = ITEMS.register("pachyrhinosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_TOOTH = ITEMS.register("pachyrhinosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_SKULL = ITEMS.register("pachyrhinosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_RIBS= ITEMS.register("pachyrhinosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_CLAW = ITEMS.register("pachyrhinosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_TAIL = ITEMS.register("pachyrhinosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_SPINE = ITEMS.register("pachyrhinosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PACHYRHINOSAURUS_LEG = ITEMS.register("pachyrhinosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //PARASAUROLOPHUS
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_TOOTH = ITEMS.register("parasaurolophus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_SKULL = ITEMS.register("parasaurolophus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_RIBS= ITEMS.register("parasaurolophus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_CLAW = ITEMS.register("parasaurolophus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_TAIL = ITEMS.register("parasaurolophus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_SPINE = ITEMS.register("parasaurolophus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_FOSSIL_LEG = ITEMS.register("parasaurolophus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> PARASAUROLOPHUS_TOOTH = ITEMS.register("parasaurolophus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_SKULL = ITEMS.register("parasaurolophus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_RIBS= ITEMS.register("parasaurolophus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_CLAW = ITEMS.register("parasaurolophus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_TAIL = ITEMS.register("parasaurolophus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_SPINE = ITEMS.register("parasaurolophus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> PARASAUROLOPHUS_LEG = ITEMS.register("parasaurolophus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //SAUROPOSEIDON
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_TOOTH = ITEMS.register("sauroposeidon_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_SKULL = ITEMS.register("sauroposeidon_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_RIBS= ITEMS.register("sauroposeidon_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_CLAW = ITEMS.register("sauroposeidon_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_TAIL = ITEMS.register("sauroposeidon_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_SPINE = ITEMS.register("sauroposeidon_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_FOSSIL_LEG = ITEMS.register("sauroposeidon_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> SAUROPOSEIDON_TOOTH = ITEMS.register("sauroposeidon_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_SKULL = ITEMS.register("sauroposeidon_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_RIBS= ITEMS.register("sauroposeidon_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_CLAW = ITEMS.register("sauroposeidon_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_TAIL = ITEMS.register("sauroposeidon_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_SPINE = ITEMS.register("sauroposeidon_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SAUROPOSEIDON_LEG = ITEMS.register("sauroposeidon_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //SHANTUNGOSAURUS
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_TOOTH = ITEMS.register("shantungosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_SKULL = ITEMS.register("shantungosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_RIBS= ITEMS.register("shantungosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_CLAW = ITEMS.register("shantungosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_TAIL = ITEMS.register("shantungosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_SPINE = ITEMS.register("shantungosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_FOSSIL_LEG = ITEMS.register("shantungosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_TOOTH = ITEMS.register("shantungosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_SKULL = ITEMS.register("shantungosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_RIBS= ITEMS.register("shantungosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_CLAW = ITEMS.register("shantungosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_TAIL = ITEMS.register("shantungosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_SPINE = ITEMS.register("shantungosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SHANTUNGOSAURUS_LEG = ITEMS.register("shantungosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
 
 
     //TODO;

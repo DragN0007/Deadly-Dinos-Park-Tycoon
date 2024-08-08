@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:pachycephalosaurus_fossil_tooth",
+    "deadlydinospt:pachycephalosaurus_fossil_skull",
+    "deadlydinospt:pachycephalosaurus_fossil_ribs",
+    "deadlydinospt:pachycephalosaurus_fossil_tail",
+    "deadlydinospt:pachycephalosaurus_fossil_spine",
+    "deadlydinospt:pachycephalosaurus_fossil_leg",
+    "deadlydinospt:pachycephalosaurus_fossil_claw"
+  ]
+}

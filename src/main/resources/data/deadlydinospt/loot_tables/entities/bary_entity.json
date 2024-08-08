@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_skull"
+          "name": "deadlydinospt:baryonyx_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_spine"
+          "name": "deadlydinospt:baryonyx_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_ribs"
+          "name": "deadlydinospt:baryonyx_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_tail"
+          "name": "deadlydinospt:baryonyx_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_claw"
+          "name": "deadlydinospt:baryonyx_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_tooth"
+          "name": "deadlydinospt:baryonyx_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinos:baryonyx_leg"
+          "name": "deadlydinospt:baryonyx_leg"
         }
       ]
     },
@@ -245,7 +245,7 @@
               }
             }
           ],
-          "name": "deadlydinos:rawmediummeat"
+          "name": "deadlydinospt:rawmediummeat"
         }
       ]
     },
@@ -254,7 +254,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:barytrophy"
+          "name": "deadlydinospt:barytrophy"
         }
       ],
       "conditions": [
@@ -269,7 +269,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinos:bary_egg"
+          "name": "deadlydinospt:bary_egg"
         }
       ],
       "conditions": [

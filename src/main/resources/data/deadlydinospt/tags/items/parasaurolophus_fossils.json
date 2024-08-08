@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:parasaurolophus_fossil_tooth",
+    "deadlydinospt:parasaurolophus_fossil_skull",
+    "deadlydinospt:parasaurolophus_fossil_ribs",
+    "deadlydinospt:parasaurolophus_fossil_tail",
+    "deadlydinospt:parasaurolophus_fossil_spine",
+    "deadlydinospt:parasaurolophus_fossil_leg",
+    "deadlydinospt:parasaurolophus_fossil_claw"
+  ]
+}

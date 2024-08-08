@@ -91,6 +91,30 @@
     "deadlydinospt:iguanodon_tail",
     "deadlydinospt:iguanodon_spine",
     "deadlydinospt:iguanodon_leg",
-    "deadlydinospt:iguanodon_claw"
+    "deadlydinospt:iguanodon_claw",
+
+    "deadlydinospt:parasaurolophus_tooth",
+    "deadlydinospt:parasaurolophus_skull",
+    "deadlydinospt:parasaurolophus_ribs",
+    "deadlydinospt:parasaurolophus_tail",
+    "deadlydinospt:parasaurolophus_spine",
+    "deadlydinospt:parasaurolophus_leg",
+    "deadlydinospt:parasaurolophus_claw",
+
+    "deadlydinospt:sauroposeidon_tooth",
+    "deadlydinospt:sauroposeidon_skull",
+    "deadlydinospt:sauroposeidon_ribs",
+    "deadlydinospt:sauroposeidon_tail",
+    "deadlydinospt:sauroposeidon_spine",
+    "deadlydinospt:sauroposeidon_leg",
+    "deadlydinospt:sauroposeidon_claw",
+
+    "deadlydinospt:shantungosaurus_tooth",
+    "deadlydinospt:shantungosaurus_skull",
+    "deadlydinospt:shantungosaurus_ribs",
+    "deadlydinospt:shantungosaurus_tail",
+    "deadlydinospt:shantungosaurus_spine",
+    "deadlydinospt:shantungosaurus_leg",
+    "deadlydinospt:shantungosaurus_claw"
   ]
 }

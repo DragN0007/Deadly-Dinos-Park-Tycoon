@@ -46,8 +46,8 @@ public class DeadlyDinosPT
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onFMLCommonSetupEvent);
 
         DDPTItems.register(eventBus);
-        DDPTBlocks.register(eventBus);
         DDPTBlocksDataGen.register(eventBus);
+        DDPTBlocks.register(eventBus);
         EntityTypes.ENTITY_TYPES.register(eventBus);
         DDPTMenuTypes.register(eventBus);
         DDPTBlockEntities.register(eventBus);

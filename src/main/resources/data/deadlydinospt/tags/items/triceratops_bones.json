@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:triceratops_tooth",
+    "deadlydinospt:triceratops_skull",
+    "deadlydinospt:triceratops_ribs",
+    "deadlydinospt:triceratops_tail",
+    "deadlydinospt:triceratops_spine",
+    "deadlydinospt:triceratops_leg",
+    "deadlydinospt:triceratops_claw"
+  ]
+}

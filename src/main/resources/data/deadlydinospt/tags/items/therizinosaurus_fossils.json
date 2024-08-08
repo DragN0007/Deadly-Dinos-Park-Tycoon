@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:therizinosaurus_fossil_tooth",
+    "deadlydinospt:therizinosaurus_fossil_skull",
+    "deadlydinospt:therizinosaurus_fossil_ribs",
+    "deadlydinospt:therizinosaurus_fossil_tail",
+    "deadlydinospt:therizinosaurus_fossil_spine",
+    "deadlydinospt:therizinosaurus_fossil_leg",
+    "deadlydinospt:therizinosaurus_fossil_claw"
+  ]
+}

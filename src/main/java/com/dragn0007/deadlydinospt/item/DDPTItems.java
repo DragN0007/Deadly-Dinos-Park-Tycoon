@@ -2036,6 +2036,103 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //STEGOSAURUS
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_TOOTH = ITEMS.register("stegosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_SKULL = ITEMS.register("stegosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_RIBS= ITEMS.register("stegosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_CLAW = ITEMS.register("stegosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_TAIL = ITEMS.register("stegosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_SPINE = ITEMS.register("stegosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_FOSSIL_LEG = ITEMS.register("stegosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> STEGOSAURUS_TOOTH = ITEMS.register("stegosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_SKULL = ITEMS.register("stegosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_RIBS= ITEMS.register("stegosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_CLAW = ITEMS.register("stegosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_TAIL = ITEMS.register("stegosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_SPINE = ITEMS.register("stegosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STEGOSAURUS_LEG = ITEMS.register("stegosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //THERIZINOSAURUS
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_TOOTH = ITEMS.register("therizinosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_SKULL = ITEMS.register("therizinosaurus_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_RIBS= ITEMS.register("therizinosaurus_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_CLAW = ITEMS.register("therizinosaurus_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_TAIL = ITEMS.register("therizinosaurus_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_SPINE = ITEMS.register("therizinosaurus_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_FOSSIL_LEG = ITEMS.register("therizinosaurus_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> THERIZINOSAURUS_TOOTH = ITEMS.register("therizinosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_SKULL = ITEMS.register("therizinosaurus_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_RIBS= ITEMS.register("therizinosaurus_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_CLAW = ITEMS.register("therizinosaurus_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_TAIL = ITEMS.register("therizinosaurus_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_SPINE = ITEMS.register("therizinosaurus_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> THERIZINOSAURUS_LEG = ITEMS.register("therizinosaurus_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+    //TRICERATOPS
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_TOOTH = ITEMS.register("triceratops_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_SKULL = ITEMS.register("triceratops_fossil_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_RIBS= ITEMS.register("triceratops_fossil_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_CLAW = ITEMS.register("triceratops_fossil_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_TAIL = ITEMS.register("triceratops_fossil_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_SPINE = ITEMS.register("triceratops_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_FOSSIL_LEG = ITEMS.register("triceratops_fossil_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    public static final RegistryObject<Item> TRICERATOPS_TOOTH = ITEMS.register("triceratops_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_SKULL = ITEMS.register("triceratops_skull",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_RIBS= ITEMS.register("triceratops_ribs",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_CLAW = ITEMS.register("triceratops_claw",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_TAIL = ITEMS.register("triceratops_tail",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_SPINE = ITEMS.register("triceratops_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> TRICERATOPS_LEG = ITEMS.register("triceratops_leg",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+
 
 
     //TODO;

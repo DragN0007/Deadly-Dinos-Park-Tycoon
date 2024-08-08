@@ -183,6 +183,15 @@ public class DDPTTags {
         public static final TagKey<Item> SHANTUNGOSAURUS_BONES = tag("shantungosaurus_bones");
         public static final TagKey<Item> SHANTUNGOSAURUS_FOSSILS = tag("shantungosaurus_fossils");
 
+        public static final TagKey<Item> STEGOSAURUS_BONES = tag("stegosaurus_bones");
+        public static final TagKey<Item> STEGOSAURUS_FOSSILS = tag("stegosaurus_fossils");
+
+        public static final TagKey<Item> THERIZINOSAURUS_BONES = tag("therizinosaurus_bones");
+        public static final TagKey<Item> THERIZINOSAURUS_FOSSILS = tag("therizinosaurus_fossils");
+
+        public static final TagKey<Item> TRICERATOPS_BONES = tag("triceratops_bones");
+        public static final TagKey<Item> TRICERATOPS_FOSSILS = tag("triceratops_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
@@ -281,6 +290,12 @@ public class DDPTTags {
             put(SAUROPOSEIDON_BONES,new Pair<> (DDPTItems.SAURO_EGG,"Sauroposeidon"));
             put(SHANTUNGOSAURUS_FOSSILS,new Pair<> (DDPTItems.SHANT_EGG,"Shantungosaurus"));
             put(SHANTUNGOSAURUS_BONES,new Pair<> (DDPTItems.SHANT_EGG,"Shantungosaurus"));
+            put(STEGOSAURUS_FOSSILS,new Pair<> (DDPTItems.STEGO_EGG,"Stegosaurus"));
+            put(STEGOSAURUS_BONES,new Pair<> (DDPTItems.STEGO_EGG,"Stegosaurus"));
+            put(THERIZINOSAURUS_FOSSILS,new Pair<> (DDPTItems.THERI_EGG,"Therizinosaurus"));
+            put(THERIZINOSAURUS_BONES,new Pair<> (DDPTItems.THERI_EGG,"Therizinosaurus"));
+            put(TRICERATOPS_FOSSILS,new Pair<> (DDPTItems.THERI_EGG,"Triceratops"));
+            put(TRICERATOPS_BONES,new Pair<> (DDPTItems.THERI_EGG,"Triceratops"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

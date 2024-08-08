@@ -111,6 +111,14 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.SHANTUNGOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.SHANT_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
+    public static final Holder<PlacedFeature> THERIZINOSAURUS_FOSSIL = PlacementUtils.register("therizinosaurus_fossil_placed",
+            DDPTConfigFeatures.THERIZINOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.THERI_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> TRICERATOPS_FOSSIL = PlacementUtils.register("triceratops_fossil_placed",
+            DDPTConfigFeatures.TRICERATOPS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.TRIKE_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
 
     //Early Cretaceous
     public static final Holder<PlacedFeature> ACROCANTHOSAURUS_FOSSIL = PlacementUtils.register("acrocanthosaurus_fossil_placed",
@@ -182,6 +190,12 @@ public class DDPTPlacedFeatures {
 
     public static final Holder<PlacedFeature> COMPSOGNATHUS_FOSSIL = PlacementUtils.register("compsognathus_fossil_placed",
             DDPTConfigFeatures.COMPSOGNATHUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.COMPY_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
+
+
+
+    public static final Holder<PlacedFeature> STEGOSAURUS_FOSSIL = PlacementUtils.register("stegosaurus_fossil_placed",
+            DDPTConfigFeatures.STEGOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.STEGO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
 
 

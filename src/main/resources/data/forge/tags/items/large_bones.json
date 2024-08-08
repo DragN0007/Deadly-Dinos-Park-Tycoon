@@ -115,6 +115,14 @@
     "deadlydinospt:shantungosaurus_tail",
     "deadlydinospt:shantungosaurus_spine",
     "deadlydinospt:shantungosaurus_leg",
-    "deadlydinospt:shantungosaurus_claw"
+    "deadlydinospt:shantungosaurus_claw",
+
+    "deadlydinospt:stegosaurus_tooth",
+    "deadlydinospt:stegosaurus_skull",
+    "deadlydinospt:stegosaurus_ribs",
+    "deadlydinospt:stegosaurus_tail",
+    "deadlydinospt:stegosaurus_spine",
+    "deadlydinospt:stegosaurus_leg",
+    "deadlydinospt:stegosaurus_claw"
   ]
 }

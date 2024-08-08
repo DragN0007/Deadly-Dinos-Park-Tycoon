@@ -57,5 +57,8 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.PARASAUROLOPHUS_FOSSIL);
         base.add(DDPTPlacedFeatures.SAUROPOSEIDON_FOSSIL);
         base.add(DDPTPlacedFeatures.SHANTUNGOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.STEGOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.THERIZINOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.TRICERATOPS_FOSSIL);
     }
 }

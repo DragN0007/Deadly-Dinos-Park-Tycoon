@@ -158,6 +158,16 @@ public class DDPTConfigFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> SHANTUNGOSAURUS_FOSSIL_ORE = FeatureUtils.register("shantungosaurus_fossil_ore",
             Feature.ORE, new OreConfiguration(SHANTUNGOSAURUS_FOSSIL, 3));
 
+    public static final List<OreConfiguration.TargetBlockState> THERIZINOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.THERIZINOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> THERIZINOSAURUS_FOSSIL_ORE = FeatureUtils.register("therizinosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(THERIZINOSAURUS_FOSSIL, 3));
+
+    public static final List<OreConfiguration.TargetBlockState> TRICERATOPS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, DDPTBlocks.TRICERATOPS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TRICERATOPS_FOSSIL_ORE = FeatureUtils.register("triceratops_fossil_ore",
+            Feature.ORE, new OreConfiguration(TRICERATOPS_FOSSIL, 3));
+
 
 
     //Early Cretaceous (Deepslate)
@@ -246,6 +256,13 @@ public class DDPTConfigFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.COMPSOGNATHUS_FOSSIL.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> COMPSOGNATHUS_FOSSIL_ORE = FeatureUtils.register("compsognathus_fossil_ore",
             Feature.ORE, new OreConfiguration(COMPSOGNATHUS_FOSSIL, 3));
+
+
+
+    public static final List<OreConfiguration.TargetBlockState> STEGOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.STEGOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> STEGOSAURUS_FOSSIL_ORE = FeatureUtils.register("stegosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(STEGOSAURUS_FOSSIL, 3));
 
 
 

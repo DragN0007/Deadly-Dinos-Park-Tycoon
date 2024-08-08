@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "deadlydinospt:stegosaurus_fossil_tooth",
+    "deadlydinospt:stegosaurus_fossil_skull",
+    "deadlydinospt:stegosaurus_fossil_ribs",
+    "deadlydinospt:stegosaurus_fossil_tail",
+    "deadlydinospt:stegosaurus_fossil_spine",
+    "deadlydinospt:stegosaurus_fossil_leg",
+    "deadlydinospt:stegosaurus_fossil_claw"
+  ]
+}

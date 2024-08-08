@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiskull"
+          "name": "deadlydinospt:parasaurolophus_skull"
         }
       ]
     },
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbispine"
+          "name": "deadlydinospt:parasaurolophus_spine"
         }
       ]
     },
@@ -75,7 +75,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiribs"
+          "name": "deadlydinospt:parasaurolophus_ribs"
         }
       ]
     },
@@ -101,7 +101,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbitail"
+          "name": "deadlydinospt:parasaurolophus_tail"
         }
       ]
     },
@@ -127,7 +127,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbiclaw"
+          "name": "deadlydinospt:parasaurolophus_claw"
         }
       ]
     },
@@ -153,7 +153,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbitooth"
+          "name": "deadlydinospt:parasaurolophus_tooth"
         }
       ]
     },
@@ -179,7 +179,7 @@
               }
             }
           ],
-          "name": "deadlydinospt:largeherbileg"
+          "name": "deadlydinospt:parasaurolophus_leg"
         }
       ]
     },

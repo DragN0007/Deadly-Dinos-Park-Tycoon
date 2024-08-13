@@ -23,6 +23,43 @@ public class DDPTRecipeMaker extends RecipeProvider implements IConditionBuilder
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapedRecipeBuilder.shaped(DDPTBlocks.WIRE_FENCE_1.get())
+                .define('A', Items.IRON_NUGGET)
+                .define('B', Items.IRON_INGOT)
+                .pattern("BAB")
+                .pattern("BBB")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocks.WIRE_FENCE_2.get())
+                .define('A', Items.IRON_NUGGET)
+                .define('B', Items.IRON_INGOT)
+                .pattern("BAB")
+                .pattern("BAB")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocks.WIRE_FENCE_3.get())
+                .define('A', Items.IRON_NUGGET)
+                .define('B', Items.IRON_INGOT)
+                .pattern("AAA")
+                .pattern("BAB")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(DDPTBlocks.WIRE_FENCE_4.get())
+                .define('A', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("AAA")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+
         ShapedRecipeBuilder.shaped(DDPTItems.EOCARCHARIA_ARMOR.get())
                 .define('A', Items.LEATHER)
                 .define('B', Items.IRON_BLOCK)

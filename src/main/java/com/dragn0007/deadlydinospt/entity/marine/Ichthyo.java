@@ -2,16 +2,16 @@ package com.dragn0007.deadlydinospt.entity.marine;
 
 import com.dragn0007.deadlydinospt.client.model.IchthyoModel;
 import com.dragn0007.deadlydinospt.entity.marine.base.AbstractPassiveMarineDino;
+import com.dragn0007.deadlydinospt.entity.marine.base.WaterDino;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
@@ -143,6 +143,23 @@ public class Ichthyo extends AbstractPassiveMarineDino implements IAnimatable {
         return super.finalizeSpawn(levelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
     }
 
+    public boolean canBeParent() {
+        return !this.isBaby() && this.getHealth() >= this.getMaxHealth();
+    }
+
+    @Override
+    public boolean canMate(WaterDino animal) {
+        if (animal == this || !(animal instanceof Ichthyo)) {
+            return false;
+        } else {
+            return this.canBeParent() && ((Ichthyo)animal).canBeParent();
+        }
+    }
+
+    @Override
+    public Ichthyo getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.ICHTHYO_ENTITY.get().create(level);
+    }
 
     @Override
     protected void defineSynchedData(){

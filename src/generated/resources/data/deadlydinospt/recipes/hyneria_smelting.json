@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "deadlydinospt:hyneria"
+  },
+  "result": "deadlydinospt:cooked_hyneria",
+  "experience": 0.35,
+  "cookingtime": 200
+}

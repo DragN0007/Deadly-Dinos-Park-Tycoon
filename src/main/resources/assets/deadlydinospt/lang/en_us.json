@@ -271,6 +271,24 @@
   "item.deadlydinospt.gar_spawn_egg": "Alligator Gar Spawn Egg",
   "item.deadlydinospt.gar_egg": "Alligator Gar Egg",
 
+  "entity.deadlydinospt.livy_entity": "Livyatan",
+  "item.deadlydinospt.livy_spawn_egg": "Livyatan Spawn Egg",
+  "item.deadlydinospt.livy_egg": "Livyatan Egg",
+  "item.deadlydinospt.livytrophy": "Livyatan Tooth Trophy",
+
+  "entity.deadlydinospt.steth_entity": "Stethacanthus",
+  "item.deadlydinospt.steth_spawn_egg": "Stethacanthus Spawn Egg",
+  "item.deadlydinospt.steth_egg": "Stethacanthus Egg",
+  "item.deadlydinospt.stethtrophy": "Stethacanthus Fin Trophy",
+
+  "entity.deadlydinospt.hyneria_entity": "Hyneria",
+  "item.deadlydinospt.hyneria_spawn_egg": "Hyneria Spawn Egg",
+  "item.deadlydinospt.hyneria_egg": "Hyneria Egg",
+
+  "entity.deadlydinospt.argan_entity": "Arganodus",
+  "item.deadlydinospt.argan_spawn_egg": "Arganodus Spawn Egg",
+  "item.deadlydinospt.argan_egg": "Arganodus Egg",
+
 
 
   "item.deadlydinospt.eocarcharia_armor": "Eocarcharia Armor",
@@ -311,6 +329,10 @@
   "item.deadlydinospt.hearty_salad": "Leafy Salad",
   "item.deadlydinospt.gar": "Gar",
   "item.deadlydinospt.cooked_gar": "Cooked Gar",
+  "item.deadlydinospt.arganodus": "Arganodus",
+  "item.deadlydinospt.cooked_arganodus": "Cooked Arganodus",
+  "item.deadlydinospt.hyneria": "Hyneria",
+  "item.deadlydinospt.cooked_hyneria": "Cooked Hyneria",
   "item.deadlydinospt.shark": "Shark Fillet",
   "item.deadlydinospt.cooked_shark": "Cooked Shark Fillet",
   "item.deadlydinospt.large_fish": "Large Fish Fillet",

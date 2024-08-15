@@ -4,6 +4,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.FluidTags;
@@ -22,14 +23,10 @@ import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.Vec3;
-
-import java.util.Random;
 
 public abstract class AbstractTamableMarineDino extends TamableAnimal  {
 
@@ -66,11 +63,9 @@ public abstract class AbstractTamableMarineDino extends TamableAnimal  {
         return false;
     }
 
-    public static boolean checkSurfaceWaterAnimalSpawnRules(EntityType<? extends AbstractTamableMarineDino> p_186238_, LevelAccessor p_186239_, MobSpawnType p_186240_, BlockPos p_186241_, Random p_186242_) {
-        int i = p_186239_.getSeaLevel();
-        int j = i - 13;
-        return p_186241_.getY() >= j && p_186241_.getY() <= i && p_186239_.getFluidState(p_186241_.below()).is(FluidTags.WATER) && p_186239_.getBlockState(p_186241_.above()).is(Blocks.WATER);
-    }
+    public abstract boolean canMate(TamableAnimal animal);
+
+    public abstract TamableAnimal getBreedOffspring(ServerLevel level, AgeableMob ageableMob);
 
     public int getMaxSpawnClusterSize() {
         return 4;

@@ -2,6 +2,7 @@ package com.dragn0007.deadlydinospt.entity.marine.base;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.FluidTags;
@@ -9,6 +10,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MoverType;
@@ -22,7 +24,6 @@ import net.minecraft.world.entity.ai.goal.TryFindWaterGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
-import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,7 +32,7 @@ import net.minecraft.world.phys.Vec3;
 import javax.annotation.Nullable;
 import java.util.EnumSet;
 
-public abstract class AbstractPassiveMarineDino extends WaterAnimal {
+public abstract class AbstractPassiveMarineDino extends WaterDino {
 
     public AbstractPassiveMarineDino(EntityType<? extends AbstractPassiveMarineDino> entityType, Level level) {
         super(entityType, level);
@@ -76,6 +77,10 @@ public abstract class AbstractPassiveMarineDino extends WaterAnimal {
 
         super.aiStep();
     }
+
+    public abstract boolean canMate(WaterDino animal);
+
+    public abstract AbstractPassiveMarineDino getBreedOffspring(ServerLevel level, AgeableMob ageableMob);
 
     static class FishMoveControl extends MoveControl {
         private final AbstractPassiveMarineDino shark;

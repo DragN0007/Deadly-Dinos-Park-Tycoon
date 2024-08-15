@@ -8,6 +8,7 @@ import com.dragn0007.deadlydinospt.client.menu.*;
 import com.dragn0007.deadlydinospt.client.render.*;
 import com.dragn0007.deadlydinospt.entity.carni.*;
 import com.dragn0007.deadlydinospt.entity.herbi.*;
+import com.dragn0007.deadlydinospt.entity.marine.*;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -70,11 +71,19 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         event.put(EntityTypes.EDMONTO_ENTITY.get(), Edmonto.createAttributes().build());
         event.put(EntityTypes.IGUA_ENTITY.get(), Igua.createAttributes().build());
         event.put(EntityTypes.TRIKE_ENTITY.get(), Trike.createAttributes().build());
-//
-//        event.put(EntityTypes.MOSA_ENTITY.get(), Mosa.createAttributes().build());
-//        event.put(EntityTypes.HELI_ENTITY.get(), Heli.createAttributes().build());
-//        event.put(EntityTypes.GAR_ENTITY.get(), Gar.createAttributes().build());
-//        event.put(EntityTypes.DUNKLEO_ENTITY.get(), Dunkleo.createAttributes().build());
+
+        event.put(EntityTypes.MOSA_ENTITY.get(), Mosa.createAttributes().build());
+        event.put(EntityTypes.HELI_ENTITY.get(), Heli.createAttributes().build());
+        event.put(EntityTypes.GAR_ENTITY.get(), Gar.createAttributes().build());
+        event.put(EntityTypes.DUNKLEO_ENTITY.get(), Dunkleo.createAttributes().build());
+        event.put(EntityTypes.ICHTHYO_ENTITY.get(), Ichthyo.createAttributes().build());
+        event.put(EntityTypes.LEED_ENTITY.get(), Leed.createAttributes().build());
+        event.put(EntityTypes.BASILO_ENTITY.get(), Basilo.createAttributes().build());
+        event.put(EntityTypes.MEG_ENTITY.get(), Meg.createAttributes().build());
+        event.put(EntityTypes.LIVY_ENTITY.get(), Livy.createAttributes().build());
+        event.put(EntityTypes.STETH_ENTITY.get(), Steth.createAttributes().build());
+        event.put(EntityTypes.ARGAN_ENTITY.get(), Argan.createAttributes().build());
+        event.put(EntityTypes.HYNERIA_ENTITY.get(), Hyneria.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -126,11 +135,19 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         EntityRenderers.register(EntityTypes.EDMONTO_ENTITY.get(), EdmontoRender::new);
         EntityRenderers.register(EntityTypes.IGUA_ENTITY.get(), IguaRender::new);
         EntityRenderers.register(EntityTypes.TRIKE_ENTITY.get(), TrikeRender::new);
-//
-//        EntityRenderers.register(EntityTypes.MOSA_ENTITY.get(), MosaRender::new);
-//        EntityRenderers.register(EntityTypes.HELI_ENTITY.get(), HeliRender::new);
-//        EntityRenderers.register(EntityTypes.GAR_ENTITY.get(), GarRender::new);
-//        EntityRenderers.register(EntityTypes.DUNKLEO_ENTITY.get(), DunkleoRender::new);
+
+        EntityRenderers.register(EntityTypes.MOSA_ENTITY.get(), MosaRender::new);
+        EntityRenderers.register(EntityTypes.HELI_ENTITY.get(), HeliRender::new);
+        EntityRenderers.register(EntityTypes.GAR_ENTITY.get(), GarRender::new);
+        EntityRenderers.register(EntityTypes.DUNKLEO_ENTITY.get(), DunkleoRender::new);
+        EntityRenderers.register(EntityTypes.ICHTHYO_ENTITY.get(), IchthyoRender::new);
+        EntityRenderers.register(EntityTypes.LEED_ENTITY.get(), LeedRender::new);
+        EntityRenderers.register(EntityTypes.BASILO_ENTITY.get(), BasiloRender::new);
+        EntityRenderers.register(EntityTypes.MEG_ENTITY.get(), MegRender::new);
+        EntityRenderers.register(EntityTypes.LIVY_ENTITY.get(), LivyRender::new);
+        EntityRenderers.register(EntityTypes.STETH_ENTITY.get(), StethRender::new);
+        EntityRenderers.register(EntityTypes.ARGAN_ENTITY.get(), ArganRender::new);
+        EntityRenderers.register(EntityTypes.HYNERIA_ENTITY.get(), HyneriaRender::new);
 
 
         ItemBlockRenderTypes.setRenderLayer(DDPTBlocks.RGLASS.get(), RenderType.cutout());

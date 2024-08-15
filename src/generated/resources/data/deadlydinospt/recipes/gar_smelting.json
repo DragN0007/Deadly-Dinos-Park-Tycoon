@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "deadlydinospt:gar"
+  },
+  "result": "deadlydinospt:cooked_gar",
+  "experience": 0.35,
+  "cookingtime": 200
+}

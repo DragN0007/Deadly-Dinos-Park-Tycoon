@@ -4,6 +4,7 @@ import com.dragn0007.deadlydinospt.client.menu.BasiloMenu;
 import com.dragn0007.deadlydinospt.client.model.BasiloModel;
 import com.dragn0007.deadlydinospt.entity.Chestable;
 import com.dragn0007.deadlydinospt.entity.marine.base.AbstractTamableMarineDino;
+import com.dragn0007.deadlydinospt.entity.marine.base.WaterDino;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
 import net.minecraft.core.BlockPos;
@@ -41,6 +42,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.event.ForgeEventFactory;
+import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
 import net.minecraftforge.network.NetworkHooks;
@@ -319,7 +321,7 @@ public class Basilo extends AbstractTamableMarineDino implements IAnimatable, Sa
     }
 
     @Override
-    public boolean canMate(Animal animal) {
+    public boolean canMate(TamableAnimal animal) {
         if (animal == this || !(animal instanceof Basilo)) {
             return false;
         } else {
@@ -331,7 +333,6 @@ public class Basilo extends AbstractTamableMarineDino implements IAnimatable, Sa
     public Basilo getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
         return EntityTypes.BASILO_ENTITY.get().create(level);
     }
-
 
     @Override
     protected void defineSynchedData(){

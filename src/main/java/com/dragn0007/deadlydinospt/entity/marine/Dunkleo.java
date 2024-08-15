@@ -2,14 +2,14 @@ package com.dragn0007.deadlydinospt.entity.marine;
 
 import com.dragn0007.deadlydinospt.client.model.DunkleoModel;
 import com.dragn0007.deadlydinospt.entity.marine.base.AbstractMarineDino;
-import com.dragn0007.deadlydinospt.entity.nonliving.Car;
-import com.dragn0007.deadlydinospt.entity.nonliving.CarFlipped;
-import com.dragn0007.deadlydinospt.entity.nonliving.CarSide;
+import com.dragn0007.deadlydinospt.entity.marine.base.WaterDino;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -74,12 +74,6 @@ public class Dunkleo extends AbstractMarineDino implements IAnimatable {
             @Override
             public boolean test(@Nullable LivingEntity livingEntity) {
                 if (livingEntity instanceof Dunkleo)
-                    return false;
-                if (livingEntity instanceof CarSide)
-                    return false;
-                if (livingEntity instanceof Car)
-                    return false;
-                if (livingEntity instanceof CarFlipped)
                     return false;
                 if (livingEntity instanceof ArmorStand)
                     return false;
@@ -173,6 +167,23 @@ public class Dunkleo extends AbstractMarineDino implements IAnimatable {
         return super.finalizeSpawn(levelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
     }
 
+    public boolean canBeParent() {
+        return !this.isBaby() && this.getHealth() >= this.getMaxHealth();
+    }
+
+    @Override
+    public boolean canMate(WaterDino animal) {
+        if (animal == this || !(animal instanceof Dunkleo)) {
+            return false;
+        } else {
+            return this.canBeParent() && ((Dunkleo)animal).canBeParent();
+        }
+    }
+
+    @Override
+    public Dunkleo getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.DUNKLEO_ENTITY.get().create(level);
+    }
 
     @Override
     protected void defineSynchedData(){

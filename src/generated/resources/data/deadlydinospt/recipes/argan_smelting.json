@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "deadlydinospt:arganodus"
+  },
+  "result": "deadlydinospt:cooked_arganodus",
+  "experience": 0.35,
+  "cookingtime": 200
+}

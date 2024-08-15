@@ -2,16 +2,16 @@ package com.dragn0007.deadlydinospt.entity.marine;
 
 import com.dragn0007.deadlydinospt.client.model.ArganModel;
 import com.dragn0007.deadlydinospt.entity.marine.base.AbstractPassiveMarineDino;
+import com.dragn0007.deadlydinospt.entity.marine.base.WaterDino;
+import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
@@ -99,7 +99,6 @@ public class Argan extends AbstractPassiveMarineDino implements IAnimatable {
         return ArganModel.Variant.variantFromOrdinal(getVariant()).resourceLocation;
     }
 
-
     private static final EntityDataAccessor<Integer> VARIANT = SynchedEntityData.defineId(Argan.class, EntityDataSerializers.INT);
 
     public int getVariant(){
@@ -124,7 +123,6 @@ public class Argan extends AbstractPassiveMarineDino implements IAnimatable {
         compoundNBT.putInt("Variant", getVariant());
     }
 
-
     @Nullable
     @Override
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor levelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {
@@ -134,11 +132,27 @@ public class Argan extends AbstractPassiveMarineDino implements IAnimatable {
         return super.finalizeSpawn(levelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
     }
 
+    public boolean canBeParent() {
+        return !this.isBaby() && this.getHealth() >= this.getMaxHealth();
+    }
+
+    @Override
+    public boolean canMate(WaterDino animal) {
+        if (animal == this || !(animal instanceof Argan)) {
+            return false;
+        } else {
+            return this.canBeParent() && ((Argan)animal).canBeParent();
+        }
+    }
+
+    @Override
+    public Argan getBreedOffspring(ServerLevel level, AgeableMob ageableMob) {
+        return EntityTypes.ARGAN_ENTITY.get().create(level);
+    }
 
     @Override
     protected void defineSynchedData(){
         super.defineSynchedData();
         this.entityData.define(VARIANT, 0);
     }
-
 }

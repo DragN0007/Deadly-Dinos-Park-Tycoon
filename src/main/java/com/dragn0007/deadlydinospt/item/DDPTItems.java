@@ -256,6 +256,67 @@ public class DDPTItems {
             () -> new DinoEggItem(EntityTypes.IGUA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
 
 
+    public static final RegistryObject<Item> MOSA_SPAWN_EGG = ITEMS.register("mosa_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.MOSA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> MOSA_EGG = ITEMS.register("mosa_egg",
+            () -> new DinoEggItem(EntityTypes.MOSA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> HELI_SPAWN_EGG = ITEMS.register("heli_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.HELI_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> HELI_EGG = ITEMS.register("heli_egg",
+            () -> new DinoEggItem(EntityTypes.HELI_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> GAR_SPAWN_EGG = ITEMS.register("gar_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.GAR_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> GAR_EGG = ITEMS.register("gar_egg",
+            () -> new DinoEggItem(EntityTypes.GAR_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> DUNKLEO_SPAWN_EGG = ITEMS.register("dunkleo_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.DUNKLEO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> DUNKLEO_EGG = ITEMS.register("dunkleo_egg",
+            () -> new DinoEggItem(EntityTypes.DUNKLEO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> ICHTHYO_SPAWN_EGG = ITEMS.register("ichthyo_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.ICHTHYO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> ICHTHYO_EGG = ITEMS.register("ichthyo_egg",
+            () -> new DinoEggItem(EntityTypes.ICHTHYO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> LEED_SPAWN_EGG = ITEMS.register("leed_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.LEED_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> LEED_EGG = ITEMS.register("leed_egg",
+            () -> new DinoEggItem(EntityTypes.LEED_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> BASILO_SPAWN_EGG = ITEMS.register("basilo_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.BASILO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> BASILO_EGG = ITEMS.register("basilo_egg",
+            () -> new DinoEggItem(EntityTypes.BASILO_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> MEG_SPAWN_EGG = ITEMS.register("meg_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.MEG_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> MEG_EGG = ITEMS.register("meg_egg",
+            () -> new DinoEggItem(EntityTypes.MEG_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> LIVY_SPAWN_EGG = ITEMS.register("livy_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.LIVY_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> LIVY_EGG = ITEMS.register("livy_egg",
+            () -> new DinoEggItem(EntityTypes.LIVY_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> STETH_SPAWN_EGG = ITEMS.register("steth_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.STETH_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> STETH_EGG = ITEMS.register("steth_egg",
+            () -> new DinoEggItem(EntityTypes.STETH_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> HYNERIA_SPAWN_EGG = ITEMS.register("hyneria_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.HYNERIA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> HYNERIA_EGG = ITEMS.register("hyneria_egg",
+            () -> new DinoEggItem(EntityTypes.HYNERIA_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+    public static final RegistryObject<Item> ARGAN_SPAWN_EGG = ITEMS.register("argan_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityTypes.ARGAN_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+    public static final RegistryObject<Item> ARGAN_EGG = ITEMS.register("argan_egg",
+            () -> new DinoEggItem(EntityTypes.ARGAN_ENTITY, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64).tab(DDPTItemGroup.DINO_GROUP)));
+
+
 
     //FOOD ITEMS
     public static final RegistryObject<Item> RAWSMALLMEAT = ITEMS.register("rawsmallmeat",
@@ -338,6 +399,14 @@ public class DDPTItems {
     public static final RegistryObject<Item> LARGE_FISH = ITEMS.register("large_fish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
     public static final RegistryObject<Item> COOKED_LARGE_FISH = ITEMS.register("cooked_large_fish",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
+    public static final RegistryObject<Item> ARGANODUS = ITEMS.register("arganodus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
+    public static final RegistryObject<Item> COOKED_ARGANODUS = ITEMS.register("cooked_arganodus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
+    public static final RegistryObject<Item> HYNERIA = ITEMS.register("hyneria",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
+    public static final RegistryObject<Item> COOKED_HYNERIA = ITEMS.register("cooked_hyneria",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(10).saturationMod(1).meat().build()).tab(DDPTItemGroup.FOOD_GROUP)));
 
     public static final RegistryObject<Item> BLUBBER = ITEMS.register("blubber",
@@ -608,6 +677,9 @@ public class DDPTItems {
             ));
 
 
+
+
+
     public static final RegistryObject<TrophyItem> MOSATROPHY = ITEMS.register("mosatrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
@@ -646,6 +718,19 @@ public class DDPTItems {
     public static final RegistryObject<TrophyItem> MEGTROPHY = ITEMS.register("megtrophy",
             () -> new TrophyItem(
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 2880, 3, true, false)
+            ));
+
+    public static final RegistryObject<TrophyItem> LIVYTROPHY = ITEMS.register("livytrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.ABSORPTION, 2880, 2,true, false),
+                    new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 2880, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2880, 3, true, false)
+            ));
+
+    public static final RegistryObject<TrophyItem> STETHTROPHY = ITEMS.register("stethtrophy",
+            () -> new TrophyItem(
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 2880, 2,true, false),
                     new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 2880, 3, true, false)
             ));
 

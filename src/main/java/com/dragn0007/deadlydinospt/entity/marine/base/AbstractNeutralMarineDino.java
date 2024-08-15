@@ -2,6 +2,7 @@ package com.dragn0007.deadlydinospt.entity.marine.base;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.FluidTags;
@@ -18,12 +19,11 @@ import net.minecraft.world.entity.ai.goal.TryFindWaterGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
-import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 
-public abstract class AbstractNeutralMarineDino extends WaterAnimal {
+public abstract class AbstractNeutralMarineDino extends WaterDino {
 
     public AbstractNeutralMarineDino(EntityType<? extends AbstractNeutralMarineDino> entityType, Level level) {
         super(entityType, level);
@@ -70,6 +70,10 @@ public abstract class AbstractNeutralMarineDino extends WaterAnimal {
 
         super.aiStep();
     }
+
+    public abstract boolean canMate(WaterDino animal);
+
+    public abstract AbstractNeutralMarineDino getBreedOffspring(ServerLevel level, AgeableMob ageableMob);
 
     static class FishMoveControl extends MoveControl {
         private final AbstractNeutralMarineDino shark;

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "deadlydinospt:shark"
+  },
+  "result": "deadlydinospt:cooked_shark",
+  "experience": 0.35,
+  "cookingtime": 100
+}

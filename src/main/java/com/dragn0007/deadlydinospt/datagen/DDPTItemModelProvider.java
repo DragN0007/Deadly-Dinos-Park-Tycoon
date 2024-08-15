@@ -46,15 +46,15 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.ATROCITROPHY.get());
         simpleItem(DDPTItems.ATROCI_SPAWN_EGG.get());
         simpleItem(DDPTItems.MOSATROPHY.get());
-//        simpleItem(DDPTItems.MOSA_SPAWN_EGG.get());
+        simpleItem(DDPTItems.MOSA_SPAWN_EGG.get());
         simpleItem(DDPTItems.HELITROPHY.get());
-//        simpleItem(DDPTItems.HELI_SPAWN_EGG.get());
+        simpleItem(DDPTItems.HELI_SPAWN_EGG.get());
         simpleItem(DDPTItems.DUNKLEOTROPHY.get());
-//        simpleItem(DDPTItems.DUNKLEO_SPAWN_EGG.get());
+        simpleItem(DDPTItems.DUNKLEO_SPAWN_EGG.get());
         simpleItem(DDPTItems.ICHTHYOTROPHY.get());
-//        simpleItem(DDPTItems.ICHTHYO_SPAWN_EGG.get());
+        simpleItem(DDPTItems.ICHTHYO_SPAWN_EGG.get());
         simpleItem(DDPTItems.LEEDTROPHY.get());
-//        simpleItem(DDPTItems.LEED_SPAWN_EGG.get());
+        simpleItem(DDPTItems.LEED_SPAWN_EGG.get());
         simpleItem(DDPTItems.BARYTROPHY.get());
         simpleItem(DDPTItems.BARY_SPAWN_EGG.get());
         simpleItem(DDPTItems.PACHYTROPHY.get());
@@ -64,13 +64,20 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.BARYTROPHY.get());
         simpleItem(DDPTItems.BARY_SPAWN_EGG.get());
         simpleItem(DDPTItems.BASILOTROPHY.get());
-//        simpleItem(DDPTItems.BASILO_SPAWN_EGG.get());
         simpleItem(DDPTItems.MEGTROPHY.get());
-//        simpleItem(DDPTItems.MEG_SPAWN_EGG.get());
         simpleItem(DDPTItems.IGUATROPHY.get());
         simpleItem(DDPTItems.IGUA_SPAWN_EGG.get());
-//
-//        simpleItem(DDPTItems.GAR_SPAWN_EGG.get());
+        simpleItem(DDPTItems.ARGAN_SPAWN_EGG.get());
+        simpleItem(DDPTItems.HYNERIA_SPAWN_EGG.get());
+        simpleItem(DDPTItems.GAR_SPAWN_EGG.get());
+        simpleItem(DDPTItems.STETH_SPAWN_EGG.get());
+        simpleItem(DDPTItems.LIVY_SPAWN_EGG.get());
+        simpleItem(DDPTItems.MEG_SPAWN_EGG.get());
+        simpleItem(DDPTItems.BASILO_SPAWN_EGG.get());
+        simpleItem(DDPTItems.BASILOTROPHY.get());
+        simpleItem(DDPTItems.MEGTROPHY.get());
+        simpleItem(DDPTItems.LIVYTROPHY.get());
+        simpleItem(DDPTItems.STETHTROPHY.get());
 
         simpleItem(DDPTItems.DINO_NUGGET_1.get());
         simpleItem(DDPTItems.DINO_NUGGET_2.get());
@@ -90,6 +97,10 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.LARGE_FISH.get());
         simpleItem(DDPTItems.COOKED_LARGE_FISH.get());
         simpleItem(DDPTItems.BLUBBER.get());
+        simpleItem(DDPTItems.ARGANODUS.get());
+        simpleItem(DDPTItems.COOKED_ARGANODUS.get());
+        simpleItem(DDPTItems.HYNERIA.get());
+        simpleItem(DDPTItems.COOKED_HYNERIA.get());
 
         simpleItem(DDPTItems.EOCARCHARIA_ARMOR.get());
 
@@ -139,6 +150,18 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         simpleItem(DDPTItems.EDMONTO_EGG.get());
         simpleItem(DDPTItems.BARY_EGG.get());
         simpleItem(DDPTItems.MEGARAP_EGG.get());
+        simpleItem(DDPTItems.GAR_EGG.get());
+        simpleItem(DDPTItems.HYNERIA_EGG.get());
+        simpleItem(DDPTItems.ARGAN_EGG.get());
+        simpleItem(DDPTItems.MEG_EGG.get());
+        simpleItem(DDPTItems.BASILO_EGG.get());
+        simpleItem(DDPTItems.STETH_EGG.get());
+        simpleItem(DDPTItems.DUNKLEO_EGG.get());
+        simpleItem(DDPTItems.LIVY_EGG.get());
+        simpleItem(DDPTItems.ICHTHYO_EGG.get());
+        simpleItem(DDPTItems.MOSA_EGG.get());
+        simpleItem(DDPTItems.LEED_EGG.get());
+        simpleItem(DDPTItems.HELI_EGG.get());
 
         handheldItem(DDPTItems.CHISEL.get());
         handheldItem(DDPTItems.BRUSH.get());

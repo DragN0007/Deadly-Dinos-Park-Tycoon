@@ -2,6 +2,7 @@ package com.dragn0007.deadlydinospt.entity.util;
 
 import com.dragn0007.deadlydinospt.entity.carni.*;
 import com.dragn0007.deadlydinospt.entity.herbi.*;
+import com.dragn0007.deadlydinospt.entity.marine.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -285,5 +286,80 @@ public class EntityTypes {
                             MobCategory.CREATURE)
                     .sized(1f,2f)
                     .build(new ResourceLocation(MODID,"pachy").toString()));
+
+
+
+
+    public static final RegistryObject<EntityType<Mosa>> MOSA_ENTITY = ENTITY_TYPES.register("mosa_entity",
+            () -> EntityType.Builder.of(Mosa::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(3f,3f)
+                    .build(new ResourceLocation(MODID,"mosa").toString()));
+
+    public static final RegistryObject<EntityType<Heli>> HELI_ENTITY = ENTITY_TYPES.register("heli_entity",
+            () -> EntityType.Builder.of(Heli::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(2f,2f)
+                    .build(new ResourceLocation(MODID,"heli").toString()));
+
+    public static final RegistryObject<EntityType<Gar>> GAR_ENTITY = ENTITY_TYPES.register("gar_entity",
+            () -> EntityType.Builder.of(Gar::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(1f,2f)
+                    .build(new ResourceLocation(MODID,"gar").toString()));
+
+    public static final RegistryObject<EntityType<Dunkleo>> DUNKLEO_ENTITY = ENTITY_TYPES.register("dunkleo_entity",
+            () -> EntityType.Builder.of(Dunkleo::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(2f,2f)
+                    .build(new ResourceLocation(MODID,"dunkleo").toString()));
+
+    public static final RegistryObject<EntityType<Ichthyo>> ICHTHYO_ENTITY = ENTITY_TYPES.register("ichthyo_entity",
+            () -> EntityType.Builder.of(Ichthyo::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(2f,2f)
+                    .build(new ResourceLocation(MODID,"ichthyo").toString()));
+
+    public static final RegistryObject<EntityType<Leed>> LEED_ENTITY = ENTITY_TYPES.register("leed_entity",
+            () -> EntityType.Builder.of(Leed::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(5f,5f)
+                    .build(new ResourceLocation(MODID,"leed").toString()));
+
+    public static final RegistryObject<EntityType<Basilo>> BASILO_ENTITY = ENTITY_TYPES.register("basilo_entity",
+            () -> EntityType.Builder.of(Basilo::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(2f,2f)
+                    .build(new ResourceLocation(MODID,"basilo").toString()));
+
+    public static final RegistryObject<EntityType<Meg>> MEG_ENTITY = ENTITY_TYPES.register("meg_entity",
+            () -> EntityType.Builder.of(Meg::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(2f,2f)
+                    .build(new ResourceLocation(MODID,"meg").toString()));
+
+    public static final RegistryObject<EntityType<Livy>> LIVY_ENTITY = ENTITY_TYPES.register("livy_entity",
+            () -> EntityType.Builder.of(Livy::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(5f,5f)
+                    .build(new ResourceLocation(MODID,"livy").toString()));
+
+    public static final RegistryObject<EntityType<Steth>> STETH_ENTITY = ENTITY_TYPES.register("steth_entity",
+            () -> EntityType.Builder.of(Steth::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(1f,2f)
+                    .build(new ResourceLocation(MODID,"steth").toString()));
+
+    public static final RegistryObject<EntityType<Hyneria>> HYNERIA_ENTITY = ENTITY_TYPES.register("hyneria_entity",
+            () -> EntityType.Builder.of(Hyneria::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(1f,1f)
+                    .build(new ResourceLocation(MODID,"hyneria").toString()));
+
+    public static final RegistryObject<EntityType<Argan>> ARGAN_ENTITY = ENTITY_TYPES.register("argan_entity",
+            () -> EntityType.Builder.of(Argan::new,
+                            MobCategory.WATER_CREATURE)
+                    .sized(1f,1f)
+                    .build(new ResourceLocation(MODID,"argan").toString()));
 }
 

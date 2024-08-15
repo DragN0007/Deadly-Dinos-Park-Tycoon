@@ -23,6 +23,7 @@ public class DDPTMenuTypes {
     public static final RegistryObject<MenuType<TrikeMenu>> TRIKE_MENU = MENU_TYPES.register("trike_menu", () -> new MenuType<>(TrikeMenu.create()));
     public static final RegistryObject<MenuType<EocarcharMenu>> EOCARCHAR_MENU = MENU_TYPES.register("eocarchar_menu", () -> new MenuType<>(EocarcharMenu.create()));
     public static final RegistryObject<MenuType<AnkyMenu>> ANKY_MENU = MENU_TYPES.register("anky_menu", () -> new MenuType<>(AnkyMenu.create()));
+    public static final RegistryObject<MenuType<BasiloMenu>> BASILO_MENU = MENU_TYPES.register("basilo_menu", () -> new MenuType<>(BasiloMenu.create()));
 
 
     public static final RegistryObject<MenuType<AcidVatMenu>> ACID_VAT_MENU = registerMenuType("acid_vat_menu", AcidVatMenu::new);

@@ -17,11 +17,13 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> AMPELO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ANKY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ARCHAE_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> ARGAN_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ATROCI_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> AUSTRALO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> AUSTRO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> AVA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> BARY_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> BASILO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CARCHAR_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CARNO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> CERATO_FOSSIL_WEIGHT;
@@ -39,6 +41,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> GIGA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> GRYPO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> HELI_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> HYNERIA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ICHTHY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> IGUA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MAHAKALA_FOSSIL_WEIGHT;
@@ -102,6 +105,9 @@ public class DeadlyDinosPTCommonConfig {
         ARCHAE_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("ARCHAE Fossil Spawn Weight", 1);
 
+        ARGAN_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("ARGAN Fossil Spawn Weight", 1);
+
         ATROCI_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("ATROCI Fossil Spawn Weight", 1);
 
@@ -116,6 +122,9 @@ public class DeadlyDinosPTCommonConfig {
 
         BARY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("BARY Fossil Spawn Weight", 1);
+
+        BASILO_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("BASILO Fossil Spawn Weight", 1);
 
         CARCHAR_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("CARCHAR Fossil Spawn Weight", 1);
@@ -167,6 +176,9 @@ public class DeadlyDinosPTCommonConfig {
 
         HELI_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("HELI Fossil Spawn Weight", 1);
+
+        HYNERIA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("HYNERIA Fossil Spawn Weight", 1);
 
         ICHTHY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("ICHTHY Fossil Spawn Weight", 1);

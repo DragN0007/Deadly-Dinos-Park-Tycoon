@@ -192,6 +192,24 @@ public class DDPTTags {
         public static final TagKey<Item> TRICERATOPS_BONES = tag("triceratops_bones");
         public static final TagKey<Item> TRICERATOPS_FOSSILS = tag("triceratops_fossils");
 
+        public static final TagKey<Item> ARGANODUS_BONES = tag("arganodus_bones");
+        public static final TagKey<Item> ARGANODUS_FOSSILS = tag("arganodus_fossils");
+
+        public static final TagKey<Item> BASILOSAURUS_BONES = tag("basilosaurus_bones");
+        public static final TagKey<Item> BASILOSAURUS_FOSSILS = tag("basilosaurus_fossils");
+
+        public static final TagKey<Item> DUNKLEOSTEUS_BONES = tag("dunkleosteus_bones");
+        public static final TagKey<Item> DUNKLEOSTEUS_FOSSILS = tag("dunkleosteus_fossils");
+
+        public static final TagKey<Item> GAR_BONES = tag("gar_bones");
+        public static final TagKey<Item> GAR_FOSSILS = tag("gar_fossils");
+
+        public static final TagKey<Item> HELICOPRION_BONES = tag("helicoprion_bones");
+        public static final TagKey<Item> HELICOPRION_FOSSILS = tag("helicoprion_fossils");
+
+        public static final TagKey<Item> HYNERIA_BONES = tag("hyneria_bones");
+        public static final TagKey<Item> HYNERIA_FOSSILS = tag("hyneria_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
@@ -296,6 +314,19 @@ public class DDPTTags {
             put(THERIZINOSAURUS_BONES,new Pair<> (DDPTItems.THERI_EGG,"Therizinosaurus"));
             put(TRICERATOPS_FOSSILS,new Pair<> (DDPTItems.THERI_EGG,"Triceratops"));
             put(TRICERATOPS_BONES,new Pair<> (DDPTItems.THERI_EGG,"Triceratops"));
+
+            put(ARGANODUS_FOSSILS,new Pair<> (DDPTItems.ARGAN_EGG,"Arganodus"));
+            put(ARGANODUS_BONES,new Pair<> (DDPTItems.ARGAN_EGG,"Arganodus"));
+            put(BASILOSAURUS_FOSSILS,new Pair<> (DDPTItems.BASILO_EGG,"Basilosaurus"));
+            put(BASILOSAURUS_BONES,new Pair<> (DDPTItems.BASILO_EGG,"Basilosaurus"));
+            put(DUNKLEOSTEUS_FOSSILS,new Pair<> (DDPTItems.DUNKLEO_EGG,"Dunkleosteus"));
+            put(DUNKLEOSTEUS_BONES,new Pair<> (DDPTItems.DUNKLEO_EGG,"Dunkleosteus"));
+            put(GAR_FOSSILS,new Pair<> (DDPTItems.GAR_EGG,"Alligator Gar"));
+            put(GAR_BONES,new Pair<> (DDPTItems.GAR_EGG,"Alligator Gar"));
+            put(HELICOPRION_FOSSILS,new Pair<> (DDPTItems.HELI_EGG,"Helicoprion"));
+            put(HELICOPRION_BONES,new Pair<> (DDPTItems.HELI_EGG,"Helicoprion"));
+            put(HYNERIA_FOSSILS,new Pair<> (DDPTItems.HYNERIA_EGG,"Hyneria"));
+            put(HYNERIA_BONES,new Pair<> (DDPTItems.HYNERIA_EGG,"Hyneria"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

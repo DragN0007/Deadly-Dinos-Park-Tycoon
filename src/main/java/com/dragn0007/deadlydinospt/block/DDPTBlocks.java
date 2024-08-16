@@ -390,6 +390,37 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> CHISELED_TRICERATOPS_FOSSIL = registerBlock("chiseled_triceratops_fossil",
             () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
+    public static final RegistryObject<Block> ARGANODUS_FOSSIL = registerBlock("arganodus_fossil",
+            () -> new ChiselableArganFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ARGANODUS_FOSSIL = registerBlock("chiseled_arganodus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> BASILOSAURUS_FOSSIL = registerBlock("basilosaurus_fossil",
+            () -> new ChiselableBasiloFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_BASILOSAURUS_FOSSIL = registerBlock("chiseled_basilosaurus_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> DUNKLEOSTEUS_FOSSIL = registerBlock("dunkleosteus_fossil",
+            () -> new ChiselableDunkleoFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_DUNKLEOSTEUS_FOSSIL = registerBlock("chiseled_dunkleosteus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> GAR_FOSSIL = registerBlock("gar_fossil",
+            () -> new ChiselableGarFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_GAR_FOSSIL = registerBlock("chiseled_gar_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> HELICOPRION_FOSSIL = registerBlock("helicoprion_fossil",
+            () -> new ChiselableHeliFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_HELICOPRION_FOSSIL = registerBlock("chiseled_helicoprion_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> HYNERIA_FOSSIL = registerBlock("hyneria_fossil",
+            () -> new ChiselableHyneriaFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_HYNERIA_FOSSIL = registerBlock("chiseled_hyneria_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

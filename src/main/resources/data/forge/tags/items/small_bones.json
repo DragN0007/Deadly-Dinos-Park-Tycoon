@@ -71,6 +71,11 @@
     "deadlydinospt:pachycephalosaurus_tail",
     "deadlydinospt:pachycephalosaurus_spine",
     "deadlydinospt:pachycephalosaurus_leg",
-    "deadlydinospt:pachycephalosaurus_claw"
+    "deadlydinospt:pachycephalosaurus_claw",
+
+
+    "deadlydinospt:arganodus_skeleton",
+    "deadlydinospt:gar_skeleton",
+    "deadlydinospt:hyneria_skeleton"
   ]
 }

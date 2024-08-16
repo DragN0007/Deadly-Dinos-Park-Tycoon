@@ -2217,6 +2217,43 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
+    //ARGANODUS
+    public static final RegistryObject<Item> ARGANODUS_FOSSIL_SKELETON = ITEMS.register("arganodus_fossil_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ARGANODUS_SKELETON = ITEMS.register("arganodus_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //BASILOSAURUS
+    public static final RegistryObject<Item> BASILOSAURUS_FOSSIL_TOOTH = ITEMS.register("basilosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> BASILOSAURUS_TOOTH = ITEMS.register("basilosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //DUNKLEOSTEUS
+    public static final RegistryObject<Item> DUNKLEOSTEUS_FOSSIL_SKELETON = ITEMS.register("dunkleosteus_fossil_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> DUNKLEOSTEUS_SKELETON = ITEMS.register("dunkleosteus_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //GAR
+    public static final RegistryObject<Item> GAR_FOSSIL_SKELETON = ITEMS.register("gar_fossil_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> GAR_SKELETON = ITEMS.register("gar_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //HELICOPRION
+    public static final RegistryObject<Item> HELICOPRION_FOSSIL_TOOTH = ITEMS.register("helicoprion_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> HELICOPRION_TOOTH = ITEMS.register("helicoprion_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //HYNERIA
+    public static final RegistryObject<Item> HYNERIA_FOSSIL_SKELETON = ITEMS.register("hyneria_fossil_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> HYNERIA_SKELETON = ITEMS.register("hyneria_skeleton",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
 
 
 

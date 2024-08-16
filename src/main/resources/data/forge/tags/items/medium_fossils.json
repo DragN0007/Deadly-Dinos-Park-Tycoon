@@ -156,6 +156,11 @@
     "deadlydinospt:therizinosaurus_fossil_tail",
     "deadlydinospt:therizinosaurus_fossil_spine",
     "deadlydinospt:therizinosaurus_fossil_leg",
-    "deadlydinospt:therizinosaurus_fossil_claw"
+    "deadlydinospt:therizinosaurus_fossil_claw",
+
+
+    "deadlydinospt:basilosaurus_fossil_tooth",
+    "deadlydinospt:dunkloesteus_fossil_tooth",
+    "deadlydinospt:helicoprion_fossil_tooth"
   ]
 }

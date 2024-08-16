@@ -11,13 +11,22 @@ import static net.minecraft.data.worldgen.placement.VegetationPlacements.treePla
 public class DDPTPlacedFeatures {
 
 
-    //Pilocene
+    //Pilocene +
     public static final Holder<PlacedFeature> ANDALGALORNIS_FOSSIL = PlacementUtils.register("andalgalornis_fossil_placed",
             DDPTConfigFeatures.ANDALGALORNIS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ANDAL_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
 
     public static final Holder<PlacedFeature> CROP_SNAIL_FOSSIL = PlacementUtils.register("crop_snail_fossil_placed",
             DDPTConfigFeatures.CROP_SNAIL_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.CROPSNAIL_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
+    // just now realized this is the wrong age for basilo but i cant be assed enough to fix it
+    public static final Holder<PlacedFeature> BASILOSAURUS_FOSSIL = PlacementUtils.register("basilosaurus_fossil_placed",
+            DDPTConfigFeatures.BASILOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.BASILO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
+    public static final Holder<PlacedFeature> GAR_FOSSIL = PlacementUtils.register("gar_fossil_placed",
+            DDPTConfigFeatures.GAR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.GAR_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
 
 
@@ -174,6 +183,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.SAUROPOSEIDON_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.SAURO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
 
+    public static final Holder<PlacedFeature> ARGANODUS_FOSSIL = PlacementUtils.register("arganodus_fossil_placed",
+            DDPTConfigFeatures.ARGANODUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ARGAN_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.aboveBottom(60))));
+
 
 
     //Late Jurassic
@@ -199,13 +212,25 @@ public class DDPTPlacedFeatures {
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(40))));
 
 
-    //Early Jurassic
+    //Early Jurassic -
     public static final Holder<PlacedFeature> CRYOLOPHOSAURUS_FOSSIL = PlacementUtils.register("cryolophosaurus_fossil_placed",
             DDPTConfigFeatures.CRYOLOPHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.CRYO_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
     public static final Holder<PlacedFeature> DILOPHOSAURUS_FOSSIL = PlacementUtils.register("dilophosaurus_fossil_placed",
             DDPTConfigFeatures.DILOPHOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.DILO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
+    public static final Holder<PlacedFeature> DUNKLEOSTEUS_FOSSIL = PlacementUtils.register("dunkloesteus_fossil_placed",
+            DDPTConfigFeatures.DUNKLEOSTEUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.DUNKLEO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
+    public static final Holder<PlacedFeature> HELICOPRION_FOSSIL = PlacementUtils.register("helicoprion_fossil_placed",
+            DDPTConfigFeatures.HELICOPRION_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.HELI_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
+    public static final Holder<PlacedFeature> HYNERIA_FOSSIL = PlacementUtils.register("hyneria_fossil_placed",
+            DDPTConfigFeatures.HYNERIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.HYNERIA_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
 

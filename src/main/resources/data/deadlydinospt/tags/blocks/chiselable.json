@@ -47,6 +47,13 @@
     "deadlydinospt:shantungosaurus_fossil",
     "deadlydinospt:stegosaurus_fossil",
     "deadlydinospt:therizinosaurus_fossil",
-    "deadlydinospt:triceratops_fossil"
+    "deadlydinospt:triceratops_fossil",
+
+    "deadlydinospt:arganodus_fossil",
+    "deadlydinospt:basilosaurus_fossil",
+    "deadlydinospt:dunkloesteus_fossil",
+    "deadlydinospt:gar_fossil",
+    "deadlydinospt:helicoprion_fossil",
+    "deadlydinospt:hyneria_fossil"
   ]
 }

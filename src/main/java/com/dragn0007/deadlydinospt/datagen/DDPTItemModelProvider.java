@@ -965,6 +965,25 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         advancedItem(DDPTItems.TRICERATOPS_TAIL.get(), "large_herbi_tail");
         advancedItem(DDPTItems.TRICERATOPS_SPINE.get(), "large_herbi_spine");
         advancedItem(DDPTItems.TRICERATOPS_LEG.get(), "large_herbi_leg");
+
+
+        simpleItem(DDPTItems.ARGANODUS_FOSSIL_SKELETON.get());
+        simpleItem(DDPTItems.ARGANODUS_SKELETON.get());
+
+        simpleItem(DDPTItems.BASILOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.BASILOSAURUS_TOOTH.get());
+
+        simpleItem(DDPTItems.DUNKLEOSTEUS_FOSSIL_SKELETON.get());
+        simpleItem(DDPTItems.DUNKLEOSTEUS_SKELETON.get());
+
+        simpleItem(DDPTItems.GAR_FOSSIL_SKELETON.get());
+        simpleItem(DDPTItems.GAR_SKELETON.get());
+
+        simpleItem(DDPTItems.HELICOPRION_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.HELICOPRION_TOOTH.get());
+
+        simpleItem(DDPTItems.HYNERIA_FOSSIL_SKELETON.get());
+        simpleItem(DDPTItems.HYNERIA_SKELETON.get());
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {

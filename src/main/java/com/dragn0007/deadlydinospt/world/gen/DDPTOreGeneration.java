@@ -60,5 +60,12 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.STEGOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.THERIZINOSAURUS_FOSSIL);
         base.add(DDPTPlacedFeatures.TRICERATOPS_FOSSIL);
+
+        base.add(DDPTPlacedFeatures.ARGANODUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.BASILOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.DUNKLEOSTEUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.GAR_FOSSIL);
+        base.add(DDPTPlacedFeatures.HELICOPRION_FOSSIL);
+        base.add(DDPTPlacedFeatures.HYNERIA_FOSSIL);
     }
 }

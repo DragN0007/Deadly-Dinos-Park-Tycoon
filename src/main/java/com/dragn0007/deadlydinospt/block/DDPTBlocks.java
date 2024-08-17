@@ -420,6 +420,11 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> CHISELED_HYNERIA_FOSSIL = registerBlock("chiseled_hyneria_fossil",
             () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
+    public static final RegistryObject<Block> ICHTHYOSAURUS_FOSSIL = registerBlock("ichthyosaurus_fossil",
+            () -> new ChiselableIchthyoFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_ICHTHYOSAURUS_FOSSIL = registerBlock("chiseled_ichthyosaurus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
 
 
 

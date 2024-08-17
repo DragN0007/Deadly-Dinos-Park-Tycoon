@@ -233,6 +233,10 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.HYNERIA_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.HYNERIA_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
+    public static final Holder<PlacedFeature> ICHTHYOSAURUS_FOSSIL = PlacementUtils.register("ichthyosaurus_fossil_placed",
+            DDPTConfigFeatures.ICHTHYOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ICHTHYO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
 
 
 

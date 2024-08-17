@@ -534,5 +534,15 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
         simpleBlock(DDPTBlocks.CHISELED_HYNERIA_FOSSIL.get(), models().cubeAll("chiseled_hyneria_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_small_marine")));
         simpleBlockItem(DDPTBlocks.CHISELED_HYNERIA_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_HYNERIA_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_small_marine")));
+
+
+
+        simpleBlock(DDPTBlocks.ICHTHYOSAURUS_FOSSIL.get(), models().cubeAll("ichthyosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_marine")));
+        simpleBlockItem(DDPTBlocks.ICHTHYOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.ICHTHYOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/deepslate_fossil_med_marine")));
+
+        simpleBlock(DDPTBlocks.CHISELED_ICHTHYOSAURUS_FOSSIL.get(), models().cubeAll("chiseled_ichthyosaurus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_marine")));
+        simpleBlockItem(DDPTBlocks.CHISELED_ICHTHYOSAURUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_ICHTHYOSAURUS_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_marine")));
     }
 }

@@ -2253,6 +2253,12 @@ public class DDPTItems {
     public static final RegistryObject<Item> HYNERIA_SKELETON = ITEMS.register("hyneria_skeleton",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
+    //ICHTHYOSAURUS
+    public static final RegistryObject<Item> ICHTHYOSAURUS_FOSSIL_TOOTH = ITEMS.register("ichthyosaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ICHTHYOSAURUS_TOOTH = ITEMS.register("ichthyosaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
 
 
 

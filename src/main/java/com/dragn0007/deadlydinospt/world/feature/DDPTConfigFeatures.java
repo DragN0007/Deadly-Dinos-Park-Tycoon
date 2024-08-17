@@ -306,6 +306,10 @@ public class DDPTConfigFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> HYNERIA_FOSSIL_ORE = FeatureUtils.register("hyneria_fossil_ore",
             Feature.ORE, new OreConfiguration(HYNERIA_FOSSIL, 3));
 
+    public static final List<OreConfiguration.TargetBlockState> ICHTHYOSAURUS_FOSSIL = List.of(
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, DDPTBlocks.ICHTHYOSAURUS_FOSSIL.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ICHTHYOSAURUS_FOSSIL_ORE = FeatureUtils.register("ichthyosaurus_fossil_ore",
+            Feature.ORE, new OreConfiguration(ICHTHYOSAURUS_FOSSIL, 3));
 
 
 

@@ -67,5 +67,6 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.GAR_FOSSIL);
         base.add(DDPTPlacedFeatures.HELICOPRION_FOSSIL);
         base.add(DDPTPlacedFeatures.HYNERIA_FOSSIL);
+        base.add(DDPTPlacedFeatures.ICHTHYOSAURUS_FOSSIL);
     }
 }

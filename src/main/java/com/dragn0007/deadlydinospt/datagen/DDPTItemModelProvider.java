@@ -984,6 +984,9 @@ public class DDPTItemModelProvider extends ItemModelProvider {
 
         simpleItem(DDPTItems.HYNERIA_FOSSIL_SKELETON.get());
         simpleItem(DDPTItems.HYNERIA_SKELETON.get());
+
+        simpleItem(DDPTItems.ICHTHYOSAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.ICHTHYOSAURUS_TOOTH.get());
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {

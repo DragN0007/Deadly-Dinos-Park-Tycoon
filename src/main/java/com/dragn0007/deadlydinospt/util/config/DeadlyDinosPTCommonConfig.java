@@ -43,6 +43,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> HELI_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> HYNERIA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ICHTHY_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> ICHTHYO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> IGUA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MAHAKALA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MAJUNGA_FOSSIL_WEIGHT;
@@ -182,6 +183,9 @@ public class DeadlyDinosPTCommonConfig {
 
         ICHTHY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("ICHTHY Fossil Spawn Weight", 1);
+
+        ICHTHYO_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("ICHTHYO Fossil Spawn Weight", 1);
 
         IGUA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("IGUA Fossil Spawn Weight", 1);

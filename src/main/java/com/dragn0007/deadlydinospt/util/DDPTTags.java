@@ -210,6 +210,9 @@ public class DDPTTags {
         public static final TagKey<Item> HYNERIA_BONES = tag("hyneria_bones");
         public static final TagKey<Item> HYNERIA_FOSSILS = tag("hyneria_fossils");
 
+        public static final TagKey<Item> ICHTHYOSAURUS_BONES = tag("ichthyosaurus_bones");
+        public static final TagKey<Item> ICHTHYOSAURUS_FOSSILS = tag("ichthyosaurus_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
@@ -327,6 +330,8 @@ public class DDPTTags {
             put(HELICOPRION_BONES,new Pair<> (DDPTItems.HELI_EGG,"Helicoprion"));
             put(HYNERIA_FOSSILS,new Pair<> (DDPTItems.HYNERIA_EGG,"Hyneria"));
             put(HYNERIA_BONES,new Pair<> (DDPTItems.HYNERIA_EGG,"Hyneria"));
+            put(ICHTHYOSAURUS_FOSSILS,new Pair<> (DDPTItems.ICHTHYO_EGG,"Ichthyosaurus"));
+            put(ICHTHYOSAURUS_BONES,new Pair<> (DDPTItems.ICHTHYO_EGG,"Ichthyosaurus"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

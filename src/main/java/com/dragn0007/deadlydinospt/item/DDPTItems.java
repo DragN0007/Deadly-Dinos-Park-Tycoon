@@ -431,6 +431,10 @@ public class DDPTItems {
             () -> new SpeciesNBTItem());
     public static final RegistryObject<Item> TEST_TUBE = ITEMS.register("test_tube",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SOFT_TISSUE = ITEMS.register("soft_tissue",
+            () -> new SpeciesNBTItem());
+    public static final RegistryObject<Item> PLANT_TISSUE = ITEMS.register("plant_tissue",
+            () -> new SpeciesNBTItem());
 
     public static final RegistryObject<Item> EOCARCHARIA_ARMOR = ITEMS.register("eocarcharia_armor",
             () -> new Item(new Item.Properties().stacksTo(1).tab(DDPTItemGroup.DDD_GROUP)));

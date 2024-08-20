@@ -171,6 +171,8 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         handheldItem(DDPTItems.PETRI_DISH.get());
         handheldItem(DDPTItems.DNA_PETRI_DISH.get());
         handheldItem(DDPTItems.TEST_TUBE.get());
+        handheldItem(DDPTItems.SOFT_TISSUE.get());
+        handheldItem(DDPTItems.PLANT_TISSUE.get());
 
 
         simpleSpriteBlockItem(DDPTBlocksDataGen.ASTEROXYLON.get());

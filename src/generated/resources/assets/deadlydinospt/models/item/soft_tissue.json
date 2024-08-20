@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "deadlydinospt:item/soft_tissue"
+  }
+}

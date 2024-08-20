@@ -45,8 +45,11 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> ICHTHY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ICHTHYO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> IGUA_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> LEED_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> LIVY_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MAHAKALA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MAJUNGA_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> MEG_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MEGARAP_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> MOSA_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> PACHY_FOSSIL_WEIGHT;
@@ -57,6 +60,7 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> SHANT_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> SPINO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> STEGO_FOSSIL_WEIGHT;
+    public static final ForgeConfigSpec.ConfigValue<Integer> STETH_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> TARBO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> THERI_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> TRIKE_FOSSIL_WEIGHT;
@@ -190,11 +194,20 @@ public class DeadlyDinosPTCommonConfig {
         IGUA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("IGUA Fossil Spawn Weight", 1);
 
+        LEED_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("LEED Fossil Spawn Weight", 1);
+
+        LIVY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("LIVY Fossil Spawn Weight", 1);
+
         MAHAKALA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("MAHAKALA Fossil Spawn Weight", 1);
 
         MAJUNGA_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("MAJUNGA Fossil Spawn Weight", 1);
+
+        MEG_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("MEG Fossil Spawn Weight", 1);
 
         MEGARAP_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("MEGARAP Fossil Spawn Weight", 1);
@@ -225,6 +238,9 @@ public class DeadlyDinosPTCommonConfig {
 
         STEGO_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("STEGO Fossil Spawn Weight", 1);
+
+        STETH_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
+                .define("STETH Fossil Spawn Weight", 1);
 
         TARBO_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("TARBO Fossil Spawn Weight", 1);

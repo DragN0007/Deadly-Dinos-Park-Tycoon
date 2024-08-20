@@ -87,13 +87,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinospt:dunkleo_skeleton"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.33
+          "name": "deadlydinospt:dunkleosteus_skeleton"
         }
       ]
     }

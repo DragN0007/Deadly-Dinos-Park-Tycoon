@@ -425,6 +425,30 @@ public class DDPTBlocks {
     public static final RegistryObject<Block> CHISELED_ICHTHYOSAURUS_FOSSIL = registerBlock("chiseled_ichthyosaurus_fossil",
             () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
+    public static final RegistryObject<Block> LEEDSICHTHYS_FOSSIL = registerBlock("leedsichthys_fossil",
+            () -> new ChiselableLeedFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_LEEDSICHTHYS_FOSSIL = registerBlock("chiseled_leedsichthys_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> LIVYATAN_FOSSIL = registerBlock("livyatan_fossil",
+            () -> new ChiselableLivyFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_LIVYATAN_FOSSIL = registerBlock("chiseled_livyatan_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> MEGALODON_FOSSIL = registerBlock("megalodon_fossil",
+            () -> new ChiselableMegFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_MEGALODON_FOSSIL = registerBlock("chiseled_megalodon_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> MOSASAURUS_FOSSIL = registerBlock("mosasaurus_fossil",
+            () -> new ChiselableMosaFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_MOSASAURUS_FOSSIL = registerBlock("chiseled_mosasaurus_fossil",
+            () -> new BrushableStoneFossil(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+
+    public static final RegistryObject<Block> STETHACANTHUS_FOSSIL = registerBlock("stethacanthus_fossil",
+            () -> new ChiselableStethFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(3.5f, 10.0f)));
+    public static final RegistryObject<Block> CHISELED_STETHACANTHUS_FOSSIL = registerBlock("chiseled_stethacanthus_fossil",
+            () -> new BrushableDeepslateFossil(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.SAND).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
 
 
 

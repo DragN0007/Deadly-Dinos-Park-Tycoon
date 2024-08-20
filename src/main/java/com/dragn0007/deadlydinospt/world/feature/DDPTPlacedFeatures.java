@@ -29,6 +29,14 @@ public class DDPTPlacedFeatures {
             DDPTConfigFeatures.GAR_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.GAR_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
 
+    public static final Holder<PlacedFeature> LIVYATAN_FOSSIL = PlacementUtils.register("livyatan_fossil_placed",
+            DDPTConfigFeatures.LIVYATAN_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.LIVY_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
+    public static final Holder<PlacedFeature> MEGALODON_FOSSIL = PlacementUtils.register("megalodon_fossil_placed",
+            DDPTConfigFeatures.MEGALODON_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.MEG_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.aboveBottom(100))));
+
 
     //Late Cretaceous
     public static final Holder<PlacedFeature> ALBERTOSAURUS_FOSSIL = PlacementUtils.register("albertosaurus_fossil_placed",
@@ -126,6 +134,10 @@ public class DDPTPlacedFeatures {
 
     public static final Holder<PlacedFeature> TRICERATOPS_FOSSIL = PlacementUtils.register("triceratops_fossil_placed",
             DDPTConfigFeatures.TRICERATOPS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.TRIKE_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
+
+    public static final Holder<PlacedFeature> MOSASAURUS_FOSSIL = PlacementUtils.register("mosasaurus_fossil_placed",
+            DDPTConfigFeatures.MOSASAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.MOSA_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(10), VerticalAnchor.aboveBottom(80))));
 
 
@@ -235,6 +247,14 @@ public class DDPTPlacedFeatures {
 
     public static final Holder<PlacedFeature> ICHTHYOSAURUS_FOSSIL = PlacementUtils.register("ichthyosaurus_fossil_placed",
             DDPTConfigFeatures.ICHTHYOSAURUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.ICHTHYO_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
+    public static final Holder<PlacedFeature> LEEDSICHTHYS_FOSSIL = PlacementUtils.register("leedsichthys_fossil_placed",
+            DDPTConfigFeatures.LEEDSICHTHYS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.LEED_FOSSIL_WEIGHT.get(),
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
+
+    public static final Holder<PlacedFeature> STETHACANTHUS_FOSSIL = PlacementUtils.register("stethacanthus_fossil_placed",
+            DDPTConfigFeatures.STETHACANTHUS_FOSSIL_ORE, DDPTOrePlacement.commonOrePlacement(DeadlyDinosPTCommonConfig.STETH_FOSSIL_WEIGHT.get(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(0))));
 
 

@@ -51,10 +51,15 @@
 
     "deadlydinospt:arganodus_fossil",
     "deadlydinospt:basilosaurus_fossil",
-    "deadlydinospt:dunkloesteus_fossil",
+    "deadlydinospt:dunkleosteus_fossil",
     "deadlydinospt:gar_fossil",
     "deadlydinospt:helicoprion_fossil",
     "deadlydinospt:hyneria_fossil",
-    "deadlydinospt:ichthyosaurus_fossil"
+    "deadlydinospt:ichthyosaurus_fossil",
+    "deadlydinospt:leedsichthys_fossil",
+    "deadlydinospt:livyatan_fossil",
+    "deadlydinospt:megalodon_fossil",
+    "deadlydinospt:mosasaurus_fossil",
+    "deadlydinospt:stethacanthus_fossil"
   ]
 }

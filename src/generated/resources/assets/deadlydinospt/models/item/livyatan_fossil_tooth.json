@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "deadlydinospt:item/livyatan_fossil_tooth"
+  }
+}

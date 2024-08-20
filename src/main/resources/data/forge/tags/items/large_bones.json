@@ -123,6 +123,12 @@
     "deadlydinospt:stegosaurus_tail",
     "deadlydinospt:stegosaurus_spine",
     "deadlydinospt:stegosaurus_leg",
-    "deadlydinospt:stegosaurus_claw"
+    "deadlydinospt:stegosaurus_claw",
+
+
+    "deadlydinospt:leedsichthys_spine",
+    "deadlydinospt:livyatan_tooth",
+    "deadlydinospt:megalodon_tooth",
+    "deadlydinospt:mosasaurus_tooth"
   ]
 }

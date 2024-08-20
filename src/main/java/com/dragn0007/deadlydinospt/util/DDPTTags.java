@@ -213,6 +213,21 @@ public class DDPTTags {
         public static final TagKey<Item> ICHTHYOSAURUS_BONES = tag("ichthyosaurus_bones");
         public static final TagKey<Item> ICHTHYOSAURUS_FOSSILS = tag("ichthyosaurus_fossils");
 
+        public static final TagKey<Item> LEEDSICHTHYS_BONES = tag("leedsichthys_bones");
+        public static final TagKey<Item> LEEDSICHTHYS_FOSSILS = tag("leedsichthys_fossils");
+
+        public static final TagKey<Item> LIVYATAN_BONES = tag("livyatan_bones");
+        public static final TagKey<Item> LIVYATAN_FOSSILS = tag("livyatan_fossils");
+
+        public static final TagKey<Item> MEGALODON_BONES = tag("megalodon_bones");
+        public static final TagKey<Item> MEGALODON_FOSSILS = tag("megalodon_fossils");
+
+        public static final TagKey<Item> MOSASAURUS_BONES = tag("mosasaurus_bones");
+        public static final TagKey<Item> MOSASAURUS_FOSSILS = tag("mosasaurus_fossils");
+
+        public static final TagKey<Item> STETHACANTHUS_BONES = tag("stethacanthus_bones");
+        public static final TagKey<Item> STETHACANTHUS_FOSSILS = tag("stethacanthus_fossils");
+
 
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
@@ -332,6 +347,16 @@ public class DDPTTags {
             put(HYNERIA_BONES,new Pair<> (DDPTItems.HYNERIA_EGG,"Hyneria"));
             put(ICHTHYOSAURUS_FOSSILS,new Pair<> (DDPTItems.ICHTHYO_EGG,"Ichthyosaurus"));
             put(ICHTHYOSAURUS_BONES,new Pair<> (DDPTItems.ICHTHYO_EGG,"Ichthyosaurus"));
+            put(LEEDSICHTHYS_FOSSILS,new Pair<> (DDPTItems.LEED_EGG,"Leedsichthys"));
+            put(LEEDSICHTHYS_BONES,new Pair<> (DDPTItems.LEED_EGG,"Leedsichthys"));
+            put(LIVYATAN_FOSSILS,new Pair<> (DDPTItems.LIVY_EGG,"Livyatan"));
+            put(LIVYATAN_BONES,new Pair<> (DDPTItems.LIVY_EGG,"Livyatan"));
+            put(MEGALODON_FOSSILS,new Pair<> (DDPTItems.MEG_EGG,"Megalodon"));
+            put(MEGALODON_BONES,new Pair<> (DDPTItems.MEG_EGG,"Megalodon"));
+            put(MOSASAURUS_FOSSILS,new Pair<> (DDPTItems.MOSA_EGG,"Mosasaurus"));
+            put(MOSASAURUS_BONES,new Pair<> (DDPTItems.MOSA_EGG,"Mosasaurus"));
+            put(STETHACANTHUS_FOSSILS,new Pair<> (DDPTItems.STETH_EGG,"Stethacanthus"));
+            put(STETHACANTHUS_BONES,new Pair<> (DDPTItems.STETH_EGG,"Stethacanthus"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "deadlydinospt:dunkloesteus_fossil_skeleton",
+          "name": "deadlydinospt:dunkleosteus_fossil_skeleton",
           "weight": 1,
           "conditions": [
             {
@@ -17,7 +17,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "deadlydinospt:chiseled_dunkloesteus_fossil",
+          "name": "deadlydinospt:chiseled_dunkleosteus_fossil",
           "weight": 1,
           "conditions": [
             {

@@ -987,6 +987,21 @@ public class DDPTItemModelProvider extends ItemModelProvider {
 
         simpleItem(DDPTItems.ICHTHYOSAURUS_FOSSIL_TOOTH.get());
         simpleItem(DDPTItems.ICHTHYOSAURUS_TOOTH.get());
+
+        simpleItem(DDPTItems.LEEDSICHTHYS_FOSSIL_SPINE.get());
+        simpleItem(DDPTItems.LEEDSICHTHYS_SPINE.get());
+
+        simpleItem(DDPTItems.LIVYATAN_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.LIVYATAN_TOOTH.get());
+
+        simpleItem(DDPTItems.MEGALODON_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.MEGALODON_TOOTH.get());
+
+        simpleItem(DDPTItems.MOSASAURUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.MOSASAURUS_TOOTH.get());
+
+        simpleItem(DDPTItems.STETHACANTHUS_FOSSIL_TOOTH.get());
+        simpleItem(DDPTItems.STETHACANTHUS_TOOTH.get());
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {

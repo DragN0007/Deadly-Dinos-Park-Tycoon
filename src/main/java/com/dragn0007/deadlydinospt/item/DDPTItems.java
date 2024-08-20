@@ -2259,6 +2259,35 @@ public class DDPTItems {
     public static final RegistryObject<Item> ICHTHYOSAURUS_TOOTH = ITEMS.register("ichthyosaurus_tooth",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
+    //LEEDSICHTHYS
+    public static final RegistryObject<Item> LEEDSICHTHYS_FOSSIL_SPINE = ITEMS.register("leedsichthys_fossil_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> LEEDSICHTHYS_SPINE = ITEMS.register("leedsichthys_spine",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //LIVYATAN
+    public static final RegistryObject<Item> LIVYATAN_FOSSIL_TOOTH = ITEMS.register("livyatan_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> LIVYATAN_TOOTH = ITEMS.register("livyatan_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //MEGALODON
+    public static final RegistryObject<Item> MEGALODON_FOSSIL_TOOTH = ITEMS.register("megalodon_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MEGALODON_TOOTH = ITEMS.register("megalodon_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //MOSASAURUS
+    public static final RegistryObject<Item> MOSASAURUS_FOSSIL_TOOTH = ITEMS.register("mosasaurus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> MOSASAURUS_TOOTH = ITEMS.register("mosasaurus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //STETHACANTHUS
+    public static final RegistryObject<Item> STETHACANTHUS_FOSSIL_TOOTH = ITEMS.register("stethacanthus_fossil_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> STETHACANTHUS_TOOTH = ITEMS.register("stethacanthus_tooth",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
 
 
 

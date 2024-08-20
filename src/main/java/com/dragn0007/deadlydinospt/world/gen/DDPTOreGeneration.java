@@ -68,5 +68,10 @@ public class DDPTOreGeneration {
         base.add(DDPTPlacedFeatures.HELICOPRION_FOSSIL);
         base.add(DDPTPlacedFeatures.HYNERIA_FOSSIL);
         base.add(DDPTPlacedFeatures.ICHTHYOSAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.LEEDSICHTHYS_FOSSIL);
+        base.add(DDPTPlacedFeatures.LIVYATAN_FOSSIL);
+        base.add(DDPTPlacedFeatures.MEGALODON_FOSSIL);
+        base.add(DDPTPlacedFeatures.MOSASAURUS_FOSSIL);
+        base.add(DDPTPlacedFeatures.STETHACANTHUS_FOSSIL);
     }
 }

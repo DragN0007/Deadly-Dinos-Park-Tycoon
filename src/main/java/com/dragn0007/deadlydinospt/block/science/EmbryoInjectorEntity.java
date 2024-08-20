@@ -4,6 +4,7 @@ import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.menu.EmbryoInjectorMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -26,7 +27,9 @@ public class EmbryoInjectorEntity extends BaseContainerBlockEntity {
     public static final int EGG_SLOT = 1;
     public static final int DINO_EGG_SLOT = 2;
 
-    public static final int INJECTOR_CHANCE = 75; // 75%
+
+    public static final int INJECTOR_CHANCE_FOSSIL = DeadlyDinosPTCommonConfig.EMBRYO_INJECTOR_FOSSIL_SUCCESS_RATE.get(); // 75%, by default
+    public static final int INJECTOR_CHANCE_BONE = DeadlyDinosPTCommonConfig.EMBRYO_INJECTOR_BONE_SUCCESS_RATE.get(); // 85%, by default
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
@@ -127,7 +130,7 @@ public class EmbryoInjectorEntity extends BaseContainerBlockEntity {
         }
 
         if(injectorEntity.injectTime == MAX_INJECT_TIME) {
-            if(level.random.nextInt(100) <= INJECTOR_CHANCE) {
+            if(level.random.nextInt(100) <= INJECTOR_CHANCE_FOSSIL) {
                 CompoundTag speciesTag = injectorEntity.getItem(EMBRYO_SLOT).getOrCreateTag();
                 ItemStack egg = DDPTTags.Items.fossilTagToEgg(speciesTag);
                 if(injectorEntity.getItem(DINO_EGG_SLOT).isEmpty()) {

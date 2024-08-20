@@ -54,7 +54,7 @@ public class DeadlyDinosPT
         DDPTBenchRecipes.register(eventBus);
 
         GeckoLib.initialize();
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosPTCommonConfig.SPEC, "deadlydinosparktycoon-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosPTCommonConfig.SPEC, "deadly-dinos-park-tycoon-common.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
     }

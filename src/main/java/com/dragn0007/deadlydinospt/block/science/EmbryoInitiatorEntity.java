@@ -3,6 +3,7 @@ package com.dragn0007.deadlydinospt.block.science;
 import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.menu.EmbryoInitiatorMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +29,8 @@ public class EmbryoInitiatorEntity extends BaseContainerBlockEntity {
     public static final int TEST_TUBE_SLOT = 4;
     public static final int EMBRYO_SLOT = 5;
 
-    public static final int INITIALIZATION_CHANCE = 25; // 25%
+    public static final int INITIALIZATION_CHANCE_FOSSIL = DeadlyDinosPTCommonConfig.EMBRYO_INITIATOR_FOSSIL_SUCCESS_RATE.get(); // 25%, by default
+    public static final int INITIALIZATION_CHANCE_BONE = DeadlyDinosPTCommonConfig.EMBRYO_INITIATOR_BONE_SUCCESS_RATE.get(); // 50%, by default
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(6, ItemStack.EMPTY);
@@ -129,7 +131,7 @@ public class EmbryoInitiatorEntity extends BaseContainerBlockEntity {
         }
 
         if(initiatorEntity.initializationTime == MAX_INITIALIZATION_TIME) {
-            if(level.random.nextInt(100) <= INITIALIZATION_CHANCE) {
+            if(level.random.nextInt(100) <= INITIALIZATION_CHANCE_FOSSIL) {
                 System.out.println("reach");
                 CompoundTag speciesTag = initiatorEntity.getItem(PETRI_SLOT).getOrCreateTag();
                 ItemStack embryoItem = new ItemStack(DDPTItems.EMBRYO.get());

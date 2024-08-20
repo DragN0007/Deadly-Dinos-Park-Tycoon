@@ -2,6 +2,8 @@ package com.dragn0007.deadlydinospt.util.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
+import java.lang.module.Configuration;
+
 public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
@@ -9,6 +11,17 @@ public class DeadlyDinosPTCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> TROPHYITEM_DURABILITY;
     public static final ForgeConfigSpec.ConfigValue<Integer> BIG_DINO_BREAK_RADIUS;
     public static final ForgeConfigSpec.ConfigValue<Integer> SMALL_DINO_BREAK_RADIUS;
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> ACID_VAT_FOSSIL_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DNA_EXTRACTOR_FOSSIL_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> EMBRYO_INITIATOR_FOSSIL_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> EMBRYO_INJECTOR_FOSSIL_SUCCESS_RATE;
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> ACID_VAT_BONE_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DNA_EXTRACTOR_BONE_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> EMBRYO_INITIATOR_BONE_SUCCESS_RATE;
+    public static final ForgeConfigSpec.ConfigValue<Integer> EMBRYO_INJECTOR_BONE_SUCCESS_RATE;
+
     public static final ForgeConfigSpec.ConfigValue<Integer> ACRO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ALBERTO_FOSSIL_WEIGHT;
     public static final ForgeConfigSpec.ConfigValue<Integer> ALLO_FOSSIL_WEIGHT;
@@ -70,7 +83,8 @@ public class DeadlyDinosPTCommonConfig {
 
 
     static {
-        BUILDER.push("Configs for Deadly Dinos!");
+        BUILDER.push("Deadly Dinos: Park Tycoon");
+        BUILDER.push("Misc Configs");
 
         TROPHYITEM_DURABILITY = BUILDER.comment("Amount of uses of Dino Trophies. Set to 0 for infinite durability. Default is 10.")
                 .define("How much durabiltiy should Dino Trophies have?", 10);
@@ -83,9 +97,52 @@ public class DeadlyDinosPTCommonConfig {
         //Small Dinos - How many blocks should they break?
         SMALL_DINO_BREAK_RADIUS = BUILDER.comment("What should the radius be that Small Deadly Dinos can destroy when attacking? 3 Blocks is Default.")
                 .define("Small Dino destroy radius", 3);
+        BUILDER.pop();
+    }
+
+    static {
+        BUILDER.push("Creation Configs");
 
 
-        
+        ACID_VAT_BONE_SUCCESS_RATE = BUILDER.comment("Acid Vat success rate, as a percentage. Default is 50. " +
+                        "Bones generally have a higher success rate, as they're fresher.")
+                .define("Acid Vat success rate percent: Bones", 50);
+
+        DNA_EXTRACTOR_BONE_SUCCESS_RATE = BUILDER.comment("DNA Extractor success rate, as a percentage. Default is 50. " +
+                        "Bones generally have a higher success rate, as they're fresher.")
+                .define("DNA Extractor success rate percent: Bones", 50);
+
+        EMBRYO_INITIATOR_BONE_SUCCESS_RATE = BUILDER.comment("Embryo Initiator success rate, as a percentage. Default is 50. " +
+                        "Bones generally have a higher success rate, as they're fresher.")
+                .define("Embryo Initiator success rate percent: Bones", 50);
+
+        EMBRYO_INJECTOR_BONE_SUCCESS_RATE = BUILDER.comment("Embryo Injector success rate, as a percentage. Default is 85. " +
+                        "Bones generally have a higher success rate, as they're fresher.")
+                .define("Embryo Injector success rate percent: Bones", 85);
+        BUILDER.pop();
+
+
+        ACID_VAT_FOSSIL_SUCCESS_RATE = BUILDER.comment("Acid Vat success rate, as a percentage. Default is 33. " +
+                        "Fossils generally have a lower success rate, as they're much older.")
+                .define("Acid Vat success rate percent: Fossils", 33);
+
+        DNA_EXTRACTOR_FOSSIL_SUCCESS_RATE = BUILDER.comment("DNA Extractor success rate, as a percentage. Default is 33. " +
+                        "Fossils generally have a lower success rate, as they're much older.")
+                .define("DNA Extractor success rate percent: Fossils", 33);
+
+        EMBRYO_INITIATOR_FOSSIL_SUCCESS_RATE = BUILDER.comment("Embryo Initiator success rate, as a percentage. Default is 25. " +
+                        "Fossils generally have a lower success rate, as they're much older.")
+                .define("Embryo Initiator success rate percent: Fossils", 25);
+
+        EMBRYO_INJECTOR_FOSSIL_SUCCESS_RATE = BUILDER.comment("Embryo Injector success rate, as a percentage. Default is 75. " +
+                        "Fossils generally have a lower success rate, as they're much older.")
+                .define("Embryo Injector success rate percent: Fossils", 75);
+        BUILDER.pop();
+    }
+
+    static {
+        BUILDER.push("Fossil Spawn Weight Configs");
+
         ACRO_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("ACRO Fossil Spawn Weight", 1);
 
@@ -259,9 +316,8 @@ public class DeadlyDinosPTCommonConfig {
 
         YUTY_FOSSIL_WEIGHT = BUILDER.comment("How often should this fossil spawn? Default is 1.")
                 .define("YUTY Fossil Spawn Weight", 1);
-
-
         BUILDER.pop();
+
         SPEC = BUILDER.build();
     }
 }

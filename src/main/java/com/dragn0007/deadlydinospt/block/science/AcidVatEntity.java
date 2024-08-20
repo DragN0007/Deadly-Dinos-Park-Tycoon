@@ -4,6 +4,7 @@ import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.menu.AcidVatMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.dragn0007.deadlydinospt.util.DDPTTags;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -29,7 +30,8 @@ public class AcidVatEntity extends BaseContainerBlockEntity implements MenuProvi
     public static final int TISSUE_SLOT = 2;
     public static final int BONEMEAL_SLOT = 3;
 
-    public static final int TISSUE_CHANCE = 33; // 33%
+    public static final int TISSUE_CHANCE_FOSSIL = DeadlyDinosPTCommonConfig.ACID_VAT_FOSSIL_SUCCESS_RATE.get(); // 33%, by default
+    public static final int TISSUE_CHANCE_BONE = DeadlyDinosPTCommonConfig.ACID_VAT_BONE_SUCCESS_RATE.get(); // 50%, by default
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
@@ -152,7 +154,7 @@ public class AcidVatEntity extends BaseContainerBlockEntity implements MenuProvi
         }
 
         if(acidVatEntity.acidLevel > 0 && acidVatEntity.boilTime == MAX_BOIL_TIME) {
-            if(level.random.nextInt(100) <= TISSUE_CHANCE) {
+            if(level.random.nextInt(100) <= TISSUE_CHANCE_FOSSIL) {
                 ItemStack tissueItem = nextTissueResult(acidVatEntity);
                 if(acidVatEntity.getItem(TISSUE_SLOT).isEmpty()) {
                     acidVatEntity.setItem(TISSUE_SLOT, tissueItem);

@@ -3,6 +3,7 @@ package com.dragn0007.deadlydinospt.block.science;
 import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.menu.DNAExtractorMenu;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
+import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -25,7 +26,8 @@ public class DNAExtractorEntity extends BaseContainerBlockEntity {
     public static final int TISSUE_SLOT = 1;
     public static final int DNA_PETRI_SLOT = 2;
 
-    public static final int EXTRACTION_CHANCE = 33; // 33%
+    public static final int EXTRACTION_CHANCE_FOSSIL = DeadlyDinosPTCommonConfig.DNA_EXTRACTOR_FOSSIL_SUCCESS_RATE.get(); // 33%, by default
+    public static final int EXTRACTION_CHANCE_BONE = DeadlyDinosPTCommonConfig.DNA_EXTRACTOR_BONE_SUCCESS_RATE.get(); // 50%, by default
 
 
     public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
@@ -126,7 +128,7 @@ public class DNAExtractorEntity extends BaseContainerBlockEntity {
         }
 
         if(extractorEntity.extractTime == MAX_EXTRACT_TIME) {
-            if(level.random.nextInt(100) <= EXTRACTION_CHANCE) {
+            if(level.random.nextInt(100) <= EXTRACTION_CHANCE_FOSSIL) {
                 CompoundTag speciesTag = extractorEntity.getItem(TISSUE_SLOT).getOrCreateTag();
                 ItemStack DNAPetriItem = new ItemStack(DDPTItems.DNA_PETRI_DISH.get());
                 DNAPetriItem.getOrCreateTag().merge(speciesTag);

@@ -18,9 +18,12 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
+import java.lang.reflect.Type;
 
 public class AcidVatEntity extends BaseContainerBlockEntity implements MenuProvider {
     public static final int MAX_BOIL_TIME = 20 * 10;

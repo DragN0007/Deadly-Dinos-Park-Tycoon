@@ -6,7 +6,6 @@ import com.dragn0007.deadlydinospt.block.science.base.DDPTBlockEntities;
 import com.dragn0007.deadlydinospt.client.gui.DDPTMenuTypes;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
-import com.dragn0007.deadlydinospt.recipes.DDPTBenchRecipes;
 import com.dragn0007.deadlydinospt.util.config.DeadlyDinosPTCommonConfig;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -51,7 +50,6 @@ public class DeadlyDinosPT
         EntityTypes.ENTITY_TYPES.register(eventBus);
         DDPTMenuTypes.register(eventBus);
         DDPTBlockEntities.register(eventBus);
-        DDPTBenchRecipes.register(eventBus);
 
         GeckoLib.initialize();
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DeadlyDinosPTCommonConfig.SPEC, "deadly-dinos-park-tycoon-common.toml");

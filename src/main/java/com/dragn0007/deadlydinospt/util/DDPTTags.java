@@ -1,6 +1,8 @@
 package com.dragn0007.deadlydinospt.util;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
+import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.dragn0007.deadlydinospt.item.DDPTItems;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.nbt.CompoundTag;
@@ -229,6 +231,19 @@ public class DDPTTags {
         public static final TagKey<Item> STETHACANTHUS_FOSSILS = tag("stethacanthus_fossils");
 
 
+        public static final TagKey<Item> ASTEROXLYON_FOSSILS = tag("asteroxylon_fossils");
+        public static final TagKey<Item> COOKSONIA_FOSSILS = tag("cooksonia_fossils");
+        public static final TagKey<Item> CALAMITES_FOSSILS = tag("calamites_fossils");
+        public static final TagKey<Item> CYCAS_FOSSILS = tag("cycas_fossils");
+        public static final TagKey<Item> CYPERUS_FOSSILS = tag("cyperus_fossils");
+        public static final TagKey<Item> CYCADS_FOSSILS = tag("cycads_fossils");
+        public static final TagKey<Item> HORSETAIL_FOSSILS = tag("horsetail_fossils");
+        public static final TagKey<Item> ZOSTER_FOSSILS = tag("zoster_fossils");
+        public static final TagKey<Item> YEW_FOSSILS = tag("yew_fossils");
+        public static final TagKey<Item> SEQUOIA_FOSSILS = tag("sequoia_fossils");
+        public static final TagKey<Item> CONIFER_FOSSILS = tag("conifer_fossils");
+
+
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(DeadlyDinosPT.MODID, name));
         }
@@ -357,6 +372,18 @@ public class DDPTTags {
             put(MOSASAURUS_BONES,new Pair<> (DDPTItems.MOSA_EGG,"Mosasaurus"));
             put(STETHACANTHUS_FOSSILS,new Pair<> (DDPTItems.STETH_EGG,"Stethacanthus"));
             put(STETHACANTHUS_BONES,new Pair<> (DDPTItems.STETH_EGG,"Stethacanthus"));
+
+            put(ASTEROXLYON_FOSSILS,new Pair<> (DDPTItems.ASTEROXYLON_ITEM,"Asteroxylon"));
+            put(HORSETAIL_FOSSILS,new Pair<> (DDPTItems.HORSETAIL_ITEM,"Horsetail"));
+            put(CALAMITES_FOSSILS,new Pair<> (DDPTItems.CALAMITES_ITEM,"Calamites"));
+            put(CYCADS_FOSSILS,new Pair<> (DDPTItems.CYCADS_ITEM,"Cycads"));
+            put(CYCAS_FOSSILS,new Pair<> (DDPTItems.CYCAS_ITEM,"Cycas"));
+            put(ZOSTER_FOSSILS,new Pair<> (DDPTItems.ZOSTER_ITEM,"Zosterophyllum"));
+            put(CYPERUS_FOSSILS,new Pair<> (DDPTItems.CYPERUS_ITEM,"Cyperus"));
+            put(COOKSONIA_FOSSILS,new Pair<> (DDPTItems.COOKSONIA_ITEM,"Cooksonia"));
+            put(YEW_FOSSILS,new Pair<> (DDPTItems.YEW_SAPLING_ITEM,"Yew Plum"));
+            put(CONIFER_FOSSILS,new Pair<> (DDPTItems.CONIFER_SAPLING_ITEM,"Giant Conifer"));
+            put(SEQUOIA_FOSSILS,new Pair<> (DDPTItems.SEQUOIA_SAPLING_ITEM,"Grand Sequoia"));
         }};
 
         public static CompoundTag fossilItemToTag(ItemStack fossil) {

@@ -1413,6 +1413,20 @@
   "item.deadlydinospt.stethacanthus_tooth": "Stethacanthus Tooth",
 
 
+  "block.deadlydinospt.plant_fossil": "Plant Fossil",
+  "block.deadlydinospt.chiseled_plant_fossil": "Chiseled Plant Fossil",
+
+  "item.deadlydinospt.cycas_fossil": "Cycas Fossil",
+  "item.deadlydinospt.cycads_fossil": "Cycads Fossil",
+  "item.deadlydinospt.zoster_fossil": "Zosterophyllum Fossil",
+  "item.deadlydinospt.cyperus_fossil": "Cyperus Fossil",
+  "item.deadlydinospt.cooksonia_fossil": "Cooksonia Fossil",
+  "item.deadlydinospt.horsetail_fossil": "Horsetail Fossil",
+  "item.deadlydinospt.asteroxylon_fossil": "Asteroxylon Fossil",
+  "item.deadlydinospt.calamites_fossil": "Calamites Fossil",
+  "item.deadlydinospt.yew_fossil": "Yew Plum Fossil",
+  "item.deadlydinospt.conifer_fossil": "Giant Conifer Fossil",
+  "item.deadlydinospt.sequoia_fossil": "Grand Sequoia Fossil",
 
 
 
@@ -1424,6 +1438,18 @@
   "block.deadlydinospt.horsetail": "Horsetail",
   "block.deadlydinospt.asteroxylon": "Asteroxylon",
   "block.deadlydinospt.calamites": "Calamites",
+
+  "item.deadlydinospt.cycas_item": "Cycas",
+  "item.deadlydinospt.cycads_item": "Cycads",
+  "item.deadlydinospt.zoster_item": "Zosterophyllum",
+  "item.deadlydinospt.cyperus_item": "Cyperus",
+  "item.deadlydinospt.cooksonia_item": "Cooksonia",
+  "item.deadlydinospt.horsetail_item": "Horsetail",
+  "item.deadlydinospt.asteroxylon_item": "Asteroxylon",
+  "item.deadlydinospt.calamites_item": "Calamites",
+  "item.deadlydinospt.yew_sapling_item": "Yew Plum Sapling",
+  "item.deadlydinospt.conifer_sapling_item": "Giant Conifer Sapling",
+  "item.deadlydinospt.sequoia_sapling_item": "Grand Sequoia Sapling",
 
   "block.deadlydinospt.wire_fence_1": "Heavy Paddock Fence",
   "block.deadlydinospt.wire_fence_2": "Moderate Paddock Fence",

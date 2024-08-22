@@ -23,8 +23,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import javax.annotation.Nonnull;
 
 //public class AcidVatRecipeJEI implements IRecipeCategory<AcidVatEntity> {
-//    public final static ResourceLocation UID = new ResourceLocation(DeadlyDinosPT.MODID, "acid_vat");
-//    public final static ResourceLocation TEXTURE =
+//    public static final ResourceLocation UID = new ResourceLocation(DeadlyDinosPT.MODID, "acid_vat");
+//    public static final ResourceLocation TEXTURE =
 //            new ResourceLocation(DeadlyDinosPT.MODID, "textures/gui/acid_vat.png");
 //
 //    private final IDrawable background;
@@ -32,7 +32,7 @@ import javax.annotation.Nonnull;
 //
 //    public AcidVatRecipeJEI(IGuiHelper helper) {
 //        this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 85);
-//        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM, new ItemStack(DDPTBlocksDataGen.ACID_VAT.get()));
+//        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(DDPTBlocksDataGen.ACID_VAT.get()));
 //    }
 //
 //    @Override
@@ -61,12 +61,17 @@ import javax.annotation.Nonnull;
 //    }
 //
 //    @Override
-//    public void setRecipe(@Nonnull IRecipeLayoutBuilder builder, @Nonnull AcidVatMenu entity, @Nonnull IFocusGroup focusGroup) {
+//    public void setRecipe(@Nonnull IRecipeLayoutBuilder builder, @Nonnull AcidVatEntity entity, @Nonnull IFocusGroup focusGroup) {
+//        builder.addSlot(RecipeIngredientRole.INPUT, 33, 34)
+//                .addItemStack(new ItemStack(DDPTItems.ACID_BUCKET.get())); // Acid
 //
-//        builder.addSlot(RecipeIngredientRole.INPUT, 33, 34).addIngredients(Ingredient.of(DDPTItems.ACID_BUCKET.get())); //Acid
-//        builder.addSlot(RecipeIngredientRole.INPUT, 79, 17).addIngredients(entity.getIngredients().get(0)); //Fossil
+//        builder.addSlot(RecipeIngredientRole.INPUT, 79, 17)
+//                .addItemStack(entity.getItem(AcidVatEntity.FOSSIL_SLOT)); // Fossil
 //
-//        builder.addSlot(RecipeIngredientRole.OUTPUT, 56, 51).addItemStack(entity.getResultItem()); //Tissue
-//        builder.addSlot(RecipeIngredientRole.OUTPUT, 102, 51).addItemStack(entity.getResultItem()); //Bonemeal
+//        builder.addSlot(RecipeIngredientRole.OUTPUT, 56, 51)
+//                .addItemStack(entity.getItem(AcidVatEntity.TISSUE_SLOT)); // Tissue
+//
+//        builder.addSlot(RecipeIngredientRole.OUTPUT, 102, 51)
+//                .addItemStack(entity.getItem(AcidVatEntity.BONEMEAL_SLOT)); // Bonemeal
 //    }
 //}

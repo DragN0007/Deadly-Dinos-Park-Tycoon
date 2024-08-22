@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "deadlydinospt:block/chiseled_stone_fossil_med_carni_2"
+    "all": "deadlydinospt:block/chiseled_deepslate_fossil_med_carni_2"
   }
 }

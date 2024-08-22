@@ -1,15 +1,15 @@
 package com.dragn0007.deadlydinospt.item;
 
 import com.dragn0007.deadlydinospt.DeadlyDinosPT;
+import com.dragn0007.deadlydinospt.block.DDPTBlocks;
+import com.dragn0007.deadlydinospt.block.DDPTBlocksDataGen;
 import com.dragn0007.deadlydinospt.entity.util.EntityTypes;
 import com.dragn0007.deadlydinospt.item.custom.*;
 import com.dragn0007.deadlydinospt.item.util.DDPTItemGroup;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -2292,6 +2292,57 @@ public class DDPTItems {
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
     public static final RegistryObject<Item> STETHACANTHUS_TOOTH = ITEMS.register("stethacanthus_tooth",
             () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+    //PLANTS
+    public static final RegistryObject<Item> ASTEROXYLON_FOSSIL = ITEMS.register("asteroxylon_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> HORSETAIL_FOSSIL = ITEMS.register("horsetail_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> CALAMITES_FOSSIL = ITEMS.register("calamites_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> CYCAS_FOSSIL = ITEMS.register("cycas_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> CYCADS_FOSSIL = ITEMS.register("cycads_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> ZOSTER_FOSSIL = ITEMS.register("zoster_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> COOKSONIA_FOSSIL = ITEMS.register("cooksonia_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> CYPERUS_FOSSIL = ITEMS.register("cyperus_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> YEW_FOSSIL = ITEMS.register("yew_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> CONIFER_FOSSIL = ITEMS.register("conifer_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+    public static final RegistryObject<Item> SEQUOIA_FOSSIL = ITEMS.register("sequoia_fossil",
+            () -> new Item(new Item.Properties().tab(DDPTItemGroup.DDD_GROUP)));
+
+
+
+
+    //Plant Items (For benches only)
+    public static final RegistryObject<Item> ASTEROXYLON_ITEM = ITEMS.register("asteroxylon_item",
+            () -> new ItemNameBlockItem((DDPTBlocksDataGen.ASTEROXYLON.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> HORSETAIL_ITEM = ITEMS.register("horsetail_item",
+            () -> new ItemNameBlockItem((DDPTBlocksDataGen.HORSETAIL.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> CALAMITES_ITEM = ITEMS.register("calamites_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.CALAMITES.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> CYCAS_ITEM = ITEMS.register("cycas_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.CYCAS.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> CYCADS_ITEM = ITEMS.register("cycads_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.CYCADS.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> ZOSTER_ITEM = ITEMS.register("zoster_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.ZOSTER.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> COOKSONIA_ITEM = ITEMS.register("cooksonia_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.COOKSONIA.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> CYPERUS_ITEM = ITEMS.register("cyperus_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.CYPERUS.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> YEW_SAPLING_ITEM = ITEMS.register("yew_sapling_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.YEWSAPLING.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> CONIFER_SAPLING_ITEM = ITEMS.register("conifer_sapling_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.YEWSAPLING.get()), (new Item.Properties())));
+    public static final RegistryObject<Item> SEQUOIA_SAPLING_ITEM = ITEMS.register("sequoia_sapling_item",
+            () -> new ItemNameBlockItem((DDPTBlocks.YEWSAPLING.get()), (new Item.Properties())));
 
 
 

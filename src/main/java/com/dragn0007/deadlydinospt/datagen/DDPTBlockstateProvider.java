@@ -594,5 +594,15 @@ public class DDPTBlockstateProvider extends BlockStateProvider {
         simpleBlock(DDPTBlocks.CHISELED_STETHACANTHUS_FOSSIL.get(), models().cubeAll("chiseled_stethacanthus_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_marine")));
         simpleBlockItem(DDPTBlocks.CHISELED_STETHACANTHUS_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_STETHACANTHUS_FOSSIL.get().getRegistryName().getPath(),
                 new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_deepslate_fossil_med_marine")));
+
+
+
+        simpleBlock(DDPTBlocks.PLANT_FOSSIL.get(), models().cubeAll("plant_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_plant")));
+        simpleBlockItem(DDPTBlocks.PLANT_FOSSIL.get(), models().cubeAll(DDPTBlocks.PLANT_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/stone_fossil_plant")));
+
+        simpleBlock(DDPTBlocks.CHISELED_PLANT_FOSSIL.get(), models().cubeAll("chiseled_plant_fossil", new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_plant")));
+        simpleBlockItem(DDPTBlocks.CHISELED_PLANT_FOSSIL.get(), models().cubeAll(DDPTBlocks.CHISELED_PLANT_FOSSIL.get().getRegistryName().getPath(),
+                new ResourceLocation(DeadlyDinosPT.MODID, "block/chiseled_stone_fossil_plant")));
     }
 }

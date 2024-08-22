@@ -176,7 +176,19 @@ public class DDPTItemModelProvider extends ItemModelProvider {
 
 
         simpleSpriteBlockItem(DDPTBlocksDataGen.ASTEROXYLON.get());
+        itemNameBlockItem(DDPTItems.ASTEROXYLON_ITEM.get(), "asteroxylon");
         simpleSpriteBlockItem(DDPTBlocksDataGen.HORSETAIL.get());
+        itemNameBlockItem(DDPTItems.HORSETAIL_ITEM.get(), "horsetail");
+
+        itemNameBlockItem(DDPTItems.CYCADS_ITEM.get(), "cycads_t");
+        itemNameBlockItem(DDPTItems.CYCAS_ITEM.get(), "cycas");
+        itemNameBlockItem(DDPTItems.CYPERUS_ITEM.get(), "cyperus");
+        itemNameBlockItem(DDPTItems.COOKSONIA_ITEM.get(), "cooksonia");
+        itemNameBlockItem(DDPTItems.CALAMITES_ITEM.get(), "calamites_t");
+        itemNameBlockItem(DDPTItems.ZOSTER_ITEM.get(), "zoster");
+        itemNameBlockItem(DDPTItems.YEW_SAPLING_ITEM.get(), "yew_sapling");
+        itemNameBlockItem(DDPTItems.CONIFER_SAPLING_ITEM.get(), "conifer_sapling");
+        itemNameBlockItem(DDPTItems.SEQUOIA_SAPLING_ITEM.get(), "sequoia_sapling");
 
 
 
@@ -1004,6 +1016,19 @@ public class DDPTItemModelProvider extends ItemModelProvider {
 
         simpleItem(DDPTItems.STETHACANTHUS_FOSSIL_TOOTH.get());
         simpleItem(DDPTItems.STETHACANTHUS_TOOTH.get());
+
+
+        advancedItem(DDPTItems.ASTEROXYLON_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.HORSETAIL_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.CYCADS_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.CYCAS_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.CYPERUS_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.COOKSONIA_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.CALAMITES_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.ZOSTER_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.YEW_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.CONIFER_FOSSIL.get(), "plant_fossil");
+        advancedItem(DDPTItems.SEQUOIA_FOSSIL.get(), "plant_fossil");
     }
 
     private ItemModelBuilder simpleSpriteBlockItem(Block block) {
@@ -1016,6 +1041,12 @@ public class DDPTItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getRegistryName().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(DeadlyDinosPT.MODID,"item/" + item.getRegistryName().getPath()));
+    }
+
+    private ItemModelBuilder itemNameBlockItem(Item item, String getTextureName) {
+        return withExistingParent(item.getRegistryName().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(DeadlyDinosPT.MODID,"block/" + getTextureName));
     }
 
     private ItemModelBuilder advancedItem(Item item, String getTextureName) {

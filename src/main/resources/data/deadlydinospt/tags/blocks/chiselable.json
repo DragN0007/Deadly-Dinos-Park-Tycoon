@@ -60,6 +60,8 @@
     "deadlydinospt:livyatan_fossil",
     "deadlydinospt:megalodon_fossil",
     "deadlydinospt:mosasaurus_fossil",
-    "deadlydinospt:stethacanthus_fossil"
+    "deadlydinospt:stethacanthus_fossil",
+
+    "deadlydinospt:plant_fossil"
   ]
 }

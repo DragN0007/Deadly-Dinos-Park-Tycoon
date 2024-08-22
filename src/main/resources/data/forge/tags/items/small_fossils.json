@@ -77,6 +77,18 @@
     "deadlydinospt:arganodus_fossil_skeleton",
     "deadlydinospt:gar_fossil_skeleton",
     "deadlydinospt:hyneria_fossil_skeleton",
-    "deadlydinospt:stethacanthus_fossil_tooth"
+    "deadlydinospt:stethacanthus_fossil_tooth",
+
+
+    "deadlydinospt:asteroxylon_fossil",
+    "deadlydinospt:horsetail_fossil",
+    "deadlydinospt:cycads_fossil",
+    "deadlydinospt:cycas_fossil",
+    "deadlydinospt:cyperus_fossil",
+    "deadlydinospt:cooksonia_fossil",
+    "deadlydinospt:calamites_fossil",
+    "deadlydinospt:yew_fossil",
+    "deadlydinospt:conifer_fossil",
+    "deadlydinospt:sequoia_fossil"
   ]
 }

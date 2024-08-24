@@ -1,6 +1,8 @@
 package com.dragn0007.deadlydinospt.entity.marine.base;
 
+import com.dragn0007.deadlydinospt.Network;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.KeyboardInput;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -112,14 +114,17 @@ public abstract class AbstractTamableMarineDino extends TamableAnimal  {
                 float f1 = livingentity.zza * 0.5F; // Forward moving speed
                 double verticalMovement = vec.y;
 
-                if (livingentity instanceof Player && this.isInWater()) {
-                    Player player = (Player) livingentity;
-                    Minecraft game = Minecraft.getInstance();
-                    LocalPlayer localPlayer = game.player;
-                    if (localPlayer !=null && localPlayer.input.jumping) {
-                        verticalMovement = 0.4D; // Swim up if holding Space
-                    } else if (player.isSprinting()) {
-                        verticalMovement = -0.4D; // Swim down if holding CTRL
+                if(this.isControlledByLocalInstance() && this.getControllingPassenger() instanceof LocalPlayer localPlayer1) {
+                    this.handleInput((KeyboardInput) localPlayer1.input);
+                    if (livingentity instanceof Player && this.isInWater()) {
+                        Player player = (Player) livingentity;
+                        Minecraft game = Minecraft.getInstance();
+                        LocalPlayer localPlayer = game.player;
+                        if (localPlayer != null && localPlayer.input.jumping) {
+                            verticalMovement = 0.4D; // Swim up if holding Space
+                        } else if (player.isSprinting()) {
+                            verticalMovement = -0.4D; // Swim down if holding CTRL
+                        }
                     }
                 }
 
@@ -151,6 +156,12 @@ public abstract class AbstractTamableMarineDino extends TamableAnimal  {
                     super.travel(vec);
                 }
             }
+        }
+    }
+
+    private void handleInput(KeyboardInput input) {
+        if(input.jumping) {
+            Network.INSTANCE.sendToServer(new Network.ToggleTillerPowerRequest(this.getId()));
         }
     }
 
